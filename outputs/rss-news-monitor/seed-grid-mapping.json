@@ -1,0 +1,47 @@
+{
+  "9ee13a9cb42c54ad895620b88210eab525fe3eaf5bec1b4ea9a0e24a925bd28c": {
+    "asset_name": "Eagle Rock · Colleton County 데이터센터 제안",
+    "asset_kind": "load", "region": "Southeast", "state": "SC",
+    "gate": "permit", "status": "blocked", "certainty": "conditional", "direction": "worsened",
+    "capacity": {"mw": 1000, "basis": "campus_plan", "qualifier": "제안 규모 · 접속신청·전력확보량 아님"},
+    "remaining_requirements": ["데이터센터 배제 구역의 조례 반영 예정", "기존 제안 부지가 배제 구역에 포함되어 입지 허용 제약", "망접속 신청·계약·보강·통전 상태 개별 미확인"]
+  },
+  "9393b5fdf4868d46a5801df7a30e8f5fba703b52c07eb18dcef8c0fe815299eb": {
+    "asset_name": "Beaufort County 데이터센터 개발 모라토리엄",
+    "asset_kind": "policy", "region": "Southeast", "state": "NC",
+    "gate": "policy", "status": "blocked", "certainty": "confirmed", "direction": "worsened",
+    "remaining_requirements": ["1년 개발 신청 중단 의결 · 개별 프로젝트 인허가 승인이 아님", "프로젝트별 예외·기존 신청 적용 범위 별도 확인 필요"]
+  },
+  "d41e492b35d02fd7794c4be699a1e591e39a00e9579d63bdbcb9cf2bf9985777": {
+    "asset_name": "Doral · Mammoth Grazing / Mammoth Pastures 2단계",
+    "asset_kind": "generation", "region": "MISO", "state": "IN",
+    "gate": "permit", "status": "approved", "certainty": "confirmed", "direction": "improved",
+    "capacity": {"mw": 1100, "basis": "generation", "qualifier": "두 사업 합계 DC 설비용량 · AC 망접속 MW와 구분"},
+    "remaining_requirements": ["사업별 AC 접속용량·Queue ID 미확인", "건설허가 효력 확인과 별개로 접속계약·망보강·준공·통전 개별 확인 필요"]
+  },
+  "53e19c8635a2ca4ba51c9db08cb0e95ea411d66fae782762d449e64078898a46": {
+    "asset_name": "TeraWulf · Muskie 데이터센터",
+    "asset_kind": "load", "region": "Unknown", "state": "KY", "utility": "Kentucky Power",
+    "gate": "contract", "status": "approved", "certainty": "confirmed", "direction": "improved",
+    "capacity": {"mw": 1000, "basis": "contracted_supply", "qualifier": "확대 계약 수요 · 즉시 통전량 아님"},
+    "remaining_requirements": ["2단계 공급 계획 2029년 · 현재 통전 완료 아님", "공식 접속 ID·권역 원장 대조 미완료", "실제 공급 개시·망보강 완료 개별 확인 필요"]
+  },
+  "8f662684665a8cfe6afd1780f496cdfb6340d7d97b4072a86ee8cdb5216a509b": {
+    "asset_name": "Vistra · Beaver Valley / Davis-Besse / Perry 출력 증강",
+    "asset_kind": "generation", "region": "PJM", "gate": "contract", "status": "conditional", "certainty": "conditional", "direction": "improved",
+    "capacity": {"mw": 433, "basis": "generation", "qualifier": "3개 원전 증강 계획 합계 · 준공·가동 확정치 아님"},
+    "remaining_requirements": ["최대 42억 달러 조건부 대출 · 최종 금융약정·집행 미확인", "원전별 인허가·출력 증강·계통 접속·가동 일정 별도 검증 필요"]
+  },
+  "0ed91ff3ffbd7c67c0e6acc197b21270c0120ef32f098fc3525b4779295ad630": {
+    "asset_name": "Entergy Louisiana · Meta Evest 전원·송전 확충",
+    "asset_kind": "load", "region": "Unknown", "state": "LA", "utility": "Entergy Louisiana",
+    "gate": "permit", "status": "pending", "certainty": "confirmed", "direction": "neutral",
+    "remaining_requirements": ["10월 7~9일 증거심리 예정 · 신청 승인 완료 아님", "발전·송전 인증 결과·요금 비용배분·보강·공급 개시 개별 확인 필요", "공식 프로젝트 식별자 원장 대조 미완료"]
+  },
+  "d6161d95e15fbc1b6d1bd23d859a17e0b27d6cc7f221c883d7a594556ea06d57": {
+    "asset_name": "미공개 미국 IPP · 데이터센터 282MW 현장 발전",
+    "asset_kind": "generation", "region": "Unknown", "gate": "equipment", "status": "approved", "certainty": "confirmed", "direction": "improved",
+    "capacity": {"mw": 282, "basis": "generation", "qualifier": "50SG 엔진 15기 수주 규모 · 현재 가동 용량 아님"},
+    "remaining_requirements": ["고객·입지·접속 권역 미공개", "현장 발전설비 주문과 별개로 인허가·납품·준공·운영 확인 필요"]
+  }
+}

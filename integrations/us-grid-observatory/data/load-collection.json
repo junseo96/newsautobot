@@ -1,0 +1,92 @@
+[
+  {
+    "region": "CAISO",
+    "level": "공개 서비스 원장 부분 추출",
+    "scope": "PG&E 55,284행 중 New Industrial 196행, SDG&E 29,337행 중 비주거 raw kW 후보 58행 수록. 업종 전체의 검증된 고부하 고객 전수와 범위 차이. PG&E 20 MW 이상 데이터센터 12.71 GW 단계 집계 별도.",
+    "remainingGap": "PG&E 원장 기준 2025-06-30 및 최신 XLSX 취득 공백; SCE XLSX 취득 실패; SDG&E 단위·과대입력과 가림. LADWP·SMUD는 절차/집계만 확인. 잔여 공영·소규모 IOU 원장 미검토.",
+    "nextAction": "CPUC·전력회사 최신 XLSX 취득 및 MW 단위 검증; SCE·공영 전력회사 전수 범위 확장; 개별 계약·통전일 연결",
+    "cadence": "반기 통전 보고 · 분기 공시 · 월별 원본 접근 확인",
+    "sourceLabel": "CPUC 공식 통전 보고 인덱스",
+    "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/infrastructure/energization/energization-data-reporting-requirements-and-data-reporting-template"
+  },
+  {
+    "region": "ERCOT",
+    "level": "비공개 고객명세·공개 집계",
+    "scope": "6월 18일 LLWG 추적 상태표 466.5 GW, Batch Zero 분류 및 Oncor 737개 활성 LC&I 요청·CenterPoint 제출 집계 확보. 데이터센터·산업·수소·암호화폐 업종 범위 확인.",
+    "remainingGap": "NPRR1267의 고객정보 기밀성과 RIOO 열람 제한. 고객 ID·개별 MW·중복·미통전 잔량 명세 비공개. Batch Zero 125.4/127.9 GW 원문 차이 미해명; 기업별 사례의 전수 대체 불가.",
+    "nextAction": "LLWG 후속 상태·업종 집계 및 Batch Zero 정정 추적; TSP 집계·개별 공개 RPG 근거의 중복 연결",
+    "cadence": "월별 LLWG · 공지 발생 시 · 분기 TSP 실적",
+    "sourceLabel": "ERCOT RFI 열람 범위 공지",
+    "url": "https://www.ercot.com/services/comm/mkt_notices/M-C092126-01"
+  },
+  {
+    "region": "ISO-NE",
+    "level": "선별 전망 2행·유틸리티 문의 집계",
+    "scope": "CELT 선별표 2행 전체: NEMA 데이터센터 200 MW·CT 일반전기화 85 MW. CMP 문의 10건·Versant 6건 집계 별도; 익명 고객행 생성 제외.",
+    "remainingGap": "선별 2행 밖의 전체 산업 신청 분모 미상. Versant 일부 Northern Maine 범위 미분해. Massachusetts ESMP 표 취득 실패. CT·RI·NH·VT 및 공영·협동조합 고객원장 조사 미완료.",
+    "nextAction": "DPU 26-ESMP-01 원문 표 재취득; 주별 PUC·TO 보고의 전체 산업 고객 연결; LFC 후속 선별 기준 확인",
+    "cadence": "분기 LFC · 반기 ESMP · 연간 CELT",
+    "sourceLabel": "ISO-NE 2026 대규모 부하 선별표",
+    "url": "https://www.iso-ne.com/static-assets/documents/100033/fx2026_large_loads.pdf"
+  },
+  {
+    "region": "MISO",
+    "level": "송전 지원 원장 161사업·계약 보완",
+    "scope": "검토 원장 597행 중 122사업, 승인 설비 원장 3,211행 중 추가 39사업의 통합 161개 지원사업. 승인 194설비행 원문 연결; Ameren·DTE 계약 별도.",
+    "remainingGap": "MTEP 송전사업과 고객 신청 큐의 차이. 임시 공급·복수 단계·동일 고객 중복 및 실제 미통전 잔량 미확인. M3/M4 설비 상태를 고객 공사·통전 단계로 전환 제외.",
+    "nextAction": "MTEP Project/Facility ID별 차분; 유틸리티 계약·PSC 명령과 동일 고객 연결; 발전·설비 정격의 부하 전환 제외",
+    "cadence": "월별 MTEP 원장 · 분기 계약 공시",
+    "sourceLabel": "MISO 검토 중 송전사업 XLSX",
+    "url": "https://cdn.misoenergy.org/MTEP%20Projects%20Under%20Evaluation368757.xlsx"
+  },
+  {
+    "region": "NYISO",
+    "level": "공개 Load Projects 74행 전체",
+    "scope": "공식 원장 74행·21개 열과 End-Use 범례 보존. 활성 53행·14,232.9 MW, 철회 17행·운영 4행 분리; SIS Pending G2 유지.",
+    "remainingGap": "소매·배전 요청을 포함한 뉴욕 전체 고객 분모 미확인. 원문 End-Use 공란 23행. HTTP·파일 메타·개별 갱신일의 불일치로 단일 원장 기준일 미확정.",
+    "nextAction": "주간 ID·MW·원문 상태 차분과 개별 날짜 이상치 검증; 지역 전력회사 전체 신청 포함 범위 대조",
+    "cadence": "주간 원장 확인",
+    "sourceLabel": "NYISO 공식 Interconnection Queue XLSX",
+    "url": "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx"
+  },
+  {
+    "region": "PJM",
+    "level": "송전 지원 1,125행·AES 선별 9행",
+    "scope": "M-3 전체 3,057행 중 Customer Service 또는 용량 셀 존재 1,125행 수록. AES 익명 계약표 9행과 Dominion·PPL·FirstEnergy·Exelon·AEP LAS 집계 별도.",
+    "remainingGap": "M-3는 기존·증분·이전·지역 전망·철회 포함 송전 필요 이력; 전체 고객 신청 큐와 범위 차이. MW 정의·램프·중복 혼재. AES 표 합계와 전망의 150 MW 차이 미해명.",
+    "nextAction": "M-3 원문 필드·범위 표시 유지 및 합산 제외; LAS·규제 계약·고객 식별자의 근거 기반 연결",
+    "cadence": "월별 M-3 · 연간 LAS · 분기 계약 공시",
+    "sourceLabel": "PJM 공식 M-3 필요 원장 XLSX",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/teac/2026/20261006/20261006-informational-only---m-3-process-needs-status.xlsx"
+  },
+  {
+    "region": "SPP",
+    "level": "DPA 이력 2,447 ID·PLP 추가 2행",
+    "scope": "2010~2026년 9월 연결 XLSX 199개·원문 2,475행의 고유 DPA 2,447개와 PLP 전용 2행, 총 2,449행 수록. 상세 연구보고서 24개·연결 레코드 38개; 기존 상세 G4 3건 보존.",
+    "remainingGap": "예비평가의 고객명·업종·MW·현재 공급 단계 다수 미공개. 전체 과거 ID를 현재 대기 고객으로 간주 불가. 연구 모델 MW와 순신규 계약·통전량의 차이.",
+    "nextAction": "월별 DPA 이력 추가·상세 DPNS·NTC·계약·통전 증거 연결; Evergy·OG&E 계약과 중복 대조",
+    "cadence": "월별 예비평가 · 수시 상세 연구 · 분기 계약 공시",
+    "sourceLabel": "SPP 공식 Delivery Point Assessment",
+    "url": "https://opsportal.spp.org/Studies/Delivery"
+  },
+  {
+    "region": "West",
+    "level": "BPA 458행·서부 계약 사건 보완",
+    "scope": "BPA LL 458행 전체와 서부 특별계약 사건 10개 수록. NV Energy 전망 범위 50개·16,930 MW 중 데이터센터 39개·16,530 MW 집계 별도. APS·SRP·Portland General 요청·계약 자료 보완.",
+    "remainingGap": "BPA의 선로·부하·이전·망보강 혼합 및 소매 고객 중복. NV 전망 범위와 현재 신청 원장의 차이. 서부 잔여 전력회사 미검토. AK는 Railbelt 4개사, HI는 HECO 그룹·KIUC 절차 중심으로 고객 원장 미확보.",
+    "nextAction": "BPA 요청·서부 사건별 고객·시설 ID 연결; NV IRP/LLESA·Utah·Idaho 공개 계약 추적; AK·HI 및 잔여 사업자 독립 원장 조사",
+    "cadence": "주간 BPA · 분기·반기 공시 · 사건별 명령",
+    "sourceLabel": "BPA 공식 LL 원장 XLSX",
+    "url": "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx"
+  },
+  {
+    "region": "Southeast",
+    "level": "Georgia Main 118행·집계·사례 분리",
+    "scope": "Georgia Q2 Main 118행 전체·보고 대상 제외 6행·OpenAI 실명 1건 별도 수록. Duke 2026년 2월 Advanced 43개·7,941 MW, TVA 공개 승인 3사건 및 Southern·FPL 집계 보완.",
+    "remainingGap": "Georgia 118행의 이름·미통전 잔량 미공개; 제거는 취소와 구별. Duke 개별 명세 비공개 및 Developing 별도. Southern의 Georgia 중복, TVA 익명 사건 중복, 잔여 남동부 사업자 미검토.",
+    "nextAction": "Georgia 분기 Main·변경 6시트 차분; Duke 반기 기준일·수정 표 추적; TVA·주 PUC 사건과 산업별 서비스 계약 연결",
+    "cadence": "분기 PSC·실적 · 반기 Duke · 수시 TVA 이사회",
+    "sourceLabel": "Georgia PSC Q2 대규모 경제개발 보고서",
+    "url": "https://psc.ga.gov/search/facts-document/?documentId=227753"
+  }
+]

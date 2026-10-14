@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-10-03",
+  "region": "ISO-NE",
+  "newConfirmedCustomerQueueRows": 0,
+  "existingForecastRowsReconfirmed": 2,
+  "coverage": {
+    "classification": "selected_forecast_projects_only",
+    "publicRowsCaptured": 2,
+    "publishedSelectedRows": 2,
+    "knownRegionalCustomerRequestDenominator": null,
+    "nameplateMW": 285,
+    "additiveWithUtilityInquiries": false,
+    "statement": "The published table is the complete list of projects selected for the 2026 CELT large-load forecast, not a list of all New England customer interconnection requests. Earlier inquiries, retail/distribution applications, confidential records, and projects below the forecast selection threshold remain outside this denominator."
+  },
+  "forecastRows": [
+    {
+      "id": "ISO-NE::ISONE-2026-NEMA-ANON",
+      "officialQueueId": null,
+      "sourceRowLabel": "NEMA / Data Center",
+      "projectTypeRaw": "Data Center",
+      "nameplateMW": 200,
+      "capacityBasis": "Reported Nameplate PRIOR to derating",
+      "timelineRaw": "thru 2027",
+      "statusRaw": "Have entered into a formal study agreement; none of the listed projects are currently under construction",
+      "asof": "2026-03-27",
+      "stage": "GU",
+      "source": "https://www.iso-ne.com/static-assets/documents/100033/fx2026_large_loads.pdf",
+      "sourcePage": 14
+    },
+    {
+      "id": "ISO-NE::ISONE-2026-CT-ANON",
+      "officialQueueId": null,
+      "sourceRowLabel": "CT / General Electrification",
+      "projectTypeRaw": "General Electrification",
+      "nameplateMW": 85,
+      "capacityBasis": "Reported Nameplate PRIOR to derating",
+      "timelineRaw": "thru 2040",
+      "statusRaw": "Have entered into a formal study agreement; none of the listed projects are currently under construction",
+      "asof": "2026-03-27",
+      "stage": "GU",
+      "source": "https://www.iso-ne.com/static-assets/documents/100033/fx2026_large_loads.pdf",
+      "sourcePage": 14
+    }
+  ],
+  "utilityAggregateObservations": [
+    {
+      "id": "CMP_MAINE_DC_INQUIRIES_20260626",
+      "utility": "Central Maine Power",
+      "geography": "CMP service territory, Maine",
+      "sectorScope": "Data centers only; does not include all industrial requests",
+      "recordType": "utility_aggregate_inquiries",
+      "asof": "2026-06-26",
+      "projectCount": 10,
+      "mw": null,
+      "statuses": [
+        {"statusRaw": "high-level pre-screenings completed", "count": 4, "subset": {"statusRaw": "requested to advance to a formal Feasibility Study", "count": 1}},
+        {"statusRaw": "currently conducting high-level screenings; results not yet delivered", "count": 3},
+        {"statusRaw": "early discussion stage involving high-level proposals; no requests received to advance further", "count": 3}
+      ],
+      "source": "https://mpuc-cms.maine.gov/CQM.Public.WebUI/MatterManagement/MatterFilingItem.aspx?CaseNumber=2026-00142&FilingSeq=135046",
+      "sourceDocument": "CMP Comments in Response to NOII Large Data Centers",
+      "sourcePages": [4, 5],
+      "localFile": "maine-cmp-comments.pdf",
+      "customerNamesPublished": false,
+      "deduplicatedUniqueProjectCount": null,
+      "additive": false
+    },
+    {
+      "id": "VERSANT_MAINE_DC_INQUIRIES_20260626",
+      "utility": "Versant Power",
+      "geography": "Versant service territory, Maine; not allocated between ISO-NE and Northern Maine in the filing",
+      "regionAssignment": null,
+      "sectorScope": "Data centers only; does not include all industrial requests",
+      "recordType": "utility_aggregate_inquiries",
+      "asof": "2026-06-26",
+      "projectCount": 6,
+      "mw": null,
+      "statuses": [
+        {"statusRaw": "inquiries from prospective data center customers", "count": 6},
+        {"statusRaw": "submitted Load Sheets", "count": 3, "subsetOf": "inquiries"},
+        {"statusRaw": "progressed to Feasibility Studies", "count": 0}
+      ],
+      "source": "https://mpuc-cms.maine.gov/CQM.Public.WebUI/MatterManagement/MatterFilingItem.aspx?CaseNumber=2026-00142&FilingSeq=135064",
+      "sourceDocument": "Versant Initial Comments",
+      "sourcePages": [2],
+      "localFile": "maine-versant-comments.pdf",
+      "customerNamesPublished": false,
+      "deduplicatedUniqueProjectCount": null,
+      "additive": false
+    }
+  ],
+  "coverageSourceRegistry": [
+    {
+      "id": "ISONE_LOAD_FORECAST_2026",
+      "source": "https://www.iso-ne.com/static-assets/documents/100033/fx2026_large_loads.pdf",
+      "sourceDate": "2026-03-27",
+      "status": "retrieved_full_pdf",
+      "rows": 2,
+      "selection": "Slide14: larger than20MW total expected nameplate and formal study agreement; not currently under construction",
+      "denominator": "2 selected forecast projects only"
+    },
+    {
+      "id": "ISONE_FERC_RESOURCE_ADEQUACY_2026",
+      "source": "https://www.iso-ne.com/static-assets/documents/100037/ferc_informational_rpt_resource_adequacy_large_loads.pdf",
+      "sourceDate": "2026-07-20",
+      "status": "retrieved_full_pdf",
+      "rows": 0,
+      "finding": "Describes developing tracking protocols with transmission owners and incorporating large loads in forecasts; no project-by-project census appendix."
+    },
+    {
+      "id": "MASSACHUSETTS_ESMP_MARCH_2026",
+      "source": "https://electricgrid.mass.gov/wp-content/uploads/2025/11/D.P.U.-24-10-11-12-ESMP-MetricsReporting-Memo-9.9.25.pdf",
+      "companionSource": "https://www.mass.gov/doc/meeting-presentation-slides-33/download",
+      "docket": "26-ESMP-01",
+      "utilities": ["NSTAR Electric / Eversource", "Massachusetts Electric / Nantucket Electric / National Grid", "Fitchburg Gas and Electric Light / Unitil"],
+      "status": "primary_reporting_requirement_identified_actual_2026_filing_rows_not_retrieved",
+      "rows": null,
+      "finding": "DPU requires new step/spot-load reporting in biannual ESMP reports, with March2026 retrospective information through December31,2025. All-industry utility route worth completing.",
+      "blocker": "electricgrid.mass.gov returnedHTTP502 through web and direct public retrieval; mass.gov page returned403; no request table retrieved or invented."
+    },
+    {
+      "id": "MAINE_PUC_2026_00142",
+      "source": "https://mpuc-cms.maine.gov/CQM.Public.WebUI/Common/CaseMaster.aspx?CaseNumber=2026-00142",
+      "status": "two_primary_utility_public_comments_retrieved",
+      "asof": "2026-06-26",
+      "rows": 0,
+      "finding": "CMP10 and Versant6 inquiry totals; public documents contain no names, per-request IDs, or MW. Counts are not proven unique projects and cannot fill16 synthetic rows. Latest docket orders/September workshop not fully retrieved."
+    },
+    {
+      "id": "REMAINING_NE_UTILITIES",
+      "status": "not_exhausted",
+      "utilities": ["Connecticut Light & Power / Eversource", "United Illuminating", "Rhode Island Energy / Narragansett", "Public Service Co. of New Hampshire / Eversource", "Unitil NH", "Liberty NH", "Green Mountain Power", "Vermont Electric Cooperative", "municipal utilities and cooperatives"],
+      "rows": null,
+      "finding": "No complete all-use customer interconnection list was retrieved for these territories. None must be represented as zero."
+    }
+  ]
+}

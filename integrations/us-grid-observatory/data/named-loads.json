@@ -1,0 +1,3595 @@
+[
+  {
+    "id": "NAMED_ORACLE_JUPITER_NM",
+    "name": "Oracle Project Jupiter — Doña Ana",
+    "aliases": [
+      "주피터",
+      "오라클",
+      "Jupiter",
+      "YGI Microgrid",
+      "Yucca Growth Infrastructure"
+    ],
+    "region": "West",
+    "regionBasis": "New Mexico 소재 현장발전 프로젝트의 비RTO 서부 탐색 분류 · 공식 계통 접속원장 미연결",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Santa Teresa 인근, Doña Ana County, New Mexico",
+    "participants": [
+      {
+        "role": "클라우드·임차",
+        "name": "Oracle"
+      },
+      {
+        "role": "발전허가 신청인",
+        "name": "Yucca Growth Infrastructure"
+      },
+      {
+        "role": "발전 기자재",
+        "name": "Bloom Energy"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "onsite",
+    "capacities": [
+      {
+        "mw": 2450,
+        "basis": "Oracle 발표의 최대 설치 연료전지 용량 · 수용가 신청 MW와 구별",
+        "sourceId": "s0"
+      },
+      {
+        "mw": 2462,
+        "basis": "NMED 수정 청문공고의 발전 허가신청 용량 · 2.45GW 회사 공시와 별도 표기",
+        "sourceId": "s1"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "데이터센터 건설 확인 · 현장 마이크로그리드 대기허가 절차와 분리",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "Oracle의 Doña Ana 캠퍼스 임차·개발 사실과 현장 연료전지 전력계획 확인",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "가스터빈·디젤 계획을 Bloom 연료전지 마이크로그리드로 전환하는 설계 공시",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "인허가",
+        "status": "조건부",
+        "detail": "2026-09-14 Oracle 설명에서 마이크로그리드 대기허가 행정절차에 대한 법원 정지 명령 확인 · 이후 최종명령·재개 여부 별도 미확보",
+        "sourceId": "s2"
+      },
+      {
+        "gate": "공사",
+        "status": "확인",
+        "detail": "2026-09-14 Oracle 설명의 건설 대상은 데이터센터 건물 · 인접 별도 마이크로그리드와 허가체계 구분",
+        "sourceId": "s2"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "연료전지 전체 가동·캠퍼스 통전 MW·실제 계통 인출량 미확보",
+        "sourceId": null
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "2026-07-28 회사 전망의 대기허가·가스관 승인 전제 명시",
+        "sourceId": "s3"
+      }
+    ],
+    "gaps": [
+      "공식 계통 접속 ID·요청 MW 미확보; 발전설비 MW를 수용가 대기열로 전환 불가",
+      "마이크로그리드 대기허가 최종명령·절차 재개 및 가스관 승인·준공 상태 미확보",
+      "2,450MW 회사 발표와 2,462MW 허가신청의 설계·범위 차이 추가 대조 필요",
+      "건물 착공과 전원 준공·실제 통전·클라우드 인도의 별도 추적 필요"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "Oracle — Project Jupiter fuel cell technology",
+        "url": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/",
+        "publishedAt": "2026-04-27"
+      },
+      {
+        "id": "s1",
+        "title": "NMED — YGI Microgrid 수정 청문공고, NSR10883·AQB26-57(P)",
+        "url": "https://service.web.env.nm.gov/urls/JnpLqFJC",
+        "publishedAt": null
+      },
+      {
+        "id": "s2",
+        "title": "Oracle — Project Jupiter construction permitting statement",
+        "url": "https://www.oracle.com/news/announcement/project-jupiter-statement-on-construction-permitting-2026-09-14/",
+        "publishedAt": "2026-09-14"
+      },
+      {
+        "id": "s3",
+        "title": "Oracle — Project Jupiter 경제효과·전력계획의 승인 전제",
+        "url": "https://www.oracle.com/news/announcement/project-jupiter-2026-07-28/",
+        "publishedAt": "2026-07-28"
+      }
+    ],
+    "asOf": "2026-09-14",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_ERCOT_STARGATE_ABILENE",
+    "name": "Stargate Abilene / Lancium Clean Campus",
+    "aliases": [
+      "Crusoe Abilene",
+      "Stargate 1",
+      "오라클"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "Lancium 공식 현장 페이지의 1.2GW ERCOT 승인 interconnect 공시",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Abilene, Taylor County, Texas",
+    "participants": [
+      {
+        "role": "개발·전력 인프라",
+        "name": "Crusoe — 데이터센터 개발·운영; Lancium — 부지·접속·전력 운영"
+      },
+      {
+        "role": "클라우드",
+        "name": "Oracle Cloud Infrastructure"
+      },
+      {
+        "role": "최종 고객",
+        "name": "OpenAI"
+      }
+    ],
+    "utility": "AEP — EPC의 송전·접속 공사 협력 상대 공시",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 1200,
+        "basis": "캠퍼스 계통 interconnect 승인 용량 — Lancium 공시 기준",
+        "sourceId": "s0"
+      },
+      {
+        "mw": 200,
+        "basis": "초기 2개동 명목 용량; 최초 통전 확인 범위",
+        "sourceId": "s1"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "일부 통전·AI 운영 확인, 캠퍼스 확장 진행",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "변압기 통전·고객 인도·계통 인출 한도의 별도 확인 필요. 이미 운영 중인 초기 용량을 신규 대기 물량에 포함 금지",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "확인",
+        "detail": "Lancium 공식 현장 페이지의 1.2GW ERCOT 승인 interconnect 공시",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "Crusoe의 초기 100MW 2개동 통전 공시 및 OpenAI의 OCI 훈련·추론 운영 확인",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "Oracle 2026-06-12 공시의 전체 용량 42% 고객 인도; 1.2GW interconnect와 분모 동일성 미확인",
+        "sourceId": "s3"
+      },
+      {
+        "gate": "공사",
+        "status": "확인",
+        "detail": "전력 EPC Mortenson의 345kV 변전소 첫 변압기 2025-12-19 통전 및 주 변압기 5대 2026-03-10 통전 공시",
+        "sourceId": "s4"
+      }
+    ],
+    "gaps": [
+      "ERCOT 공식 대기열 ID·Batch Zero 분류와 실명 연결",
+      "최신 승인 램프업별 계통 인출 MW",
+      "전체 캠퍼스 실측 부하와 잔여 접속 대기 MW",
+      "2026-09-10 어닝콜의 6개동·618MW 고객 인도 보도 발견; 기업 원문 웹캐스트·발표자료와 직접 대조 전 최신 수치 대체 보류"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "Lancium Abilene campus — ERCOT Approved",
+        "url": "https://lancium.com/locations-abilene/",
+        "publishedAt": null
+      },
+      {
+        "id": "s1",
+        "title": "Crusoe Microsoft Abilene announcement — existing campus progress",
+        "url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure",
+        "publishedAt": "2026-03-27"
+      },
+      {
+        "id": "s2",
+        "title": "OpenAI five new Stargate sites",
+        "url": "https://openai.com/index/five-new-stargate-sites/",
+        "publishedAt": "2025-09-23"
+      },
+      {
+        "id": "s3",
+        "title": "Oracle Q4 delivery update",
+        "url": "https://blogs.oracle.com/ceo/from-the-q4-earnings-call",
+        "publishedAt": "2026-06-12"
+      },
+      {
+        "id": "s4",
+        "title": "Mortenson Abilene AI Data Center & Power Delivery",
+        "url": "https://www.mortenson.com/projects/abilene-data-center-development",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-06-12",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_ERCOT_IREN_CHILDRESS_MICROSOFT",
+    "name": "IREN Childress — Microsoft Horizon 1–4",
+    "aliases": [
+      "IREN Childress",
+      "Horizon 1",
+      "Horizon 2",
+      "Horizon 3",
+      "Horizon 4",
+      "마이크로소프트"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "2024-07-24 IREN 공시의 ERCOT 계통연구 승인 및 AEP 수정 접속계약",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Childress, Texas",
+    "participants": [
+      {
+        "role": "개발·전력 인프라",
+        "name": "IREN — 부지·데이터센터·GPU 클라우드 운영"
+      },
+      {
+        "role": "클라우드",
+        "name": "IREN"
+      },
+      {
+        "role": "최종 고객",
+        "name": "Microsoft"
+      }
+    ],
+    "utility": "AEP — 수정 접속계약 상대",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 200,
+        "basis": "Microsoft용 Horizon 1–4 계약 critical IT load; 전체 Childress 계통 용량과 구분",
+        "sourceId": "s1"
+      },
+      {
+        "mw": 750,
+        "basis": "Childress 전체 확보 계통 전력용량",
+        "sourceId": "s0"
+      },
+      {
+        "mw": 50,
+        "basis": "Horizon 1 고객 인도 IT 용량; 200MW의 부분집합",
+        "sourceId": "s2"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "Horizon 1 고객 인도·검수, Horizon 2 시운전, Horizon 3–4 건설",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "750MW 확보전력과 200MW IT 계약의 합산 금지. 건물 인도를 계통 전체 750MW 통전으로 변환 금지",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "확인",
+        "detail": "2024-07-24 IREN 공시의 ERCOT 계통연구 승인 및 AEP 수정 접속계약",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2024-07-24 계통연구 승인·AEP 계약 수정을 통한 전체 부지 확보전력 600→750MW 확대",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2025-11-03 Microsoft GPU 클라우드 계약의 Horizon 1–4 총 200MW IT 명시",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026-08-27 Horizon 1 50MW 인도, Horizon 2 시운전, Horizon 3–4 건설 후반 단계 공시",
+        "sourceId": "s2"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "실측 계통 인출 MW·캠퍼스 전체 통전 완료의 별도 확인 필요",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "ERCOT 공식 원장 ID",
+      "Horizon별 승인 인출 MW와 램프업 조건",
+      "GPU 인도·시운전과 일치하는 시간별 실측 계통 부하"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "IREN increases Childress power capacity from 600MW to 750MW",
+        "url": "https://irisenergy.gcs-web.com/news-releases/news-release-details/iren-increases-childress-power-capacity-600mw-750mw",
+        "publishedAt": "2024-07-24"
+      },
+      {
+        "id": "s1",
+        "title": "IREN Secures $9.7bn AI Cloud Contract with Microsoft",
+        "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-secures-97bn-ai-cloud-contract-microsoft",
+        "publishedAt": "2025-11-03"
+      },
+      {
+        "id": "s2",
+        "title": "IREN Reports FY26 Results",
+        "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+        "publishedAt": "2026-08-27"
+      }
+    ],
+    "asOf": "2026-08-27",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_ERCOT_LANCIUM_CRUSOE_CHILDRESS",
+    "name": "Crusoe–Lancium Childress Clean Campus",
+    "aliases": [
+      "Lancium Childress County Clean Campus"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "Lancium 공식 현장 페이지의 1GW ERCOT 승인 interconnect 공시",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Childress County, Texas",
+    "participants": [
+      {
+        "role": "개발·전력 인프라",
+        "name": "Crusoe — 데이터센터 개발·운영; Lancium — 부지·전력 interconnect·에너지 운영"
+      },
+      {
+        "role": "최종 고객",
+        "name": "대형 하이퍼스케일러 — 실명 비공개"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 1000,
+        "basis": "캠퍼스 grid-connected capacity / interconnect 용량",
+        "sourceId": "s0"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "개발 발표·ERCOT 승인 공시; 실제 착공·최초 통전 미확인",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "IREN Childress와 별개 부지·개발사·프로젝트. 같은 도시명 기준 병합 금지",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "확인",
+        "detail": "Lancium 공식 현장 페이지의 1GW ERCOT 승인 interconnect 공시",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026-07-15 공동 발표의 270에이커 1GW 계통연계 캠퍼스",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "발표 당시 Q3 2026 착공 계획; 확인일 경과만으로 실제 착공 판정 불가",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "Lancium 현장 페이지의 ERCOT interconnect 승인 및 개발 중 상태",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "실측 계통 인출 MW·캠퍼스 전체 통전 완료의 별도 확인 필요",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "실명 최종 고객",
+      "전력회사·송전사업자 명칭",
+      "공식 원장 ID와 승인 세부조건",
+      "실제 착공·통전일·단계별 인출 MW"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "Crusoe and Lancium announce 1GW Childress campus",
+        "url": "https://www.globenewswire.com/news-release/2026/07/15/3327869/0/en/Crusoe-and-Lancium-Announce-1-0-Gigawatt-AI-Data-Center-Campus-in-Childress-Texas.html",
+        "publishedAt": "2026-07-15"
+      },
+      {
+        "id": "s1",
+        "title": "Lancium Childress County campus — ERCOT Approved",
+        "url": "https://lancium.com/locations-childress-county/",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-07-15",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_TEXAS_CRUSOE_MICROSOFT_ABILENE",
+    "name": "Crusoe Abilene — Microsoft 전용 캠퍼스",
+    "aliases": [
+      "Crusoe Abilene II",
+      "마이크로소프트"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "텍사스 Abilene 소재 탐색 표시; 신규 캠퍼스의 ERCOT 신청·승인 용량 미확인",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Abilene, Texas — 기존 Stargate 인접 부지",
+    "participants": [
+      {
+        "role": "개발·전력 인프라",
+        "name": "Crusoe"
+      },
+      {
+        "role": "클라우드",
+        "name": "Microsoft"
+      },
+      {
+        "role": "최종 고객",
+        "name": "Microsoft"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "onsite",
+    "capacities": [
+      {
+        "mw": 672,
+        "basis": "2개동 × 각336MW critical IT load; 개발사 설계치",
+        "sourceId": "s0"
+      },
+      {
+        "mw": 900,
+        "basis": "전용 onsite 발전소 명목 용량; headline 캠퍼스 용량",
+        "sourceId": "s0"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "착공 확인·2027년 중반 첫 건물 통전 목표",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "900MW 발전소와 672MW IT 부하의 합산 금지. 기존 Stargate 1.2GW interconnect에 신규 900MW를 추가하는 계산 금지",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "BTM 전용 발전 계획 공시. 기존 Abilene ERCOT 승인 범위를 신규 캠퍼스로 확장 적용 금지",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026-03-27 Microsoft 전용 2개동 및 900MW BTM 발전소 계획",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "각 건물 336MW IT 설계, 첫 건물 2027년 중반 통전 목표",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026-06-09 Crusoe의 별도 900MW Microsoft 캠퍼스 착공 공시",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "실측 계통 인출 MW·캠퍼스 전체 통전 완료의 별도 확인 필요",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "계통 접속 유무·전력회사·신청 ID",
+      "확정 계통 인출 한도",
+      "발전소 인허가·통전 승인·실제 운영 MW"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "Crusoe announces 900MW Microsoft Abilene campus",
+        "url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure",
+        "publishedAt": "2026-03-27"
+      },
+      {
+        "id": "s1",
+        "title": "Crusoe contracted capacity update",
+        "url": "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud",
+        "publishedAt": "2026-06-09"
+      }
+    ],
+    "asOf": "2026-06-09",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_TEXAS_STARGATE_FRONTIER",
+    "name": "Stargate Shackelford / Vantage Frontier",
+    "aliases": [
+      "Frontier",
+      "Vantage Shackelford County",
+      "오라클"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "텍사스 Shackelford 소재 탐색 표시; 실제 ERCOT 접속 신청 확인과 구분",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Shackelford County, Texas",
+    "participants": [
+      {
+        "role": "개발·전력 인프라",
+        "name": "Vantage Data Centers"
+      },
+      {
+        "role": "클라우드",
+        "name": "Oracle Cloud Infrastructure"
+      },
+      {
+        "role": "최종 고객",
+        "name": "OpenAI"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "onsite",
+    "capacities": [
+      {
+        "mw": 1400,
+        "basis": "10개동 전체 critical IT load 설계용량 — Vantage 공식 현장 페이지",
+        "sourceId": "s0"
+      },
+      {
+        "mw": 115,
+        "basis": "2026-06-12 Oracle 공시의 이용 가능 power capacity; IT·계통 인출 기준 미정의",
+        "sourceId": "s2"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "건설 진행·일부 전원 용량 확보 공시, 고객 인도 2027년 상반기 목표",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "건물 인도 일정과 고객 컴퓨팅 인도 일정의 구분. onsite 전원 확보를 ERCOT 1.4GW 접속 승인으로 해석 금지",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "확인",
+        "detail": "Oracle 공식 페이지의 자체 onsite microgrid 공시. ERCOT 계통 접속 여부·한도 미확인",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "Vantage 공식 현장 페이지의 10개동 1.4GW critical IT 설계",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "Oracle 공식 현장 페이지의 자체 onsite 왕복동 엔진 microgrid",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "Oracle 2026-06-12 공시의 2025년8월 계약·115MW 전원 이용 가능·고객 인도2027년 상반기 목표",
+        "sourceId": "s2"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "실측 계통 인출 MW·캠퍼스 전체 통전 완료의 별도 확인 필요",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "계통 접속 여부·신청 ID·전력회사",
+      "전체 허용 계통 인출량",
+      "115MW의 IT·발전·부지 전력 기준",
+      "공식 계통 단계와 최초 고객 가동·실측 부하"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "Vantage Frontier campus",
+        "url": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx",
+        "publishedAt": null
+      },
+      {
+        "id": "s1",
+        "title": "Oracle Shackelford County Data Center",
+        "url": "https://www.oracle.com/data-centers/shackelford-county/",
+        "publishedAt": null
+      },
+      {
+        "id": "s2",
+        "title": "Oracle Q4 delivery update",
+        "url": "https://blogs.oracle.com/ceo/from-the-q4-earnings-call",
+        "publishedAt": "2026-06-12"
+      },
+      {
+        "id": "s3",
+        "title": "OpenAI five new Stargate sites",
+        "url": "https://openai.com/index/five-new-stargate-sites/",
+        "publishedAt": "2025-09-23"
+      },
+      {
+        "id": "s4",
+        "title": "Oracle Stargate fact sheet published by US House office",
+        "url": "https://arrington.house.gov/uploadedfiles/final_oracle_oai_data_center_fact_sheet_092225b.pdf",
+        "publishedAt": "2025-09-23"
+      }
+    ],
+    "asOf": "2026-06-12",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_ORACLE_SALINE_THE_BARN",
+    "name": "Oracle·OpenAI Saline Stargate — The Barn",
+    "aliases": [
+      "The Barn",
+      "Saline Township Stargate",
+      "Green Chile Ventures LLC",
+      "오라클"
+    ],
+    "region": "MISO",
+    "regionBasis": "DTE Electric 공급 및 DTE의 MISO 송전·전력시장 이용 확인",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Saline Township, Washtenaw County, Michigan",
+    "participants": [
+      {
+        "role": "개발",
+        "name": "Related Digital"
+      },
+      {
+        "role": "클라우드",
+        "name": "Oracle Cloud Infrastructure"
+      },
+      {
+        "role": "최종 고객",
+        "name": "OpenAI"
+      },
+      {
+        "role": "전력계약 상대·범위",
+        "name": "Green Chile Ventures LLC — Oracle 자회사"
+      }
+    ],
+    "utility": "DTE Electric",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 1383,
+        "basis": "MPSC 특별계약 공시상 계약 수요 1,383MW",
+        "sourceId": "s0"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026-06-01 Oracle의 캠퍼스 건설 진행 확인; 2026-09-28 DTE의 승인·착공 재확인",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026-06-01 Oracle의 캠퍼스 건설 진행 확인; 2026-09-28 DTE의 승인·착공 재확인",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "MPSC 전력·저장 특별계약 조건부 승인(2025-12-18); DTE 계획상 2027~2028년 수요 증가",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "통전 완료 MW 및 실제 계통 부하의 공개 근거 미확보",
+        "sourceId": null
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "DTE 2026-09-28 투자자 자료의 반올림 표기 1.4GW; 계약 수요와 에너지저장 설비 1,383MW 별도 항목",
+        "sourceId": "s2"
+      },
+      {
+        "gate": "인허가",
+        "status": "조건부",
+        "detail": "MPSC U-21990 — 접속 대기열 ID와 구분",
+        "sourceId": "s0"
+      }
+    ],
+    "gaps": [
+      "공식 수용가 접속 원장 ID",
+      "통전 완료 MW",
+      "단계별 실제 전력 인입 일정",
+      "접속심사 원문·망 보강 준공 확인",
+      "실명·위치·계약부하·유틸리티·건설상태 확인 가능. 전력 특별계약 승인과 공식 접속심사 단계의 일대일 대응 미확보"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "MPSC Saline 특별계약 조건부 승인",
+        "url": "https://www.michigan.gov/mpsc/commission/events/2025/12/18/~/link.aspx?_id=5F5E5CA34D71466696AB507F9571E9FC&_z=z",
+        "publishedAt": "2025-12-18"
+      },
+      {
+        "id": "s1",
+        "title": "Oracle The Barn 건설 진행 발표",
+        "url": "https://www.oracle.com/news/announcement/related-digital-oracle-openai-walbridge-and-governor-whitmer-celebrate-construction-of-stargate-campus-in-saline-township-2026-06-01/",
+        "publishedAt": "2026-06-01"
+      },
+      {
+        "id": "s2",
+        "title": "DTE 2026-09-28 Business Update",
+        "url": "https://www.sec.gov/Archives/edgar/data/936340/000093634026000159/dtebusinessupdate92826fi.htm",
+        "publishedAt": "2026-09-28"
+      },
+      {
+        "id": "s3",
+        "title": "DTE Electric Choice — MISO 관계",
+        "url": "https://www.dteenergy.com/us/en/business/service-request/electric/electric-choice.html",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-09-28",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_GOOGLE_VAN_BUREN_CANNOLI",
+    "name": "Google Van Buren — Project Cannoli",
+    "aliases": [
+      "Project Cannoli",
+      "Van Buren Township data center",
+      "구글"
+    ],
+    "region": "MISO",
+    "regionBasis": "DTE Electric 공급 및 DTE의 MISO 송전·전력시장 이용 확인",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Van Buren Township, Wayne County, Michigan",
+    "participants": [
+      {
+        "role": "개발",
+        "name": "Panattoni"
+      },
+      {
+        "role": "클라우드",
+        "name": "Google"
+      },
+      {
+        "role": "최종 고객",
+        "name": "Google"
+      },
+      {
+        "role": "전력계약 상대·범위",
+        "name": "Google LLC"
+      }
+    ],
+    "utility": "DTE Electric",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 1000,
+        "basis": "DTE·Michigan AG 공시상 전력 계약 부하 1.0GW",
+        "sourceId": "s1"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026-10-01 MPSC PSA·CCAA 조건부 승인. 공급 개시 2027-12, 최대부하 2028-12 예상",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "개발사 공개 페이지의 제안 캠퍼스; 실제 건물 착공·준공 별도 미확인",
+        "sourceId": "s2"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "2026-10-01 MPSC PSA·CCAA 조건부 승인. 공급 개시 2027-12, 최대부하 2028-12 예상",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "통전 완료 MW 및 실제 계통 부하의 공개 근거 미확보",
+        "sourceId": null
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "전력공급용 신규 재생에너지 최대1,600MW·저장480MW의 별도 공급설비 계획; 부하 합산 제외",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "인허가",
+        "status": "조건부",
+        "detail": "MPSC U-22058 — 접속 대기열 ID와 구분",
+        "sourceId": "s0"
+      }
+    ],
+    "gaps": [
+      "공식 수용가 접속 원장 ID",
+      "통전 완료 MW",
+      "최종 접속심사·망 보강 일정",
+      "실제 공사 단계",
+      "기존 2026-09-28 자료의 계약 심사중 상태를 2026-10-01 조건부 승인으로 갱신 필요. 승인 범위는 전력서비스 계약 조건이며 입지·건축 허가와 구분"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "MPSC Google 전력 계약 조건부 승인",
+        "url": "https://www.michigan.gov/mpsc/commission/news-releases/2026/10/01/mpsc-approves-dte-electric-google-data-center-and-contracts-protects-customers-from-project-cost",
+        "publishedAt": "2026-10-01"
+      },
+      {
+        "id": "s1",
+        "title": "DTE Data Centers and Customer Rate Protection",
+        "url": "https://dteenergy.com/us/en/quicklinks/data-center-facts.html",
+        "publishedAt": "2026-10-01"
+      },
+      {
+        "id": "s2",
+        "title": "Panattoni Project Cannoli",
+        "url": "https://www.panattoni.com/vanburen/",
+        "publishedAt": null
+      },
+      {
+        "id": "s3",
+        "title": "DTE Electric Choice — MISO 관계",
+        "url": "https://www.dteenergy.com/us/en/business/service-request/electric/electric-choice.html",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-10-01",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_META_HYPERION_LOUISIANA",
+    "name": "Meta Hyperion — Richland Parish",
+    "aliases": [
+      "Hyperion",
+      "Richland Parish Data Center",
+      "메타"
+    ],
+    "region": "MISO",
+    "regionBasis": "Entergy Louisiana 공급 및 Entergy의 MISO 송전운영 확인",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Richland Parish, Louisiana",
+    "participants": [
+      {
+        "role": "개발",
+        "name": "Meta·Blue Owl 운용 펀드 합작회사; Meta 건설관리"
+      },
+      {
+        "role": "클라우드",
+        "name": "Meta"
+      },
+      {
+        "role": "최종 고객",
+        "name": "Meta"
+      }
+    ],
+    "utility": "Entergy Louisiana",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 5000,
+        "basis": "Meta의 계획 compute capacity; 캠퍼스 전체 전력수요·접속 신청MW와 구분",
+        "sourceId": "s0"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2024-12 착공, 2026-07-13 Meta의 5GW 확대 및 건설 진행 공시",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2024-12 착공, 2026-07-13 Meta의 5GW 확대 및 건설 진행 공시",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "Entergy와 전력 공급·비용부담 협약 및 발전·송전·저장 증설 계획 확인; 발전허가·통전 전체 완료 미확인",
+        "sourceId": "s2"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "통전 완료 MW 및 실제 계통 부하의 공개 근거 미확보",
+        "sourceId": null
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026-03 전력 인프라 계획의 신규 가스발전 >5,200MW와 동일 지표 불가",
+        "sourceId": "s2"
+      }
+    ],
+    "gaps": [
+      "캠퍼스 전체 접속 신청·확정 MW",
+      "공식 수용가 접속 원장 ID",
+      "단계별 통전 완료 MW",
+      "확대분 전력 인허가·망 보강 준공 상태",
+      "실명 프로젝트 추적 가능. 5GW compute와 전원설비MW·유틸리티 전체 대기열의 합산 제외"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "Meta Louisiana 5GW 확대",
+        "url": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
+        "publishedAt": "2026-07-13"
+      },
+      {
+        "id": "s1",
+        "title": "Meta·Blue Owl Hyperion 합작",
+        "url": "https://about.fb.com/news/2025/10/meta-blue-owl-capital-develop-hyperion-data-center/",
+        "publishedAt": "2025-10-21"
+      },
+      {
+        "id": "s2",
+        "title": "Entergy Louisiana·Meta 전력 인프라 협약",
+        "url": "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings",
+        "publishedAt": "2026-03-27"
+      },
+      {
+        "id": "s3",
+        "title": "Entergy 송전망과 MISO",
+        "url": "https://www.entergy.com/transmission",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-07-13",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_AWS_NIPSCO_NORTHERN_INDIANA",
+    "name": "AWS Northern Indiana — NIPSCO 신규 캠퍼스 묶음",
+    "aliases": [
+      "Amazon Northern Indiana expansion",
+      "Amazon Data Services NIPSCO",
+      "아마존"
+    ],
+    "region": "MISO",
+    "regionBasis": "NIPSCO 공급 및 NiSource SEC 공시의 MISO 참여 확인",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Northern Indiana — NIPSCO 공급 신규 복수캠퍼스",
+    "participants": [
+      {
+        "role": "개발",
+        "name": "Amazon; 개별 부동산 개발법인 미확보"
+      },
+      {
+        "role": "클라우드",
+        "name": "Amazon Web Services"
+      },
+      {
+        "role": "전력계약 상대·범위",
+        "name": "Amazon Data Services, Inc."
+      }
+    ],
+    "utility": "NIPSCO / NiSource Generation Company",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 2400,
+        "basis": "Amazon 공식 발표의 복수 신규 데이터센터 총계획용량·전력 필요량; 단일 프로젝트 아님",
+        "sourceId": "s0"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2025-11-24 신규캠퍼스 투자 계획 발표; 개별 사이트별 공사상태 미확보",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2025-11-24 신규캠퍼스 투자 계획 발표; 개별 사이트별 공사상태 미확보",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "NIPSCO 전력서비스 협약 확인; 후속 NiSource 발표의 조기 통전 계획과 실제 통전 완료 구분",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "통전 완료 MW 및 실제 계통 부하의 공개 근거 미확보",
+        "sourceId": null
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "최대3GW 신규 발전설비는 공급 측 별도 계획; 기존 St. Joseph County·Project Rainier와 구분",
+        "sourceId": "s0"
+      }
+    ],
+    "gaps": [
+      "개별 캠퍼스 명칭·주소·용량 분해",
+      "공식 수용가 접속 원장 ID",
+      "통전 완료 MW",
+      "개별 수요 램프 일정",
+      "최종 클라우드 수용가",
+      "AWS 투자·유틸리티 공급관계 확인 가능. 단일 부지 또는 Anthropic Project Rainier로 임의 치환 금지"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "Amazon Northern Indiana 신규캠퍼스 투자 발표",
+        "url": "https://www.aboutamazon.com/news/company-news/amazon-15-billion-indiana-data-centers",
+        "publishedAt": "2025-11-24"
+      },
+      {
+        "id": "s1",
+        "title": "NiSource Google 신규협약 및 Amazon 협약 확대",
+        "url": "https://www.nipsco.com/our-company/news-room/news-article/nisource-announces-strategic-energy-infrastructure-agreements-to-enhance-customer-value-and-economic-growth-in-indiana",
+        "publishedAt": null
+      },
+      {
+        "id": "s2",
+        "title": "NiSource SEC 424B5 — NIPSCO MISO 참여",
+        "url": "https://www.sec.gov/Archives/edgar/data/1111711/000119312526348038/d103099d424b5.htm",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2025-11-24",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_COREWEAVE_LANCASTER",
+    "name": "CoreWeave Lancaster AI Campus",
+    "aliases": [
+      "CTP Lancaster",
+      "코어위브"
+    ],
+    "region": "PJM",
+    "regionBasis": "개발사의 PPL Electric 망 보강 협력 발표와 PJM의 PPL 송전회원 확인",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Lancaster, Pennsylvania",
+    "participants": [
+      {
+        "role": "개발",
+        "name": "Chirisa Technology Parks·Machine Investment Group; Blue Owl 자금 참여"
+      },
+      {
+        "role": "클라우드",
+        "name": "CoreWeave — 임차 운영"
+      }
+    ],
+    "utility": "PPL Electric Utilities — 망 보강 협력사 확인; 계약상세 미확보",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 100,
+        "basis": "CoreWeave 공식 초기 데이터센터 용량; 공식 발표상 IT/총전력 구분 미명시",
+        "sourceId": "s0"
+      },
+      {
+        "mw": 300,
+        "basis": "확장 잠재용량 · 초기100MW 포함, 합산 제외",
+        "sourceId": "s0"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "CoreWeave 2025-07-15 임차·투자 발표. 개발사 전체 Lancaster East LPE-01 건설중 표시 확인; CoreWeave 임차영역과 개별 동 대조 미확보",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "CoreWeave 2025-07-15 임차·투자 발표. 개발사 전체 Lancaster East LPE-01 건설중 표시 확인; CoreWeave 임차영역과 개별 동 대조 미확보",
+        "sourceId": "s2"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "PPL Electric 망 보강 투자 계획 확인; CoreWeave 실제 접속 신청·확정·통전MW 미확보",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "통전 완료 MW 및 실제 계통 부하의 공개 근거 미확보",
+        "sourceId": null
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "확장 잠재용량 300MW; 초기100MW에 가산 불가. 개발사의 Lancaster 전체 utility power와 CoreWeave 용량은 범위 상이",
+        "sourceId": "s0"
+      }
+    ],
+    "gaps": [
+      "CoreWeave 임차영역과 LPE·LPW 상세 대조",
+      "공식 수용가 접속 원장 ID",
+      "계약·통전 MW",
+      "최종 AI 고객",
+      "망 보강 준공일",
+      "CoreWeave 실명 확인 가능. 회사 차원의 OpenAI 계약을 해당 캠퍼스 고객으로 임의 매칭 금지. 개발사 전력 가용성 문구를 통전 완료로 해석 금지"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "CoreWeave Lancaster 투자 발표",
+        "url": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx",
+        "publishedAt": "2025-07-15"
+      },
+      {
+        "id": "s1",
+        "title": "Chirisa Lancaster 합작·PPL 망 투자",
+        "url": "https://chirisatechnologyparks.com/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus/",
+        "publishedAt": "2025-08-25"
+      },
+      {
+        "id": "s2",
+        "title": "Chirisa 프로젝트 현황",
+        "url": "https://chirisatechnologyparks.com/",
+        "publishedAt": null
+      },
+      {
+        "id": "s3",
+        "title": "PJM 공식 회원 목록",
+        "url": "https://www.pjm.com/about-pjm/member-services/member-list",
+        "publishedAt": "2026-09-28"
+      },
+      {
+        "id": "s4",
+        "title": "Lancaster시 데이터센터 안내",
+        "url": "https://www.cityoflancasterpa.gov/data-center/",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2025-08-25",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_ORACLE_OPENAI_LIGHTHOUSE_WI",
+    "name": "Oracle·OpenAI Stargate — Vantage Lighthouse",
+    "aliases": [
+      "Lighthouse",
+      "Stargate Wisconsin",
+      "Port Washington",
+      "오라클"
+    ],
+    "region": "MISO",
+    "regionBasis": "Vantage의 We Energies 공급 명시 및 Wisconsin Electric 공식 요금표의 MISO footprint 확인",
+    "industry": "데이터센터",
+    "industryEvidence": "기존 공식 데이터센터 프로젝트 공시",
+    "lifecycle": "unknown",
+    "location": "Port Washington, Ozaukee County, Wisconsin",
+    "participants": [
+      {
+        "role": "개발",
+        "name": "Vantage Data Centers"
+      },
+      {
+        "role": "클라우드",
+        "name": "Oracle Cloud Infrastructure"
+      },
+      {
+        "role": "최종 고객",
+        "name": "OpenAI"
+      },
+      {
+        "role": "전력계약 상대·범위",
+        "name": "Vantage — 전력 인프라 비용부담 발표; 전력계약 법인명 미확보"
+      }
+    ],
+    "utility": "We Energies / Wisconsin Electric Power",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 902,
+        "basis": "Vantage 현행 캠퍼스 제원상 critical IT load",
+        "sourceId": "s0"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "4개 데이터센터 캠퍼스, 2028년 완공 계획; 현행 공식제원 확보, 최신 세부 공정 미확보",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "4개 데이터센터 캠퍼스, 2028년 완공 계획; 현행 공식제원 확보, 최신 세부 공정 미확보",
+        "sourceId": "s0"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "We Energies 공급·전용 변전소 계획 및 전력 인프라 비용부담 발표 확인; 접속 확정·통전MW 미확보",
+        "sourceId": "s1"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "통전 완료 MW 및 실제 계통 부하의 공개 근거 미확보",
+        "sourceId": null
+      },
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "보도상의1.3GW 또는 전원증설 약2GW를 IT902MW와 동일 지표로 처리 금지",
+        "sourceId": "s0"
+      }
+    ],
+    "gaps": [
+      "캠퍼스 전체 전력 접속 요청·확정 MW",
+      "공식 수용가 접속 원장 ID",
+      "접속심사 단계",
+      "통전 완료 MW",
+      "전력 인입·망 보강 완료일",
+      "실명·IT용량·유틸리티 연결 가능. IT부하를 공식 접속대기 MW로 자동 전환 불가. 현행 제원의 공시일 미확보로 확인일만 기록"
+    ],
+    "sources": [
+      {
+        "id": "s0",
+        "title": "Vantage Lighthouse 공식 제원",
+        "url": "https://vantage-dc.com/data-center-locations/north-america/port-washington-wisconsin",
+        "publishedAt": null
+      },
+      {
+        "id": "s1",
+        "title": "Vantage·Oracle·OpenAI Wisconsin 발표",
+        "url": "https://vantage-dc.com/news/openai-oracle-and-vantage-data-centers-announce-stargate-data-center-site-in-wisconsin/",
+        "publishedAt": "2025-10-22"
+      },
+      {
+        "id": "s2",
+        "title": "Wisconsin Electric ancillary service tariff",
+        "url": "https://www.we-energies.com/services/business/pdf/tas.pdf",
+        "publishedAt": null
+      }
+    ],
+    "asOf": null,
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-riot-rockdale",
+    "name": "Riot Rockdale / AMD conversion",
+    "aliases": [
+      "Whinstone",
+      "Riot Rockdale Facility"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "데이터센터·채굴 혼합",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "operating",
+    "location": "Rockdale, Milam County, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "Riot Platforms"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 700,
+        "basis": "기존 개발 완료 용량·총 계통 접속 용량; 신규 증분 신청 용량 아님",
+        "sourceId": "riot-rockdale"
+      },
+      {
+        "mw": 25,
+        "basis": "기존 캠퍼스 전환에 포함된 초기 AMD 핵심 IT 임대 용량",
+        "sourceId": "riot-amd"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "Riot 공시상 700 MW 캠퍼스 운영 중; 기존 채굴 설비 일부를 HPC로 전환하는 AMD 임대계약 체결",
+    "milestones": [
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "Riot 공시상 700 MW 캠퍼스 운영 중; 기존 채굴 설비 일부를 HPC로 전환하는 AMD 임대계약 체결",
+        "sourceId": "riot-rockdale"
+      }
+    ],
+    "gaps": [
+      "선정 근거에서 현재 동시 계량수요와 준공 완료 AMD IT 용량 미확인",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "riot-rockdale",
+        "title": "Riot Rockdale site",
+        "url": "https://www.riotplatforms.com/locations/rockdale/",
+        "publishedAt": null
+      },
+      {
+        "id": "riot-amd",
+        "title": "Riot Rockdale land acquisition and AMD lease",
+        "url": "https://www.riotplatforms.com/riot-announces-fee-simple-acquisition-of-land-and-first-data-center-lease-with-amd-at-the-rockdale-site/",
+        "publishedAt": null
+      }
+    ],
+    "asOf": null,
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-riot-corsicana",
+    "name": "Riot Corsicana",
+    "aliases": [],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "데이터센터·채굴 혼합",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "operating",
+    "location": "Corsicana, Navarro County, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "Riot Platforms"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 1000,
+        "basis": "회사 공시상 승인·통전 완료 부지 전력 용량; 관측된 1,000 MW 소비량 아님",
+        "sourceId": "riot-dc"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "회사 공시상 Corsicana의 승인·통전 완료 전력 인프라 1 GW",
+    "milestones": [
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "회사 공시상 Corsicana의 승인·통전 완료 전력 인프라 1 GW",
+        "sourceId": "riot-dc"
+      }
+    ],
+    "gaps": [
+      "운영 중인 채굴 부하·준공 완료 IT 용량·향후 전환 단계를 부지 접속 용량과 구분 필요",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "riot-dc",
+        "title": "Riot data centers",
+        "url": "https://www.riotplatforms.com/datacenters/",
+        "publishedAt": null
+      },
+      {
+        "id": "riot-corsicana",
+        "title": "Riot Corsicana site",
+        "url": "https://www.riotplatforms.com/locations/corsicana/",
+        "publishedAt": null
+      }
+    ],
+    "asOf": null,
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-mara-granbury",
+    "name": "MARA Granbury",
+    "aliases": [
+      "GC Data Center Granbury",
+      "Wolf Hollow site"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "데이터센터·채굴 혼합",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "operating",
+    "location": "Granbury, Hood County, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "MARA Holdings"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "mixed",
+    "capacities": [
+      {
+        "mw": 300,
+        "basis": "회사 공시상 부지 총용량; 실제 부하 아님",
+        "sourceId": "mara-2025"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2025년 Form 10-K상 300 MW 부지 운영, 연말 통전 해시레이트 12.3 EH/s 및 추론 기능 통합 착수",
+    "milestones": [
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "2025년 Form 10-K상 300 MW 부지 운영, 연말 통전 해시레이트 12.3 EH/s 및 추론 기능 통합 착수",
+        "sourceId": "mara-2025"
+      }
+    ],
+    "gaps": [
+      "동일 부지 발전과 계통 공급의 혼합 구조; 순 계통 인출량 미공개",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "mara-2025",
+        "title": "MARA 2025 Form 10-K",
+        "url": "https://ir.mara.com/sec-filings/all-sec-filings/content/0001507605-26-000007/mara-20251231.htm",
+        "publishedAt": "2026-03-02"
+      },
+      {
+        "id": "mara-2024",
+        "title": "MARA 2024 Form 10-K",
+        "url": "https://ir.mara.com/sec-filings/all-sec-filings/content/0001507605-25-000003/mara-20241231.htm",
+        "publishedAt": "2025-03-03"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-mara-garden-city",
+    "name": "MARA Garden City",
+    "aliases": [
+      "APLD Rattlesnake Den I"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "암호화폐 채굴",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "operating",
+    "location": "Garden City, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "MARA Holdings"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "mixed",
+    "capacities": [
+      {
+        "mw": 200,
+        "basis": "인수한 캠퍼스 명판 용량; 전량 사용 중인 부하 아님",
+        "sourceId": "mara-garden"
+      },
+      {
+        "mw": 126,
+        "basis": "2024년 말 공시된 운영 용량의 과거 시점 수치",
+        "sourceId": "mara-2024"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2024년 인수한 채굴 시설 운영; 2025년 공시에 폭풍으로 인한 채굴 장비 손상 기재",
+    "milestones": [
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "2024년 인수한 채굴 시설 운영; 2025년 공시에 폭풍으로 인한 채굴 장비 손상 기재",
+        "sourceId": "mara-2025"
+      }
+    ],
+    "gaps": [
+      "2026년 운영 MW 미확인; 명판 200 MW를 실제 인출량으로 계상 불가",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "mara-2025",
+        "title": "MARA 2025 Form 10-K",
+        "url": "https://ir.mara.com/sec-filings/all-sec-filings/content/0001507605-26-000007/mara-20251231.htm",
+        "publishedAt": "2026-03-02"
+      },
+      {
+        "id": "mara-garden",
+        "title": "MARA acquisition of Garden City mining site",
+        "url": "https://ir.mara.com/news-events/press-releases/detail/1350/marathon-digital-holdings-announces-the-closing-of-its-acquisition-of-a-200-megawatt-bitcoin-mining-data-center-adjacent-to-a-wind-farm",
+        "publishedAt": "2024-04-02"
+      },
+      {
+        "id": "mara-2024",
+        "title": "MARA 2024 Form 10-K",
+        "url": "https://ir.mara.com/sec-filings/all-sec-filings/content/0001507605-25-000003/mara-20241231.htm",
+        "publishedAt": "2025-03-03"
+      }
+    ],
+    "asOf": "2025-12-31",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-mara-matagorda",
+    "name": "MARA Matagorda / MAT 1177",
+    "aliases": [
+      "HIF USA Matagorda",
+      "MAT 1177 LLC",
+      "HIF Matagorda eFuels"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "데이터센터·채굴 혼합",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "planned",
+    "location": "Matagorda County, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "MARA Holdings"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 2000,
+        "basis": "SEC 공시상 유틸리티 서한 약정 용량; ERCOT 배정·Batch Zero 승인 조건부",
+        "sourceId": "mara-2026q2"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "MARA의 2026년 7월 HIF 보유 MAT 1177 인수; 유틸리티 서한상 최대 2 GW 권리 및 최초 대금 지급의 Batch Zero 승인 조건",
+    "milestones": [
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "MARA의 2026년 7월 HIF 보유 MAT 1177 인수; 유틸리티 서한상 최대 2 GW 권리 및 최초 대금 지급의 Batch Zero 승인 조건",
+        "sourceId": "mara-2026q2"
+      }
+    ],
+    "gaps": [
+      "Batch Zero 조건 충족을 입증하는 공개 근거 미확보",
+      "과거 HIF e-fuels 계획은 선행 사업 이력; 별도 활성 수소 고객으로 추가 계상 불가",
+      "ERCOT 전력 배정 미승인 시 인수 해지 가능 조항",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "mara-2026q2",
+        "title": "MARA Q2 2026 Form 10-Q",
+        "url": "https://ir.mara.com/sec-filings/all-sec-filings/content/0001507605-26-000022/mara-20260630.htm",
+        "publishedAt": "2026-08-06"
+      }
+    ],
+    "asOf": "2026-08-06",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-hut-king-mountain",
+    "name": "Hut 8 King Mountain",
+    "aliases": [
+      "Echo",
+      "MARA McCamey hosted capacity"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "암호화폐 채굴",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "operating",
+    "location": "King Mountain / McCamey, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "King Mountain JV / Hut 8"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "mixed",
+    "capacities": [
+      {
+        "mw": 280,
+        "basis": "운영관리 대상 캠퍼스 용량; 계량기 후단 부지",
+        "sourceId": "hut-platform"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "Hut 8 공시상 King Mountain의 계량기 후단 설비 운영; 2025년 실적에 코로케이션 합작사 이익 반영",
+    "milestones": [
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "Hut 8 공시상 King Mountain의 계량기 후단 설비 운영; 2025년 실적에 코로케이션 합작사 이익 반영",
+        "sourceId": "hut-platform"
+      }
+    ],
+    "gaps": [
+      "동일 물리적 캠퍼스의 MARA McCamey 위탁 채굴 용량 중복 합산 금지",
+      "유틸리티명과 실제 순 계통 수전량 미확인",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "hut-platform",
+        "title": "Hut 8 platform",
+        "url": "https://www.hut8.com/our-platform",
+        "publishedAt": null
+      },
+      {
+        "id": "hut-texas",
+        "title": "Hut 8 Texas development statement",
+        "url": "https://www.hut8.com/news-insights/press-releases/hut-8-affirms-commitment-to-responsible-data-center-development-following-directive-from-texas",
+        "publishedAt": null
+      },
+      {
+        "id": "hut-2025",
+        "title": "Hut 8 2025 results",
+        "url": "https://www.hut8.com/news-insights/press-releases/hut-8-reports-fourth-quarter-and-full-year-2025-results",
+        "publishedAt": "2026-02-25"
+      }
+    ],
+    "asOf": null,
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-hut-vega",
+    "name": "Hut 8 Vega",
+    "aliases": [],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "암호화폐 채굴",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "operating",
+    "location": "Texas Panhandle / West Texas",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "Hut 8"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "mixed",
+    "capacities": [
+      {
+        "mw": 205,
+        "basis": "부지 ASIC 코로케이션 용량; 단계별 통전 기준으로 계량된 계통 수요 아님",
+        "sourceId": "hut-2025"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2025년 6월 30일 최초 통전 발표; 2025년 실적에서 205 MW ASIC 시설 통전 확인",
+    "milestones": [
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "2025년 6월 30일 최초 통전 발표; 2025년 실적에서 205 MW ASIC 시설 통전 확인",
+        "sourceId": "hut-vega"
+      }
+    ],
+    "gaps": [
+      "계량기 후단 공급 구조; 순 ERCOT 인출량과 전면 가동 시 계량 MW 미공개",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "hut-vega",
+        "title": "Hut 8 energizes Vega",
+        "url": "https://www.hut8.com/news-insights/press-releases/hut-8-energizes-vega-data-center",
+        "publishedAt": "2025-06-30"
+      },
+      {
+        "id": "hut-2025",
+        "title": "Hut 8 2025 results",
+        "url": "https://www.hut8.com/news-insights/press-releases/hut-8-reports-fourth-quarter-and-full-year-2025-results",
+        "publishedAt": "2026-02-25"
+      },
+      {
+        "id": "hut-texas",
+        "title": "Hut 8 Texas development statement",
+        "url": "https://www.hut8.com/news-insights/press-releases/hut-8-affirms-commitment-to-responsible-data-center-development-following-directive-from-texas",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-02-25",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-cipher-odessa",
+    "name": "Cipher Odessa",
+    "aliases": [],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "암호화폐 채굴",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "operating",
+    "location": "Odessa, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "Cipher Digital"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 207,
+        "basis": "회사 공시상 운영 전력 용량",
+        "sourceId": "cipher-sites"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "현재 회사 포트폴리오상 Odessa 운영 중, 해시레이트 약 11.6 EH/s",
+    "milestones": [
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "현재 회사 포트폴리오상 Odessa 운영 중, 해시레이트 약 11.6 EH/s",
+        "sourceId": "cipher-sites"
+      }
+    ],
+    "gaps": [
+      "공식 큐 식별번호와 계량수요 미확보; 포트폴리오 페이지 발행일 미표시",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "cipher-sites",
+        "title": "Cipher Digital infrastructure",
+        "url": "https://cipherdigital.com/infrastructure/",
+        "publishedAt": null
+      }
+    ],
+    "asOf": null,
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-cipher-black-pearl",
+    "name": "Cipher Black Pearl / AWS",
+    "aliases": [],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "데이터센터",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "partial-operation",
+    "location": "Wink, Winkler County, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "Cipher Digital / AWS"
+      }
+    ],
+    "utility": "Oncor",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 300,
+        "basis": "금융조달 첨부자료상 통전 완료 총 접속 용량 및 ERCOT 승인 용량",
+        "sourceId": "cipher-blackpearl"
+      },
+      {
+        "mw": 216,
+        "basis": "총 캠퍼스 용량에 포함된 계약상 핵심 IT 부하",
+        "sourceId": "cipher-blackpearl"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 2월 채굴 설비 운영 종료; 8월 최초 HPC 용량 인도·임대료 발생 개시, 잔여 단계 공사 중",
+    "milestones": [
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "2026년 2월 채굴 설비 운영 종료; 8월 최초 HPC 용량 인도·임대료 발생 개시, 잔여 단계 공사 중",
+        "sourceId": "cipher-q2"
+      }
+    ],
+    "gaps": [
+      "과거 채굴 용량과 HPC 전환 용량을 별도 신규 부하로 중복 계상 금지",
+      "회사 공시상 ERCOT 승인 주장; 공개 LLI 식별번호와 실제 계량수요 미확보",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "cipher-q2",
+        "title": "Cipher Digital second quarter 2026 update",
+        "url": "https://investors.cipherdigital.com/news-releases/news-release-details/cipher-digital-provides-second-quarter-2026-business-update",
+        "publishedAt": "2026-08-04"
+      },
+      {
+        "id": "cipher-blackpearl",
+        "title": "Cipher Black Pearl project financing exhibit",
+        "url": "https://investors.cipherdigital.com/static-files/ea18cc35-53af-4e32-81a7-32a835429abf",
+        "publishedAt": null
+      },
+      {
+        "id": "cipher-conversion",
+        "title": "Cipher full year 2025 business update slides",
+        "url": "https://investors.cipherdigital.com/static-files/58e46e77-13f9-4514-8c2a-2c7695cf2b4a",
+        "publishedAt": "2026-02-24"
+      }
+    ],
+    "asOf": "2026-08-04",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-cipher-barber-lake",
+    "name": "Cipher Barber Lake / Fluidstack",
+    "aliases": [],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "데이터센터",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "construction",
+    "location": "Colorado City, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "Cipher Digital / Fluidstack"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 300,
+        "basis": "포트폴리오상 계약 캠퍼스 용량·통전 전력; 준공 완료 IT 부하 아님",
+        "sourceId": "cipher-sites"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 8월 공시상 공사 진행과 함께 임차인의 실사용 권한 행사·부분 입주·네트워크 랙 설치 개시",
+    "milestones": [
+      {
+        "gate": "공사",
+        "status": "확인",
+        "detail": "2026년 8월 공시상 공사 진행과 함께 임차인의 실사용 권한 행사·부분 입주·네트워크 랙 설치 개시",
+        "sourceId": "cipher-q2"
+      }
+    ],
+    "gaps": [
+      "향후 500 MW 증설 계획과 기존 300 MW 캠퍼스 구분 필요",
+      "전 용량 최종 운영 확인과 공개 LLI 식별번호 미확보",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "cipher-q2",
+        "title": "Cipher Digital second quarter 2026 update",
+        "url": "https://investors.cipherdigital.com/news-releases/news-release-details/cipher-digital-provides-second-quarter-2026-business-update",
+        "publishedAt": "2026-08-04"
+      },
+      {
+        "id": "cipher-sites",
+        "title": "Cipher Digital infrastructure",
+        "url": "https://cipherdigital.com/infrastructure/",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-08-04",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-freeport-lng",
+    "name": "Freeport LNG trains 1–3",
+    "aliases": [
+      "Freeport eLNG"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "화학·수소·연료",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "operating",
+    "location": "Quintana Island, Brazoria County, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "Freeport LNG"
+      }
+    ],
+    "utility": "CenterPoint Energy",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 690,
+        "basis": "2015년 ERCOT 계획상 전면 생산 시 전력 부하 추정치; 현재 계량수요가 아닌 과거 수치",
+        "sourceId": "freeport-ercot"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "3개 트레인의 기존 전기 구동 LNG 플랜트 운영; 해당 부하 공급을 위한 Jones Creek 송전 사업의 2015년 ERCOT 승인",
+    "milestones": [
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "3개 트레인의 기존 전기 구동 LNG 플랜트 운영; 해당 부하 공급을 위한 Jones Creek 송전 사업의 2015년 ERCOT 승인",
+        "sourceId": "freeport-current"
+      }
+    ],
+    "gaps": [
+      "Train 4는 별도 향후 증설 계획으로 본 사례에서 제외",
+      "현재 계량수요와 계약상 계통 수전 한도 미확보",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "freeport-current",
+        "title": "Freeport LNG overview",
+        "url": "https://freeportlng.com/about/about-overview",
+        "publishedAt": null
+      },
+      {
+        "id": "freeport-ercot",
+        "title": "ERCOT 2015 Electric System Constraints and Needs",
+        "url": "https://www.ercot.com/files/docs/2015/12/31/2015ercotconstraintsandneedsreport.pdf",
+        "publishedAt": "2015-12-31"
+      }
+    ],
+    "asOf": null,
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-samsung-taylor",
+    "name": "Samsung Taylor semiconductor fab",
+    "aliases": [],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "반도체",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "construction",
+    "location": "Taylor, Williamson County, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "Samsung Austin Semiconductor"
+      }
+    ],
+    "utility": "Oncor",
+    "powerRoute": "grid",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "Samsung의 2026년 6월 공시상 연말 팹 가동 목표; PUCT 제출 Oncor 기술자 증언상 1단계 138 kV 공급 설비 공사 완료",
+    "milestones": [
+      {
+        "gate": "공사",
+        "status": "확인",
+        "detail": "Samsung의 2026년 6월 공시상 연말 팹 가동 목표; PUCT 제출 Oncor 기술자 증언상 1단계 138 kV 공급 설비 공사 완료",
+        "sourceId": "samsung-current"
+      }
+    ],
+    "gaps": [
+      "1차 자료에서 부지 부하 MW 미확인",
+      "PUCT PDF 직접 다운로드 차단; 송전 공사 주장은 검색 색인에 수록된 1차 제출자료 발췌문만 확인",
+      "Austin의 운영 팹과 Taylor의 건설 사업 구분 필요",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "samsung-current",
+        "title": "Samsung Taylor construction and operations update",
+        "url": "https://semiconductor.samsung.com/sas/local-news/samsung-austin-semiconductors-two-campuses-inject-10-9b-into-central-texas-economy-in-2025/",
+        "publishedAt": "2026-06-10"
+      },
+      {
+        "id": "samsung-grid",
+        "title": "Oncor engineering testimony filed in PUCT 58050 item 4",
+        "url": "https://interchange.puc.texas.gov/Documents/58050_4_1500376.PDF",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-06-10",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-cmc-seguin",
+    "name": "CMC Steel Texas / Seguin",
+    "aliases": [
+      "CMC/SMI",
+      "CMC Steel-Texas"
+    ],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "철강·금속·광물",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "operating",
+    "location": "Seguin, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "Commercial Metals Company"
+      }
+    ],
+    "utility": "Guadalupe Valley Electric Cooperative",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 124.5,
+        "basis": "GVEC의 과거 2016년 산업 부하 전망치; 2026년 실제 부하나 신규 신청량 아님",
+        "sourceId": "cmc-grid"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 CMC 제철소 인증서에 Seguin 포함; 과거 GVEC CCN 제출자료에서 CMC/SMI 변전소와 예상 산업 부하 확인",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026년 CMC 인증서상 제철소 확인; 현재 계통 통전일·부하 MW는 별도 미확보",
+        "sourceId": "cmc-2026"
+      }
+    ],
+    "gaps": [
+      "현재 계량 부하와 증설 신청량 미공개",
+      "PUCT PDF 직접 다운로드 차단; 과거 계통 근거는 검색 색인의 1차 제출자료 발췌문으로 확인",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가",
+      "현재 전력 접속의 실제 통전일은 별도 미확보"
+    ],
+    "sources": [
+      {
+        "id": "cmc-2026",
+        "title": "CMC steel mills compliance certificate",
+        "url": "https://www.cmc.com/getmedia/78fd6981-893e-47d7-add7-34b10f1968da/CMC-Steel-Mills-General-Compliance-Certificate.pdf",
+        "publishedAt": "2026-01-20"
+      },
+      {
+        "id": "cmc-grid",
+        "title": "GVEC supplemental CCN response, PUCT 41967 item 7",
+        "url": "https://interchange.puc.texas.gov/Documents/41967_7_774212.PDF",
+        "publishedAt": null
+      },
+      {
+        "id": "cmc-current",
+        "title": "CMC energy and climate",
+        "url": "https://esg.cmc.com/environmental/environmental-stewardship/energy-and-climate/",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-01-20",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-cnp-baytown-hydrogen",
+    "name": "CenterPoint Baytown blue-hydrogen customer — name undisclosed",
+    "aliases": [],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "화학·수소·연료",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "planned",
+    "location": "Baytown, Harris County, TX",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "Undisclosed customer"
+      }
+    ],
+    "utility": "CenterPoint Energy",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 475.475,
+        "basis": "계산 유효전력: 500.5 MVA × 공시 역률 0.95; 원문은 MVA 공시이며 해당 MW 수치 직접 공시 아님",
+        "sourceId": "baytown-initial"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2028년 1월 목표 청색수소 플랜트의 신규 고객 소유 138 kV 변전소 공급 요청; 2025년 ERCOT 독립 검토·TAC 승인 완료",
+    "milestones": [
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "2028년 1월 목표 청색수소 플랜트의 신규 고객 소유 138 kV 변전소 공급 요청; 2025년 ERCOT 독립 검토·TAC 승인 완료",
+        "sourceId": "baytown-initial"
+      }
+    ],
+    "gaps": [
+      "고객 실명 공개 확인 불가; 위치·변전소명만으로 Exxon으로 추정 금지",
+      "이사회 자료는 결의안 초안 포함으로 실제 이사회 의결의 근거 아님",
+      "시운전·현재 Batch Zero 배정 근거 미확보",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "baytown-initial",
+        "title": "CenterPoint Baytown Area Load Addition RPG presentation",
+        "url": "https://www.ercot.com/files/docs/2024/11/11/CNP_Baytown_Area_Load_Addition_project_20241112.pdf",
+        "publishedAt": "2024-11-11"
+      },
+      {
+        "id": "baytown-review",
+        "title": "ERCOT Baytown Independent Review and Board recommendation",
+        "url": "https://www.ercot.com/files/docs/2025/09/15/7.1-CNP-Baytown-Area-Load-Addition-Project.pdf",
+        "publishedAt": "2025-09-15"
+      }
+    ],
+    "asOf": "2025-09-15",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-canaan-bear",
+    "name": "Canaan / WindHQ Bear",
+    "aliases": [],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "암호화폐 채굴",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "operating",
+    "location": "West Texas",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "WindHQ 51% / Canaan 49%"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 40,
+        "basis": "이전 소유사 포트폴리오상 부지 전력 용량; ABC 3개 부지 합계 120 MW를 각 부지에 부여 불가",
+        "sourceId": "cipher-abc"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 2월 Canaan의 Cipher 보유 합작사 지분 49% 인수; 후속 공시에도 ABC 운영 사업 식별 유지",
+    "milestones": [
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "2026년 2월 Canaan의 Cipher 보유 합작사 지분 49% 인수; 후속 공시에도 ABC 운영 사업 식별 유지",
+        "sourceId": "canaan-acquisition"
+      }
+    ],
+    "gaps": [
+      "현재 부지별 실제 MW 미공개",
+      "물리적 부지 용량에 지분율을 곱하여 산정 불가",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "canaan-acquisition",
+        "title": "Canaan acquires 49 percent interest in Alborz, Bear and Chief Mountain",
+        "url": "https://investor.canaan-creative.com/news-releases/news-release-details/canaan-inc-acquires-cipher-minings-interest-multiple-operational",
+        "publishedAt": "2026-02-23"
+      },
+      {
+        "id": "canaan-current",
+        "title": "Canaan August 2026 mining update",
+        "url": "https://investor.canaan-creative.com/news-releases/news-release-details/canaan-inc-provides-august-2026-bitcoin-production-and-mining",
+        "publishedAt": null
+      },
+      {
+        "id": "cipher-abc",
+        "title": "Cipher portfolio presentation with ABC site capacities",
+        "url": "https://investors.cipherdigital.com/static-files/f00c5ff3-78e0-4cbd-b8e9-b9c32edb13c9",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-08-31",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "ercot-canaan-chief-mountain",
+    "name": "Canaan / WindHQ Chief Mountain",
+    "aliases": [],
+    "region": "ERCOT",
+    "regionBasis": "인용한 1차 사업 근거에서 Texas·ERCOT 소재 또는 해당 유틸리티 공급 관계 확인",
+    "industry": "암호화폐 채굴",
+    "industryEvidence": "연결된 기업·유틸리티 원문의 사업 목적",
+    "lifecycle": "operating",
+    "location": "West Texas",
+    "participants": [
+      {
+        "role": "소유·운영·개발 주체",
+        "name": "WindHQ 51% / Canaan 49%"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 40,
+        "basis": "이전 소유사 포트폴리오상 부지 전력 용량; ABC 3개 부지 합계 120 MW를 각 부지에 부여 불가",
+        "sourceId": "cipher-abc"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 2월 Canaan의 Cipher 보유 합작사 지분 49% 인수; 후속 공시에도 ABC 운영 사업 식별 유지",
+    "milestones": [
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "2026년 2월 Canaan의 Cipher 보유 합작사 지분 49% 인수; 후속 공시에도 ABC 운영 사업 식별 유지",
+        "sourceId": "canaan-acquisition"
+      }
+    ],
+    "gaps": [
+      "현재 부지별 실제 MW 미공개",
+      "물리적 부지 용량에 지분율을 곱하여 산정 불가",
+      "공개 ERCOT 고객별 큐 식별번호와 공식 접속신청 부하 연결 미확보; 사례별 MW를 큐 총량으로 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "canaan-acquisition",
+        "title": "Canaan acquires 49 percent interest in Alborz, Bear and Chief Mountain",
+        "url": "https://investor.canaan-creative.com/news-releases/news-release-details/canaan-inc-acquires-cipher-minings-interest-multiple-operational",
+        "publishedAt": "2026-02-23"
+      },
+      {
+        "id": "canaan-current",
+        "title": "Canaan August 2026 mining update",
+        "url": "https://investor.canaan-creative.com/news-releases/news-release-details/canaan-inc-provides-august-2026-bitcoin-production-and-mining",
+        "publishedAt": null
+      },
+      {
+        "id": "cipher-abc",
+        "title": "Cipher portfolio presentation with ABC site capacities",
+        "url": "https://investors.cipherdigital.com/static-files/f00c5ff3-78e0-4cbd-b8e9-b9c32edb13c9",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-08-31",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-toyota-nc",
+    "name": "Toyota Battery Manufacturing North Carolina",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "배터리 제조",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "partial-operation",
+    "location": "Liberty / Randolph County, 노스캐롤라이나주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Toyota"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "unknown",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2025년 11월 12일 주정부 발표에서 공장 개장과 생산 확대 확인. 전력수요 MW와 최신 정상가동 도달 여부는 해당 자료에서 미공개.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2025년 11월 12일 주정부 발표에서 공장 개장과 생산 확대 확인. 전력수요 MW와 최신 정상가동 도달 여부는 해당 자료에서 미공개.",
+        "sourceId": "toyota-nc"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "미확보",
+        "detail": "사업별 공개 전력공급계약, 계통심사 결과 및 공식 접속 대기열 ID 미확보.",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가."
+    ],
+    "sources": [
+      {
+        "id": "toyota-nc",
+        "title": "Stein 주지사, Toyota 배터리 공장 개장 발표",
+        "url": "https://governor.nc.gov/news/press-releases/2025/11/12/governor-stein-celebrates-grand-opening-toyota-battery-plant-randolph-county",
+        "publishedAt": "2025-11-12"
+      }
+    ],
+    "asOf": "2025-11-12",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-hyundai-metaplant",
+    "name": "Hyundai Motor Group Metaplant America",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "자동차·배터리 제조",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "operating",
+    "location": "Ellabell / Bryan County, 조지아주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Hyundai Motor Group"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "unknown",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2025년 3월 26일 준공 발표에서 2024년 10월 3일 첫 차량 생산 및 IONIQ 5·IONIQ 9 생산 확인. 향후 차량 생산능력 확대 수치는 전력수요로 환산 불가.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2025년 3월 26일 준공 발표에서 2024년 10월 3일 첫 차량 생산 및 IONIQ 5·IONIQ 9 생산 확인. 향후 차량 생산능력 확대 수치는 전력수요로 환산 불가.",
+        "sourceId": "hyundai"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "미확보",
+        "detail": "사업별 공개 전력공급계약, 계통심사 결과 및 공식 접속 대기열 ID 미확보.",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가.",
+      "발표의 주차장 태양광 5.2 MW는 발전용량이므로 전력부하 MW에서 제외."
+    ],
+    "sources": [
+      {
+        "id": "hyundai",
+        "title": "HMGMA 준공 발표",
+        "url": "https://www.hyundaimotorgroup.com/en/amp/CONT0000000000173041",
+        "publishedAt": "2025-03-26"
+      }
+    ],
+    "asOf": "2025-03-26",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-rivian-georgia",
+    "name": "Rivian Stanton Springs North factory",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "자동차 제조",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "construction",
+    "location": "Social Circle / Walton and Morgan counties, 조지아주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Rivian"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "unknown",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 8월 6일 Rivian 발표에서 조지아 제조시설 공사 진행 확인. 운영 중인 애틀랜타 본사는 별도 시설.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026년 8월 6일 Rivian 발표에서 조지아 제조시설 공사 진행 확인. 운영 중인 애틀랜타 본사는 별도 시설.",
+        "sourceId": "rivian"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "미확보",
+        "detail": "사업별 공개 전력공급계약, 계통심사 결과 및 공식 접속 대기열 ID 미확보.",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가."
+    ],
+    "sources": [
+      {
+        "id": "rivian",
+        "title": "Rivian 애틀랜타 동부 본사 개장 발표",
+        "url": "https://rivian.com/stories/atlanta-georgia-east-coast-headquarters-opening",
+        "publishedAt": "2026-08-06"
+      }
+    ],
+    "asOf": "2026-08-06",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-ford-tennessee",
+    "name": "Ford Tennessee Truck Plant / BlueOval City",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "자동차 제조",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "construction",
+    "location": "Stanton / Haywood County, 테네시주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Ford Motor Company"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "unknown",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "현재 Ford FAQ의 트럭 조립 개시 목표는 2029년. 2024년 4월 4일 발표의 목표는 2026년이며 당시 설비 설치 진행 명시. 일정 변경 확인, 실제 계통 접속 상태는 미공개.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "현재 Ford FAQ의 트럭 조립 개시 목표는 2029년. 2024년 4월 4일 발표의 목표는 2026년이며 당시 설비 설치 진행 명시. 일정 변경 확인, 실제 계통 접속 상태는 미공개.",
+        "sourceId": "ford-current"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "미확보",
+        "detail": "사업별 공개 전력공급계약, 계통심사 결과 및 공식 접속 대기열 ID 미확보.",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가.",
+      "현재 FAQ의 게시일 미표기. 2029년은 회사 목표이며 실제 통전일은 미확인. 트럭 공장과 별도 배터리 공장의 소유권 변경·용도 전환은 구분 필요."
+    ],
+    "sources": [
+      {
+        "id": "ford-current",
+        "title": "BlueOval City FAQ — 2026년 10월 3일 확인",
+        "url": "https://corporate.ford.com/operations/blue-oval-city/faqs/",
+        "publishedAt": null
+      },
+      {
+        "id": "ford-2024",
+        "title": "Ford 차세대 전기차 일정 변경 발표",
+        "url": "https://www.fromtheroad.ford.com/us/en/articles/2024/ford-updates-timing-for-next-gen-evs--readies-manufacturing-plan",
+        "publishedAt": "2024-04-04"
+      }
+    ],
+    "asOf": null,
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-vinfast-nc",
+    "name": "VinFast North Carolina factory",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "자동차·배터리 제조",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "unknown",
+    "location": "Moncure / Chatham County, 노스캐롤라이나주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "VinFast"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "unknown",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 5월 21일 노스캐롤라이나주 법무부의 부지 회수를 위한 소송 발표. 계약상 2026년 7월 가동 목표 대비 최소 2028년까지 지연 및 계약 불이행 주장. 주정부의 주장과 지연 사실을 구분하며, 취소 확정 근거는 미확보.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026년 5월 21일 노스캐롤라이나주 법무부의 부지 회수를 위한 소송 발표. 계약상 2026년 7월 가동 목표 대비 최소 2028년까지 지연 및 계약 불이행 주장. 주정부의 주장과 지연 사실을 구분하며, 취소 확정 근거는 미확보.",
+        "sourceId": "vinfast"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "미확보",
+        "detail": "사업별 공개 전력공급계약, 계통심사 결과 및 공식 접속 대기열 ID 미확보.",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가.",
+      "인용한 주정부 발표만으로 회사 측 이의 제기와 후속 소송 결과 확인 불가. 취소·철회로 분류할 근거 미확보."
+    ],
+    "sources": [
+      {
+        "id": "vinfast",
+        "title": "노스캐롤라이나주, 제조 부지 회수를 위한 VinFast 소송 발표",
+        "url": "https://ncdoj.gov/north-carolina-sues-vinfast-to-acquire-shovel-ready-manufacturing-site/",
+        "publishedAt": "2026-05-21"
+      }
+    ],
+    "asOf": "2026-05-21",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-novelis-bay-minette",
+    "name": "Novelis Bay Minette recycling and rolling plant",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "알루미늄 재활용·압연",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "construction",
+    "location": "Bay Minette / Baldwin County, 앨라배마주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Novelis"
+      }
+    ],
+    "utility": "Alabama Power",
+    "powerRoute": "grid",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 8월 5일 분기 발표에서 주요 설비의 초기 시운전 착수 확인. 공장 시운전과 전력망 접속 완료 여부는 별도 확인 필요.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026년 8월 5일 분기 발표에서 주요 설비의 초기 시운전 착수 확인. 공장 시운전과 전력망 접속 완료 여부는 별도 확인 필요.",
+        "sourceId": "novelis-2026"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "확인",
+        "detail": "Novelis의 Bay Minette 대상 Alabama Power 재생에너지 구독 참여 확인. 고객 부하의 계약 MW는 미공개.",
+        "sourceId": "novelis-power"
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가.",
+      "재생에너지 구독으로 지원하는 80 MW 태양광 발전소 2기는 발전자산. 이를 Novelis 전력수요 160 MW로 해석 불가."
+    ],
+    "sources": [
+      {
+        "id": "novelis-2026",
+        "title": "Novelis 2027 회계연도 1분기 실적",
+        "url": "https://investors.novelis.com/news-events/press-releases/detail/1425/novelis-reports-first-quarter-fiscal-year-2027-results",
+        "publishedAt": "2026-08-05"
+      },
+      {
+        "id": "novelis-power",
+        "title": "Novelis·Southern Company 협력 발표",
+        "url": "https://investors.novelis.com/news-events/press-releases/detail/18/novelis-partners-with-southern-company-in-pursuit-of-decarbonization-goals",
+        "publishedAt": "2023-10-09"
+      }
+    ],
+    "asOf": "2026-08-05",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-wolfspeed-siler-city",
+    "name": "Wolfspeed John Palmour Manufacturing Center",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "반도체용 탄화규소 소재",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "partial-operation",
+    "location": "Siler City / Chatham County, 노스캐롤라이나주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Wolfspeed"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "grid",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 8월 20일 Form 10-K에서 Siler City의 생산 준비 완료와 낮은 가동률 확인. 최소 구매 의무가 있는 장기 전력공급계약도 공시되었으나 MW는 미공개.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026년 8월 20일 Form 10-K에서 Siler City의 생산 준비 완료와 낮은 가동률 확인. 최소 구매 의무가 있는 장기 전력공급계약도 공시되었으나 MW는 미공개.",
+        "sourceId": "wolfspeed"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "확인",
+        "detail": "Form 10-K에 Siler City·Durham 장기 전력공급계약의 구매 의무 공시. 인용 구간의 공급사·MW는 미공개.",
+        "sourceId": "wolfspeed"
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가."
+    ],
+    "sources": [
+      {
+        "id": "wolfspeed",
+        "title": "Wolfspeed 2026 회계연도 Form 10-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+        "publishedAt": "2026-08-20"
+      }
+    ],
+    "asOf": "2026-06-28",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-nucor-lexington",
+    "name": "Nucor Steel Lexington rebar micro mill",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "철강 제조",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "partial-operation",
+    "location": "Lexington / Davidson County, 노스캐롤라이나주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Nucor"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "unknown",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 7월 28일 발표에서 Lexington의 2분기 EBITDA 흑자 및 신규 사업의 생산 확대 진행 확인. 전력부하 MW는 미공개.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026년 7월 28일 발표에서 Lexington의 2분기 EBITDA 흑자 및 신규 사업의 생산 확대 진행 확인. 전력부하 MW는 미공개.",
+        "sourceId": "nucor"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "미확보",
+        "detail": "사업별 공개 전력공급계약, 계통심사 결과 및 공식 접속 대기열 ID 미확보.",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가."
+    ],
+    "sources": [
+      {
+        "id": "nucor",
+        "title": "Nucor 2026년 2분기 실적 발표, 슬라이드 8",
+        "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526318190/d468854dex992.htm",
+        "publishedAt": "2026-07-28"
+      }
+    ],
+    "asOf": "2026-07-28",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-nucor-berkeley",
+    "name": "Nucor Steel Berkeley second galvanizing line",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "철강 도금·제조",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "construction",
+    "location": "Berkeley County, 사우스캐롤라이나주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Nucor"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "unknown",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 7월 28일 발표에서 설비 시운전 진행 및 2026년 가을 생산 개시 목표 확인. 생산 목표일에 대한 실제 통전 근거는 미확보.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026년 7월 28일 발표에서 설비 시운전 진행 및 2026년 가을 생산 개시 목표 확인. 생산 목표일에 대한 실제 통전 근거는 미확보.",
+        "sourceId": "nucor"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "미확보",
+        "detail": "사업별 공개 전력공급계약, 계통심사 결과 및 공식 접속 대기열 ID 미확보.",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가."
+    ],
+    "sources": [
+      {
+        "id": "nucor",
+        "title": "Nucor 2026년 2분기 실적 발표, 슬라이드 8",
+        "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526318190/d468854dex992.htm",
+        "publishedAt": "2026-07-28"
+      }
+    ],
+    "asOf": "2026-07-28",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-century-mt-holly",
+    "name": "Century Aluminum Mt. Holly potline restart",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "1차 알루미늄 제련",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "operating",
+    "location": "Goose Creek / Berkeley County, 사우스캐롤라이나주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Century Aluminum"
+      }
+    ],
+    "utility": "Santee Cooper",
+    "powerRoute": "grid",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 8월 6일 사업자 발표에서 Mt. Holly의 잔여 전해조 90기 재가동 완료 확인. 2025년 10월 6일 Santee Cooper 발표에서 2031년까지 연장된 계약에 따른 추가 전력공급 확인.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026년 8월 6일 사업자 발표에서 Mt. Holly의 잔여 전해조 90기 재가동 완료 확인. 2025년 10월 6일 Santee Cooper 발표에서 2031년까지 연장된 계약에 따른 추가 전력공급 확인.",
+        "sourceId": "century-current"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "확인",
+        "detail": "추가 전해조 라인에 대한 전력회사·고객 간 공급계약 체결 및 2031년까지 연장 확인. 발표의 전력 MW는 미공개.",
+        "sourceId": "century-power"
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가."
+    ],
+    "sources": [
+      {
+        "id": "century-current",
+        "title": "Century Aluminum 2026년 2분기 실적",
+        "url": "https://investors.centuryaluminum.com/news-events/press-releases/press-release-details/2026/Century-Aluminum-Company-Reports-Second-Quarter-2026-Results/default.aspx",
+        "publishedAt": "2026-08-06"
+      },
+      {
+        "id": "century-power",
+        "title": "Santee Cooper·Century 추가 전해조 전력공급계약 발표",
+        "url": "https://newsroom.santeecooper.com/news/Santee-Cooper-Century-Sign-Agreement-to-Power-Additional-Potline-Create-Jobs-in-Mt.-Holly/",
+        "publishedAt": "2025-10-06"
+      }
+    ],
+    "asOf": "2026-08-06",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-plug-woodbine",
+    "name": "Plug Power Woodbine hydrogen plant",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "수전해 수소 생산",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "operating",
+    "location": "Woodbine / Camden County, 조지아주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Plug Power"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "unknown",
+    "capacities": [
+      {
+        "mw": 40,
+        "basis": "수전해 설비의 정격 전력: 5 MW PEM 설비 8기. 시설 전체 최대수요·접속 신청용량·미통전 잔여용량과 구분.",
+        "sourceId": "plug-mw"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2024년 1월 23일 사업자 발표에서 생산 개시 및 5 MW PEM 수전해 설비 8기 확인. 2026년 9월 22일 발표에서 조지아 수소시설의 운영 지속 확인.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2024년 1월 23일 사업자 발표에서 생산 개시 및 5 MW PEM 수전해 설비 8기 확인. 2026년 9월 22일 발표에서 조지아 수소시설의 운영 지속 확인.",
+        "sourceId": "plug-current"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "미확보",
+        "detail": "사업별 공개 전력공급계약, 계통심사 결과 및 공식 접속 대기열 ID 미확보.",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가."
+    ],
+    "sources": [
+      {
+        "id": "plug-current",
+        "title": "Plug Power 2026년 9월 22일 운영시설 현황",
+        "url": "https://www.ir.plugpower.com/press-releases/news-details/2026/Plug-Power-Expands-Hydrogen-Footprint-Across-New-Zealand-and-Australia-with-GenEco-Electrolyzer-Delivery-to-HWR-Hydrogen/default.aspx",
+        "publishedAt": "2026-09-22"
+      },
+      {
+        "id": "plug-mw",
+        "title": "Plug 조지아 수소 생산 개시 발표",
+        "url": "https://www.ir.plugpower.com/press-releases/news-details/2024/Plug-Power-Starts-Production-of-Liquid-Green-Hydrogen-at-its-Georgia-Plant/default.aspx",
+        "publishedAt": "2024-01-23"
+      }
+    ],
+    "asOf": "2026-09-22",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-fpl-cavendish",
+    "name": "FPL Cavendish NextGen Hydrogen Hub",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "수전해 수소 생산",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "operating",
+    "location": "Okeechobee County, 플로리다주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Florida Power & Light"
+      }
+    ],
+    "utility": "Florida Power & Light",
+    "powerRoute": "onsite",
+    "capacities": [
+      {
+        "mw": 25,
+        "basis": "수전해 시스템의 정격 전력. 인접 태양광으로 가동하는 전력회사 소유 실증시설이며, 고객 접속 신청용량과 구분.",
+        "sourceId": "fpl-mw"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2024년 2월 8일 FPL 발표에서 태양광 기반 수소 실증시설 준공 확인. 2022년 2월 28일 공급업체 발표에 수전해 설비 5기, 합계 25 MW 명시.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2024년 2월 8일 FPL 발표에서 태양광 기반 수소 실증시설 준공 확인. 2022년 2월 28일 공급업체 발표에 수전해 설비 5기, 합계 25 MW 명시.",
+        "sourceId": "fpl-complete"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "미확보",
+        "detail": "사업별 공개 전력공급계약, 계통심사 결과 및 공식 접속 대기열 ID 미확보.",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가.",
+      "산업용 전력수요 범위에 포함한 전력회사 소유 시설로, 별도 소매 고객에 해당하지 않음. 확보한 최근 구체적 운영 자료는 2024년 기준."
+    ],
+    "sources": [
+      {
+        "id": "fpl-complete",
+        "title": "FPL 청정수소 허브 준공 발표",
+        "url": "https://newsroom.fpl.com/Florida-Power-Light-Company-announces-completion-of-clean-hydrogen-hub",
+        "publishedAt": "2024-02-08"
+      },
+      {
+        "id": "fpl-mw",
+        "title": "Cummins의 FPL용 25 MW 수전해 설비 공급 발표",
+        "url": "https://investor.cummins.com/news/detail/554/fpl-announces-cummins-to-supply-electrolyzer-for",
+        "publishedAt": "2022-02-28"
+      }
+    ],
+    "asOf": "2024-02-08",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "southeast-industrial-aluminum-dynamics-columbus",
+    "name": "Aluminum Dynamics Columbus rolling mill",
+    "aliases": [],
+    "region": "Southeast",
+    "regionBasis": "미국 남동부 비RTO 조사 범위에 속하는 지리적 위치 기준. 별도 출처가 없는 전력 공급사·접속 관계는 미확인.",
+    "industry": "알루미늄 압연·재활용",
+    "industryEvidence": "사업자·공급업체·전력회사·주정부의 1차 발표자료에서 산업 활동 확인.",
+    "lifecycle": "partial-operation",
+    "location": "Columbus / Lowndes County, 미시시피주",
+    "participants": [
+      {
+        "role": "사업 소유자·개발사",
+        "name": "Steel Dynamics / Aluminum Dynamics"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "unknown",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026년 9월 17일 사업자 실적 전망에서 냉간압연기 3기 전체와 첫 연속 소둔·용체화 열처리 라인의 가동 확인. 출하량 확대 및 고객 승인 절차 진행.",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026년 9월 17일 사업자 실적 전망에서 냉간압연기 3기 전체와 첫 연속 소둔·용체화 열처리 라인의 가동 확인. 출하량 확대 및 고객 승인 절차 진행.",
+        "sourceId": "sdi"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "미확보",
+        "detail": "사업별 공개 전력공급계약, 계통심사 결과 및 공식 접속 대기열 ID 미확보.",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "인용한 1차 자료에서 시설 전체 전력수요 MW와 미통전 잔여 MW 미확보.",
+      "Georgia·Duke·TVA·Southern 비공개 행과의 동일 사업 연결 근거 미확보. 해당 집계와 중복 합산 금지.",
+      "공장 공사·생산 이력만으로 계통심사 완료 또는 특정 접속 단계 도달 여부 판정 불가.",
+      "위치만으로 전력 공급사를 추정하지 않음. 별도로 발표된 신규 재활용 슬래브 시설은 이 압연공장 행에 통합하지 않음."
+    ],
+    "sources": [
+      {
+        "id": "sdi",
+        "title": "Steel Dynamics 2026년 3분기 실적 전망",
+        "url": "https://ir.steeldynamics.com/steel-dynamics-provides-third-quarter-2026-earnings-guidance/",
+        "publishedAt": "2026-09-17"
+      }
+    ],
+    "asOf": "2026-09-17",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_AVH1_CA",
+    "name": "Antelope Valley Hydrogen 1",
+    "aliases": [
+      "AVH1",
+      "앤털로프 밸리 수소 1"
+    ],
+    "region": "West",
+    "regionBasis": "현장 태양광 중심 수소 프로젝트의 서부 탐색 분류 · 공식 CAISO 접속원장·전력회사 연결 미확인",
+    "industry": "화학·수소·연료",
+    "industryEvidence": "카운티 신청서와 개발사 자료가 전기분해 수소 생산설비로 명시",
+    "lifecycle": "planned",
+    "location": "Antelope Valley, Los Angeles County, California",
+    "participants": [
+      {
+        "role": "개발사",
+        "name": "Novo Hydrogen"
+      },
+      {
+        "role": "계획 심사",
+        "name": "Los Angeles County Department of Regional Planning"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "onsite",
+    "capacities": [
+      {
+        "mw": 162,
+        "basis": "2024-11-25 카운티 접수 목록의 전기분해 설비 최대 정격 · 계통 신청·확보 용량 아님",
+        "sourceId": "county"
+      },
+      {
+        "mw": 182,
+        "basis": "2024-08-06 개발사의 전기분해 설계 발표 · 후속 카운티 신청 162MW와 상충하며 합산 불가",
+        "sourceId": "developer_dated"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "토지이용 신청 접수 확인 · 전기분해 설계 162MW와 182MW가 상충하며 최신 승인 설계·계통접속 상태 미확인",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "카운티의 RPAP2024006028·6029·6030은 RPPL2024000110에 연계된 같은 수소 프로젝트의 신청으로 묶어 1건 처리",
+        "sourceId": "county"
+      },
+      {
+        "gate": "인허가",
+        "status": "조건부",
+        "detail": "2024-11-22 토지이용 신청이 2024-11-25 목록에 접수된 사실 확인 · 후속 승인·착공 여부 미확보",
+        "sourceId": "county"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "개발사는 현장 태양광 235MW로 전기분해를 공급하는 계획을 설명 · 태양광은 발전설비이며 수용가 부하 또는 계통 신청 MW가 아님",
+        "sourceId": "developer_dated"
+      },
+      {
+        "gate": "공사",
+        "status": "미확보",
+        "detail": "해당 수소설비의 착공·공정률을 확인할 최신 1차 자료 미확보",
+        "sourceId": null
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "전기분해 설비 통전·수소 상업생산 또는 전력회사 서비스 개시 확인 미확보",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "카운티 자료는 최대 162MW, 앞선 개발사 발표는 182MW 전기분해 설계로 차이 존재 · 확정 현재 용량으로 단일화 불가",
+      "현재 개발사 페이지에 182MW와 과거 300MW 문구가 함께 남아 있어 최신 설계 판단 근거로 단독 사용 불가",
+      "공식 계통 신청 ID·계통 신청 MW·전력회사 및 계통 보완전력 규모 미확보",
+      "인허가 단계의 기준일은 2024-11-25이며 2026-10-03 확인일이 최신 승인·진척을 뜻하지 않음",
+      "카운티 신청의 태양광 약 240MW와 개발사 발표의 235MW는 발전계획 · 전기분해 부하와 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "county",
+        "title": "LA County — 2024-11-18~25 계획 신청 접수 목록, 17~22쪽",
+        "url": "https://planning.lacounty.gov/wp-content/uploads/2024/12/DRP_PlanningArea_Countywide_25-11-2024_06-00-14.pdf",
+        "publishedAt": null
+      },
+      {
+        "id": "developer_dated",
+        "title": "Novo Hydrogen — ARCHES 협력 사업과 AVH1 전기분해·태양광 계획",
+        "url": "https://novohydrogen.com/news/california-arches-hub-secures-nations-first-federal-funding-for-renewable-clean-hydrogen/",
+        "publishedAt": "2024-08-06"
+      },
+      {
+        "id": "developer_live",
+        "title": "Novo Hydrogen — AVH1 프로젝트 페이지, 설계 문구 상충",
+        "url": "https://novohydrogen.com/antelope-valley-hydrogen-1/",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2024-11-25",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_POLA_ZEPEO_CA",
+    "name": "Port of Los Angeles ZEPEO",
+    "aliases": [
+      "ZEPEO",
+      "로스앤젤레스항 전기화",
+      "Zero-Emission Port Electrification and Operations"
+    ],
+    "region": "West",
+    "regionBasis": "LADWP가 공급하는 로스앤젤레스항 전력시설 사업 · CAISO 수용가 접속원장과 별도인 서부 분류",
+    "industry": "항만·물류·운송",
+    "industryEvidence": "항만 화물취급장비의 무배출 전환을 지원하는 전력설비 확충 사업",
+    "lifecycle": "planned",
+    "location": "Port of Los Angeles, Los Angeles, California",
+    "participants": [
+      {
+        "role": "항만 사업주",
+        "name": "City of Los Angeles Harbor Department"
+      },
+      {
+        "role": "전력시설 공급·설계",
+        "name": "Los Angeles Department of Water and Power"
+      }
+    ],
+    "utility": "LADWP",
+    "powerRoute": "grid",
+    "capacities": [],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "환경심사 채택 확인 · 2030년 추가 213MVA, 2035년 추가 306MVA 전력시설 MOU 계획이며 MW 환산·단일 수용가 집계 불가",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026-05-28 항만위원회 안건에 ZEPEO 사업과 LADWP 협력 MOU 범위 제시",
+        "sourceId": "agenda"
+      },
+      {
+        "gate": "인허가",
+        "status": "확인",
+        "detail": "LADWP의 IS/MND 인증일은 2026-03-24, 항만 환경문서 목록의 채택일은 2026-05-28 · SCH2025120795",
+        "sourceId": "environment"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "MOU 안건은 2030년까지 추가 213MVA, 2035년까지 추가 306MVA의 34.5kV 전력시설 확보를 제시 · 원문 단위 MVA 유지",
+        "sourceId": "agenda"
+      },
+      {
+        "gate": "공사",
+        "status": "미확보",
+        "detail": "환경심사 채택과 전체 전력시설 공사 착수·준공은 구분 · 전체 사업 공정률 미확보",
+        "sourceId": null
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "계획한 추가 전력시설 전체의 통전 또는 항만 수용가 실제 인출 MW 미확보",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "213MVA·306MVA는 피상전력 전력시설 규모 · 역률 근거가 없어 MW로 환산하지 않으며 capacities 배열은 비워 둠",
+      "항만 전체 기반시설 사업으로 개별 터미널의 서비스 요청과 중복 가능 · 하나의 고객·공식 큐 항목으로 집계 불가",
+      "2035년 306MVA와 2030년 213MVA의 중복 범위가 명확하지 않아 두 수치를 합산하지 않음",
+      "안건에 예정된 2026-07-14 LADWP MOU 표결의 후속 승인 결과 미확보",
+      "날짜 없는 사업 개요의 추가 200MVA와 2026-05-28 MOU 안건 수치는 범위·시점이 달라 별도 보존",
+      "공식 수용가 큐 ID와 계통 신청 MW 미확보"
+    ],
+    "sources": [
+      {
+        "id": "agenda",
+        "title": "Port of Los Angeles — 2026-05-28 항만위원회 안건 7, ZEPEO MOU",
+        "url": "https://portoflosangeles.org/commission/agenda-archive-and-videos/agendas/2026/05282026-regular-agenda",
+        "publishedAt": "2026-05-28"
+      },
+      {
+        "id": "environment",
+        "title": "Port of Los Angeles — ZEPEO 환경문서 채택 이력",
+        "url": "https://portoflosangeles.org/environment/environmental-documents",
+        "publishedAt": null
+      },
+      {
+        "id": "overview",
+        "title": "Port of Los Angeles — LADWP 협력 개요, 추가 200MVA 표기",
+        "url": "https://portoflosangeles.org/environment/air-quality/cooperative-agreement",
+        "publishedAt": null
+      }
+    ],
+    "asOf": "2026-05-28",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_APMT_PIER400_CA",
+    "name": "APM Terminals Pier 400 전력 증설",
+    "aliases": [
+      "Pier 400",
+      "피어 400",
+      "APMT Pier 400"
+    ],
+    "region": "West",
+    "regionBasis": "LADWP가 공급하는 로스앤젤레스항 터미널의 서부 분류 · CAISO 접속원장 미연결",
+    "industry": "항만·물류·운송",
+    "industryEvidence": "운영사가 참여한 ZEPA 사례 자료가 전기 트랙터·스트래들 캐리어·선박 육상전원을 설명",
+    "lifecycle": "partial-operation",
+    "location": "Pier 400, Port of Los Angeles, California",
+    "participants": [
+      {
+        "role": "터미널 운영",
+        "name": "APM Terminals"
+      },
+      {
+        "role": "전력 공급",
+        "name": "Los Angeles Department of Water and Power"
+      },
+      {
+        "role": "항만",
+        "name": "Port of Los Angeles"
+      }
+    ],
+    "utility": "LADWP",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 18,
+        "basis": "계통 공급능력 7→18MW 증설 목표의 최종 총량 · 18MW 신규 증분이나 완료 통전 MW 아님",
+        "sourceId": "zepa"
+      },
+      {
+        "mw": 7,
+        "basis": "같은 자료가 제시한 기존 계통 공급능력 · 목표 18MW와 합산 불가",
+        "sourceId": "zepa"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "전기 화물취급장비 일부 운영 확인 · 계통 공급능력 7→18MW 증설을 설명하지만 18MW 전체 통전 완료는 미확인",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "APM Terminals·Kalmar·Orange EV가 참여한 자료가 Pier 400의 전기장비 운영과 전력 증설을 설명",
+        "sourceId": "zepa"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "LADWP·항만·APMT가 계통 공급능력 7MW를 18MW로 확대 중이라고 명시 · 계약·통전 완료 문서 미확보",
+        "sourceId": "zepa"
+      },
+      {
+        "gate": "통전",
+        "status": "확인",
+        "detail": "전기 터미널 트랙터 20대 등 일부 장비 운영과 방문 선박 육상전원 사용 확인 · 이 확인은 18MW 전체 증설의 통전을 뜻하지 않음",
+        "sourceId": "zepa"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "증설 목표 18MW 전체 공급 개시일·실제 피크 수요·전력회사 계량 자료 미확보",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "출처 하단은 수치 기준을 2025년 중반으로 적지만 본문은 2025년 실적과 올해라는 표현을 포함 · 정확한 게시일·전체 수치 기준일 미확정",
+      "기존 장비의 운영을 계통 공급능력 18MW 증설 완료로 해석하지 않음",
+      "공식 접속 큐 ID·계통 신청 MW 미확보 · 18MW는 목표 총 공급능력",
+      "ZEPEO 등 항만 전체 전력시설 계획과 중복 가능하여 합산 불가"
+    ],
+    "sources": [
+      {
+        "id": "zepa",
+        "title": "ZEPA — Pier 400 running to net zero, 참여 기업과 공동 발행한 사례 자료",
+        "url": "https://portelectrification.com/case-studies/pier-400",
+        "publishedAt": null
+      }
+    ],
+    "asOf": null,
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_DONLIN_GOLD_AK",
+    "name": "Donlin Gold 광산",
+    "aliases": [
+      "Donlin",
+      "돈린 골드"
+    ],
+    "region": "West",
+    "regionBasis": "알래스카 현장 자가발전 광산의 탐색 편의상 West 분류 · 미국 서부 동기계통·Railbelt 유틸리티 연결을 뜻하지 않음",
+    "industry": "철강·금속·광물",
+    "industryEvidence": "USACE 환경영향평가와 개발사 공시가 금광 개발·광물 처리 사업으로 확인",
+    "lifecycle": "planned",
+    "location": "Donlin Gold project, southwest Alaska",
+    "participants": [
+      {
+        "role": "개발사",
+        "name": "NOVAGOLD"
+      },
+      {
+        "role": "사업 지분 보유",
+        "name": "Donlin Gold Holdings LLC / Paulson"
+      }
+    ],
+    "utility": null,
+    "powerRoute": "onsite",
+    "capacities": [
+      {
+        "mw": 153,
+        "basis": "2018년 최종 EIS 설계의 평균 운전 전력부하 · 과거 설계값이며 계통 신청·현재 확정 수요 아님",
+        "sourceId": "eis"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "2026-08-11 금융조달 준비와 금융조달용 타당성조사 진행 확인 · 153MW는 2018년 자가발전 광산 설계의 평균 운전부하",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "2026-08-11 개발사가 금융자문사 선임과 금융조달용 타당성조사(BFS) 진행을 공시",
+        "sourceId": "financing"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "2018년 EIS는 현장 발전으로 평균 운전부하 153MW를 공급하는 설계 · 발전 정격 227MW에는 예비설비가 포함되어 부하와 구별",
+        "sourceId": "eis"
+      },
+      {
+        "gate": "인허가",
+        "status": "확인",
+        "detail": "2018년 최종 환경영향평가의 사업·전력 설계 자료 확보 · 이 자료만으로 모든 현재 인허가 완료를 주장하지 않음",
+        "sourceId": "eis"
+      },
+      {
+        "gate": "공사",
+        "status": "조건부",
+        "detail": "개발사는 BFS 완료와 관련 업무 이후 최종 투자결정으로 진행하는 단계라고 설명 · 전체 광산 본공사 착수 확인은 아님",
+        "sourceId": "financing"
+      },
+      {
+        "gate": "통전",
+        "status": "미확보",
+        "detail": "계획한 광산의 상업 운전 또는 153MW 부하 통전 미확보",
+        "sourceId": null
+      }
+    ],
+    "gaps": [
+      "153MW는 2018년 환경영향평가의 평균 운전부하 · 현재 진행 중인 타당성조사가 설계·전력수요를 변경할 수 있음",
+      "227MW 발전설비 정격을 227MW 수용가 부하나 계통 요청으로 표기하지 않음",
+      "현장 발전 계획으로 확인되며 Railbelt 유틸리티의 대기열·계통 신청 MW에 포함하지 않음",
+      "최종 투자결정·자금조달 완료·본공사 착수·상업생산 확인 미확보",
+      "EIS는 2018년 4월 자료이나 정확한 일자 미확정으로 출처 publishedAt은 null 유지"
+    ],
+    "sources": [
+      {
+        "id": "eis",
+        "title": "USACE — Donlin Gold 최종 EIS 요약, 2018년 4월, 16쪽",
+        "url": "https://www.donlingoldseis.com/final-eis-2018/Executive%20Summary_FEIS.pdf",
+        "publishedAt": null
+      },
+      {
+        "id": "financing",
+        "title": "NOVAGOLD — Donlin 금융자문사 선임·BFS 및 최종 투자결정 전 단계",
+        "url": "https://novagold.com/novagold-paulson-announce-the-appointment-of-endeavour-financial-and-macquarie-capital-as-financial-advisors-to-the-donlin-gold-project/",
+        "publishedAt": "2026-08-11"
+      }
+    ],
+    "asOf": "2026-08-11",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  },
+  {
+    "id": "NAMED_GOOGLE_DISK_DRIVE_CA",
+    "name": "Google 5079 Disk Drive — San Jose",
+    "aliases": [
+      "Google San Jose",
+      "구글 산호세",
+      "E-5455",
+      "PG&E AL 7785-E"
+    ],
+    "region": "CAISO",
+    "regionBasis": "CPUC가 PG&E 230kV 송전급 소매서비스 신청으로 명시한 San Jose 부하 · 공식 개별 큐 ID는 미공개",
+    "industry": "데이터센터",
+    "industryEvidence": "CPUC 결의안 초안과 2026-10-02 공표 안건이 신규 250MW 데이터센터 부하로 명시",
+    "lifecycle": "planned",
+    "location": "5079 Disk Drive, San Jose, California",
+    "participants": [
+      {
+        "role": "수용가",
+        "name": "Google LLC"
+      },
+      {
+        "role": "전력회사",
+        "name": "Pacific Gas and Electric Company"
+      },
+      {
+        "role": "규제기관",
+        "name": "California Public Utilities Commission"
+      }
+    ],
+    "utility": "PG&E",
+    "powerRoute": "grid",
+    "capacities": [
+      {
+        "mw": 250,
+        "basis": "CPUC 공식 자료의 전면 개발 시 예상 소매 전력수요 · 230kV 서비스 신청 250MW, 규제승인·통전 대기",
+        "sourceId": "draft"
+      }
+    ],
+    "gridRequestMW": null,
+    "queueId": null,
+    "matchedProjectId": null,
+    "statusSummary": "PG&E의 250MW·230kV 서비스 신청과 예비 엔지니어링 완료 확인 · CPUC 승인안은 2026-10-08 회의로 보류되어 10월 3일 현재 승인·통전으로 표시 불가",
+    "milestones": [
+      {
+        "gate": "프로젝트",
+        "status": "확인",
+        "detail": "Google은 2025-03-03 서비스 신청, PG&E는 2025-12-18 Advice Letter 7785-E 제출 · 원문에 5079 Disk Drive와 250MW 명시",
+        "sourceId": "draft"
+      },
+      {
+        "gate": "전력 확보",
+        "status": "조건부",
+        "detail": "2025년 12월 최신 예비 엔지니어링 연구(PES) 완료 · 230kV 개폐소와 지중선이 필요하며 최종 전력공급 승인과 구별",
+        "sourceId": "draft"
+      },
+      {
+        "gate": "인허가",
+        "status": "조건부",
+        "detail": "2026-10-02 발행한 10월 8일 안건 2는 E-5455를 아직 승인 제안으로 수록 · 7월 16일·8월 13일·9월 3일·9월 17일 보류 이력 명시",
+        "sourceId": "october_agenda"
+      },
+      {
+        "gate": "공사",
+        "status": "조건부",
+        "detail": "원문 신청 일정은 2027년 1월 공사 개시 목표 · 착공 확인이 아님",
+        "sourceId": "draft"
+      },
+      {
+        "gate": "통전",
+        "status": "조건부",
+        "detail": "원문은 2028년 12월 서비스 개시 목표를 제시 · 승인·시공·실제 통전은 별도 확인 필요",
+        "sourceId": "draft"
+      }
+    ],
+    "gaps": [
+      "250MW는 공식 서비스 신청의 전면 개발 예상 부하로 확인되지만 공개된 개별 큐 ID는 미확보",
+      "Advice Letter 7785-E와 결의안 E-5455는 공시·규제 문서 ID이며 수용가 큐 ID가 아님 · queueId와 gridRequestMW는 null, 확인된 250MW는 용량 근거에 보존",
+      "결의안 초안의 승인한다는 문구는 제안 결과 · 2026-10-03 현재 실제 의결·최종승인으로 해석 불가",
+      "2027년 1월 착공과 2028년 12월 운영은 신청인의 목표 일정 · 완료된 단계가 아님",
+      "확정 공사비·최종 서비스 계약 조건·통전일 및 실제 인출량 미확보"
+    ],
+    "sources": [
+      {
+        "id": "draft",
+        "title": "CPUC — 결의안 E-5455 초안, PG&E·Google 250MW 예외 서비스 신청",
+        "url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M607/K718/607718746.PDF",
+        "publishedAt": "2026-07-16"
+      },
+      {
+        "id": "october_agenda",
+        "title": "CPUC — 2026-10-08 회의 안건, 10월 2일 발행, 3~4쪽",
+        "url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M622/K069/622069835.pdf",
+        "publishedAt": "2026-10-02"
+      },
+      {
+        "id": "september_hold",
+        "title": "CPUC — 2026-09-17 회의 최종 보류 목록",
+        "url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M619/K318/619318894.PDF",
+        "publishedAt": "2026-09-15"
+      }
+    ],
+    "asOf": "2026-10-02",
+    "checkedAt": "2026-10-03",
+    "additive": false
+  }
+]

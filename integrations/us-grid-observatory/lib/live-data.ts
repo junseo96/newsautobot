@@ -1,0 +1,16 @@
+import type {LiveData} from './grid-types';
+import {BA_OPTIONS} from './grid-types';
+const base='https://www.eia.gov/electricity/930-api/';
+const allowed=new Set(['US48',...Object.values(BA_OPTIONS).flat().map(x=>x.id)]);
+function eiaDate(d:Date){return `${String(d.getUTCMonth()+1).padStart(2,'0')}${String(d.getUTCDate()).padStart(2,'0')}${d.getUTCFullYear()} 00:00:00`}
+function iso(t:string){const m=t.match(/(\d{2})\/(\d{2})\/(\d{4}) (\d{2}:\d{2}:\d{2})/);return m?`${m[3]}-${m[1]}-${m[2]}T${m[4]}Z`:t;}
+async function query(id:string,fuel=false){const end=new Date(Date.now()+86400000),start=new Date(Date.now()-3*86400000);const q=new URLSearchParams({'respondent[0]':id,frequency:'hourly',start:eiaDate(start),end:eiaDate(end),'type[0]':fuel?'NG':'D',timezone:'UTC'});const url=base+(fuel?'region_data_by_fuel_type/data':'region_data/data')+'?'+q;const response=await fetch(url,{signal:AbortSignal.timeout(18000),headers:{Accept:'application/json'}});if(!response.ok)throw new Error(`원천 응답 ${response.status}`);const data=await response.json() as {data:Record<string,unknown>[]}[];const rows=data[0]?.data;if(!Array.isArray(rows)||!rows.length)throw new Error('원천 관측값 미확보');return rows.filter(r=>r.VAL!==null&&r.VAL!==undefined&&Number.isFinite(Number(r.VAL)));}
+const nameMap:Record<string,string>={COL:'Coal',NG:'Natural Gas',NUC:'Nuclear',WAT:'Hydro',WND:'Wind',SUN:'Solar',OTH:'Other',OIL:'Petroleum',BAT:'Battery Storage',OES:'Other energy storage',PS:'Pumped storage'};
+export async function liveData(id:string):Promise<LiveData>{
+ if(!allowed.has(id))throw new Error('지원하지 않는 운영기관');
+ const [d,f]=await Promise.allSettled([query(id),query(id,true)]);const demand=d.status==='fulfilled'?d.value:[];const fuel=f.status==='fulfilled'?f.value:[];
+ const latestDemand=demand.toSorted((a,b)=>iso(String(a.TIMESTAMP_)).localeCompare(iso(String(b.TIMESTAMP_)))).at(-1);const lastFuel=fuel.map(r=>iso(String(r.TIMESTAMP_))).sort().at(-1);const latestFuel=fuel.filter(r=>iso(String(r.TIMESTAMP_))===lastFuel);const mix=latestFuel.map(r=>({fuel:nameMap[String(r.FUEL_TYPE_ID)]||String(r.FUEL_TYPE_NAME||r.FUEL_TYPE_ID),gw:Number(r.VAL)/1000}));
+ const points=demand.map(r=>({time:iso(String(r.TIMESTAMP_)),loadGW:Number(r.VAL)/1000})).sort((a,b)=>a.time.localeCompare(b.time)).slice(-48);
+ const flags=[...demand,...latestFuel].filter(r=>r.FLAG_ID||r.IMPUTED_VAL!==null&&r.IMPUTED_VAL!==undefined).length;
+ return {id,name:String(latestDemand?.RESPONDENT_NAME||id),source:'EIA-930',sourceUrl:'https://www.eia.gov/electricity/gridmonitor/dashboard/electric_overview/US48/US48',observedAt:latestDemand?iso(String(latestDemand.TIMESTAMP_)):'',mixObservedAt:lastFuel||'',retrievedAt:new Date().toISOString(),timezone:'UTC',interval:'1시간 평균 · Hour Ending',loadGW:latestDemand?Number(latestDemand.VAL)/1000:null,generationGW:mix.length?mix.reduce((s,r)=>s+r.gw,0):null,mix,series:points,status:points.length?'available':'unavailable',warning:[!points.length?'부하 관측값 미확보'+(d.status==='rejected'?' ('+String(d.reason?.message||d.reason)+')':''):'',!mix.length?'발전 믹스 미확보'+(f.status==='rejected'?' ('+String(f.reason?.message||f.reason)+')':''):'',flags?'원천 보정·품질 플래그 포함':'','시간 MWh를 1시간 평균 GW로 환산; 발전 믹스와 부하의 관측시점 별도'].filter(Boolean).join(' · ')};
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "file": "duke_stillman_20260925.pdf",
+    "url": "https://dms.psc.sc.gov/Attachments/Matter/4975de54-4beb-444e-9ca1-0f0ee7016b3b",
+    "bytes": 783507,
+    "sha256": "3fed698c8395fec05d320eef1752e7d737c1393193485a00d182b532fdb0cacf",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "wolfspeed_2026_10k.html",
+    "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000895419/4d9db5cb-3b28-4dae-a902-f0d4852735b6.html",
+    "bytes": 7715227,
+    "sha256": "d282e9a8eaa4d52b0acb0709621ca3659f62adb6d060d18de7fd8ab9c0b377ec",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "nucor_q2_2026.html",
+    "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526318190/d468854dex992.htm",
+    "bytes": 32717,
+    "sha256": "fdb29f6407ec0a8c3248796dbfdc0f90767230d17322ed472d053609721620cc",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "ford_blueoval_faq.html",
+    "url": "https://corporate.ford.com/operations/blue-oval-city/faqs/",
+    "bytes": 1594795,
+    "sha256": "8d040cb7ab6883d4f1052f78fed5f3aaf04196a786821b7dadd857cc92c7c649",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "santeecooper_century_20251006.html",
+    "url": "https://newsroom.santeecooper.com/news/Santee-Cooper-Century-Sign-Agreement-to-Power-Additional-Potline-Create-Jobs-in-Mt.-Holly/",
+    "bytes": 170648,
+    "sha256": "cebd8ffda0fdfde25bd01bfad0c44eb80b6b729002fe4b149a44bd09ac9da249",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "vinfast_ncdoj_20260521.html",
+    "url": "https://ncdoj.gov/north-carolina-sues-vinfast-to-acquire-shovel-ready-manufacturing-site/",
+    "bytes": 105853,
+    "sha256": "bb53f208e8a79eb1ce17b31e3a86ff9495ec261f1340170a525c1100b28953b5",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "rivian_20260806.html",
+    "url": "https://rivian.com/stories/atlanta-georgia-east-coast-headquarters-opening",
+    "bytes": 365586,
+    "sha256": "eb3b36cecdaff17446343f7cdcca99d994804c50cee9bd350a490c4ef335c787",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "novelis_20260805.html",
+    "url": "https://investors.novelis.com/news-events/press-releases/detail/1425/novelis-reports-first-quarter-fiscal-year-2027-results",
+    "bytes": 154346,
+    "sha256": "ea4b65f3c4e513248517a199b2d4be0e13f68dfc0b128b591c74b67fc0d76852",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "steeldynamics_20260917.html",
+    "url": "https://ir.steeldynamics.com/steel-dynamics-provides-third-quarter-2026-earnings-guidance/",
+    "bytes": 218836,
+    "sha256": "84e99e46fcd1df36c0558867f3ba6345dbcea42e5d0273a38a9dcfd4874454c6",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "cummins_fpl_electrolyzer.html",
+    "url": "https://investor.cummins.com/news/detail/554/fpl-announces-cummins-to-supply-electrolyzer-for",
+    "bytes": 122942,
+    "sha256": "3a5af0306bdc19dfd3674f6805af2675d8985d78a6267489b0f5fef6e2d112cd",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "fpl_cavendish_20240208.html",
+    "url": "https://newsroom.fpl.com/Florida-Power-Light-Company-announces-completion-of-clean-hydrogen-hub",
+    "bytes": 29728,
+    "sha256": "970ffd5375b533a0fa9beab899b9596f2a36e103c09bdb3723c6c5bfac6ca9a1",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "plug_georgia_20240123.html",
+    "url": "https://www.ir.plugpower.com/press-releases/news-details/2024/Plug-Power-Starts-Production-of-Liquid-Green-Hydrogen-at-its-Georgia-Plant/default.aspx",
+    "bytes": 93074,
+    "sha256": "533c78110ab0a1dcd0d99695b6fdad4faa548a3c0dad1c105be74513f3090ddc",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "plug_operating_20260922.html",
+    "url": "https://www.ir.plugpower.com/press-releases/news-details/2026/Plug-Power-Expands-Hydrogen-Footprint-Across-New-Zealand-and-Australia-with-GenEco-Electrolyzer-Delivery-to-HWR-Hydrogen/default.aspx",
+    "bytes": 93937,
+    "sha256": "628123bf300ca252ad5da225c45415146fee8fa83d35306518512d2d493b7be6",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "alabamapower_disclosure_202608.html",
+    "url": "https://www.alabamapower.com/company/media-room/energy-answers/data-center-facts-for-alabama-communities/data-center-agreements-and-redactions.html",
+    "bytes": 140364,
+    "sha256": "abff7376264c8903adeb92589eebcd60b3f1964a1107f9ef5c5731bc1b0afa4f",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "novelis_alabamapower_20231009.html",
+    "url": "https://investors.novelis.com/news-events/press-releases/detail/18/novelis-partners-with-southern-company-in-pursuit-of-decarbonization-goals",
+    "bytes": 28092,
+    "sha256": "301b8309eb7967bf4733dd6ef45752ea171282125c996291b760c0fc41f49766",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "hyundai_20250326.html",
+    "url": "https://www.hyundaimotorgroup.com/en/amp/CONT0000000000173041",
+    "bytes": 59946,
+    "sha256": "8c4b733dedf7ba86024267d2d24ff683c302e179926a873b5b677960fefc87b4",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "nc_toyota_20251112.html",
+    "url": "https://governor.nc.gov/news/press-releases/2025/11/12/governor-stein-celebrates-grand-opening-toyota-battery-plant-randolph-county",
+    "bytes": 51810,
+    "sha256": "228647034c49e6bc5c29a5ced09d0bd46cc1e350b51d69e6375c4e98cf515107",
+    "checkedAt": "2026-10-03"
+  }
+]

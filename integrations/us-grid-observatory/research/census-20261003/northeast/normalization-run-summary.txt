@@ -1,0 +1,163 @@
+{
+  "source": "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+  "checkedAt": "2026-10-03",
+  "sourceModifiedAt": "2026-09-11",
+  "publishedRows": 74,
+  "existingRows": 74,
+  "addedQueueIds": [],
+  "removedQueueIds": [],
+  "changedCoreFields": [],
+  "activeRows": 53,
+  "activeMW": 14232.9,
+  "statusTotals": {
+    "14": {
+      "count": 4,
+      "mw": 360.2
+    },
+    "0": {
+      "count": 17,
+      "mw": 3078.88
+    },
+    "12": {
+      "count": 4,
+      "mw": 1515.0
+    },
+    "7": {
+      "count": 2,
+      "mw": 110.0
+    },
+    "10": {
+      "count": 4,
+      "mw": 302.3
+    },
+    "8": {
+      "count": 1,
+      "mw": 120.0
+    },
+    "9": {
+      "count": 3,
+      "mw": 892.6
+    },
+    "6": {
+      "count": 4,
+      "mw": 588.0
+    },
+    "5": {
+      "count": 16,
+      "mw": 4431.0
+    },
+    "4": {
+      "count": 16,
+      "mw": 5503.0
+    },
+    "1": {
+      "count": 3,
+      "mw": 771.0
+    }
+  },
+  "allEndUseTotals": {
+    "undisclosed": {
+      "count": 23,
+      "mw": 4060.08
+    },
+    "DAT": {
+      "count": 24,
+      "mw": 5876.9
+    },
+    "DAT-CM": {
+      "count": 4,
+      "mw": 745.0
+    },
+    "M-CH": {
+      "count": 2,
+      "mw": 1056.0
+    },
+    "M-IN": {
+      "count": 1,
+      "mw": 50.0
+    },
+    "DAT-AI": {
+      "count": 12,
+      "mw": 5266.0
+    },
+    "M-CG": {
+      "count": 2,
+      "mw": 106.0
+    },
+    "O": {
+      "count": 1,
+      "mw": 50.0
+    },
+    "RD": {
+      "count": 5,
+      "mw": 462.0
+    }
+  },
+  "activeEndUseTotals": {
+    "DAT": {
+      "count": 24,
+      "mw": 5876.9
+    },
+    "DAT-CM": {
+      "count": 4,
+      "mw": 745.0
+    },
+    "M-CH": {
+      "count": 2,
+      "mw": 1056.0
+    },
+    "M-IN": {
+      "count": 1,
+      "mw": 50.0
+    },
+    "DAT-AI": {
+      "count": 12,
+      "mw": 5266.0
+    },
+    "M-CG": {
+      "count": 2,
+      "mw": 106.0
+    },
+    "O": {
+      "count": 1,
+      "mw": 50.0
+    },
+    "RD": {
+      "count": 5,
+      "mw": 462.0
+    },
+    "undisclosed": {
+      "count": 2,
+      "mw": 621.0
+    }
+  },
+  "sourceRowUpdateMin": "2011-02-28",
+  "sourceRowUpdateMax": "2026-09-30",
+  "rawDateAnomalies": [
+    "1465"
+  ],
+  "enrichmentCount": 74,
+  "knownEndUseCount": 51,
+  "changedUseLabelCount": 51,
+  "changedRawStageLabelCount": 46,
+  "rawStageLabelChangeMeaning": "46 display labels expanded from tracking-sheet shorthand to the Load Projects official legend; this is metadata normalization, not46 lifecycle transitions. Underlying source codes and normalized G stages unchanged.",
+  "coverageDenominator": {
+    "known": 74,
+    "definition": "All rows marked Load Interconnection with a Queue Number in the current official Load Projects sheet, including alphanumeric 0290A, all statuses/end uses and no MW cutoff",
+    "nationalOrRetailCustomerUniverse": null
+  },
+  "dateWarning": "XLSX core modified and HTTP Last-Modified both Sep11, but latest project Last Updated Date is Sep30. Do not downgrade existing Oct2 collection asof or claim Sep11 represents all contents.",
+  "trackingWarnings": [
+    {
+      "cell": "Load Project Tracking!O14",
+      "sourceCachedMW": 14473.1,
+      "rowRecalculatedActiveMW": 14232.9
+    },
+    {
+      "cell": "Load Project Tracking!O53",
+      "sourceCachedMW": 13611.9,
+      "rowRecalculatedActiveMW": 14232.9,
+      "reason": "621 MW of active requests have blank published End-Use: Micron Fab 3 (606 MW), Kilbourne Graphite Concentrator Plant (15 MW)"
+    }
+  ]
+}

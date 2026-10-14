@@ -1,0 +1,253 @@
+{
+  "checkedAt": "2026-10-03",
+  "count": 5,
+  "nonDataCenterCount": 4,
+  "confirmedPendingUtilityRequestCount": 1,
+  "projects": [
+    {
+      "id": "CA-AVH1",
+      "name": "Antelope Valley Hydrogen 1",
+      "state": "CA",
+      "operator": "Utility not established; primarily behind-the-meter generation",
+      "industry": "Hydrogen electrolysis",
+      "mw": 162,
+      "gridRequestMW": null,
+      "capacityBasis": "County application proposes up to 162 MW electrolyzer equipment; not grid-request MW",
+      "stage": "Land-use applications received; current developer continues marketing, later permit status unverified",
+      "stageAsOf": "2024-11-25",
+      "checkedAt": "2026-10-03",
+      "recordType": "named_project_evidence",
+      "queueId": null,
+      "additive": false,
+      "sources": [
+        {
+          "url": "https://planning.lacounty.gov/wp-content/uploads/2024/12/DRP_PlanningArea_Countywide_25-11-2024_06-00-14.pdf",
+          "title": "LA County application list, pages 17–22",
+          "publishedAt": "2024-11-25",
+          "asOf": "2024-11-25",
+          "checkedAt": "2026-10-03",
+          "note": "RPAP2024006028/6029/6030 received 2024-11-22; single project RPPL2024000110"
+        },
+        {
+          "url": "https://novohydrogen.com/news/california-arches-hub-secures-nations-first-federal-funding-for-renewable-clean-hydrogen/",
+          "title": "Developer ARCHES update",
+          "publishedAt": "2024-08-06",
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": "Describes 182 MW electrolysis plus 235 MW onsite PV, inconsistent with later county 162 MW application"
+        },
+        {
+          "url": "https://novohydrogen.com/antelope-valley-hydrogen-1/",
+          "title": "Developer project page",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": "Page includes incompatible 182 MW and older 300 MW sections; no single current value can be established"
+        }
+      ],
+      "capacityAsOf": "2024-11-25",
+      "capacityAlternativeDisclosures": [
+        {
+          "value": 182,
+          "unit": "MW",
+          "date": "2024-08-06",
+          "basis": "Developer electrolyzer design"
+        },
+        {
+          "value": 300,
+          "unit": "MW",
+          "date": null,
+          "basis": "Conflicting older duplicate section on undated developer page"
+        }
+      ],
+      "gridSupplyRoute": "behind_the_meter_primary",
+      "confirmedActiveUtilityRequest": false,
+      "includeInPendingGridMW": false,
+      "note": "Three land-use application rows are one hydrogen project. 240 MW county solar proposal is generation, not load. Electrolyzer ratings are explicitly electrical equipment, but proposed design and grid-service request differ."
+    },
+    {
+      "id": "CA-POLA-ZEPEO",
+      "name": "Port of Los Angeles Zero-Emission Port Electrification and Operations (ZEPEO)",
+      "state": "CA",
+      "operator": "LADWP",
+      "industry": "Port cargo-handling electrification",
+      "mw": null,
+      "gridRequestMW": null,
+      "capacityBasis": "Additional electrical infrastructure capacity in MVA; no power-factor conversion",
+      "stage": "Environmental review adopted; MOU approval proposed in examined agenda",
+      "stageAsOf": "2026-05-28",
+      "checkedAt": "2026-10-03",
+      "recordType": "named_project_evidence",
+      "queueId": null,
+      "additive": false,
+      "sources": [
+        {
+          "url": "https://portoflosangeles.org/commission/agenda-archive-and-videos/agendas/2026/05282026-regular-agenda",
+          "title": "Port board agenda item 7",
+          "publishedAt": "2026-05-28",
+          "asOf": "2026-05-28",
+          "checkedAt": "2026-10-03",
+          "note": "MOU scope: additional 213 MVA by 2030 and additional 306 MVA by 2035"
+        },
+        {
+          "url": "https://portoflosangeles.org/environment/environmental-documents",
+          "title": "Port environmental documents",
+          "publishedAt": null,
+          "asOf": "2026-05-28",
+          "checkedAt": "2026-10-03",
+          "note": "ZEPEO adopted May 28, 2026; LADWP certified IS/MND March 24, 2026; SCH2025120795"
+        },
+        {
+          "url": "https://portoflosangeles.org/environment/air-quality/cooperative-agreement",
+          "title": "Port-LADWP cooperative agreement overview",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": "Undated overview has additional 200 MVA; dated MOU scope retained separately"
+        }
+      ],
+      "requestedMVA": 213,
+      "capacityAsOf": "2026-05-28",
+      "capacityMilestones": [
+        {
+          "year": 2030,
+          "value": 213,
+          "unit": "MVA",
+          "basis": "additional medium-voltage power at 34.5 kV"
+        },
+        {
+          "year": 2035,
+          "value": 306,
+          "unit": "MVA",
+          "basis": "additional capacity wording in source; do not sum with 213 without engineering scope"
+        }
+      ],
+      "confirmedActiveUtilityRequest": false,
+      "includeInPendingGridMW": false,
+      "recordIsUniqueCustomer": false,
+      "note": "Port-wide infrastructure program can overlap individual terminal expansions. Not one customer queue row; not 200/213/306 MW. July 14 anticipated LADWP MOU vote not independently verified."
+    },
+    {
+      "id": "CA-APMT-PIER400",
+      "name": "APM Terminals Pier 400 grid-capacity expansion",
+      "state": "CA",
+      "operator": "LADWP",
+      "industry": "Container terminal electrification",
+      "mw": 18,
+      "gridRequestMW": null,
+      "capacityBasis": "Target total grid capacity grows from 7 MW to 18 MW; not an 18 MW incremental request",
+      "stage": "Grid expansion described as underway; fleet partly operating, full 18 MW energization unverified",
+      "stageAsOf": null,
+      "checkedAt": "2026-10-03",
+      "recordType": "named_project_evidence",
+      "queueId": null,
+      "additive": false,
+      "sources": [
+        {
+          "url": "https://portelectrification.com/case-studies/pier-400",
+          "title": "ZEPA member-coordinated Pier 400 case study",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": "Sources named APM Terminals, Kalmar, Orange EV and Port of Los Angeles; figures footer says mid-2025 but body discusses 2025 volumes and earlier this year"
+        }
+      ],
+      "capacityAsOf": null,
+      "sourceAsOfText": "Figures as of mid-2025; internal date inconsistency in live page",
+      "existingCapacityMW": 7,
+      "targetCapacityMW": 18,
+      "confirmedActiveUtilityRequest": false,
+      "includeInPendingGridMW": false,
+      "note": "Industry alliance case study published in coordination with participating companies; exact publication and full grid completion date unavailable. Current fleet operation is not proof the 18 MW grid expansion is complete. May overlap ZEPEO infrastructure."
+    },
+    {
+      "id": "AK-DONLIN",
+      "name": "Donlin Gold mine",
+      "state": "AK",
+      "operator": "Planned on-site power supply",
+      "industry": "Gold mining and processing",
+      "mw": 153,
+      "gridRequestMW": null,
+      "capacityBasis": "Average running electrical load in 2018 final EIS design; not 227 MW generation capacity or a utility request",
+      "stage": "Bankable feasibility study and financing preparation; final investment decision remains prospective",
+      "stageAsOf": "2026-08-11",
+      "checkedAt": "2026-10-03",
+      "recordType": "named_project_evidence",
+      "queueId": null,
+      "additive": false,
+      "sources": [
+        {
+          "url": "https://www.donlingoldseis.com/final-eis-2018/Executive%20Summary_FEIS.pdf",
+          "title": "US Army Corps Donlin final EIS executive summary, page 16",
+          "publishedAt": "2018-04",
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": "153 MW average running load; planned 227 MW generation includes redundancy"
+        },
+        {
+          "url": "https://novagold.com/novagold-paulson-announce-the-appointment-of-endeavour-financial-and-macquarie-capital-as-financial-advisors-to-the-donlin-gold-project/",
+          "title": "Developer financing-adviser appointment",
+          "publishedAt": "2026-08-11",
+          "asOf": "2026-08-11",
+          "checkedAt": "2026-10-03",
+          "note": "BFS and workstreams precede final investment decision"
+        }
+      ],
+      "capacityAsOf": "2018-04",
+      "gridSupplyRoute": "onsite_generation",
+      "confirmedActiveUtilityRequest": false,
+      "includeInPendingGridMW": false,
+      "note": "Historic engineered load retained with vintage; 2026 BFS may revise design. Off-grid proposed mine must not be counted in Railbelt utility load queue or presented as operating/construction committed."
+    },
+    {
+      "id": "CA-GOOGLE-DISK-DRIVE",
+      "name": "Google 5079 Disk Drive, San Jose",
+      "state": "CA",
+      "operator": "PG&E",
+      "industry": "Data center",
+      "mw": 250,
+      "gridRequestMW": 250,
+      "capacityBasis": "Forecast retail electric demand at full build, 230 kV",
+      "stage": "Preliminary engineering study completed; exceptional-case agreement regulatory approval pending, held to October 8",
+      "stageAsOf": "2026-10-02",
+      "checkedAt": "2026-10-03",
+      "recordType": "named_project_evidence",
+      "queueId": null,
+      "additive": false,
+      "sources": [
+        {
+          "url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M607/K718/607718746.PDF",
+          "title": "Draft Resolution E-5455",
+          "publishedAt": "2026-07-16",
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": "Page 3 application March 3, 2025; latest PES December 2025; 250 MW at full build; AL7785-E filed December 18, 2025"
+        },
+        {
+          "url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M622/K069/622069835.pdf",
+          "title": "October 8, 2026 CPUC agenda, pages 3–4",
+          "publishedAt": "2026-10-02",
+          "asOf": "2026-10-02",
+          "checkedAt": "2026-10-03",
+          "note": "Item 2 remains proposed; prior holds July 16, August 13, September 3 and September 17"
+        },
+        {
+          "url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M619/K318/619318894.PDF",
+          "title": "September 17 final hold list",
+          "publishedAt": "2026-09-15",
+          "asOf": "2026-09-17",
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "utilityAdviceLetter": "7785-E",
+      "identifierType": "Official advice-letter identifier, not queue ID",
+      "capacityAsOf": "2026-07-16",
+      "confirmedActiveUtilityRequest": true,
+      "includeInPendingGridMW": true,
+      "targetInService": "2028-12",
+      "targetConstructionStart": "2027-01",
+      "note": "Draft language saying approves is a proposed outcome, not an approval. Official October agenda confirms not adopted as of this research date. Target dates are applicant schedule, not completed milestones."
+    }
+  ]
+}

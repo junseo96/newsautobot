@@ -1,0 +1,99 @@
+[
+  {
+    "operator": "Georgia Power",
+    "scope": "Complete public Q2 2026 large-load economic-development Main and six change sheets",
+    "allIndustry": true,
+    "publicMainRows": 118,
+    "mainAnnouncedUltimateMW": 80059.479,
+    "knownUniverseCount": 118,
+    "knownUniverseMeaning": "Only projects admitted to this public reporting screen, not all service applicants or all industrial customers",
+    "realNameUnknownCount": 118,
+    "announcedMWUnknownCount": 0,
+    "remainingUnenergizedMWUnknownCount": 118,
+    "unknownFractions": {
+      "name": 1,
+      "announcedMW": 0,
+      "remainingUnenergizedMW": 1
+    },
+    "coverageFractionOfAllCustomers": null,
+    "confidentiality": "Names,location columns redacted. Threshold values unpublished. Source row IDs are snapshot positions; no stable queue identity.",
+    "changeTabsComplete": true
+  },
+  {
+    "operator": "Duke DEC / DEP",
+    "scope": "Spring 2026 Advanced Development aggregate portfolio, corrected latest September 25 table; Developing separate",
+    "allIndustry": true,
+    "advancedCount": 43,
+    "advancedMW": 7941,
+    "publicProjectRows": 0,
+    "knownUniverseCount": 43,
+    "realNameUnknownCount": 43,
+    "individualMWUnknownCount": 43,
+    "unknownFractions": {
+      "nameWithinAdvanced": 1,
+      "individualMWWithinAdvanced": 1
+    },
+    "developingCount": null,
+    "developingMWApprox": 6000,
+    "coverageFractionOfAllCustomers": null,
+    "confidentiality": "Public reports give only category counts/capacity, no project identities. Four fully operational projects moved to base forecast; no identity/MW disclosed. Wholesale 2 / nearly 900 MW separate in Spring report."
+  },
+  {
+    "operator": "TVA",
+    "scope": "Three located public Board power availability approval events in 2024-26 index",
+    "allIndustry": true,
+    "publicEvents": 3,
+    "uniqueCustomerCount": null,
+    "realNameUnknownEventCount": 2,
+    "exactMWUnknownEventCount": 2,
+    "unknownFractions": {
+      "nameAmongTheseEvents": 0.6666666666666666,
+      "exactMWAmongTheseEvents": 0.6666666666666666
+    },
+    "coverageFractionOfAllCustomers": null,
+    "confidentiality": "2026 details in confidential Board memos.  >100 MW event threshold, not comprehensive roster. Anonymous events may repeat same customer."
+  },
+  {
+    "operator": "Southern consolidated / Alabama Power / Mississippi Power",
+    "scope": "Large-load contract aggregate only; 31 contracts / 17 GW includes Georgia",
+    "allIndustry": true,
+    "publicProjectRows": 0,
+    "knownUniverseCount": 31,
+    "coverageFractionOfAllCustomers": null,
+    "confidentiality": "No full public individual customer table located. Alabama official page explains capacity/timing commercial terms redacted. Consolidated contracts cannot be assigned to named industrial examples or added to GPC Main."
+  },
+  {
+    "operator": "FPL",
+    "scope": "Large-load interest/discussion aggregates plus one utility-owned hydrogen asset",
+    "allIndustry": true,
+    "publicProjectRows": 0,
+    "knownUniverseCount": null,
+    "coverageFractionOfAllCustomers": null,
+    "confidentiality": "No complete customer roster located. 21 GW interest and 12 GW advanced discussions are overlapping business-development aggregates, not firm service agreements."
+  },
+  {
+    "operator": "Dominion Energy South Carolina / Santee Cooper",
+    "scope": "Public IRP/rate docket search and named utility/customer announcements",
+    "allIndustry": true,
+    "publicProjectRows": 0,
+    "knownUniverseCount": null,
+    "coverageFractionOfAllCustomers": null,
+    "confidentiality": "Complete all-industry load register not located; no claim that none exists. Named Century Mt. Holly supplements coverage without supplying unknown total denominator."
+  },
+  {
+    "operator": "Named industrial supplement",
+    "scope": "13 purposively selected industrialload assets across NC, SC, GA, TN, AL, MS, FL",
+    "allIndustry": true,
+    "publicNamedRows": 13,
+    "knownUniverseCount": null,
+    "wholeSiteLoadMWUnknownCount": 13,
+    "gridRequestMWUnknownCount": 13,
+    "equipmentElectricalRatingKnownCount": 2,
+    "coverageFractionOfAllCustomers": null,
+    "unknownFractions": {
+      "wholeSiteLoadMWWithinSample": 1,
+      "gridRequestMWWithinSample": 1
+    },
+    "confidentiality": "Two known ratings are electrolyzer equipment 40 and 25 MW, not grid requests. Utility-owned FPL pilot distinct from retail customer."
+  }
+]

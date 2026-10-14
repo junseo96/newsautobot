@@ -1,0 +1,236 @@
+[
+  {
+    "recordId": "PUCN::26-05026",
+    "operator": "NV Energy / Sierra Pacific Power",
+    "region": "West",
+    "recordType": "large_load_contract_application_docket",
+    "docket": "26-05026",
+    "customerEntities": [
+      "Amazon Data Services, Inc."
+    ],
+    "mw": null,
+    "industry": null,
+    "sourceUrl": "https://pucweb1.state.nv.us/puc2/DktInfo.aspx",
+    "sourceTitle": "PUCN Docket Information",
+    "sourceIndexDate": "2026-05-29",
+    "sourceDateMeaning": "Docket index Date Filed; exact service stage not supplied by index.",
+    "observedMilestone": "Application for approval of Large Load Electric Service Agreement(s)",
+    "currentCustomerInterconnectionStatus": "unknown",
+    "include": 0,
+    "queueId": null,
+    "note": "One docket may cover multiple entities, agreements or facilities. Not one confirmed physical customer project. Do not split or sum without contracts.",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "recordId": "PUCN::26-05027",
+    "operator": "NV Energy / Sierra Pacific Power",
+    "region": "West",
+    "recordType": "large_load_contract_application_docket",
+    "docket": "26-05027",
+    "customerEntities": [
+      "PR RNO Property Owner 1, LLC",
+      "SV RNO Property Owner 1, LLC"
+    ],
+    "mw": null,
+    "industry": null,
+    "sourceUrl": "https://pucweb1.state.nv.us/puc2/DktInfo.aspx",
+    "sourceTitle": "PUCN Docket Information",
+    "sourceIndexDate": "2026-05-29",
+    "sourceDateMeaning": "Docket index Date Filed; exact service stage not supplied by index.",
+    "observedMilestone": "Application for approval of Large Load Electric Service Agreement(s)",
+    "currentCustomerInterconnectionStatus": "unknown",
+    "include": 0,
+    "queueId": null,
+    "note": "One docket may cover multiple entities, agreements or facilities. Not one confirmed physical customer project. Do not split or sum without contracts.",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "recordId": "PUCN::26-05028",
+    "operator": "NV Energy / Sierra Pacific Power",
+    "region": "West",
+    "recordType": "large_load_contract_application_docket",
+    "docket": "26-05028",
+    "customerEntities": [
+      "Vantage Data Centers NV11, LLC"
+    ],
+    "mw": null,
+    "industry": null,
+    "sourceUrl": "https://pucweb1.state.nv.us/puc2/DktInfo.aspx",
+    "sourceTitle": "PUCN Docket Information",
+    "sourceIndexDate": "2026-06-03",
+    "sourceDateMeaning": "Docket index Date Filed; exact service stage not supplied by index.",
+    "observedMilestone": "Application for approval of Large Load Electric Service Agreement(s)",
+    "currentCustomerInterconnectionStatus": "unknown",
+    "include": 0,
+    "queueId": null,
+    "note": "One docket may cover multiple entities, agreements or facilities. Not one confirmed physical customer project. Do not split or sum without contracts.",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "recordId": "PUCN::26-05029",
+    "operator": "NV Energy / Nevada Power",
+    "region": "West",
+    "recordType": "large_load_contract_application_docket",
+    "docket": "26-05029",
+    "customerEntities": [
+      "Novva Las Vegas, LLC",
+      "Proton NLV, LLC"
+    ],
+    "mw": null,
+    "industry": null,
+    "sourceUrl": "https://pucweb1.state.nv.us/puc2/DktInfo.aspx",
+    "sourceTitle": "PUCN Docket Information",
+    "sourceIndexDate": "2026-05-29",
+    "sourceDateMeaning": "Docket index Date Filed; exact service stage not supplied by index.",
+    "observedMilestone": "Application for approval of Large Load Electric Service Agreement(s)",
+    "currentCustomerInterconnectionStatus": "unknown",
+    "include": 0,
+    "queueId": null,
+    "note": "One docket may cover multiple entities, agreements or facilities. Not one confirmed physical customer project. Do not split or sum without contracts.",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "recordId": "PUCN::26-05030",
+    "operator": "NV Energy / Nevada Power",
+    "region": "West",
+    "recordType": "large_load_contract_application_docket",
+    "docket": "26-05030",
+    "customerEntities": [
+      "VIP LANDCO, LLC",
+      "Prologis L.P."
+    ],
+    "mw": null,
+    "industry": null,
+    "sourceUrl": "https://pucweb1.state.nv.us/puc2/DktInfo.aspx",
+    "sourceTitle": "PUCN Docket Information",
+    "sourceIndexDate": "2026-05-29",
+    "sourceDateMeaning": "Docket index Date Filed; exact service stage not supplied by index.",
+    "observedMilestone": "Application for approval of Large Load Electric Service Agreement(s)",
+    "currentCustomerInterconnectionStatus": "unknown",
+    "include": 0,
+    "queueId": null,
+    "note": "One docket may cover multiple entities, agreements or facilities. Not one confirmed physical customer project. Do not split or sum without contracts.",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "recordId": "IPUC::IPC-E-24-44",
+    "operator": "Idaho Power",
+    "region": "West",
+    "recordType": "approved_special_service_contract",
+    "docket": "IPC-E-24-44",
+    "customerEntities": [
+      "Micron Idaho Semiconductor Manufacturing (Triton) LLC"
+    ],
+    "industry": "semiconductor",
+    "mw": null,
+    "sourceUrl": "https://lf-puc.idaho.gov/WebLink/DocView.aspx?dbid=0&id=159551",
+    "secondarySourceUrl": "https://lf-puc.idaho.gov/WebLink/DocView.aspx?dbid=0&id=158085",
+    "observedMilestone": "ESA executed2024-11-21; approved with modifications 2026-05-08; compliance approved 2026-07-08",
+    "currentCustomerInterconnectionStatus": "unknown",
+    "include": 0,
+    "queueId": null,
+    "note": "20 MW tariff trigger is not total request.500 MW IRP comparator is not verified Micron load. Contract approval is distinct from energization.",
+    "checkedAt": "2026-10-03",
+    "sourceDateMeaning": "Document/regulatory milestone date, not energization date"
+  },
+  {
+    "recordId": "IPUC::IPC-E-26-19",
+    "operator": "Idaho Power",
+    "region": "West",
+    "recordType": "special_service_contract_application",
+    "docket": "IPC-E-26-19",
+    "customerEntities": [
+      "Chobani, LLC"
+    ],
+    "industry": "food_manufacturing",
+    "mw": null,
+    "sourceUrl": "https://puc.idaho.gov/Case/Details/7795",
+    "sourceIndexDate": "2026-06-08",
+    "observedMilestone": "Application for ESA and Schedule 35; Notice of Modified Procedure 2026-09-08",
+    "currentCustomerInterconnectionStatus": "unknown",
+    "include": 0,
+    "queueId": null,
+    "checkedAt": "2026-10-03",
+    "sourceDateMeaning": "Document/regulatory milestone date, not energization date"
+  },
+  {
+    "recordId": "IPUC::IPC-E-26-25",
+    "operator": "Idaho Power",
+    "region": "West",
+    "recordType": "existing_contract_amendment_application",
+    "docket": "IPC-E-26-25",
+    "customerEntities": [
+      "Brisbie LLC"
+    ],
+    "industry": "data_center",
+    "mw": null,
+    "sourceUrl": "https://puc.idaho.gov/Case/Details/7843",
+    "sourceIndexDate": "2026-09-01",
+    "observedMilestone": "Third amendment ESA application; Notice of Application 2026-09-23",
+    "currentCustomerInterconnectionStatus": "unknown",
+    "include": 0,
+    "queueId": null,
+    "note": "Existing Meta/Brisbie contract history; do not count as an additional physical customer.",
+    "checkedAt": "2026-10-03",
+    "sourceDateMeaning": "Document/regulatory milestone date, not energization date"
+  },
+  {
+    "recordId": "UTAHPSC::26-035-05",
+    "operator": "PacifiCorp / Rocky Mountain Power",
+    "region": "West",
+    "recordType": "anonymous_approved_large_load_contract",
+    "docket": "26-035-05",
+    "customerEntities": [],
+    "industry": null,
+    "mw": null,
+    "sourceUrl": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2027-irp/PacifiCorp_2027_IRP_PIM_6.pdf",
+    "sourcePage": 27,
+    "observedMilestone": "Contract executed 2026-01-20; filed 2026-02-10; approved 2026-04-10",
+    "currentCustomerInterconnectionStatus": "unknown",
+    "include": 0,
+    "queueId": null,
+    "note": "Customer identity and MW unknown from public source. Protected workpapers identified in coverage gaps.",
+    "checkedAt": "2026-10-03",
+    "sourceDateMeaning": "Document/regulatory milestone date, not energization date"
+  },
+  {
+    "recordId": "SDPUC::EL26-008",
+    "operator": "Black Hills Power",
+    "region": "West",
+    "state": "SD",
+    "recordType": "large_load_contract_application_docket",
+    "docket": "EL26-008",
+    "customerEntities": [
+      "CSRE Properties South Dakota, LLC"
+    ],
+    "mw": null,
+    "industry": "crypto_blockchain",
+    "sourceUrl": "https://puc.sd.gov/Dockets/Electric/2026/EL26-008.aspx",
+    "sourceTitle": "SD PUC EL26-008 Blockchain Interruptible Electric Service Agreement",
+    "sourceIndexDate": "2026-03-19",
+    "sourceDateMeaning": "Original application filing date; docket checked October 3, 2026.",
+    "observedMilestone": "Contract approval application; amended agreement filed August 19, 2026; public docket explicitly Pending.",
+    "regulatoryStatus": "Pending",
+    "currentCustomerInterconnectionStatus": "unknown",
+    "stage": "GU",
+    "include": 0,
+    "queueId": null,
+    "note": "Customer name is explicit in public application. Agreement is for a Rapid City facility. MW and material contract terms are redacted in the public amended agreement. Regulatory Pending is not an interconnection gate determination. March application requested approval by June 1; no approval should be inferred from that requested date.",
+    "sourceHistory": [
+      {
+        "url": "https://puc.sd.gov/commission/dockets/electric/2026/EL26-008/Application.pdf",
+        "date": "2026-03-19",
+        "meaning": "Application date",
+        "page": 1
+      },
+      {
+        "url": "https://puc.sd.gov/commission/dockets/electric/2026/EL26-008/Exh1081926.pdf",
+        "date": "2026-08-19",
+        "meaning": "Amended Exhibit 1 filing date",
+        "page": "1-25"
+      }
+    ],
+    "confidentiality": "Docket labels original Exhibit 1 and Amended Exhibit 1 confidential and not available to the public; a redacted amended agreement is public.",
+    "checkedAt": "2026-10-03"
+  }
+]

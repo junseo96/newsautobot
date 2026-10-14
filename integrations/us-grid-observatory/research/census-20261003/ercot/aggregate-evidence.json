@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-03",
+  "source": {
+    "id": "ercot-june",
+    "title": "ERCOT Large Load Interconnection Status Update, June 19 2026",
+    "url": "https://www.ercot.com/files/docs/2026/06/18/June-19-LLWG-Report.pptx",
+    "publishedAt": "2026-06-18"
+  },
+  "sourceDate": "2026-06-18",
+  "slides": [
+    2,
+    4,
+    8,
+    9,
+    14,
+    17
+  ],
+  "unit": "GW",
+  "reportedTotalGW": 466.5,
+  "statusGW": {
+    "noStudiesSubmitted": 257.6,
+    "underERCOTReview": 151.1,
+    "section94Only": 11.8,
+    "section94and95Met": 37.1,
+    "approvedToEnergizeNotOperational": 3.2,
+    "observedEnergizedAllTimeNonsimultaneousPeak": 5.7
+  },
+  "approvalAndObservationMW": {
+    "approvedToEnergize": 8927,
+    "june2026NonSimultaneousMonthlyPeak": 3900,
+    "june2026SimultaneousMonthlyPeak": 3675
+  },
+  "industrySharePercent": {
+    "dataCenter": 90.2,
+    "notSpecified": 4.8,
+    "crypto": 3.0,
+    "industrial": 1.0,
+    "hydrogen": 0.8,
+    "dataCenterCrypto": 0.2
+  },
+  "directlyReportedIndustryMW": {
+    "dataCenter": 420812
+  },
+  "notes": [
+    "Status components and total are published rounded; sum may differ.",
+    "5.7 GW observed is all-time non-simultaneous peaks, not current simultaneous power.",
+    "Industry percentages are not exact category MW; do not silently multiply into source-reported MW.",
+    "June cleanup removed duplicate/cancelled LLI tickets and consolidated phase tickets.",
+    "June 2 Batch Zero eligibility chart total 481.4 GW is a different snapshot and scope from June 18 466.5 GW LLIS chart.",
+    "Later Batch Zero 125.4 versus 127.9 GW discrepancy not resolved in this research pass; do not replace either without source-specific as-of evidence."
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "file": "wolfspeed_2026_10k_full.html",
+    "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+    "bytes": 3316623,
+    "sha256": "a4b3b7d5f5a93b2e9c37bbe0c510a9d12d95d7e50afa5284233929b2ba9170a2",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "century_20260806.html",
+    "url": "https://investors.centuryaluminum.com/news-events/press-releases/press-release-details/2026/Century-Aluminum-Company-Reports-Second-Quarter-2026-Results/default.aspx",
+    "bytes": 280842,
+    "sha256": "81911e9036912e32b3d883105a6f678a20f31a6373c2bc161e88e79934af9839",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "ford_20240404.html",
+    "url": "https://media.ford.com/content/fordmedia/fna/ca/en/news/2024/04/04/ford-updates-timing-for-next-gen-evs--readies-manufacturing-plan.html",
+    "bytes": 1035946,
+    "sha256": "a883bf6f8bbf0d21cb99a0514ec7ae9299cb575dfdc7ef567a20de0787341473",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "southern_q2_2026.pdf",
+    "url": "https://s27.q4cdn.com/273397814/files/doc_financials/2026/q2/SO-2026-Q2-Earnings-Call-Final.pdf",
+    "bytes": 1438590,
+    "sha256": "1f2130c403b612bc2d00444aae75cba7ccb05991b1f73e62a84c1420dac15413",
+    "checkedAt": "2026-10-03"
+  },
+  {
+    "file": "fpl_q2_2026.html",
+    "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000058/neeq22026exhibit99.htm",
+    "bytes": 1066852,
+    "sha256": "9e47809fdac6f89501e334178e0bf56021319f5ead5efc92e76083d0b1cab1df",
+    "checkedAt": "2026-10-03"
+  }
+]

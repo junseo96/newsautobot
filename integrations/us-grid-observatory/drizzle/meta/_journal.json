@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1790967022068,
+      "tag": "0000_sudden_colonel_america",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1791263000761,
+      "tag": "0001_striped_cassandra_nova",
+      "breakpoints": true
+    }
+  ]
+}

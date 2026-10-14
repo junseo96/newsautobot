@@ -1,0 +1,21 @@
+# Allow only the reviewed Telegram sender script to run outside the sandbox.
+# This preserves Windows DPAPI decryption under the user's own account.
+prefix_rule(
+    pattern = [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\pos03\\Documents\\Codex\\newflow\\outputs\\telegram-forwarder\\Send-Telegram.ps1",
+    ],
+    decision = "allow",
+    justification = "Send the completed scheduled news brief through the user-configured Telegram bot.",
+    match = [
+        "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\Users\\pos03\\Documents\\Codex\\newflow\\outputs\\telegram-forwarder\\Send-Telegram.ps1\" -MessageFile \"C:\\Users\\pos03\\Documents\\Codex\\newflow\\work\\telegram-outbox\\latest-brief.txt\"",
+    ],
+    not_match = [
+        "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\other\\Send-Telegram.ps1\" -MessageFile \"C:\\brief.txt\"",
+        "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command Invoke-RestMethod https://api.telegram.org",
+    ],
+)

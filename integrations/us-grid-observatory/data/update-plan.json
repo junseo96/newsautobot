@@ -1,0 +1,484 @@
+{
+  "version": 5,
+  "purpose": "공식 공개 자료를 확인해 대기열·정책·운영자료와 이력을 주간 갱신. 데이터센터뿐 아니라 반도체·배터리·자동차·철강·금속·화학·수소·암모니아·LNG·제조·광업·암호화폐 등 모든 업종의 공개 수용가 원장을 조사하고, 원장·송전 지원사업·실명 공시·집계 관측·출처별 수집범위를 구별해 갱신.",
+  "access": {
+    "site": "get_site로 이 Site의 현행 owner-private 여부와 서비스 액세스 확인",
+    "credential": "반환된 서비스 credential은 해당 Site에 OAI-Sites-Authorization 헤더로만 전달; 코드·파일·스케줄에 저장 금지",
+    "writer": "POST /api/updates",
+    "readback": "GET /api/data, /api/projects?region=NYISO, /api/history?region=NYISO, /api/load-data; GET /api/load-census, /api/named-loads, /api/research; 원문 확장필드 대조는 GET /api/projects?region=<region> 또는 /api/projects?region=<region>&id=<id> (compact=1 사용 금지)"
+  },
+  "steps": [
+    "GET /api/update-plan, /api/data, /api/load-census 확인. /api/load-census.sources의 현행 출처 목록·모집단·선택조건·미확보 항목을 주간 조사목록으로 사용하고 records의 operator별 완전한 저장 범위를 확인. 각 지표 sourceAsOf와 원장 asof 유지. /api/load-census.records는 큰 원문 확장필드를 생략한 목록이므로 이를 그대로 쓰기 payload로 재전송하지 않음. 교체 전 GET /api/projects?region=<region>에서 compact 옵션 없이 읽고 kind=load 및 정확한 operator로 필터해 전체 원장·출처 확장필드를 확보.",
+    "공식 EIA 운영자료는 operatingParserPython을 클라우드 실행환경에서 실행해 얻은 payloads를 각각 POST /api/updates(action=ingest-live)로 저장. 이 방식은 Worker의 원천접속 실패와 독립. 가능하면 action=refresh-live 사용 가능하나 실패를 성공으로 기록 금지. 누락기관은 이전 값 유지. GET /api/live?mode=stored&ba=...로 읽기 대조.",
+    "LBNL queues 최신 원장, NYISO Load Projects 원장, BPA Line/Load, ERCOT Batch Zero, PJM 제출자료, SPP DPA, Georgia PSC 최신 경제개발 분기자료 등 공식 원자료 신규 공시 확인; CPUC energization 전체 탭, PJM M-3/TEAC, MISO MTEP 평가·Appendix A, SPP DPA 과거·신규월 명세 및 /api/load-census.sources의 나머지 유틸리티·규제기관 자료를 업종 제한 없이 재확인",
+    "변경자료만 원장 필드로 정규화. 개별 관문 추론 금지, 미공개 0 처리 금지. 과거 전체범위를 대체할 수 없으면 기존 원장 유지하고 review에 미확보 기록",
+    "발전 원장 교체는 action=ingest, kind=generation, region 전체 범위로 수행. sourceAsOf는 원자료의 해당 기준일 경계이며 SPP 2026 확장과 2025 비교 범위 변화 명시. 수용가 원장은 action=ingest-load-register로 region+정확한 operator의 완전한 범위만 교체. 화면의 업종·용량·상태 필터 결과나 변경 행만으로 전체 operator를 덮어쓰지 않음. 기존 action=ingest와 신규 원장 교체의 날짜 검증 차이는 writerSchema 확인.",
+    "FERC 2023/1920/206, ERCOT Batch Zero, PJM EIT/RRI, MISO ERAS, SPP ERAS 정책의 공시 상태 확인. 발표·승인·실행·통전 구분. 확인된 변경만 action=policies로 전체 정책표 교체",
+    "ERCOT·Georgia·APS 등 개별원장과 다른 공개집계의 신규확인 시 action=evidence로 /api/data.loadEvidence 전체맵 업데이트. 값·정의·공시일·출처 유지. NYISO card 값은 유효원장에서 자동계산.",
+    "주간 전 업종 census 검토: loadCensusReview와 GET /api/load-census.sources에 따라 공식 원문 전체 범위를 확인하고 원장 ID·원문 상태·날짜·용량 단위·폐기/통전 이력을 보존. 수용가 원장 교체는 action=ingest-load-register 1회에 해당 operator의 완전한 records를 전송해 원자적 저장; 개별 ID 부분 upsert 용도로 사용 금지. 현재 선택 기준은 검증된 요청 10 MW 이상 또는 10 MVA 이상 또는 원문의 산업/대규모부하 표지이며, 표지로 선택된 MW 미공개 행을 10 MW 이상으로 단정하지 않음. 과거 명세·송전사업·수요 전망을 현재 유효 고객 수로 계산하지 않음.",
+    "원장 저장 후 GET /api/load-census의 실제 저장 행과 공식 원문 모집단을 대조하고 action=load-sources로 검증한 출처 ID만 부분 upsert. sourceRows는 명시한 원문 모집단, loadedRows는 동일 선택조건으로 저장된 행 수; 서로 다른 모집단을 분모로 사용하지 않음. full-register/filtered-register/aggregate/case/not-public/access-failed/not-reviewed를 근거에 맞게 구별. 원문 미접근이면 기존 원장을 유지하고 실패 범위·다음 확보 방법 기록. 전국 전체 고객 분모가 없으므로 전국 확보율·누락률·완성률 백분율 산출 금지.",
+    "GET /api/load-data와 loadCollectionPlan을 열고 수용가 공시 관측값을 확인. 각 기관의 최신 IR/SEC/PSC/이사회/LAS 자료로 재검증. 새로운 검증값은 action=load-observations로 해당 안정 ID만 upsert; 서로 다른 요청·전망·계약·가동 용량을 합산 금지. 미확보 숫자는 null 유지. sourceCheckedAt 대신 checkedAt 사용, 실제 asOf와 publicationDate 보존. 조회 실패만으로 행 삭제·0 입력 금지. GET /api/load-data에서 해당 ID 및 변경이력 대조.",
+    "GET /api/research의 notes와 정성 해설 원문 재확인. facts·interpretation·limitations·nextCheck 및 공시일·확인일 분리. 확인한 행만 action=qualitative-notes로 기존 ID 부분 upsert, GET /api/research.notes 및 history 읽기 대조. 원문 미접근 시 기존 내용·checkedAt 유지하고 review unavailable 기록. 수용가 공시·정책·수집 범위는 동일 자료실에 자동 연결되므로 중복 요약 행 생성 불필요.",
+    "GET /api/named-loads 실명 프로젝트별 공식 기업·유틸리티·규제기관 공시 확인. 프로젝트명·개발사·클라우드·최종고객·법인별 역할과 전력경로 구별. 신규/변경 확인 사례만 action=named-loads 부분 upsert 후 GET 읽기 대조. 공식 큐 ID·계통 신청 MW는 직접 연결 증거 없으면 null, 공시 용량은 basis·sourceId 보존, additive=false 유지. 캠퍼스/IT/발전/계약 MW 합산 및 건물착공→G7 추론 금지. 미접근 시 기존 asOf·checkedAt 유지와 review unavailable 기록. 발전원2025 snapshot의 최신성 공백은 공식원장 교체 전 계속 표시. 실명 조사도 모든 산업으로 확대. 공장의 GWh/년 생산능력·톤/년 생산량·달러 투자액·발전/저장설비 MW를 고객 요청 MW로 사용하지 않음. 업종·기업명·지역 유사성만으로 익명 원장과 합치지 않으며 취소·중단·운영 사례는 해당 상태로 보존.",
+    "action=review에 모든 source의 updated/unchanged/unavailable 및 근거 기록. 실패 자료는 이전 검증값 유지. 개별 감소는 철회·통전·재분류 구분, 전부 병목해소로 해석 금지. census 출처 목록의 미검토/비공개/접근실패도 review에 포함하고 검증된 source inventory 변경과 실제 원장 교체 결과를 별도 기록.",
+    "GET 읽기경로로 실제 저장값·기준일·원장 합계 대조 후 변경점과 미확보 항목을 한국어 명사형으로 간결 보고"
+  ],
+  "sources": [
+    {
+      "name": "LBNL Queued Up",
+      "url": "https://emp.lbl.gov/queues",
+      "frequency": "annual"
+    },
+    {
+      "name": "NYISO Load Projects",
+      "url": "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "frequency": "periodic"
+    },
+    {
+      "name": "BPA Line/Load",
+      "url": "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+      "frequency": "periodic"
+    },
+    {
+      "name": "ERCOT Batch Zero",
+      "url": "https://www.ercot.com/",
+      "frequency": "event"
+    },
+    {
+      "name": "Georgia PSC",
+      "url": "https://psc.ga.gov/search/facts-document/?documentId=227753",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "PJM Large Load",
+      "url": "https://www.pjm.com/committees-and-groups/subcommittees/las",
+      "frequency": "periodic"
+    },
+    {
+      "name": "SPP DPA",
+      "url": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=259",
+      "frequency": "monthly"
+    },
+    {
+      "name": "CPUC Energization public utility reports",
+      "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/infrastructure/energization/energization-data-reporting-requirements-and-data-reporting-template",
+      "frequency": "biannual; weekly publication check",
+      "scope": "PG&E·SCE·SDG&E 공개 통전요청 원문. 실제 워크북 URL·자료기간·접근상태는 GET /api/load-census.sources의 현행 항목 사용."
+    },
+    {
+      "name": "PJM M-3 / TEAC public need register",
+      "url": "https://www.pjm.com/committees-and-groups/committees/teac",
+      "frequency": "monthly; weekly publication check",
+      "scope": "operator=PJM M-3. AES Ohio 및 LAS 집계와 병행 유지. Need Number와 s-number는 고객 큐 ID가 아님."
+    },
+    {
+      "name": "MISO MTEP public evaluation and approved registers",
+      "url": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
+      "frequency": "monthly/quarterly; weekly publication check",
+      "scope": "operator=MISO MTEP. Projects Under Evaluation과 Appendix A 시설 원문을 project ID로 결합, 고객·단계별 MW 합산 금지."
+    }
+  ],
+  "writerSchema": {
+    "refresh-live": {
+      "action": "refresh-live",
+      "ids": [
+        "US48",
+        "PJM",
+        "ISNE",
+        "CISO",
+        "ERCO",
+        "MISO",
+        "NYIS",
+        "SWPP",
+        "SWPW",
+        "BPAT",
+        "SOCO"
+      ]
+    },
+    "ingest": {
+      "action": "ingest",
+      "kind": "generation|load",
+      "region": "CAISO|ERCOT|ISO-NE|MISO|NYISO|PJM|SPP|West|Southeast",
+      "operator": "optional exact operator to replace only that operator",
+      "sourceAsOf": "YYYY-MM-DD",
+      "sourceUrl": "official URL",
+      "records": "same Project[] schema returned by /api/projects; retain original keys; don't overwrite unknown values with invented values",
+      "note": "source scope/change notes"
+    },
+    "review": {
+      "action": "review",
+      "review": {
+        "sources": [
+          {
+            "url": "official URL",
+            "status": "unchanged|updated|unavailable",
+            "note": "what checked or changed"
+          }
+        ],
+        "note": "brief review"
+      }
+    },
+    "policies": {
+      "action": "policies",
+      "rows": "10 columns exactly as /api/data policies: name,region,status,gate,GW,interpretation,date,reliefGW,limitation,sourceURL"
+    },
+    "evidence": {
+      "action": "evidence",
+      "evidence": "same complete 9-region object from GET /api/data.loadEvidence: title,value,note,source"
+    },
+    "ingest-live": {
+      "action": "ingest-live",
+      "data": "operatingParserPython output payloads[].data; must be actual EIA observations"
+    },
+    "load-observations": {
+      "action": "load-observations",
+      "observations": "GET /api/load-data.observations의 동일 스키마. ID는 숫자/날짜 갱신에도 기존 ID 유지. 신규 독립 지표만 새 ID. 확인한 행만 부분 upsert; 다른 행은 유지. 필수 필드: id,region,operator,metricLabel,valueGW(number|null),valueQualifier(=|~|>|>=),stageClass(request|study|contract|construction|energized|forecast|mixed),asOf(YYYY-MM-DD|YYYY-MM|null),asOfNote(optional),publicationDate(YYYY-MM-DD),sourceUrl(https),sourceTitle,evidenceText,scope,includesEnergized(bool|null),additive(false),collectionMethod,nextAction,remainingGap,checkedAt(YYYY-MM-DD). Optional stageBreakdown의 합계는 원문 합계 ±0.005 GW 이내; 상호배타적인 동일 범위 단계만 사용."
+    },
+    "qualitative-notes": {
+      "action": "qualitative-notes",
+      "notes": "GET /api/research.notes의 동일 스키마. 안정 id 유지. 필수: id, region(9권역 또는 US), category(공개 범위|접속 절차|정책 상태|해석 기준), title, summary, verifiedFacts(string[]), interpretation, limitations, nextCheck, sourceUrl(https), sourceTitle, publicationDate(YYYY-MM-DD|null), checkedAt(YYYY-MM-DD), status(확인|조건부|공시 불일치). 확인한 행만 부분 upsert; 과거 공시일 덮어쓰기 금지. 확인된 정성 사실만 사용, 점수·해소GW 추론 금지."
+    },
+    "named-loads": {
+      "action": "named-loads",
+      "records": "GET /api/named-loads.records와 동일 스키마, 안정 id 부분 upsert. name,aliases,region,regionBasis,location,participants[{role,name}],utility(string|null),powerRoute(grid|onsite|mixed|unknown),capacities[{mw,basis,sourceId}],gridRequestMW(number|null),queueId(string|null),matchedProjectId(string|null),statusSummary,milestones[{gate(프로젝트|전력 확보|인허가|공사|통전),status(확인|조건부|미확보),detail,sourceId(string|null)}],gaps(string[]),sources[{id,title,url,publishedAt(YYYY-MM-DD|null)}],asOf(YYYY-MM-DD|null),checkedAt(YYYY-MM-DD),additive(false). ID는 공식큐ID와 별도. null asOf는 공시일 미명시; 확인일로 치환 금지. sourceId 참조 검증. 공식 큐ID 없으면 gridRequestMW=null; 공급계약/확보전력 MW는 capacities로 정의해 기록."
+    },
+    "ingest-load-register": {
+      "action": "ingest-load-register",
+      "region": "CAISO|ERCOT|ISO-NE|MISO|NYISO|PJM|SPP|West|Southeast",
+      "operator": "exact nonempty operator, max 200 chars; one complete operator scope per request",
+      "sourceAsOf": "real YYYY-MM-DD, not future; no regression against stored records in the same region/operator",
+      "sourceUrl": "official URL",
+      "records": "Project[] from GET /api/projects?region=<region> without compact=1, filtered to kind=load and the exact operator; 1..15000 rows; unique id (1..200 chars), region, operator, queueId(string; empty when no official customer queue ID), name(string|number), kind=load, mw(finite number|string|null), stage(G1|G2|G3|GC|G4|G5|G6|G7|G8|GU|GN|GS|BC|W), include(0|1), source(URL), asof(real YYYY-MM-DD), low(number|string), high(number|string); optional storageMw(finite number|null). Preserve all evidence extension fields returned by the reader. Every region/operator must match body; each record.asof <= sourceAsOf, permitting faithfully dated historical rows.",
+      "note": "source universe, complete replacement scope, selection, changes and unresolved linkage; optional",
+      "writeBehavior": "Whole region+operator replacement, not row upsert. Server batches chunked storage and update-run atomically; send the complete operator in one request. Server overwrites low/high from the stage map. W/G8 always include=0; include=1 only for NYISO with numeric MW. Source rows lacking verified active customer-stage evidence remain include=0. Empty arrays cannot clear an operator; preserve prior data and record a review if source is inaccessible or an empty result is not validated. GET /api/load-census records are compact and omit sourceFields/assessmentHistory/studyEvidence/provenance/raw fields; never round-trip that compact response as a complete replacement. Hydrate full records from /api/projects before preservation/merge.",
+      "limits": "Request JSON text max 14000000 chars; individual serialized record max 800000 UTF-8 bytes; up to 80 server-created chunks. Do not split one replacement into separate partial POSTs."
+    },
+    "load-sources": {
+      "action": "load-sources",
+      "sources": "CensusSource[] from GET /api/load-census.sources; 1..300 rows with unique stable IDs; partial upsert of verified source entries, not full-map replacement. Required fields listed below.",
+      "sourceFields": {
+        "id": "nonempty string, max 6000 chars",
+        "region": "CAISO|ERCOT|ISO-NE|MISO|NYISO|PJM|SPP|West|Southeast|AK|HI|US",
+        "operator": "nonempty string",
+        "title": "nonempty string",
+        "universe": "nonempty string; exact published source population and scope",
+        "selection": "nonempty string; precise extraction/selection predicate, exclusions and units",
+        "coverage": "full-register|filtered-register|aggregate|case|not-public|access-failed|not-reviewed",
+        "sourceRows": "nonnegative integer|null; rows in stated source universe, not inferred national customer count",
+        "loadedRows": "nonnegative integer|null; loaded rows matching stated selection, not automatically distinct customers or active requests",
+        "sourceDate": "string|null; exact disclosed period/date without fabricated precision",
+        "sourceDateMeaning": "nonempty string; generated/exported date, publication date, reporting cutoff or historical assessment period distinguished",
+        "checkedAt": "YYYY-MM-DD; not future, cannot regress for same ID",
+        "url": "official https URL",
+        "gaps": "nonempty string[]; each item nonempty, max 6000 chars",
+        "nextAction": "nonempty string"
+      },
+      "validation": "Text fields use max 6000 chars. Existing ID region cannot change. Validate the full censusSourceSchema before POST, preserve stable ID, and verify saved entry by GET /api/load-census. Do not mark full-register from case/aggregate evidence or from an inaccessible file."
+    }
+  },
+  "normalization": {
+    "generation": "Raw active record key entity::queueID; component records distinct from physical projects. Generation and storage MW separate, missing hybrid components preserved. National total excludes NON_US, unknown location labeled. Signed adjustments retained.",
+    "NYISO": "Official current workbook status legend and rawStage must be checked. 0=withdrawn/W/exclude;14=operating/G8/exclude;1=G1;4 (SIS Pending)=G2;5 (SIS In Progress)=G3;6,7,8,9=G4;10=G5;11=G6;12=G7. This is not an exhaustive code list: for unlisted or changed codes preserve unknown stage unless official evidence verifies a mapping. Status8 is rejected cost allocation/next facilities study pending, not withdrawn. Only verified active load include=1. GW=MW/1000. Numeric IDs zero padding normalized for match.",
+    "BPA": "Line/Load mixed scope, include=0, BPA Completed=BC not G8, Energized=G8. Missing MW retained. Canonical app region=West (source label Non-RTO West). Raw sourceRegion retained. Previous UI alias mismatch corrected 2026-10-03, record-count change is reclassification, not new projects.",
+    "otherLoads": "ERCOT aggregate, Georgia announced load, commercial contracts and forecasts remain separate; not a national pure load queue total.",
+    "history": "Snapshots stored by date and region; monthly view last available dated snapshot per month. No invented pre-baseline history.",
+    "scoring": "0–100 ordinal remaining interconnection stage. Not completion probability. Server enforces stage mapping; parallel permit/finance/equipment gates unknown remain unknown.",
+    "ingestValidation": "sourceAsOf and every record.asof must match a real YYYY-MM-DD date; affected-scope latest source date cannot go backwards; finite numeric storageMw or null; W/G8 always excluded. Mixed operator dates labeled explicitly.",
+    "loadObservations": "Separate evidence layer; no automatic contribution to pure queue GW or stage scores. Signed commercial ESA/LOA is not automatically G6 interconnection agreement. Use null when exact date unknown; YYYY-MM allowed when month is all that is published. checkedAt is verification date, not source asOf. Same-ID source date/publication date/checkedAt cannot regress; coarser-period corrections require explicit review, no inferred end-of-month dates. Current IDs may embed original dates: keep stable for future revisions. History stores full before/after observations atomically with data; first source baseline exists in checked-in JSON.",
+    "ERCOTDisclosure": "NPRR1267 (approved 2025-07-31) requires aggregated Large Load status reporting because customer information is confidential. Zero locally collected project rows must display project-level data unavailable, never zero customer requests. Load mode must not show generation stage GW or generation scores. Use separate central requests, Batch Zero categories and utility aggregates with dates/scopes; no summing.",
+    "NamedProjectCoverage": "실명 공시의 발견과 공식 큐 연결은 별도. 유사 고객MW·주소·프로젝트명만으로 익명 원장 합치기 금지. onsite 프로젝트 region은 탐색용 소재지역이며 regionBasis에 실제 접속권역 미확정 표기. 전국 전수 분모 미확보; 추적 사례 수를 전체시장 확보율로 표현 금지.",
+    "GenerationMissingComponents": "새 발전 원장 교체 시 generation-missing-components의 id·asof별 용량 구성요소 결측 목록도 재생성. 미대조 기준일을 결측 0건으로 해석 금지.",
+    "AllIndustryCensusSelection": "Current screening/display rule: verified requested load >=10 MW OR >=10 MVA OR explicit industrial/large-load source flag. This is a research selection, not a nationwide regulatory definition. Industrial flag + unknown MW does NOT imply >=10 MW. Retain unknown capacity, confidential names and industries; ordinary commercial unknown capacity is not automatically industrial. Keep whole stored operator scope when writing; UI filters must not become destructive replacement filters.",
+    "LoadRegisterIdentifiers": "Internal record id, official customer queueId, utility service ID, officialNeedId and transmissionProjectId are different identifiers. PJM Need Number / s-number and MISO MTEP ID are transmission-support identifiers, never silently copied to queueId. Preserve source row references and duplicate-identifier flags; no deduplication by similar MW/location alone.",
+    "LoadRegisterCapacity": "Numeric mw requires source-specific direct MW evidence and capacityBasis. Preserve MVA in apparentMva or sourceFields with mw=null; no MVA-to-MW inference in requested-load fields. Normalize raw kW only when source units and field meaning are verified; anomalous/redacted raw values stay unnormalized. No GWh/year, tonnes/year, dollars, transformer MVA, generation MW, IT MW, campus MW or contracted supply substituted for requested grid MW.",
+    "LoadRegisterStatus": "Historical assessment, request, support-project and removed rows are evidence records, not current active customer counts. Customer business construction does not establish G7. MISO M3/M4 describe transmission facilities, not customer G7/G8. Commercial ESA/LOA is not automatically interconnection G6. Preserve cancelled/withdrawn/energized/removed reason separately; a removed source row may be below reporting threshold or reclassified rather than cancelled. Except directly verified NYISO active load, retain include=0; transmission_support remains GU with low=0/high=100 unless separately sourced customer-stage evidence supports reclassification.",
+    "CensusDatesAndCoverage": "Keep source reporting cutoff/asof, source publicationDate or named-source publishedAt, file generated/exported date, service target and checkedAt distinct. A download/verification date cannot refresh an old snapshot. Generated date does not establish current active status; file-name month is not automatically cutoff/publication date. load-sources.sourceDateMeaning must explain the exact date and population. SourceRows and loadedRows count stated records, not necessarily unique customers. No nationwide completeness percentage without a known comparable national denominator.",
+    "CensusOperatorAtomicity": "ingest-load-register atomically replaces one complete region/operator; record.asof may differ but cannot exceed sourceAsOf. Preserve AES Ohio separately from PJM M-3 and other operators sharing a region. Preserve mixed-vintage source meaning and full evidence history. Missing/unavailable source is not a zero-row replacement. Review operator row counts, IDs, raw states and removed reasons before and after write."
+  },
+  "operatingParserPython": "\"\"\"Read public EIA-930 observations, no credentials; emit ingest-live payloads.\"\"\"\nimport datetime,json,sys,urllib.parse,urllib.request\nIDS=['US48','ERCO','CISO','PJM','MISO','SWPP','SWPW','ISNE','NYIS','BPAT','SOCO','DUK','TVA','FPL','PACE','PACW','AZPS','NEVP']\nnow=datetime.datetime.now(datetime.timezone.utc)\ndef read(fuel):\n q={f'respondent[{i}]':v for i,v in enumerate(IDS)}\n q.update(frequency='hourly',start=(now-datetime.timedelta(days=3)).strftime('%m%d%Y 00:00:00'),end=(now+datetime.timedelta(days=1)).strftime('%m%d%Y 00:00:00'),timezone='UTC',limit='50000')\n q['type[0]']='NG' if fuel else 'D'\n url='https://www.eia.gov/electricity/930-api/'+('region_data_by_fuel_type/data' if fuel else 'region_data/data')+'?'+urllib.parse.urlencode(q)\n with urllib.request.urlopen(urllib.request.Request(url,headers={'Accept':'application/json','User-Agent':'USGridResearch/1.0'}),timeout=45) as r:obj=json.load(r)\n data=obj[0]['data']\n if not data:raise ValueError('Empty EIA observations; preserve prior dataset')\n return data\n\ndef iso(t):return datetime.datetime.strptime(t,'%m/%d/%Y %H:%M:%S').isoformat()+'Z'\nnames={'COL':'Coal','NG':'Natural Gas','NUC':'Nuclear','WAT':'Hydro','WND':'Wind','SUN':'Solar','OTH':'Other','OIL':'Petroleum','BAT':'Battery Storage','OES':'Other energy storage','PS':'Pumped storage'}\ndemand=read(False);fuel=read(True);payloads=[]\nfor key in IDS:\n d=sorted([r for r in demand if r['RESPONDENT_ID']==key and isinstance(r.get('VAL'),(int,float))],key=lambda r:iso(r['TIMESTAMP_']))\n f=[r for r in fuel if r['RESPONDENT_ID']==key and isinstance(r.get('VAL'),(int,float))]\n if not d or not f:continue\n ft=max(iso(r['TIMESTAMP_']) for r in f);mix=[dict(fuel=names.get(r['FUEL_TYPE_ID'],r['FUEL_TYPE_NAME']),gw=r['VAL']/1000) for r in f if iso(r['TIMESTAMP_'])==ft]\n payloads.append({'action':'ingest-live','data':dict(id=key,name=d[-1]['RESPONDENT_NAME'],source='EIA-930',sourceUrl='https://www.eia.gov/electricity/gridmonitor/',observedAt=iso(d[-1]['TIMESTAMP_']),mixObservedAt=ft,retrievedAt=now.isoformat().replace('+00:00','Z'),timezone='UTC',interval='1시간 평균 · Hour Ending',loadGW=d[-1]['VAL']/1000,generationGW=sum(m['gw'] for m in mix),mix=mix,series=[dict(time=iso(r['TIMESTAMP_']),loadGW=r['VAL']/1000,flag=r.get('FLAG_ID'),imputed=r.get('IMPUTED_VAL')) for r in d[-48:]],warning='부하·믹스 관측시점 별도 · 원천 품질 플래그 보존')})\njson.dump({'payloads':payloads,'missing':[key for key in IDS if key not in [p['data']['id'] for p in payloads]]},sys.stdout,ensure_ascii=False)\n",
+  "loadCollectionPlan": [
+    {
+      "region": "CAISO",
+      "level": "CPUC 공개 서비스원장·유틸리티 단계별 집계",
+      "scope": "PG&E·SDG&E CPUC 공개 통전요청의 산업/대규모부하 선택 행과 기존 PG&E 20 MW 이상 데이터센터 집계를 별도 추적. 원장 탭의 자료기간과 개별 요청·통전·취소 상태 보존; CAISO 전체 요청과 범위 차이.",
+      "remainingGap": "SCE 공개 워크북 확보·파일 내용 확인, 최신 PG&E/SDG&E 동등 시점 명세, 고객 MW·실명 및 주 전체 분모 미확보. 선택된 산업 행의 MW 미공개를 10 MW 이상으로 간주 금지.",
+      "nextAction": "CPUC 반기 공시의 실제 워크북·서술보고서·기밀신청을 확인. 모든 관련 탭의 원문 모집단/선택 행 수를 대조하고 각 유틸리티 operator 전체를 교체. 잘못된 회사 파일·빈 응답·단위 이상은 격리하고 GET /api/load-census.sources에 접근 및 최신성 공백 기록.",
+      "cadence": "반기 CPUC · 분기 IR · 주간 신규자료 확인",
+      "sourceLabel": "CPUC Energization 공개 보고서·원장",
+      "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/infrastructure/energization/energization-data-reporting-requirements-and-data-reporting-template"
+    },
+    {
+      "region": "ERCOT",
+      "level": "중앙·유틸리티 집계",
+      "scope": "공식 대규모 부하 요청 총계, Batch Zero 분류 및 Oncor·CenterPoint 요청 집계 확보. 고객별 전수 명세와 별개이며, 신청 물량 0을 의미하지 않음.",
+      "remainingGap": "NPRR1267의 고객정보 기밀성에 따른 집계 공개. 고객 ID·개별 MW·단계 연결 원장 및 125.4 / 127.9 GW 원문 차이 정정본 미확보.",
+      "nextAction": "ERCOT 후속 분류·RFI 공시와 TSP 분기실적 대조. 고객 ID 확보 후 Oncor·CenterPoint와 중앙 집합의 중복 연결.",
+      "cadence": "주간 정책·분기 유틸리티",
+      "sourceLabel": "ERCOT 대규모 부하 RFI 공지",
+      "url": "https://www.ercot.com/services/comm/mkt_notices/M-B091426-02"
+    },
+    {
+      "region": "ISO-NE",
+      "level": "익명 연구·전망 표본",
+      "scope": "공식 검토 대상 2건, NEMA 데이터센터 200 MW·CT 일반전기화 85 MW 확보. 약 110 MW는 장기 피크 전망 반영분.",
+      "remainingGap": "미포함 요청, 실명 고객, 프로젝트별 계약·통전 일정 및 전체 대기량 미확보.",
+      "nextAction": "LFC의 TO 조사·CELT 후속 공시 확인. 익명 연구 사례를 주 규제기관과 전력회사 계약자료에 근거로 연결.",
+      "cadence": "분기 LFC · 연간 CELT",
+      "sourceLabel": "ISO-NE Load Forecast Committee",
+      "url": "https://www.iso-ne.com/committees/reliability/load-forecast"
+    },
+    {
+      "region": "MISO",
+      "level": "MTEP 공개 송전사업 원장·유틸리티 계약",
+      "scope": "MTEP Projects Under Evaluation 및 Appendix A 시설 명세를 MTEP project ID별로 조사. Load Growth와 직접 신규부하 근거를 보존하고 Ameren·DTE 등의 고객 계약과 별도 추적.",
+      "remainingGap": "MISO 전체 고객별 접속신청 분모, 익명 고객 실명·업종, 여러 지원사업/임시탭/단계별 동일 부하 연결 및 실제 통전량 미확보.",
+      "nextAction": "평가 원장과 승인시설 원장의 서로 다른 기준일을 유지. 시설을 MTEP ID로 결합하되 같은 고객을 지원하는 서로 다른 ID의 MW는 합산하지 않음. M1/M2/M3/M4 원문 상태를 보존하며 고객 접속단계는 미상 유지. operator=MISO MTEP 완전 범위만 원자적 교체.",
+      "cadence": "분기 공시 · 월별 계획자료",
+      "sourceLabel": "MISO MTEP 공개 평가·Appendix A 원장",
+      "url": "https://www.misoenergy.org/planning/transmission-planning/mtep/"
+    },
+    {
+      "region": "NYISO",
+      "level": "공개 부하 프로젝트 원장",
+      "scope": "Load Projects 원장과 공식 상태 범례 확보. 철회·운영 제외 후 유효 용량 계산. SIS Pending은 G2 유지.",
+      "remainingGap": "배전 접속을 포함한 지역 전력회사 전체 요청의 포함 여부, 계약 세부조건·최초 통전 이력 미확보.",
+      "nextAction": "공식 XLSX의 프로젝트 ID·MW·rawStage 차분 확인. Gold Book 전망 및 유틸리티 자료는 별도 범위로 교차검증.",
+      "cadence": "주간 원장 확인",
+      "sourceLabel": "NYISO 공식 접속 원장 XLSX",
+      "url": "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx"
+    },
+    {
+      "region": "PJM",
+      "level": "M-3 공개 송전 필요원장·LAS 계약/전망",
+      "scope": "PJM M-3 전체 공개 원장에서 고객 서비스·부하 지원 근거를 조사하고 AES Ohio 표본을 별도 operator로 유지. LAS의 Dominion·PPL·FirstEnergy·Exelon·AEP 요청·계약·전망과 합산하지 않음.",
+      "remainingGap": "지원사업과 개별 고객·익명 실명의 연결, 남은 미통전 MW와 전체 고객 신청 분모 미확보. 과거·배전 구역·기존 부하 및 중복 단계 포함.",
+      "nextAction": "TEAC M-3 최신 공개 파일의 게시일과 데이터 내용을 확인. Need Number/Upgrade ID 분리, 원문 MW/MVA·철회 범위·중복 ID 점검 후 operator=PJM M-3 완전 교체. LAS·주 규제기관 자료는 별도 증거층에 갱신.",
+      "cadence": "월별 M-3/TEAC · 주간 LAS/신규자료 · 분기 공시",
+      "sourceLabel": "PJM M-3 / TEAC 공식 공개 원장",
+      "url": "https://www.pjm.com/committees-and-groups/committees/teac"
+    },
+    {
+      "region": "SPP",
+      "level": "DPA/DPNS 과거·현재 공개 평가명세",
+      "scope": "2010년부터 2026년 9월까지 월별 워크북 199개에서 과거 평가 2,475행, 서로 다른 assessment ID 2,447개 및 PLP-only 2개를 조사한 2,449개 이력 기준선. 이력 ID 수는 현재 유효 고객 수가 아님. 후속 공시의 실제 건수·모집단은 GET /api/load-census.sources에서 확인. Evergy ESA·OG&E 계약은 별도.",
+      "remainingGap": "역사적 평가 ID의 현재 취소·가동·유효 상태, 고객별 MW 및 동일 부하 중복 연결과 현재 활성 고객 분모 미확보.",
+      "nextAction": "신규월과 과거 누락월을 원문에서 보완하고 반복 ID·출처 이력을 보존. 역사적 원장 전체 operator를 유지하며 신규월만으로 덮어쓰기 금지. 연구 용량과 발전/설비용량을 구별하고 과거명세를 active로 전환하지 않음.",
+      "cadence": "주간 신규월 공시 확인 · 월별 원장 · 분기 계약",
+      "sourceLabel": "SPP Delivery Point Network Studies",
+      "url": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=259"
+    },
+    {
+      "region": "West",
+      "level": "혼합 원장·계약 집계",
+      "scope": "BPA Line/Load 혼합 원장, SRP 요청 및 Portland General 계약·추가 요청 확보. 지역 전력회사 표본이며 서부 전체와 범위 차이.",
+      "remainingGap": "BPA 송전선·부하 분리, 유틸리티와 동일 고객 연결, APS·PacifiCorp를 포함한 통일 단계별 잔량 미확보.",
+      "nextAction": "BPA 요청 ID와 SRP·PGE의 계약·주 규제자료 연결. LCIP 후속 원장 및 OPUC 제출물에서 통전분·남은 계약량 확인.",
+      "cadence": "주간 BPA · 분기·이사회",
+      "sourceLabel": "BPA 공식 Line/Load 원장 XLSX",
+      "url": "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx"
+    },
+    {
+      "region": "Southeast",
+      "level": "Georgia 공개 경제개발 원장·산업별 공시",
+      "scope": "Georgia 최신 확보 자료의 Main 118건과 별도 Removed 6건을 구분하고 기타 변경 탭을 대조. 현재 공시 수와 역사적 제거 행은 별도이며 Southeast 전체 고객 분모가 아님. Southern·FPL·Duke·TVA 계약·승인도 별도 근거층.",
+      "remainingGap": "공시 이후 고객 상태, 기존 가동분·순수 미통전 잔량, removed 원인의 세부 연결, 타 유틸리티/협동조합/지방공기업 요청 분모 미확보.",
+      "nextAction": "Georgia PSC 최신 분기 원문의 Main·변경·Removed 탭을 완전 대조. Added 행은 Main과 중복 가능; MW만으로 익명 행 연결 금지. Removed는 취소·기준 미달·재분류 구분을 유지하며 active 집계 제외. operator 전체 갱신 후 source inventory의 현재 건수/자료기간 갱신.",
+      "cadence": "분기 PSC·실적·이사회",
+      "sourceLabel": "Georgia PSC 경제개발 보고서",
+      "url": "https://psc.ga.gov/search/facts-document/?documentId=227753"
+    }
+  ],
+  "loadCollectionSources": [
+    {
+      "operator": "Dominion Energy Virginia",
+      "region": "PJM",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5ai---dominion_energy.pdf"
+    },
+    {
+      "operator": "PPL Electric Utilities",
+      "region": "PJM",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5e---ppl.pdf"
+    },
+    {
+      "operator": "FirstEnergy",
+      "region": "PJM",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5h---firstenergy.pdf"
+    },
+    {
+      "operator": "FirstEnergy APS",
+      "region": "PJM",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5h---firstenergy.pdf"
+    },
+    {
+      "operator": "FirstEnergy ATSI",
+      "region": "PJM",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5h---firstenergy.pdf"
+    },
+    {
+      "operator": "FirstEnergy Potomac Edison",
+      "region": "PJM",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5h---firstenergy.pdf"
+    },
+    {
+      "operator": "FirstEnergy Ohio Edison",
+      "region": "PJM",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5h---firstenergy.pdf"
+    },
+    {
+      "operator": "Exelon (ComEd / PECO)",
+      "region": "PJM",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf"
+    },
+    {
+      "operator": "AEP PJM utilities",
+      "region": "PJM",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5f---aep.pdf"
+    },
+    {
+      "operator": "AEP Ohio",
+      "region": "PJM",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5f---aep.pdf"
+    },
+    {
+      "operator": "Indiana & Michigan Power",
+      "region": "PJM",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5f---aep.pdf"
+    },
+    {
+      "operator": "Pacific Gas and Electric (PG&E)",
+      "region": "CAISO",
+      "url": "https://www.sec.gov/Archives/edgar/data/75488/000100498026000047/q226earningspresentation.htm"
+    },
+    {
+      "operator": "Portland General Electric (PGE)",
+      "region": "West",
+      "url": "https://investors.portlandgeneral.com/static-files/326e18d0-0240-4c90-81d9-78da69552f4c"
+    },
+    {
+      "operator": "Salt River Project (SRP)",
+      "region": "West",
+      "url": "https://www.srpnet.com/assets/srpnet/pdf/about/governance-leadership/district-meetings/20260113_WSS_packet.pdf"
+    },
+    {
+      "operator": "Alabama Power",
+      "region": "Southeast",
+      "url": "https://s27.q4cdn.com/273397814/files/doc_financials/2026/q2/SO-2026-Q2-Earnings-Call-Final.pdf"
+    },
+    {
+      "operator": "Mississippi Power",
+      "region": "Southeast",
+      "url": "https://s27.q4cdn.com/273397814/files/doc_financials/2026/q2/SO-2026-Q2-Earnings-Call-Final.pdf"
+    },
+    {
+      "operator": "Georgia Power",
+      "region": "Southeast",
+      "url": "https://s27.q4cdn.com/273397814/files/doc_financials/2026/q2/SO-2026-Q2-Earnings-Call-Final.pdf"
+    },
+    {
+      "operator": "Florida Power & Light",
+      "region": "Southeast",
+      "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000058/neeq22026exhibit99.htm"
+    },
+    {
+      "operator": "Duke Energy Carolinas / Duke Energy Progress",
+      "region": "Southeast",
+      "url": "https://s201.q4cdn.com/583395453/files/doc_financials/2026/q1/Q1-2026-Earnings-Presentation-w-Reg-G.pdf"
+    },
+    {
+      "operator": "Tennessee Valley Authority",
+      "region": "Southeast",
+      "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/august-20--2026/resolutions/board-resolution---power-availability-august-2026-v2.pdf?sfvrsn=ed264403_1"
+    },
+    {
+      "operator": "Evergy",
+      "region": "SPP",
+      "url": "https://investors.evergy.com/static-files/73352465-a5e0-4dbf-ac4b-98692902443f"
+    },
+    {
+      "operator": "Evergy",
+      "region": "SPP",
+      "url": "https://www.sec.gov/Archives/edgar/data/1711269/000171126926000100/evrg-20260630.htm"
+    },
+    {
+      "operator": "OG&E",
+      "region": "SPP",
+      "url": "https://ogeenergy.gcs-web.com/static-files/98fd12b7-a142-42e5-b6b4-91a0476ea50b"
+    },
+    {
+      "operator": "ISO New England",
+      "region": "ISO-NE",
+      "url": "https://isonewswire.com/2026/05/18/iso-ne-establishes-forecast-framework-for-data-centers-other-large-loads/"
+    },
+    {
+      "operator": "Oncor",
+      "region": "ERCOT",
+      "url": "https://www.oncor.com/content/oncorwww/wire/en/home/newsroom/oncor-reports-second-quarter-2026-results.html"
+    },
+    {
+      "operator": "Ameren Missouri",
+      "region": "MISO",
+      "url": "https://www.sec.gov/Archives/edgar/data/1002910/000100291026000023/aee-20260630.htm"
+    },
+    {
+      "operator": "DTE Electric",
+      "region": "MISO",
+      "url": "https://www.sec.gov/Archives/edgar/data/936340/000093634026000159/dtebusinessupdate92826fi.htm"
+    },
+    {
+      "operator": "MISO",
+      "region": "MISO",
+      "url": "https://cdn.misoenergy.org/20260826%20PAC%20Item%2005%20PAC%20MTEP26%20Preview%20Update776960.pdf"
+    },
+    {
+      "operator": "CenterPoint Houston Electric",
+      "region": "ERCOT",
+      "url": "https://investors.centerpointenergy.com/news-releases/news-release-details/centerpoint-energy-reports-strong-q2-2026-results-provides"
+    },
+    {
+      "operator": "ERCOT",
+      "region": "ERCOT",
+      "url": "https://www.ercot.com/news/release/06182026-puct-approves-ercots"
+    }
+  ],
+  "qualitativeReview": {
+    "readPath": "/api/research",
+    "cadence": "주간 원문 확인 · 공시 변경 시 갱신",
+    "notes": "자료실은 저장된 수용가 공시·정책과 자동 연결. 정성 해설의 재확인과 내용 변경을 별도 기록. 구체적 공식 원문·기준일 유지, 원문 복제 대신 사실 중심 요약."
+  },
+  "loadCensusReview": {
+    "readPath": "/api/load-census",
+    "cadence": "매주 신규 공식자료·접근상태 확인; 월별/분기별/반기별 원문이 갱신될 때만 해당 원장 교체",
+    "inventoryAuthority": "GET /api/load-census.sources의 안정 ID, URL, universe, selection, coverage, gaps, nextAction을 현행 조사목록으로 사용. 고정 예시 URL이나 과거 건수보다 실제 검증된 inventory를 우선하며 새 공식 출처를 추가할 수 있음. 기존 관측·실명·정성 자료를 삭제하거나 합산하지 않음.",
+    "sectors": [
+      "데이터센터",
+      "반도체",
+      "배터리",
+      "자동차",
+      "철강·금속",
+      "화학·산업가스",
+      "수소·암모니아",
+      "LNG",
+      "기타 제조업",
+      "광업",
+      "암호화폐",
+      "물류·철도·공항·건설",
+      "기타/미분류 산업"
+    ],
+    "selection": "검증된 고객 요청 10 MW 이상 또는 10 MVA 이상 또는 원문의 산업/대규모부하 표지. 이 표지는 업종 포함 조건이며 미공개 MW의 하한이 아님. 전국 전수의 정의나 법정 기준으로 표현 금지.",
+    "sourceSpecificRules": [
+      "CPUC: PG&E·SCE·SDG&E 각 회사와 데이터기간/반기 공시일을 실제 파일 내부에서 확인. Tariff의 ongoing/in-progress, energized/closed, cancelled 탭을 분리하며 residential·MPU·단위 이상은 선택조건에 따라 제외. 산업 표지/원문 요청용량의 선택 근거와 누락 용량을 보존. Closed/ready-for-service는 전체 공장 상업운전과 구별. 접근 실패 파일과 이름/내용이 다른 파일을 다른 회사 원장으로 적재 금지.",
+      "PJM M-3: 고객 서비스 및 직접 부하 근거를 원문 전체에서 조사. officialNeedId와 transmissionProjectId를 별도 보존하고 queueId로 전환하지 않음. MW-labelled 셀에 MVA가 들어간 사례, 기존 부하·구역 합계·중복 ID·취소된 해결책을 검토. operator=PJM M-3는 AES Ohio와 병행. GU/include=0 지원사업을 현재 신규 고객 큐로 계산 금지.",
+      "MISO MTEP: 평가 프로젝트와 Appendix A 시설을 MTEP project ID별로 연결하되 facility ID와 상태도 보존. 동일 고객의 여러 송전사업/단계/임시탭은 각각 근거이며 MW 합산 금지. M3/M4는 송전설비 공정, 고객 접속·통전 증거 아님. 각 파일 기준일과 최신 게시/생성일 의미를 별도 유지.",
+      "SPP: 2010년~2026년 9월 월별 워크북 199개는 파일 수. 원문 2,475개 이력행/2,447개 서로 다른 assessment ID에 PLP-only 2개를 더한 2,449개 이력 기준선이며 현재 active 고객 수가 아님. 신규연도/신규월과 과거자료를 함께 완전 보존하고 실제 전체 범위/선택건수는 현행 inventory에 기록. 생성/다운로드 날짜로 역사적 행을 현재 active로 갱신 금지. 연구보고서와 요청ID 직접 연결, 발전/부하/설비 MW 구별.",
+      "Georgia: 현재 확보 Main 118건과 별도 Removed 6건 및 모든 변경 탭을 대조하는 기준선 유지; 후속 분기 원문에 따라 실제 건수 갱신. Main은 유효 순수 미통전 큐와 다르며 Added는 Main과 중복 가능. Removed는 취소뿐 아니라 보고기준 미달 등 사유가 있으므로 원인 없이 W로 단정 금지. 자료기간·게시일·파일생성일·확인일 분리.",
+      "나머지 출처: GET /api/load-census.sources에서 NYISO·BPA·ERCOT·ISO-NE·서부/동남부 유틸리티와 지방공기업·협동조합·AK/HI 등 조사 범위의 current gaps/nextAction을 읽고 진행. 공시 없음과 미검토/접근실패를 구별. 요청 0건이나 전국 조사완료로 해석 금지."
+    ],
+    "readbackChecks": [
+      "operator별 IDs/행 수/기준일/철회·운영·제거 상태 대조",
+      "sourceRows와 loadedRows의 모집단·선택 조건 일치 확인",
+      "MW/MVA·미공개 용량·역사적 행·송전 지원사업의 합계 제외 확인",
+      "named-loads 공식 큐 연결 증거·역할·업종·취소/운영 상태 대조",
+      "review에 updated/unchanged/unavailable와 다음 확인 과제 기록; 전국 확보율 산출 금지"
+    ]
+  }
+}

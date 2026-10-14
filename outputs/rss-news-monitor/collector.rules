@@ -1,0 +1,25 @@
+prefix_rule(
+    pattern = [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\pos03\\Documents\\Codex\\newflow\\outputs\\rss-news-monitor\\Run-Collector.ps1",
+    ],
+    decision = "allow",
+    justification = "Allow the fixed local RSS collector to fetch configured public industry sources during scheduled runs.",
+)
+
+prefix_rule(
+    pattern = [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\pos03\\Documents\\Codex\\newflow\\outputs\\rss-news-monitor\\Ack-Collector.ps1",
+    ],
+    decision = "allow",
+    justification = "Allow the fixed local collector to mark reviewed and Telegram-delivered candidate URLs.",
+)

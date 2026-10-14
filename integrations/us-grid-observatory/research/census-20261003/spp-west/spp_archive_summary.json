@@ -1,0 +1,1046 @@
+{
+  "allRows": 2475,
+  "distinctRawIds": 2447,
+  "countByAssessmentYear": {
+    "2010": 38,
+    "2011": 104,
+    "2012": 158,
+    "2013": 93,
+    "2014": 108,
+    "2015": 94,
+    "2016": 137,
+    "2017": 110,
+    "2018": 149,
+    "2019": 206,
+    "2020": 102,
+    "2021": 221,
+    "2022": 219,
+    "2023": 179,
+    "2024": 197,
+    "2025": 188,
+    "2026": 172
+  },
+  "duplicateRawIds": {
+    "DPA-2020-April-1195": 2,
+    "DPA-2012-January-115": 3,
+    "DPA-2012-January-116": 3,
+    "DPA-2012-January-117": 3,
+    "DPA-2012-January-118": 3,
+    "DPA-2012-January-119": 3,
+    "DPA-2012-January-120": 3,
+    "DPA-2012-January-121": 3,
+    "DPA-2012-January-122": 3,
+    "DPA-2012-January-123": 3,
+    "DPA-2012-January-125": 3,
+    "DPA-2011-JANUARY-032": 2,
+    "DPA-2011-JANUARY-033": 2,
+    "DPA-2011-JANUARY-034": 2,
+    "DPA-2011-JANUARY-035": 2,
+    "DPA-2011-JANUARY-036": 2,
+    "DPA-2011-JANUARY-037": 2,
+    "DPA-2011-JANUARY-038": 2
+  },
+  "files": [
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2026_Preliminary_Assessment_Posting_January_2026.xlsx",
+      "year": "2026",
+      "rows": 11
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2026_Preliminary_Assessment_Posting_February_2026.xlsx",
+      "year": "2026",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2026_Preliminary_Assessment_Posting_March_2026.xlsx",
+      "year": "2026",
+      "rows": 31
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2026_Preliminary_Assessment_Posting_April_2026.xlsx",
+      "year": "2026",
+      "rows": 17
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2026_Preliminary_Assessment_Posting_May_2026.xlsx",
+      "year": "2026",
+      "rows": 17
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2026_Preliminary_Assessment_Posting_June_2026.xlsx",
+      "year": "2026",
+      "rows": 24
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2026_Preliminary_Assessment_Posting_July_2026.xlsx",
+      "year": "2026",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2026_Preliminary_Assessment_Posting_August_2026.xlsx",
+      "year": "2026",
+      "rows": 28
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2026_Preliminary_Assessment_Posting_September_2026.xlsx",
+      "year": "2026",
+      "rows": 24
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_January_2025.xlsx",
+      "year": "2025",
+      "rows": 6
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_February_2025.xlsx",
+      "year": "2025",
+      "rows": 14
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_March_2025.xlsx",
+      "year": "2025",
+      "rows": 7
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_April_2025.xlsx",
+      "year": "2025",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_May_2025_b.xlsx",
+      "year": "2025",
+      "rows": 15
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_June_2025.xlsx",
+      "year": "2025",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_July_2025.xlsx",
+      "year": "2025",
+      "rows": 16
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_August_2025.xlsx",
+      "year": "2025",
+      "rows": 22
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_September_2025.xlsx",
+      "year": "2025",
+      "rows": 25
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_October_2025.xlsx",
+      "year": "2025",
+      "rows": 21
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_November_2025.xlsx",
+      "year": "2025",
+      "rows": 7
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2025_Preliminary_Assessment_Posting_December_2025.xlsx",
+      "year": "2025",
+      "rows": 31
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_January_2024.xlsx",
+      "year": "2024",
+      "rows": 21
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_February_2024.xlsx",
+      "year": "2024",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_March_2024.xlsx",
+      "year": "2024",
+      "rows": 20
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_April_2024.xlsx",
+      "year": "2024",
+      "rows": 15
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_May_2024.xlsx",
+      "year": "2024",
+      "rows": 11
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_June_2024.xlsx",
+      "year": "2024",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_July_2024.xlsx",
+      "year": "2024",
+      "rows": 25
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_August_2024.xlsx",
+      "year": "2024",
+      "rows": 15
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_September_2024.xlsx",
+      "year": "2024",
+      "rows": 18
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_October_2024.xlsx",
+      "year": "2024",
+      "rows": 21
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_November_2024.xlsx",
+      "year": "2024",
+      "rows": 19
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2024_Preliminary_Assessment_Posting_December_2024.xlsx",
+      "year": "2024",
+      "rows": 11
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_January_2023.xlsx",
+      "year": "2023",
+      "rows": 13
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_February_2023.xlsx",
+      "year": "2023",
+      "rows": 19
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_March_2023.xlsx",
+      "year": "2023",
+      "rows": 19
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_April_2023.xlsx",
+      "year": "2023",
+      "rows": 15
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_May_2023.xlsx",
+      "year": "2023",
+      "rows": 18
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_June_2023_Revised.xlsx",
+      "year": "2023",
+      "rows": 18
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_July_2023.xlsx",
+      "year": "2023",
+      "rows": 21
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_August_2023.xlsx",
+      "year": "2023",
+      "rows": 13
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_September_2023.xlsx",
+      "year": "2023",
+      "rows": 5
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_October_2023.xlsx",
+      "year": "2023",
+      "rows": 17
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_November_2023.xlsx",
+      "year": "2023",
+      "rows": 13
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2023_Preliminary_Assessment_Posting_December_2023.xlsx",
+      "year": "2023",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessment_Posting_January_2022.xlsx",
+      "year": "2022",
+      "rows": 25
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessment_Posting_February_2022.xlsx",
+      "year": "2022",
+      "rows": 34
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessment_Posting_March_2022_Rev..xlsx",
+      "year": "2022",
+      "rows": 23
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessment_Posting_April_2022.xlsx",
+      "year": "2022",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessments_Posting_May_2022.xlsx",
+      "year": "2022",
+      "rows": 15
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessment_Posting_June_2022.xlsx",
+      "year": "2022",
+      "rows": 22
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessment_Posting_July_2022.xlsx",
+      "year": "2022",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessment_Posting__August_2022.xlsx",
+      "year": "2022",
+      "rows": 16
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessment_Posting_September_2022.xlsx",
+      "year": "2022",
+      "rows": 18
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessment_Posting_October_2022.xlsx",
+      "year": "2022",
+      "rows": 21
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessment_Posting_November_2022.xlsx",
+      "year": "2022",
+      "rows": 7
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2022_Preliminary_Assessment_Posting_December_2022.xlsx",
+      "year": "2022",
+      "rows": 17
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_January_2021.xlsx",
+      "year": "2021",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_February_2021.xlsx",
+      "year": "2021",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_March_2021.xlsx",
+      "year": "2021",
+      "rows": 15
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_April_2021.xlsx",
+      "year": "2021",
+      "rows": 16
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_May_2021.xlsx",
+      "year": "2021",
+      "rows": 4
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_June_2021.xlsx",
+      "year": "2021",
+      "rows": 15
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_July_2021_Rev2.xlsx",
+      "year": "2021",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_August_2021_Rev.3.xlsx",
+      "year": "2021",
+      "rows": 58
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_September_2021.xlsx",
+      "year": "2021",
+      "rows": 30
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_October_2021_rev_12.3.21.xlsx",
+      "year": "2021",
+      "rows": 17
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_November_2021.xlsx",
+      "year": "2021",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2021_Preliminary_Assessment_Posting_December_2021.xlsx",
+      "year": "2021",
+      "rows": 23
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_AQ_-_January_2020_Prelim_Assessment.xls",
+      "year": "2020",
+      "rows": 6
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_AQ_-_February_2020_Prelim_Assessment.xls",
+      "year": "2020",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_AQ_-_March_2020_Prelim_Assessment.xls",
+      "year": "2020",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_AQ_-_April_2020_Prelim_Assessment.xls",
+      "year": "2020",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_AQ_-_May_2020_Prelim_Assessment.xls",
+      "year": "2020",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_AQ_-_June_2020_Prelim_Assessment.xls",
+      "year": "2020",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_AQ_-_July_2020_Prelim_Assessment_Rev2.xls",
+      "year": "2020",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_Preliminary_Assessment_Posting_August_2020_Rev2.xlsx",
+      "year": "2020",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_Preliminary_Assessment_Posting_September_2020.xlsx",
+      "year": "2020",
+      "rows": 14
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_Preliminary_Assessment_Posting_October_2020.xlsx",
+      "year": "2020",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_Preliminary_Assessment_Posting_November_2020.xlsx",
+      "year": "2020",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2020_Preliminary_Assessment_Posting_December_2020.xlsx",
+      "year": "2020",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_January_2019_Prelim_Assessment.xls",
+      "year": "2019",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_February_2019_Prelim_Assessment_Rev3.xls",
+      "year": "2019",
+      "rows": 27
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_March_2019_Prelim_Assessment.xls",
+      "year": "2019",
+      "rows": 26
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_April_2019_Prelim_Assessment.xls",
+      "year": "2019",
+      "rows": 14
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_May_2019_Prelim_Assessment.xls",
+      "year": "2019",
+      "rows": 20
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_June_2019_Prelim_Assessment_Rev4.xls",
+      "year": "2019",
+      "rows": 16
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_July_2019_Prelim_Assessment.xls",
+      "year": "2019",
+      "rows": 18
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_August_2019_Prelim_Assessment.xls",
+      "year": "2019",
+      "rows": 15
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_September_2019_Prelim_Assessment.xls",
+      "year": "2019",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_October_2019_Prelim_Assessment.xls",
+      "year": "2019",
+      "rows": 18
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_November_2019_Prelim_Assessment.xls",
+      "year": "2019",
+      "rows": 28
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2019_AQ_-_December_2019_Prelim_Assessment.xls",
+      "year": "2019",
+      "rows": 6
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_January_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_February_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 20
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_March_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 11
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_April_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 23
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_May_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 13
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_June_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 4
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_July_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 13
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_August_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_September_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_October_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 20
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_November_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2018_AQ_-_December_2018_Prelim_Assessment.xls",
+      "year": "2018",
+      "rows": 7
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_January_2017_Prelim_Assessment.xls",
+      "year": "2017",
+      "rows": 11
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_February_2017_Prelim_Assessment.xls",
+      "year": "2017",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_March_2017_Prelim_Assessment.xls",
+      "year": "2017",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_April_2017_Prelim_Assessment.xls",
+      "year": "2017",
+      "rows": 5
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_May_2017_Prelim_Assessment.xls",
+      "year": "2017",
+      "rows": 11
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_June_2017_Prelim_Assessment.xls",
+      "year": "2017",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_July_2017_Prelim_Assessment.xls",
+      "year": "2017",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_August_2017_Prelim_Assessment.xls",
+      "year": "2017",
+      "rows": 19
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_September_2017_Prelim_Assessment.xls",
+      "year": "2017",
+      "rows": 4
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_October_2017_Prelim_Assessment.xls",
+      "year": "2017",
+      "rows": 7
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_November_2017_Prelim_Assessment.xls",
+      "year": "2017",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2017_AQ_-_December_2017_Prelim_Assessment_b.xls",
+      "year": "2017",
+      "rows": 7
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_January_2016_Prelim_Assessment.xls",
+      "year": "2016",
+      "rows": 6
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_February_2016_Prelim_Assessment.xls",
+      "year": "2016",
+      "rows": 17
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_March_2016_Prelim_Assessment.xls",
+      "year": "2016",
+      "rows": 15
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_April_2016_Prelim_Assessment.xls",
+      "year": "2016",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_May_2016_Prelim_Assessment.xls",
+      "year": "2016",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_June_2016_Prelim_Assessment.xls",
+      "year": "2016",
+      "rows": 5
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_July_2016_Prelim_Assessment.xls",
+      "year": "2016",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_August_2016_Prelim_Assessment.xls",
+      "year": "2016",
+      "rows": 14
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_September_2016_Prelim_Assessment.xls",
+      "year": "2016",
+      "rows": 17
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_October_2016_Prelim_Assessment.xls",
+      "year": "2016",
+      "rows": 17
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_November_2016_Prelim_Assessment.xls",
+      "year": "2016",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2016_AQ_-_December_2016_Prelim_Assessment_.xls",
+      "year": "2016",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_January_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 5
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_February_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_March_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_April_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 5
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_May_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 7
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_June_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_July_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_August_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_September_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_October_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_November_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 16
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2015_AQ_-_December_2015_Prelim_Assessment.xls",
+      "year": "2015",
+      "rows": 7
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_1-14_January_Preliminary_Assessments.xls",
+      "year": "2014",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_2-14_February_Preliminary_Assessments.xls",
+      "year": "2014",
+      "rows": 11
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_3-14_March_Preliminary_Assments.xls",
+      "year": "2014",
+      "rows": 4
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_4-14_April_Prelim_Assessments.xls",
+      "year": "2014",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_5-14_May_Prelim_Assessments.xls",
+      "year": "2014",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_6-14_June_Prelim_Assessment.xls",
+      "year": "2014",
+      "rows": 17
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_7-14_July_Prelim_Assessment.xls",
+      "year": "2014",
+      "rows": 6
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_8-14_August_Prelim_Assessment.xls",
+      "year": "2014",
+      "rows": 15
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_9-14_September_Prelim_Assessment.xls",
+      "year": "2014",
+      "rows": 11
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_10-14_October_Prelim_Assessment.xls",
+      "year": "2014",
+      "rows": 13
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_November_2014_Prelim_Assessment.xls",
+      "year": "2014",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2014_AQ_-_December_2014_Prelim_Assessment.xls",
+      "year": "2014",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_1-13_January_Preliminary_Assessments.xls",
+      "year": "2013",
+      "rows": 13
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_2-13_February_Preliminary_Assessments.xls",
+      "year": "2013",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_3-13_March_Preliminary_Assessments.xls",
+      "year": "2013",
+      "rows": 16
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_4-13_April_Preliminary_Assessments.xls",
+      "year": "2013",
+      "rows": 6
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_5-13_May_Preliminary_Assessments.xls",
+      "year": "2013",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_6-13_June_Preliminary_Assessments_-_Amended.xls",
+      "year": "2013",
+      "rows": 18
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_7-13_July_Preliminary_Assessments.xls",
+      "year": "2013",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_8-13_August_Preliminary_Assessments.xls",
+      "year": "2013",
+      "rows": 4
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_9-13_September_Preliminary_Assessments_1.xls",
+      "year": "2013",
+      "rows": 4
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_10-13_October_Preliminary_Assessments.xls",
+      "year": "2013",
+      "rows": 6
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_11-13_November_Preliminary_Assessments.xls",
+      "year": "2013",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2013_AQ_-_12-13_December_Preliminary_Assessments.xls",
+      "year": "2013",
+      "rows": 4
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_01_-_12_January_Preliminary_Assessments_-_Amended_022112.xls",
+      "year": "2012",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_02-12_February_Preliminary_Assessments.xls",
+      "year": "2012",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_03-12_March_Preliminary_Assessments.xls",
+      "year": "2012",
+      "rows": 27
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_04-12_April_Preliminary_Assessments.xls",
+      "year": "2012",
+      "rows": 15
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_05-12_May_Preliminary_Assessments.xls",
+      "year": "2012",
+      "rows": 13
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_06-12_June_Preliminary_Assessments.xls",
+      "year": "2012",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_07-12_July_Preliminary_Assessments.xls",
+      "year": "2012",
+      "rows": 16
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_08-12_August_Preliminary_Assessments.xls",
+      "year": "2012",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_09-12_September_Preliminary_Assessments_-_AMENDED.xls",
+      "year": "2012",
+      "rows": 18
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_10-12_October_Preliminary_Assessments.xls",
+      "year": "2012",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_11-12_November_Preliminary_Assessments.xls",
+      "year": "2012",
+      "rows": 12
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2012_AQ_-_12-12_December_Preliminary_Assessments.xls",
+      "year": "2012",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_01-11_January_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 7
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_02-11_February_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 6
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_03-11_March_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_04-11_April_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_05-11_May_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 11
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_06-11_June_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_07-11_July_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 6
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_08-11_August_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_09-11_September_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_10_-_11_October_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_11_-_11_November_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_12_-_11_December_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 8
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_01_-_12_January_Preliminary_Assessments.xls",
+      "year": "2011",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2011_AQ_-_01_-_12_January_Preliminary_Assessments_-_Amended_022112.xls",
+      "year": "2011",
+      "rows": 10
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2010_AQ_-_May_Preliminary_Assessments.xls",
+      "year": "2010",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2010_AQ_-_06_June_Preliminary_Assessments.xls",
+      "year": "2010",
+      "rows": 3
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2010_AQ_-_08_August_Preliminary_Assessments.xls",
+      "year": "2010",
+      "rows": 2
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2010_AQ_-_09_September_Preliminary_Assessments.xls",
+      "year": "2010",
+      "rows": 9
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2010_AQ_-_10_October_Preliminary_Assessments.xls",
+      "year": "2010",
+      "rows": 4
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2010_AQ_-_11_November_Preliminary_Assessments.xls",
+      "year": "2010",
+      "rows": 5
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2010_AQ_-_12_December_Preliminary_Assessments.xls",
+      "year": "2010",
+      "rows": 5
+    },
+    {
+      "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_2010_AQ_-_01-11_January_Preliminary_Assessments.xls",
+      "year": "2010",
+      "rows": 7
+    }
+  ],
+  "scope": "All 199 preliminary-assessment spreadsheets published under SPP 2010–2026 Delivery Point Assessment index; one 2010 example DOC retained separately. Historical results, not an active load queue. Customer, MW and industry generally not columns. Date coverage varies with publication; current 2026 through September.",
+  "coverageDenominator": {
+    "publishedFiles": 199,
+    "parsedFiles": 199,
+    "activeLoadQueueDenominator": null
+  }
+}

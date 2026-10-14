@@ -1,0 +1,53 @@
+{
+  "asOf": "2026-06-30",
+  "publishedAt": "2026-08-17",
+  "checkedAt": "2026-10-03",
+  "latestFound": true,
+  "latestQualification": "Latest report located through web docket searches; no Q3 report located by October 3. Quarterly filing lag means this is not a current-day pipeline.",
+  "sourceUrl": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227753/109137",
+  "mainCount": 118,
+  "announcedUltimateLoadMW": 80059.479,
+  "segmentCounts": {
+    "Data Center/Crypto": 108,
+    "Manufacturing": 6,
+    "Clean Energy Tech": 4
+  },
+  "segmentMW": {
+    "Clean Energy Tech": 538,
+    "Manufacturing": 1854.479,
+    "Data Center/Crypto": 77667
+  },
+  "stageCounts": {
+    "Technical Review": 86,
+    "Request for Service": 10,
+    "Contract for Electric Service": 22
+  },
+  "stageMW": {
+    "Technical Review": 64492,
+    "Request for Service": 5995.479,
+    "Contract for Electric Service": 9572
+  },
+  "priorSiteAnonymousRows": 118,
+  "priorFieldDifferences": [],
+  "changeCounts": {
+    "Load Change": 6,
+    "Ramp Change": 19,
+    "Stage Change": 1,
+    "Removed Projects": 6,
+    "Initial Service Change": 10,
+    "Projects Added": 11
+  },
+  "removedAnnouncedMW": 1382,
+  "removedBelowThresholdMW": 882,
+  "addedAnnouncedMW": 6776,
+  "netLoadChangeMW": 1535.2,
+  "delayedInitialServiceRows": 8,
+  "advancedInitialServiceRows": 2,
+  "coverage": "Complete 118-row public Main sheet plus all nonblank rows in all six change tabs; neither an all-Southeast customer census nor a pure connection queue.",
+  "nameUnknownFraction": 1.0,
+  "exactAnnouncedMWUnknownFraction": 0,
+  "remainingUnenergizedMWUnknownFraction": 1.0,
+  "largeLoadUniverse": "Economic development projects above company organic growth thresholds for commercial and industrial load; threshold values not disclosed in this report. Total economic development pipeline 84,800 MW includes 4,700 MW outside large-load reported rows.",
+  "matchingCaution": "Anonymous change rows are deliberately not matched to Main by MW alone. Added rows overlap Main; removed rows are historical exits, not all cancellations.",
+  "sha256": "d5727a5b3c33cce6ab1e67c6b6f8ba671c15d3695be5adb7c174ce4a7dd92bcd"
+}

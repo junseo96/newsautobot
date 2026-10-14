@@ -1,0 +1,14 @@
+{
+  "version": 10,
+  "timezone": "Asia/Seoul",
+  "active_window_kst": {"start": "06:00", "end": "21:00"},
+  "scheduled_hours_kst": [6, 9, 12, 15, 18, 21],
+  "morning_window": {"previous_day_start": "21:00", "end": "06:00"},
+  "freshness_hours": 72,
+  "gmail_overlap_hours": 6,
+  "screen_page_size": 100,
+  "screen_summary_chars": 240,
+  "source_policy": "sources.json and existing company/transmission watchlists retained",
+  "history_policy": "inherit immutable retirement baseline from runtime-v9.json",
+  "completion_policy": "all screened candidates accounted for; receipt-backed delivery and ACK required"
+}

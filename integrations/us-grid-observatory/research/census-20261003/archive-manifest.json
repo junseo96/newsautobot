@@ -1,0 +1,568 @@
+{
+  "checkedAt": "2026-10-03",
+  "description": "Selected reproducibility artifacts copied from research-census. Raw binary source documents, massive normalized row duplicates, browser/search payloads, and before snapshots are excluded. Existing regional README text is retained as historical researcher documentation.",
+  "fileCount": 80,
+  "totalCopiedBytes": 836308,
+  "files": [
+    {
+      "path": "california/build_named_loads.py",
+      "originalResearchPath": "california/build_named_loads.py",
+      "bytes": 15359,
+      "sha256": "284abde5d476cb4e0a8b84cf0336696d8e941d0a12b9349a08391c955ba7926a",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "california/build_research_package.py",
+      "originalResearchPath": "california/build_research_package.py",
+      "bytes": 22937,
+      "sha256": "aa5870c7ebaedc3d927065aeed622bc519be3be7f77568d9701c53491afcb367",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "california/coverage-inventory.json",
+      "originalResearchPath": "california/coverage-inventory.json",
+      "bytes": 19686,
+      "sha256": "88151ed0506ff996d9f9a88374ff3873c985e6dd9c74a2e099463500ac81b2b1",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "california/download_primary_evidence.py",
+      "originalResearchPath": "california/download_primary_evidence.py",
+      "bytes": 1827,
+      "sha256": "ee3c34db3386d0f8777f17ceb6dfa4ab0c92a94857b680e2a79e5415f660c18e",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "california/energization-inventory.json",
+      "originalResearchPath": "california/energization-inventory.json",
+      "bytes": 69381,
+      "sha256": "04a3235a596aa365206b5826d1acd6766d3f9a174dd06aaaf0b9fcd0bc1d8432",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "california/named-project-evidence.json",
+      "originalResearchPath": "california/named-project-evidence.json",
+      "bytes": 11168,
+      "sha256": "f303d7e4ce799129dc03d76002af9f1d99f0240a29d4a92c7112927a06709e7d",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "california/named-source-downloads.json",
+      "originalResearchPath": "california/named-source-downloads.json",
+      "bytes": 2413,
+      "sha256": "fe04ffa2a5775a7e68498e7176a54a1ea82c453e1057800346ab4c051319d3be",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "california/parse_energization.py",
+      "originalResearchPath": "california/parse_energization.py",
+      "bytes": 10748,
+      "sha256": "a55f4d0bdd9f08cd720c1aa36066463a5f872acb6f84bf3ef1c9712b331e9797",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "california/research-notes.json",
+      "originalResearchPath": "california/research-notes.json",
+      "bytes": 3591,
+      "sha256": "a2b9e7a6939cae6afaf7f4976fd6cb920ce1c318aa9e34f22bcee41272bbbb72",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "ercot/aggregate-evidence.json",
+      "originalResearchPath": "ercot/aggregate-evidence.json",
+      "bytes": 1704,
+      "sha256": "fbe5d2da6043954b486eee53cdd07eea56af16b606be47868a2ee008acd42bd3",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "ercot/build-research.py",
+      "originalResearchPath": "ercot/build-research.py",
+      "bytes": 22610,
+      "sha256": "02150e82dccee6f97e7b6124cade3c0a63d8f4ce5ccfb8c848344bde27aacd05",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "ercot/load-observations-additions.json",
+      "originalResearchPath": "ercot/load-observations-additions.json",
+      "bytes": 4091,
+      "sha256": "45219ec8be60dffd94b859c895d42005012b637a67cbecfd641a8289b2164759",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "ercot/source-inventory.json",
+      "originalResearchPath": "ercot/source-inventory.json",
+      "bytes": 4974,
+      "sha256": "5971a9c9dca80679716676d2620a0b9c0f5d684a9a7677bee28de11d50ae5ea9",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "ercot/sources.json",
+      "originalResearchPath": "ercot/sources.json",
+      "bytes": 6844,
+      "sha256": "6ba669d77e55c7d53a94a830b36c95eb2cbe26e09c281b923908d69da8b18831",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/capacity-audit-patches.json",
+      "originalResearchPath": "northeast/capacity-audit-patches.json",
+      "bytes": 18364,
+      "sha256": "49f6e4d717f85ac8a377d3bdf3d98162f498073f35b83f4b1303ff6c90f0c7ce",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/isone-2026-large-loads.pdf.metadata.json",
+      "originalResearchPath": "northeast/isone-2026-large-loads.pdf.metadata.json",
+      "bytes": 324,
+      "sha256": "a210bd987fc51a8374c5d7f58698f53f6180e5e4fcb36c256ecc0ee675413c9f",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/isone-census-evidence.json",
+      "originalResearchPath": "northeast/isone-census-evidence.json",
+      "bytes": 7221,
+      "sha256": "ddf99e1008a6aaf1922f5031aa6ef6bdf74787e2930d0fb2c58c223bb24aed95",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/isone-ferc-july2026.pdf.metadata.json",
+      "originalResearchPath": "northeast/isone-ferc-july2026.pdf.metadata.json",
+      "bytes": 240,
+      "sha256": "cc21ee947237f5b94e04c91a65dd7885715e0e05fee51d00642d0d89757e463e",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/maine-cmp-comments.pdf.metadata.json",
+      "originalResearchPath": "northeast/maine-cmp-comments.pdf.metadata.json",
+      "bytes": 332,
+      "sha256": "ac7ef2a2487d97f92ad9716f4f6cd116fce0de32b99c16f46f93ec7257730c46",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/maine-cmp-filing.html.metadata.json",
+      "originalResearchPath": "northeast/maine-cmp-filing.html.metadata.json",
+      "bytes": 251,
+      "sha256": "8e87a7ff7edf6fbd0a3a8b63d933cdfc92fd1da0afa01e6de0dc0367bac7e712",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/maine-versant-comments.pdf.metadata.json",
+      "originalResearchPath": "northeast/maine-versant-comments.pdf.metadata.json",
+      "bytes": 332,
+      "sha256": "8e47cd2f1b5a1b5f58785ca232b5278ad31e5ddeb9de847c67a8a95e2172d2ff",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/maine-versant-filing.html.metadata.json",
+      "originalResearchPath": "northeast/maine-versant-filing.html.metadata.json",
+      "bytes": 251,
+      "sha256": "bd2b8a188e426112b26045fd0fe3da7790a9074691b7f8d0263466e180c75eee",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/named-industrial-research-leads.json",
+      "originalResearchPath": "northeast/named-industrial-research-leads.json",
+      "bytes": 2986,
+      "sha256": "1b54d9d4979cba123638c3fb03192394f31e473aa03f35102fd5768a99c48561",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/normalization-run-summary.txt",
+      "originalResearchPath": "northeast/normalization-run-summary.txt",
+      "bytes": 3464,
+      "sha256": "437eca66ffb941270cc4d5bf25aff337a7a4e3f8f33de10c96d2305142be3f68",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/normalize_nyiso.py",
+      "originalResearchPath": "northeast/normalize_nyiso.py",
+      "bytes": 8379,
+      "sha256": "2924ffdf3adee735aeb484b7d97b91e9d8ad3d79d26ed44d653725b6061cac3f",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/nyiso-comparison-summary.json",
+      "originalResearchPath": "northeast/nyiso-comparison-summary.json",
+      "bytes": 3464,
+      "sha256": "437eca66ffb941270cc4d5bf25aff337a7a4e3f8f33de10c96d2305142be3f68",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/nyiso-official-legends.json",
+      "originalResearchPath": "northeast/nyiso-official-legends.json",
+      "bytes": 3884,
+      "sha256": "b3f2346ca35d600f4dd52da4d6a7eef3039188176213c71747c8a4d5005dc56d",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "northeast/nyiso-queue.xlsx.metadata.json",
+      "originalResearchPath": "northeast/nyiso-queue.xlsx.metadata.json",
+      "bytes": 355,
+      "sha256": "5fc234a5669d15a78a07af4d328d273080cb21994329ea1e3b968f956ace7a16",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "pjm-miso/README.md",
+      "originalResearchPath": "pjm-miso/README.md",
+      "bytes": 5010,
+      "sha256": "80de3c3bc67d7978f6d1429674c89a3e8826f060e9bfc3e5332bc418004ed9dc",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "pjm-miso/build_highlights.py",
+      "originalResearchPath": "pjm-miso/build_highlights.py",
+      "bytes": 6002,
+      "sha256": "8686f3e01e00b24cc8d1f592485f86d9ecd9c15ee893fc548232a813fb5c9a5b",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "pjm-miso/coverage-summary.json",
+      "originalResearchPath": "pjm-miso/coverage-summary.json",
+      "bytes": 4280,
+      "sha256": "7817e18a57b698a70fca873b00ec1a987c0dbd7d86389db66a869b8f1f8951d4",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "pjm-miso/extract_registers.py",
+      "originalResearchPath": "pjm-miso/extract_registers.py",
+      "bytes": 1595,
+      "sha256": "4f3e6a4422b734324f5de83452358759644a1cae581c842c51b7db0da4b688e0",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "pjm-miso/fetch_sources.py",
+      "originalResearchPath": "pjm-miso/fetch_sources.py",
+      "bytes": 1594,
+      "sha256": "bcf39214dec99200123106b8543d9640bf8f222f9aa1ebce000b65934a472e2d",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "pjm-miso/normalization-log.json",
+      "originalResearchPath": "pjm-miso/normalization-log.json",
+      "bytes": 4281,
+      "sha256": "85b40280b3823c4e3bccbdd9df3e5defa8df711f57c304924886cfef461c6821",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "pjm-miso/normalize_census.py",
+      "originalResearchPath": "pjm-miso/normalize_census.py",
+      "bytes": 13751,
+      "sha256": "b4259d687064c273bd59a8c8078274befbe6dc8403ca18313c2aa6111a41f260",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "pjm-miso/primary-source-manifest.json",
+      "originalResearchPath": "pjm-miso/primary-source-manifest.json",
+      "bytes": 1347,
+      "sha256": "35781b3b98a7d53f5ae954c12ff4f9d787683993d6217a3d96311d58fdfb08c0",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "pjm-miso/raw/source-manifest.json",
+      "originalResearchPath": "pjm-miso/raw/source-manifest.json",
+      "bytes": 25885,
+      "sha256": "a758f98857372fedb677e2d0e56a40f5eecfa9aedcbe13786ac0f0c4014280e5",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "pjm-miso/raw/teac-links.json",
+      "originalResearchPath": "pjm-miso/raw/teac-links.json",
+      "bytes": 53579,
+      "sha256": "4aaec6d22a590511f538185cf07e29c583a1348b122899d70669484881d48370",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/README.md",
+      "originalResearchPath": "southeast/README.md",
+      "bytes": 4528,
+      "sha256": "d3e790f31bfc9c9b845be152a5886260ad0727e59d55a2fb73d6c98d771ff0fb",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/coverage.json",
+      "originalResearchPath": "southeast/coverage.json",
+      "bytes": 4435,
+      "sha256": "e989d4cb7e18354cbea87a0d3beb6534279c2030f0374bbbee6e766e5aa5c87c",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/georgia_changes.json",
+      "originalResearchPath": "southeast/georgia_changes.json",
+      "bytes": 39467,
+      "sha256": "9d723441bbcd72672551e5fa1defa3fa0af2491ad6a5de196f6cb2f6c15d8a75",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/georgia_removed_from_screen.json",
+      "originalResearchPath": "southeast/georgia_removed_from_screen.json",
+      "bytes": 5397,
+      "sha256": "5ee7d71d6721f8f4eee21835ce48d9d025d0b99dadfeb5e5cde33a9f8ecc0cc6",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/georgia_summary.json",
+      "originalResearchPath": "southeast/georgia_summary.json",
+      "bytes": 2187,
+      "sha256": "447ae321ac987b349a8b4ef82c9ea8ff6a58acea1f52838e9a07b30214c1cd5e",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/load_observations_additions.json",
+      "originalResearchPath": "southeast/load_observations_additions.json",
+      "bytes": 9566,
+      "sha256": "24d321ed87f95413ecf5725a7fb778f9a3c98c20edd42807e5f29f4b5f92e679",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/named_industrial_summary.json",
+      "originalResearchPath": "southeast/named_industrial_summary.json",
+      "bytes": 899,
+      "sha256": "3c42e3a97d30b0bf78faf46b1b99de19f39b88baa4e506aa949db05934d254d5",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/raw/download_extra_manifest.json",
+      "originalResearchPath": "southeast/raw/download_extra_manifest.json",
+      "bytes": 5208,
+      "sha256": "d47a7c00c7cf854cf01bb82460e46eec19b0360ddd903f7e8ca2d89e86dc2517",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/raw/download_manifest.json",
+      "originalResearchPath": "southeast/raw/download_manifest.json",
+      "bytes": 965,
+      "sha256": "4903d3fd86b78a7c6400616b48f7868e8117c964b894b4399e4131c2d688c718",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/raw/download_remaining_manifest.json",
+      "originalResearchPath": "southeast/raw/download_remaining_manifest.json",
+      "bytes": 1541,
+      "sha256": "d43312306fa6e01a568b87df4b72ed37af76ddc2edbd00df5dde8ca7a720e87e",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/raw/ford_pdf_manifest.json",
+      "originalResearchPath": "southeast/raw/ford_pdf_manifest.json",
+      "bytes": 429,
+      "sha256": "629c0ba9126e352324087d48649bfa3a720e8395f3339a3fdc5d5b0b9f147c9d",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/scripts/build_deliverables.py",
+      "originalResearchPath": "southeast/scripts/build_deliverables.py",
+      "bytes": 16688,
+      "sha256": "c2788225c8e63ce00d5d278809c21fe8b8545c9389d5c9c1fa6553f07ddb5378",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/scripts/build_inventory.py",
+      "originalResearchPath": "southeast/scripts/build_inventory.py",
+      "bytes": 9636,
+      "sha256": "df5ff8801220e77726b47a1aa0e8db39cc34641a3c7a96241806fef10f7c5f58",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/scripts/download_extra.py",
+      "originalResearchPath": "southeast/scripts/download_extra.py",
+      "bytes": 3299,
+      "sha256": "5874ab8ed7d2ff40ebd76f1d71a2d515455a0fc3fcbbd03e31d7a3fb08689e1d",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/scripts/download_remaining.py",
+      "originalResearchPath": "southeast/scripts/download_remaining.py",
+      "bytes": 1609,
+      "sha256": "9e841f3351a7a40f38ab654714d694160c533fdf1a31dd1fb0d5172c49d81cb2",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/scripts/parse_georgia.py",
+      "originalResearchPath": "southeast/scripts/parse_georgia.py",
+      "bytes": 6749,
+      "sha256": "4e810d8ba70137839fc1572865af6ac7c2178ee4f278c26560fbd285e8922cd0",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/scripts/translate_korean.py",
+      "originalResearchPath": "southeast/scripts/translate_korean.py",
+      "bytes": 11991,
+      "sha256": "e2e950a70edd3b87c8fa1cbe3b8b150a0e6df4332dd78cfee365a040e5004207",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/source_inventory.json",
+      "originalResearchPath": "southeast/source_inventory.json",
+      "bytes": 7292,
+      "sha256": "737c926c0bc15a5cb3b803027c295c04bb323383efe8a4c4cfaa16f7c6bfc44d",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "southeast/tva_public_approval_events.json",
+      "originalResearchPath": "southeast/tva_public_approval_events.json",
+      "bytes": 3924,
+      "sha256": "21905b15a71bef5b720a30e8f102ba9b58dca720d7cc2f13e9f64d7185536d20",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/add_black_hills.py",
+      "originalResearchPath": "spp-west/add_black_hills.py",
+      "bytes": 4729,
+      "sha256": "78ade6b51ff6cf7775d8b4ac96ee471c90700b531b8f3908ed2915e5cb41f0e8",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/bpa_changes_from_site.json",
+      "originalResearchPath": "spp-west/bpa_changes_from_site.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/bpa_summary.json",
+      "originalResearchPath": "spp-west/bpa_summary.json",
+      "bytes": 1181,
+      "sha256": "e5ae00c5c614d27933652da3d45e2820b3587eff78065c20f869d5717daede35",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/fetch_dpns.py",
+      "originalResearchPath": "spp-west/fetch_dpns.py",
+      "bytes": 1233,
+      "sha256": "680f550afaac15cb2acf181d712f7f7898d88c15175a2d878f99d042f64ca27e",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/fetch_spp_archive.py",
+      "originalResearchPath": "spp-west/fetch_spp_archive.py",
+      "bytes": 1632,
+      "sha256": "70b7362e2e29bf9e2f09be8fb9c51f4a6081224f310d072024a1472d803d8d57",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/fetch_west_sources.py",
+      "originalResearchPath": "spp-west/fetch_west_sources.py",
+      "bytes": 2034,
+      "sha256": "b61fa68d79701b4b0a54106a9e4d66d458d339935daeead1f6288c7d3e2bed75",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/file_manifest.json",
+      "originalResearchPath": "spp-west/file_manifest.json",
+      "bytes": 58141,
+      "sha256": "7b273a26ce88019c9623dd2c16876f3f272a5ef8af0fb096e894d319293e815f",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/normalize_spp.py",
+      "originalResearchPath": "spp-west/normalize_spp.py",
+      "bytes": 9081,
+      "sha256": "124f9216f962b5e8c6c8299da2c16caac3e83059c93961165afdfe8c5acfc282",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/parse_registers.py",
+      "originalResearchPath": "spp-west/parse_registers.py",
+      "bytes": 7653,
+      "sha256": "94a758f7814795935a2b80fe7f89b6f69a0ae1701e352d5b84b8f223e314034b",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/raw/download_manifest.json",
+      "originalResearchPath": "spp-west/raw/download_manifest.json",
+      "bytes": 3447,
+      "sha256": "872ecd5899b970cdb1dd2c9095d9c47da9038cf17462a1b2d483383be8d97633",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/raw/spp_archive_manifest.json",
+      "originalResearchPath": "spp-west/raw/spp_archive_manifest.json",
+      "bytes": 113098,
+      "sha256": "89ce72a0a58fe1ff855c10a30239c6fb96b0bee55ae0c9006fc28f7d7ba66fe5",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/raw/spp_download_manifest.json",
+      "originalResearchPath": "spp-west/raw/spp_download_manifest.json",
+      "bytes": 2039,
+      "sha256": "45f04fb863580052f000c66c05f14f2633197614c358540bc4ca6d8a474539af",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/raw/spp_dpns_manifest.json",
+      "originalResearchPath": "spp-west/raw/spp_dpns_manifest.json",
+      "bytes": 10459,
+      "sha256": "f709c3e6fcd32b050e573a608479d59b8c16cb60817237b97e46b0d36fed2504",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/raw/west_sources_manifest.json",
+      "originalResearchPath": "spp-west/raw/west_sources_manifest.json",
+      "bytes": 3339,
+      "sha256": "c6533c2886a2f80f77c36c8c417ac6594cd9ea00ea2775bca07b0589cd1ed9b2",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/research_handoff.json",
+      "originalResearchPath": "spp-west/research_handoff.json",
+      "bytes": 3823,
+      "sha256": "05ff2d58534498cca25f8f52af61d5bf52adf4267d5baec804d129693c40b0ab",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/spp_archive_summary.json",
+      "originalResearchPath": "spp-west/spp_archive_summary.json",
+      "bytes": 37896,
+      "sha256": "6d5f2d20f602ee42b11bcae59cf5ae4c830fa1362f982322a2fb824f5b0194f2",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/spp_normalization_summary.json",
+      "originalResearchPath": "spp-west/spp_normalization_summary.json",
+      "bytes": 525,
+      "sha256": "be1b7f93215d445d8b6aa86c005919121a9c4d8c2e371c8c4d4bfddecc2c5401",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/spp_parse_empty_workbooks.json",
+      "originalResearchPath": "spp-west/spp_parse_empty_workbooks.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/spp_study_evidence.json",
+      "originalResearchPath": "spp-west/spp_study_evidence.json",
+      "bytes": 37624,
+      "sha256": "9eb51f49cf69719ccf19c6caef2dcf2dca0172404a0107f270dd549202ccc8a1",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/west_additional_contract_records.json",
+      "originalResearchPath": "spp-west/west_additional_contract_records.json",
+      "bytes": 10041,
+      "sha256": "d6b73320f750ac38dd68f44eed59ddf58b4cfaa5f9ba5898313915a4f25dae7b",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/west_coverage_gaps.json",
+      "originalResearchPath": "spp-west/west_coverage_gaps.json",
+      "bytes": 8803,
+      "sha256": "a3d6d317dbfd8e12503f2cc31b3d52a211916ca66fce1b660ca49db656e12c42",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/west_new_aggregate_observations.json",
+      "originalResearchPath": "spp-west/west_new_aggregate_observations.json",
+      "bytes": 7177,
+      "sha256": "0c3bbe643d5b5790449a9043e816e13aecd72b36255a32ae4132428c20ebce5a",
+      "copyMode": "byte-identical"
+    },
+    {
+      "path": "spp-west/write_west_findings.py",
+      "originalResearchPath": "spp-west/write_west_findings.py",
+      "bytes": 12035,
+      "sha256": "fc38ca8db8b5c03f7f14fec723192962903d4822c5ace16c6d9727911960ee3c",
+      "copyMode": "byte-identical"
+    }
+  ]
+}

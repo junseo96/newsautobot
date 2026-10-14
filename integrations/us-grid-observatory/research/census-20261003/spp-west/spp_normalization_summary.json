@@ -1,0 +1,20 @@
+{
+  "assessmentIDs": 2447,
+  "allRecordsIncludingPLPOnly": 2449,
+  "historyRows": 2475,
+  "assessmentHistoryRowTotal": 2475,
+  "newVsExisting": 2299,
+  "currentActiveLoadDenominator": null,
+  "matchedStudyEvidenceRecords": 38,
+  "numericStudyCapacityRecords": 19,
+  "uniqueStudyReports": 24,
+  "unmatchedStudyIds": [
+    "DPA-2023-April-1771",
+    "DPA-2023-April-1774",
+    "DPA-2023-April-1775",
+    "DPA-2023-April-1777",
+    "DPA-2023-June-1818"
+  ],
+  "allHistoricalIncludeZero": true,
+  "allCurrentStageUnknown": true
+}

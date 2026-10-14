@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-10-03",
+  "scope": "SPP, BPA, non-RTO West; official-source assessment and LL registers plus utility/PUC records and evidence gaps. No Site modifications.",
+  "spp": {
+    "assessmentIDs": 2447,
+    "allRecordsIncludingPLPOnly": 2449,
+    "historyRows": 2475,
+    "assessmentHistoryRowTotal": 2475,
+    "newVsExisting": 2299,
+    "currentActiveLoadDenominator": null,
+    "matchedStudyEvidenceRecords": 38,
+    "numericStudyCapacityRecords": 19,
+    "uniqueStudyReports": 24,
+    "unmatchedStudyIds": [
+      "DPA-2023-April-1771",
+      "DPA-2023-April-1774",
+      "DPA-2023-April-1775",
+      "DPA-2023-April-1777",
+      "DPA-2023-June-1818"
+    ],
+    "allHistoricalIncludeZero": true,
+    "allCurrentStageUnknown": true
+  },
+  "bpa": {
+    "rowCount": 458,
+    "rawStatusCounts": {
+      "RECEIVED": 19,
+      "WITHDRAWN": 170,
+      "STUDY": 101,
+      "BPA COMPLETED": 32,
+      "STUDY COMPLETED": 27,
+      "CONST AGRMT EXE": 24,
+      "ENERGIZED": 84,
+      "E&P EXECUTED": 1
+    },
+    "classificationCounts": {
+      "unspecified_line_or_load": 329,
+      "explicit_load_description": 90,
+      "network_description_load_purpose_unconfirmed": 31,
+      "explicit_line_only_description": 7,
+      "explicit_load_and_network_description": 1
+    },
+    "industryTagCounts": {
+      "mining": 5,
+      "data_center": 31,
+      "hydrogen": 4,
+      "steel_metals": 5,
+      "industrial_unspecified": 16,
+      "crypto_blockchain": 3,
+      "refining_fuels": 10,
+      "semiconductor": 1,
+      "paper_packaging": 3
+    },
+    "missingSummerServiceMW": 103,
+    "missingWinterServiceMW": 103,
+    "sourceTimestamp": "2026-10-03T03:01:04.129000",
+    "coverageDenominator": {
+      "allPublishedLLRows": 458,
+      "allNewLargeLoadCustomers": null
+    },
+    "scope": "All BPA Connection Type LL rows including historical energized, withdrawn, line, mixed network/load and unspecified purpose. Summer/Winter Interconnection Service MW are preserved, not recast as net-new requested load."
+  },
+  "additionalWesternDocketRecords": 10,
+  "additionalWesternAggregateObservations": 7,
+  "operatorCoverageGapRecords": 10,
+  "keyLimitations": [
+    "SPP unique assessment IDs are historical published assessment identities, not physical facilities or current pending customers.",
+    "SPP detailed report MW are modeled study-load values, not necessarily net-new requested or contracted demand. Do not sum them.",
+    "BPA LL includes lines, substations, transfers, withdrawals and energized projects. All 458 rows are excluded from additive customer MW.",
+    "BPA workbook contains no public study-report hyperlinks on any of its 458 LL rows.",
+    "Western docket records may be amendments or cover several legal entities. They are evidence observations, not necessarily new customers.",
+    "No complete current high-load customer denominator established for any western utility in reviewed public material. NV Energy 50-project denominator is a specific 2026 IRP forecast scope.",
+    "Black Hills April 29 presentation verified through official web PDF extraction; local download timed out. SD PUC public documents downloaded successfully."
+  ],
+  "primaryImportFiles": [
+    "spp_normalized_projects.json",
+    "bpa_normalized_projects.json",
+    "west_additional_contract_records.json",
+    "west_new_aggregate_observations.json",
+    "west_coverage_gaps.json"
+  ],
+  "rawDataFiles": [
+    "spp_all_assessment_rows.json",
+    "spp_2026_new_rows.json",
+    "spp_study_evidence.json",
+    "bpa_all_ll_rows.json"
+  ],
+  "preservation": "All SPP assessment history rows retain original URL, index URL, publication date, workbook sheet/row and raw fields. BPA records retain all 40 raw source fields. Research raw directory contains the original source workbooks and retrieved detailed reports."
+}

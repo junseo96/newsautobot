@@ -1,0 +1,1164 @@
+[
+  {
+    "id": "nyiso-load-register",
+    "region": "NYISO",
+    "operator": "NYISO",
+    "title": "Load Projects 공개 원장",
+    "universe": "공개 Load Projects 시트 74행 전체; 활성 53행·14,232.9 MW, 철회 17행, 운영 4행. 뉴욕 전체 배전·소매 서비스 신청 건수 미상.",
+    "selection": "공식 21개 열과 End-Use 코드·상태 범례 보존; 74개 ID 전량 수록; SIS Pending의 G2 유지.",
+    "coverage": "full-register",
+    "sourceRows": 74,
+    "loadedRows": 74,
+    "sourceDate": null,
+    "sourceDateMeaning": "단일 원장 기준일 미확정. HTTP Last-Modified 2026-09-11, XLSX core modified 2026-09-11, 개별 Last Updated 최대 2026-09-30의 불일치. 기존 2026-10-02는 수집 표기; 2026-10-03은 재확인일.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+    "gaps": [
+      "지역 전력회사 배전·소매 신청의 전체 포함 여부 미확인.",
+      "End-Use 원문 공란 23행; 고객명 기반 원문 코드 추정 제외. 1465의 Last Updated 원문 14는 날짜로 변환 제외."
+    ],
+    "nextAction": "주간 XLSX ID·MW·원문 상태 차분과 날짜 이상치 확인; 지역 전력회사 원장 포함 범위 대조"
+  },
+  {
+    "id": "isone-selected-forecast",
+    "region": "ISO-NE",
+    "operator": "ISO New England",
+    "title": "2026 CELT 대규모 부하 선별표",
+    "universe": "20 MW 초과 및 정식 연구계약 체결 등 전망 선별조건 충족 2행 전체; NEMA 데이터센터 200 MW·CT 일반전기화 85 MW. 뉴잉글랜드 전체 서비스 신청 분모 미상.",
+    "selection": "14쪽 익명 선별표 2행 수록; 저감 전 명목용량 285 MW 보존. 장기 피크 반영분 약 110 MW와 별도 지표.",
+    "coverage": "filtered-register",
+    "sourceRows": 2,
+    "loadedRows": 2,
+    "sourceDate": "2026-03-27",
+    "sourceDateMeaning": "전망 자료 작성일; 2건의 고객 접수일·통전일과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.iso-ne.com/static-assets/documents/100033/fx2026_large_loads.pdf",
+    "gaps": [
+      "이전 단계 문의·20 MW 이하·배전 신청·미선정 산업 고객 미포함.",
+      "2026-07-20 FERC 정보보고서의 TO 추적 절차 개발 확인; 전 고객 목록 부록 미확보."
+    ],
+    "nextAction": "LFC·CELT 후속 선별표 및 TO별 고객 신청 보고서 대조"
+  },
+  {
+    "id": "isone-cmp-inquiries",
+    "region": "ISO-NE",
+    "operator": "Central Maine Power",
+    "title": "Maine PUC 데이터센터 문의 집계",
+    "universe": "2026-00142 공개 의견서의 데이터센터 문의 10건; 전체 산업 고객·중복 제거 고객 분모 미상.",
+    "selection": "예비 선별 완료 4건·진행 3건·초기 협의 3건 집계; 완료 4건 중 정식 타당성 연구 요청 1건. 익명 개별행 생성 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-06-26",
+    "sourceDateMeaning": "공개 의견서 작성·제출일; 집계의 별도 기준일 미명시.",
+    "checkedAt": "2026-10-03",
+    "url": "https://mpuc-cms.maine.gov/CQM.Public.WebUI/MatterManagement/MatterFilingItem.aspx?CaseNumber=2026-00142&FilingSeq=135046",
+    "gaps": [
+      "고객명·요청 ID·개별 MW 미공개; 10건의 고유 물리적 프로젝트 여부 미확인."
+    ],
+    "nextAction": "후속 PUC 의견서·연구 진행 현황 및 비데이터센터 대규모 고객 보고 범위 확인"
+  },
+  {
+    "id": "isone-versant-inquiries",
+    "region": "ISO-NE",
+    "operator": "Versant Power",
+    "title": "Maine PUC 데이터센터 문의 집계",
+    "universe": "Versant 서비스권역 문의 6건; Load Sheet 제출 3건, 타당성 연구 진입 0건. ISO-NE와 Northern Maine 간 배분 미상.",
+    "selection": "메인주 전체 문의 관측치 보존; 6개 ISO-NE 고객행·0 MW로의 변환 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-06-26",
+    "sourceDateMeaning": "공개 의견서 작성·제출일; 문의별 접수일 미공개.",
+    "checkedAt": "2026-10-03",
+    "url": "https://mpuc-cms.maine.gov/CQM.Public.WebUI/MatterManagement/MatterFilingItem.aspx?CaseNumber=2026-00142&FilingSeq=135064",
+    "gaps": [
+      "고객명·ID·개별 MW 및 중복 여부 미공개.",
+      "일부 서비스권역의 ISO-NE 외 지역 포함 가능성; 6건 전량의 ISO-NE 귀속 제외."
+    ],
+    "nextAction": "계통권역별 문의 분해 및 정식 연구 전환 보고 확인"
+  },
+  {
+    "id": "isone-ma-esmp-access",
+    "region": "ISO-NE",
+    "operator": "Eversource / National Grid / Unitil MA",
+    "title": "Massachusetts ESMP 부하 보고 취득 공백",
+    "universe": "DPU 26-ESMP-01의 2026년 3월 회고 보고 대상 전력회사 3개 그룹; 신규 step/spot load 보고의 실제 행 수 미상.",
+    "selection": "공식 보고 의무 확인; 실제 고객 표 미취득. electricgrid HTTP 502·mass.gov HTTP 403 발생 기록.",
+    "coverage": "access-failed",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": null,
+    "sourceDateMeaning": "2025-09-09 보고 지침 확인; 대상 회고기간 2025-12-31까지. 2026년 실제 제출표 작성일 미확정.",
+    "checkedAt": "2026-10-03",
+    "url": "https://electricgrid.mass.gov/wp-content/uploads/2025/11/D.P.U.-24-10-11-12-ESMP-MetricsReporting-Memo-9.9.25.pdf",
+    "gaps": [
+      "NSTAR·Massachusetts/Nantucket Electric·Fitchburg의 실제 산업별 신청표·고객 MW 미확보."
+    ],
+    "nextAction": "DPU 26-ESMP-01 원문 첨부표 재취득 및 세 전력회사별 분모 확인"
+  },
+  {
+    "id": "isone-remaining-utilities",
+    "region": "ISO-NE",
+    "operator": "뉴잉글랜드 잔여 전력회사",
+    "title": "전력회사별 미검토 범위",
+    "universe": "CT·RI·NH·VT의 IOU·공영·협동조합 고객 원장; 사업자별·전 산업별 전체 분모 미상.",
+    "selection": "CL&P·UI·Rhode Island Energy·Eversource NH·Unitil NH·Liberty NH·GMP·VEC 및 공영·협동조합의 개별 전수 원장 조사 미완료. ISO-NE 자료는 참고 경로.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": null,
+    "sourceDate": null,
+    "sourceDateMeaning": "미검토 원장의 기준일 미상; 2026-10-03은 조사 공백 정리일.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.iso-ne.com/committees/reliability/load-forecast",
+    "gaps": [
+      "확인된 ISO-NE 선별표와 Maine 문의 집계를 잔여 전력회사 전체 조사로 확장 불가."
+    ],
+    "nextAction": "주별 PUC·유틸리티 서비스 신청·산업별 특별계약 원장 순차 조사"
+  },
+  {
+    "id": "pjm-m3-support",
+    "region": "PJM",
+    "operator": "PJM / 21개 송전 소유자",
+    "title": "M-3 송전 지원 필요 원장",
+    "universe": "Tracking Sheet 전체 3,057행 중 Customer Service 또는 Total Expected Load 값 존재 1,125행. 개별 고객 접속대기열의 전체 분모 미상.",
+    "selection": "전 업종·무최소 MW 필터; 1,125행과 원문 열 전량 수록. 고객 필요·기존 부하·이전·지역 성장·취소 포함. 송전 Need Number와 고객 Queue ID의 구별.",
+    "coverage": "filtered-register",
+    "sourceRows": 3057,
+    "loadedRows": 1125,
+    "sourceDate": "2026-10-01",
+    "sourceDateMeaning": "원장 작성 기준일; 2026-10-06 회의 경로와 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/teac/2026/20261006/20261006-informational-only---m-3-process-needs-status.xlsx",
+    "gaps": [
+      "고객별 명칭·현재 접속 단계·잔여 미통전 MW 미확인; 복수 송전사업과 동일 고객의 중복 가능성.",
+      "418개 MW 값의 총량·증분·기존 피크·권역·램프 범위 혼재; 합산 제외. MVA·설비 정격의 고객 MW 전환 제외."
+    ],
+    "nextAction": "M-3 후속 원장 차분과 공개 계약·LAS 제출자료의 동일 고객 근거 연결"
+  },
+  {
+    "id": "pjm-aes-contract-table",
+    "region": "PJM",
+    "operator": "AES Ohio",
+    "title": "공개 익명 고객 계약표",
+    "universe": "공개 제출표의 익명 고객 9행 전체; AES Ohio 전체 문의·고객 신청 분모 미상.",
+    "selection": "ESO 등 원문 계약 표기와 고객별 MW 수록; 계통심사 단계 추정 제외.",
+    "coverage": "filtered-register",
+    "sourceRows": 9,
+    "loadedRows": 9,
+    "sourceDate": "2026-09-21",
+    "sourceDateMeaning": "고객표 기준일; LAS 발표일 2026-09-29와 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5j---dayton_aes.pdf",
+    "gaps": [
+      "표 합계 6,635 MW와 전망 6,485 MW 차이 미해명; 실명·원장 ID·개별 통전일 미공개."
+    ],
+    "nextAction": "후속 AES 고객표와 150 MW 차이 설명·M-3 연결 식별자 확보"
+  },
+  {
+    "id": "pjm-dominion-las",
+    "region": "PJM",
+    "operator": "Dominion Energy Virginia",
+    "title": "2027 부하전망 제출 집계",
+    "universe": "Dominion LSE 데이터센터 ELOA·CLOA·ESA 계약과 청구피크 집계; 전체 산업 고객 분모 미상.",
+    "selection": "2026년 7월 ELOA 32,473·CLOA 9,356·ESA 11,997 MW 및 8월 청구피크 4.8 GW 구분. 개별 고객행 없음.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-09-29",
+    "sourceDateMeaning": "LAS 발표일; 지표별 기준월·목표연도는 원문 관측값 별도 보존.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5ai---dominion_energy.pdf",
+    "gaps": [
+      "개별 ID·중복·미통전 잔량 미공개; ELOA는 계통심사 완료나 착공 증거와 구별",
+      "M-3 지원사업·타 유틸리티·기존 가동 용량과의 단순 합산 제외."
+    ],
+    "nextAction": "LAS 후속 제출표·계약 공시의 고객별 ID와 미통전 잔량 확인"
+  },
+  {
+    "id": "pjm-ppl-las",
+    "region": "PJM",
+    "operator": "PPL Electric Utilities",
+    "title": "2027 부하전망 제출 집계",
+    "universe": "2024년 9월 이후 누적 대규모 부하 문의·요청 및 전망 선별 집계; 현재 유효 고객 분모 미상.",
+    "selection": "요청 240 GW 초과와 ESA/CSA·LOA 전망 집계 분리; 누적 요청을 현재 대기량으로 전환 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-09-29",
+    "sourceDateMeaning": "LAS 발표일; 지표별 기준월·목표연도는 원문 관측값 별도 보존.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5e---ppl.pdf",
+    "gaps": [
+      "누적접수량이므로 현재 유효큐·중복제거·취소차감 불명; 발전큐와 단순비교 금지",
+      "M-3 지원사업·타 유틸리티·기존 가동 용량과의 단순 합산 제외."
+    ],
+    "nextAction": "LAS 후속 제출표·계약 공시의 고객별 ID와 미통전 잔량 확인"
+  },
+  {
+    "id": "pjm-firstenergy-las",
+    "region": "PJM",
+    "operator": "FirstEnergy",
+    "title": "2027 부하전망 제출 집계",
+    "universe": "FirstEnergy PJM 서비스권역 연구 요청·계약·신규 접속 집계; 전체 고유 고객 분모 미상.",
+    "selection": "연구 요청 102 GW·증분 계약/파이프라인 약 22 GW·신규 접속 및 실제 계측 피크의 각각 보존.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-09-29",
+    "sourceDateMeaning": "LAS 발표일; 지표별 기준월·목표연도는 원문 관측값 별도 보존.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5h---firstenergy.pdf",
+    "gaps": [
+      "현재 유효·취소·중복 제거 범위 미공개",
+      "M-3 지원사업·타 유틸리티·기존 가동 용량과의 단순 합산 제외."
+    ],
+    "nextAction": "LAS 후속 제출표·계약 공시의 고객별 ID와 미통전 잔량 확인"
+  },
+  {
+    "id": "pjm-exelon-las",
+    "region": "PJM",
+    "operator": "Exelon (ComEd / PECO)",
+    "title": "2027 부하전망 제출 집계",
+    "universe": "ComEd·PECO 데이터센터 파이프라인 약 37 GW; 운영 포함 전망 선별 집합.",
+    "selection": "전망 포함 약 12 GW와 제외 약 25 GW의 집계 보존; 전체 산업 고객 행 생성 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-09-29",
+    "sourceDateMeaning": "LAS 발표일; 지표별 기준월·목표연도는 원문 관측값 별도 보존.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+    "gaps": [
+      "접속대기열 단독합계 아님; 반올림·개별ID·미통전 잔량 미공개",
+      "M-3 지원사업·타 유틸리티·기존 가동 용량과의 단순 합산 제외."
+    ],
+    "nextAction": "LAS 후속 제출표·계약 공시의 고객별 ID와 미통전 잔량 확인"
+  },
+  {
+    "id": "pjm-aep-las",
+    "region": "PJM",
+    "operator": "AEP PJM utilities",
+    "title": "2027 부하전망 제출 집계",
+    "universe": "APCo·I&M·AEP Ohio·Kentucky Power의 계약 근거 피크부하 전망; 신청 전체 분모 미상.",
+    "selection": "2031년 증분 계획 피크 19,675 MW 보존; 명목계약용량·현재 대기량과 구별.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-09-29",
+    "sourceDateMeaning": "LAS 발표일; 지표별 기준월·목표연도는 원문 관측값 별도 보존.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5f---aep.pdf",
+    "gaps": [
+      "피크부하 전망이며 명목계약용량 아님; 97%ESA/3%LOA는 프로젝트 수 비중",
+      "M-3 지원사업·타 유틸리티·기존 가동 용량과의 단순 합산 제외."
+    ],
+    "nextAction": "LAS 후속 제출표·계약 공시의 고객별 ID와 미통전 잔량 확인"
+  },
+  {
+    "id": "miso-mtep-evaluation",
+    "region": "MISO",
+    "operator": "MISO MTEP",
+    "title": "검토 중 송전사업 원장",
+    "universe": "검토 중 전체 597행 중 Load Growth 또는 명시적 신규 부하 근거 122개 사업; 발전연계 GIP 제외. MISO 고객 신청 전체 분모 미상.",
+    "selection": "원문 열·행 번호 보존. Appendix A와 겹치는 46개 사업을 ID로 병합; 두 원장 통합 고유 지원사업 161개.",
+    "coverage": "filtered-register",
+    "sourceRows": 597,
+    "loadedRows": 122,
+    "sourceDate": "2026-07-31",
+    "sourceDateMeaning": "MTEP 검토 원장 기준일; 고객 서비스 신청일과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://cdn.misoenergy.org/MTEP%20Projects%20Under%20Evaluation368757.xlsx",
+    "gaps": [
+      "같은 고객의 임시 공급·단계별 증설·복수 설비사업 중복 가능성.",
+      "M1 계획 상태와 고객 접속심사 단계의 구별; 고객 미통전 합산 제외."
+    ],
+    "nextAction": "MTEP Project ID별 차분과 유틸리티 서비스계약·고객 식별자 연결"
+  },
+  {
+    "id": "miso-mtep-approved",
+    "region": "MISO",
+    "operator": "MISO MTEP",
+    "title": "Appendix A 승인 설비 원장",
+    "universe": "전체 3,211개 설비행·1,497개 송전사업 중 선정 부하 지원 194설비행·85사업. 검토 원장과 겹치는 46사업, 승인 원장만의 추가 39사업.",
+    "selection": "194개 승인 설비행의 원문을 85사업에 연결; loadedRows 39는 검토 원장 외 추가 고유 레코드. 두 원장 합계 161사업.",
+    "coverage": "filtered-register",
+    "sourceRows": 3211,
+    "loadedRows": 39,
+    "sourceDate": "2026-08-04",
+    "sourceDateMeaning": "승인 설비 원장 기준일; URL 쿼리의 20260514 및 고객 통전일과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226",
+    "gaps": [
+      "송전설비 M3 공사·M4 서비스 개시는 고객 G7·G8 증거와 구별.",
+      "전체 161사업 중 검증 MW 42건의 단계 중복·임시공급 포함; 합산 제외."
+    ],
+    "nextAction": "승인 시설 ID·계획 상태 차분 및 고객 통전 증거 별도 확보"
+  },
+  {
+    "id": "miso-ameren-contracts",
+    "region": "MISO",
+    "operator": "Ameren Missouri",
+    "title": "전력서비스·건설계약 공시",
+    "universe": "Ameren Missouri 체결 전력서비스계약 2.8 GW 및 건설계약 별도 집계; 전체 MISO 고객 분모 미상.",
+    "selection": "계약 범위와 발표 시점 보존; 전력서비스·건설계약 간 중복 합산 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-08-03",
+    "sourceDateMeaning": "10-Q 공시일; 보고기간 종료 2026-06-30과 별도, 계약 지표의 정확 기준일 미확정.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1002910/000100291026000023/aee-20260630.htm",
+    "gaps": [
+      "개별 고객별 용량 분해 미공개. 3.4 GW 건설계약과 합산 금지."
+    ],
+    "nextAction": "Missouri PSC 계약 자료와 MTEP 지원사업의 실명 연결·가동분 분리"
+  },
+  {
+    "id": "miso-dte-contracts",
+    "region": "MISO",
+    "operator": "DTE Electric",
+    "title": "Oracle·Google 계약 근거",
+    "universe": "공개 Oracle 약 1.4 GW·Google 1 GW 및 합계 2.4 GW의 두 고객 사례; DTE 전체 요청 분모 미상.",
+    "selection": "2026-09-28 회사 자료와 2026-10-01 MPSC Google 조건부 승인 대조; MTEP Benton·Cannoli와 자동 합산 제외.",
+    "coverage": "case",
+    "sourceRows": 2,
+    "loadedRows": 0,
+    "sourceDate": "2026-10-01",
+    "sourceDateMeaning": "Google MPSC 명령 발표일; 용량 근거는 2026-09-28 자료. 고객 통전일과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.michigan.gov/mpsc/commission/news-releases/2026/10/01/mpsc-approves-dte-electric-google-data-center-and-contracts-protects-customers-from-project-cost",
+    "gaps": [
+      "개별 부하 대기열 ID·잔여 미통전량·송전보강 완료일 미확보; named 근거와 지원사업의 중복 가능성."
+    ],
+    "nextAction": "승인 조건·최종 공급계약·송전사업 ID 및 실통전량 대조"
+  },
+  {
+    "id": "spp-dpa-history",
+    "region": "SPP",
+    "operator": "SPP",
+    "title": "Delivery Point Assessment 공개 이력",
+    "universe": "2010~2026년 9월, 17개 연도 인덱스·199개 연결 XLSX의 2,475개 행; 고유 DPA Request ID 2,447개.",
+    "selection": "2,447개 ID별 예비평가 이력 전량 병합; 현재 고객 대기량·고유 대규모 수용가 수로 전환 제외.",
+    "coverage": "full-register",
+    "sourceRows": 2475,
+    "loadedRows": 2447,
+    "sourceDate": null,
+    "sourceDateMeaning": "개별 이력의 Date Received·원본 게시일 보존; 전체 이력의 단일 기준일 없음. 2026-10-03은 재확인일.",
+    "checkedAt": "2026-10-03",
+    "url": "https://opsportal.spp.org/Studies/Delivery",
+    "gaps": [
+      "예비평가의 Request Number·Date Received·Study Required 외 고객명·업종·MW·현재 계약/통전 상태 미공개.",
+      "Study Required YES/NO의 계약 체결·공급 확약·현재 pending 의미 추정 제외."
+    ],
+    "nextAction": "월별 XLSX 추가·수정 이력과 최종 DPNS 보고서의 같은 Request ID 연결"
+  },
+  {
+    "id": "spp-dpns-reports",
+    "region": "SPP",
+    "operator": "SPP",
+    "title": "DPNS·PLP·HDPS 상세 연구보고서",
+    "universe": "2022~2026년 공개 연구보고서 24개 고유 파일; 원장과 연결된 레코드 38개. 보고서 수와 고객 수의 구별.",
+    "selection": "DPA 36개 레코드의 상세 근거 보완 및 PLP 전용 2행 추가; DPA와 합친 SPP 원장 2,449행. 기존 상세 G4 3건 근거 보존.",
+    "coverage": "case",
+    "sourceRows": null,
+    "loadedRows": 2,
+    "sourceDate": null,
+    "sourceDateMeaning": "각 연구보고서의 작성·버전일 별도 보존; 전체 문서 묶음의 단일 기준일 없음.",
+    "checkedAt": "2026-10-03",
+    "url": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=259",
+    "gaps": [
+      "연구용 계절·연도별 delivery-point MW와 순신규 계약 MW의 차이; 합산 제외.",
+      "최종 연구·NTC 발급과 공사 완료·고객 통전의 구별. 다중 요청 보고서의 개별 MW 임의 배분 제외."
+    ],
+    "nextAction": "보고서 개정일·NTC·공사계약·통전 근거 및 원장 밖 보고서 ID 추가 확인"
+  },
+  {
+    "id": "spp-evergy-esa",
+    "region": "SPP",
+    "operator": "Evergy",
+    "title": "ESA 포트폴리오 공시",
+    "universe": "Evergy Kansas/Missouri 체결 ESA 부분집합; 추가 발표 1.7 GW와 포트폴리오 2.6 GW의 서로 다른 범위.",
+    "selection": "IR 및 10-Q 계약·운영 포함 범위 확인; 신규 고객행 추정 생성 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-08-06",
+    "sourceDateMeaning": "IR·10-Q 발표일; 포트폴리오의 2026-06-30 기준 별도 보존.",
+    "checkedAt": "2026-10-03",
+    "url": "https://investors.evergy.com/static-files/73352465-a5e0-4dbf-ac4b-98692902443f",
+    "gaps": [
+      "프로젝트별 명칭·MW·미통전 잔량 미공개; DPNS 및 운영분과의 중복 가능성."
+    ],
+    "nextAction": "Kansas·Missouri 특별계약과 DPA/DPNS ID의 근거 기반 연결"
+  },
+  {
+    "id": "spp-oge-contracts",
+    "region": "SPP",
+    "operator": "OG&E",
+    "title": "Google 3개 부지 특별계약",
+    "universe": "공개 Google 3개 부지 서비스계약 사례; OG&E 전체 신청 분모 미상.",
+    "selection": "계약 대상 부지 수 3개 보존; 계약 MW 미공개 및 관련 태양광 발전 MW의 부하 전환 제외.",
+    "coverage": "case",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-07-29",
+    "sourceDateMeaning": "Q2 공시일; 현재 승인·통전 기준일 미확정.",
+    "checkedAt": "2026-10-03",
+    "url": "https://ogeenergy.gcs-web.com/static-files/98fd12b7-a142-42e5-b6b4-91a0476ea50b",
+    "gaps": [
+      "계약 MW 및 2026-10-03 현재 승인·통전 상태 미확보. 수량 3건만 확인."
+    ],
+    "nextAction": "Oklahoma 규제명령·특별계약 공개본과 DPNS 연결 확인"
+  },
+  {
+    "id": "bpa-ll-register",
+    "region": "West",
+    "operator": "BPA",
+    "title": "Connection Type LL 공개 원장",
+    "universe": "BPA LL 458행 전체; 선로·망보강·부하·혼합·목적 미기재 포함. 신규 대규모 고객의 분모 미상.",
+    "selection": "458개 요청의 원문 상태·여름/겨울 Interconnection Service MW 보존; 부하 명시 90행·부하+망 명시 1행과 잔여 항목 분리.",
+    "coverage": "full-register",
+    "sourceRows": 458,
+    "loadedRows": 458,
+    "sourceDate": "2026-10-03",
+    "sourceDateMeaning": "원장 생성 시각 2026-10-03T03:01:04.129; 고객별 상태 사건일과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+    "gaps": [
+      "철회 170·ENERGIZED 84·BPA COMPLETED 32 등 이력 포함; 458개를 대기 고객으로 간주 불가.",
+      "여름·겨울 서비스 MW 공란 각각 103행; MW를 순신규 고객 요청량으로 일괄 재해석 제외."
+    ],
+    "nextAction": "주간 LL 원장 차분과 소매 전력회사 고객·산업·부하/선로 목적 연결"
+  },
+  {
+    "id": "west-nv-forecast",
+    "region": "West",
+    "operator": "NV Energy",
+    "title": "2026 IRP 대규모 부하 전망 범위",
+    "universe": "Bundled-service 전망 범위 50개 프로젝트·16,930 MW; 그중 데이터센터 39개·16,530 MW. 현재 접속신청 전체 분모 미확정.",
+    "selection": "IRP Volume 6 요약 집계 보존; 50개 고객행 추정 생성 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-05",
+    "sourceDateMeaning": "IRP 자료의 작성 월; 개별 신청 및 현 대기열 기준일로 해석 제외.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-6.pdf",
+    "gaps": [
+      "프로젝트별 명칭·요청 MW·Rule 9/연구 상태 및 공개 LLESA 5건과의 중복 미공개."
+    ],
+    "nextAction": "후속 IRP 부하표·Rule 9 보고와 LLESA 사건별 시설 범위 대조"
+  },
+  {
+    "id": "west-nv-llesa",
+    "region": "West",
+    "operator": "NV Energy / PUCN",
+    "title": "LLESA 신청 사건 인덱스",
+    "universe": "26-05026~26-05030의 사건 5개·명시 법인 8개; 물리적 고객·시설 수 미상.",
+    "selection": "사건당 1행 수록; 법인별 고객행 분할·인덱스 신청을 승인으로 승격 제외.",
+    "coverage": "case",
+    "sourceRows": 5,
+    "loadedRows": 5,
+    "sourceDate": null,
+    "sourceDateMeaning": "인덱스 접수일은 4건 2026-05-29·1건 2026-06-03; 사건별 날짜 보존.",
+    "checkedAt": "2026-10-03",
+    "url": "https://pucweb1.state.nv.us/puc2/DktInfo.aspx",
+    "gaps": [
+      "계약 MW·시설별 배분·현재 계통연계 단계 미확보; IRP 50개 전망 프로젝트와의 연결 미확인."
+    ],
+    "nextAction": "LLESA 공개 계약·명령과 Rule 9 개별 시설·용량 연결"
+  },
+  {
+    "id": "west-pacificorp-contract",
+    "region": "West",
+    "operator": "PacifiCorp / Rocky Mountain Power",
+    "title": "Utah 26-035-05 특별계약",
+    "universe": "익명 승인 특별계약 1개 사건; PacifiCorp 전체 대규모 고객 신청 분모 미상.",
+    "selection": "2026-01-20 계약·02-10 접수·04-10 승인 이력 수록; 고객명·MW 공란 유지.",
+    "coverage": "case",
+    "sourceRows": 1,
+    "loadedRows": 1,
+    "sourceDate": "2026-04-10",
+    "sourceDateMeaning": "공개 규제명령의 승인일; 통전일과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://pscdocs.utah.gov/electric/26docs/2603505/3447332603505oasadmfatmdrao4-10-2026.pdf",
+    "gaps": [
+      "공개 PIM의 고객명·MW 생략 및 사건 로그의 confidential/highly confidential workpaper 확인.",
+      "전체 서비스 신청 명세 미확보; 사례 1건의 전수 대표성 없음."
+    ],
+    "nextAction": "공개 명령·서비스 요청 절차와 비공개 항목을 구분한 추가 사건 조사"
+  },
+  {
+    "id": "west-idaho-contracts",
+    "region": "West",
+    "operator": "Idaho Power",
+    "title": "Idaho 특별계약·변경 사건",
+    "universe": "IPC-E-24-44·26-19·26-25의 Micron·Chobani·Brisbie 3개 사건; 전체 신청 분모 미상.",
+    "selection": "사건별 계약·규제 이력 3행 수록; 신규 고객과 기존 계약 변경의 구별.",
+    "coverage": "case",
+    "sourceRows": 3,
+    "loadedRows": 3,
+    "sourceDate": null,
+    "sourceDateMeaning": "각 계약·명령의 원문 사건일 별도 보존; 2026-10-03은 확인일.",
+    "checkedAt": "2026-10-03",
+    "url": "https://puc.idaho.gov/Case?closed=0&fc=2&fv=idaho+power&pn=1&ps=100&sc=1&sd=1&util=1",
+    "gaps": [
+      "개별 요청/계약 MW 미확정. Micron 20 MW는 요금제 기준, 500 MW는 IRP 비교값으로 고객 용량 배정 제외."
+    ],
+    "nextAction": "IPUC 공개 계약 부속서·접속설비 공사 및 고객 MW 근거 확인"
+  },
+  {
+    "id": "west-aps-queue-aggregate",
+    "region": "West",
+    "operator": "APS",
+    "title": "대규모 부하 요청 공개 설명",
+    "universe": "APS 미약정 요청 약 19 GW의 공식 페이지 집계; 전체 고객명별 공개 원장 분모 미상.",
+    "selection": "공식 고객 설명 및 ACC 2026-04-16 워크숍 확인; 개별 원장행 미확보.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": null,
+    "sourceDateMeaning": "공식 페이지의 정확 집계 기준일 미명시; 2026-10-03은 확인일.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.aps.com/en/Utility/Company-wide-Events-and-Messages/Data_Centers_How_Were_Protecting_Customers_While_Planning-for_Big_Energy_Needs",
+    "gaps": [
+      "고객명·ID·개별 MW·단계 미공개; 비공개 법적 근거의 임의 추정 제외."
+    ],
+    "nextAction": "ACC 후속 워크숍·계약/요청 집계 및 고객 단계 공시 확인"
+  },
+  {
+    "id": "west-srp-requests",
+    "region": "West",
+    "operator": "Salt River Project",
+    "title": "10 MW 초과 고객 송전용량 요청",
+    "universe": "2025-09-25 기준 80개 프로젝트·15,308 MW; 데이터센터·첨단제조·경공업·중공업 등 포함.",
+    "selection": "공식 이사회 집계 전 업종 보존; 80개 익명 고객행 생성 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2025-09-25",
+    "sourceDateMeaning": "요청 집계 기준일; 이사회 발표일 2026-01-13과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.srpnet.com/assets/srpnet/pdf/about/governance-leadership/district-meetings/20260113_WSS_packet.pdf",
+    "gaps": [
+      "이름·개별 용량·현재 상태 미공개; 부문 합계 15,307 MW와 공시 총계의 1 MW 반올림 차이."
+    ],
+    "nextAction": "LCIP 후속 등록·납부·계약·통전 집계 및 최신 동등 분모 확인"
+  },
+  {
+    "id": "west-xcel-colorado",
+    "region": "West",
+    "operator": "Xcel / Public Service Company of Colorado",
+    "title": "Colorado 대규모 부하 요금제 절차",
+    "universe": "Colorado PUC 26AL-0137E 요금제 사건; 고객 프로젝트 원장 분모 미상.",
+    "selection": "공식 2026-04-17 공지의 50 MW 기준 및 20~50 MW 조건부 적용 절차 확인; 고객 원장 미취득.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-04-17",
+    "sourceDateMeaning": "규제기관 절차 공지일; 고객 신청 재고 기준일 아님.",
+    "checkedAt": "2026-10-03",
+    "url": "https://content.govdelivery.com/accounts/CODORA/bulletins/4136266",
+    "gaps": [
+      "고객 ID·개별 MW·현재 단계 표 미검토; 요금제 임계값의 고객 요청 MW 대체 제외."
+    ],
+    "nextAction": "26AL-0137E 후속 공개 증언·신청 통계와 고객별 특별계약 조사"
+  },
+  {
+    "id": "west-pnm",
+    "region": "West",
+    "operator": "PNM",
+    "title": "IRP·대규모 고객 계약 공시 경로",
+    "universe": "2026 IRP 및 Q2 10-Q의 자원조달·Greater Kudo 관련 계약 경로; 고객 신청 원장 분모 미상.",
+    "selection": "공식 공시의 공급 자원과 고객 계약 구별 확인; 전 고객 명부 미취득.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-06-30",
+    "sourceDateMeaning": "10-Q 보고기간 종료일; 고객 신청 기준일 미명시.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1108426/000110842626000048/pnm-20260630.htm",
+    "gaps": [
+      "Meta/Greater Kudo용 발전·저장 자원 MW의 고객 요청량 전환 제외; 전체 고객 원장 미검토."
+    ],
+    "nextAction": "NMPRC 특별서비스 계약과 고객 요청 MW·전체 신청 보고 조사"
+  },
+  {
+    "id": "west-blackhills",
+    "region": "West",
+    "operator": "Black Hills Power",
+    "title": "Blockchain 서비스계약 사건",
+    "universe": "South Dakota EL26-008의 CSRE Properties 1개 사건; 회사 전체 고객 신청 분모 미상.",
+    "selection": "공개 신청서·8월 19일 수정 계약과 Pending 상태 확인; 규제 Pending과 접속심사 단계의 구별.",
+    "coverage": "case",
+    "sourceRows": 1,
+    "loadedRows": 1,
+    "sourceDate": "2026-08-19",
+    "sourceDateMeaning": "수정 계약 제출일; 최초 신청일 2026-03-19 및 확인일과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://puc.sd.gov/Dockets/Electric/2026/EL26-008.aspx",
+    "gaps": [
+      "공개 계약의 MW·상업조건 가림과 원본 비공개 표시 확인.",
+      "회사 3 GW 초과 파이프라인·Cheyenne 집계와 동일 고객 여부 미확인."
+    ],
+    "nextAction": "사건 명령·수정 계약 공개분 및 지역별 고객 범위 대조"
+  },
+  {
+    "id": "west-portland-general",
+    "region": "West",
+    "operator": "Portland General Electric",
+    "title": "계약·추가 요청 공시",
+    "universe": "데이터센터 5개 고객 계약 430 MW 및 추가 요청 1.7 GW의 공개 집계; 오리건 전체 고객 분모 미상.",
+    "selection": "계약 도표의 운영 포함 범위와 추가 요청 구별; BPA 및 CA PG&E와 단순 합산 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-07-31",
+    "sourceDateMeaning": "IR 발표일; 계약 도표 기준일 2026-01-31. 인접 1.7 GW 문구의 정확 기준일 미명시.",
+    "checkedAt": "2026-10-03",
+    "url": "https://investors.portlandgeneral.com/static-files/326e18d0-0240-4c90-81d9-78da69552f4c",
+    "gaps": [
+      "5개 고객별 명칭·MW·통전분 및 BPA LL 요청 연결 미공개."
+    ],
+    "nextAction": "OPUC UM 2377 및 후속 공시의 고객별 계약·운영분 확인"
+  },
+  {
+    "id": "west-remaining-utilities",
+    "region": "West",
+    "operator": "서부 잔여 공영·협동조합·소매 전력회사",
+    "title": "서부 전수조사 잔여 범위",
+    "universe": "BPA 연결 전력회사와 서부 IOU·공영·협동조합의 소매 고객 요청; 전체 사업자별 분모 미상.",
+    "selection": "BPA·명시된 개별 사업자의 확인 범위 외 독립 고객 원장 조사 미완료; BPA 페이지는 조사 연결 경로.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": null,
+    "sourceDate": null,
+    "sourceDateMeaning": "미검토 원장의 기준일 미상; 확인일을 원장일로 사용 제외.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+    "gaps": [
+      "송전 요청·소매 신청·동일 시설의 중복 연결 및 모든 사업자 조사 미완료."
+    ],
+    "nextAction": "소매 서비스권역별 신청·특별계약 명세와 BPA LL 연결 범위 조사"
+  },
+  {
+    "id": "caiso-process",
+    "region": "CAISO",
+    "operator": "CAISO",
+    "title": "Large Loads 이해관계자 절차",
+    "universe": "대규모 부하 정책·계통 절차 문서; CAISO 전체 소매 고객 신청 분모 미상.",
+    "selection": "2026-09-24 최종안 등 공식 절차 문서 확인; 프로젝트별 고객 원장 미취득. 발전접속 큐의 부하 전용 원장 전용 제외.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-09-24",
+    "sourceDateMeaning": "최종안 작성일; 고객 접속 원장 기준일 아님.",
+    "checkedAt": "2026-10-03",
+    "url": "https://stakeholdercenter.caiso.com/StakeholderInitiatives/Large-loads",
+    "gaps": [
+      "고객 요청의 소매 전력회사별 분산; 정책 검토를 고객 전수조사로 간주 불가."
+    ],
+    "nextAction": "CPUC 통전 보고·서비스 전력회사 원장 및 CAISO 부하 절차 연결"
+  },
+  {
+    "id": "california-pge-industrial-register",
+    "region": "CAISO",
+    "operator": "PG&E",
+    "title": "공개 통전 요청 원장의 산업 분류",
+    "universe": "2025년 9월 공개 XLSX 55,284행: tariff 25,207·MPU 30,077. 명시 New Industrial 196행; 고용량 여부 미검증.",
+    "selection": "New Industrial 196행 전량 수록: 진행 133·energized 35·취소 28. 고객 요청 MW 전부 미공개.",
+    "coverage": "filtered-register",
+    "sourceRows": 55284,
+    "loadedRows": 196,
+    "sourceDate": "2025-06-30",
+    "sourceDateMeaning": "원장 기준일; 게시일 2025-09-30. 2026년 3월 서술보고서는 2025-12-31 기준이나 동반 최신 XLSX 미취득.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/infrastructure/energization/pge-september-2025-biannual-energization-data-report_20250930.xlsx",
+    "gaps": [
+      "196행을 10 MW 이상 고객 또는 현재 대기 고객 196개로 간주 불가.",
+      "고객명·도시·요청용량 미공개; 일반 상업 분류의 고부하 산업 선별 불가. 최신 workbook 취득 공백."
+    ],
+    "nextAction": "PG&E 공개 규제 아카이브 R.24-01-018의 2026-03-31 XLSX와 후속 보고 취득"
+  },
+  {
+    "id": "california-pge-dc-aggregate",
+    "region": "CAISO",
+    "operator": "PG&E",
+    "title": "20 MW 이상 신규 데이터센터 단계 집계",
+    "universe": "2026-06-30 기준 PG&E 20 MW 이상 신규 데이터센터 12,710 MW; 전체 산업·CAISO 전체와 범위 차이.",
+    "selection": "예비설계 8,200·최종설계 3,880·공사계약 490·공사 140 MW 보존; 통전 후 제외 기준 확인.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-06-30",
+    "sourceDateMeaning": "단계별 집계 기준일; SEC 발표일 2026-07-23과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/75488/000100498026000047/q226earningspresentation.htm",
+    "gaps": [
+      "프로젝트별 이름·MW·병목·통전일 미공개; 산업 통전 원장 196행과 식별자 연결 미확인."
+    ],
+    "nextAction": "동일 분류기준의 분기별 단계 이동 및 CPUC 개별 요청 연결"
+  },
+  {
+    "id": "california-sce-access",
+    "region": "CAISO",
+    "operator": "SCE",
+    "title": "공개 통전 요청 XLSX 취득 공백",
+    "universe": "CPUC의 2025년 9월 및 2026년 3월 공개 통전 보고 대상; 실제 고객 행 분모 미확정.",
+    "selection": "2026년 3월 서술·기밀 신청 확인; mixed-media Attachment A 미취득. 2025년 공식 XLSX 응답 0바이트.",
+    "coverage": "access-failed",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2025-12-31",
+    "sourceDateMeaning": "취득한 2026년 3월 서술보고서의 기간 말; 개별 XLSX 취득·원장행 확인 완료를 뜻하지 않음.",
+    "checkedAt": "2026-10-03",
+    "url": "https://docs.cpuc.ca.gov/PublishedDocs/Efile/G000/M604/K030/604030059.PDF",
+    "gaps": [
+      "SCE 표시 대체 링크의 실제 SDG&E 내용 확인 및 제외.",
+      "0개 적재는 취득 실패이며 대규모 고객 부재의 증거 아님."
+    ],
+    "nextAction": "CPUC R.24-01-018 mixed-media 원본 XLSX 재취득 및 소유자·시트 검증"
+  },
+  {
+    "id": "california-sdge-register",
+    "region": "CAISO",
+    "operator": "SDG&E",
+    "title": "공개 비주거 통전 요청 후보",
+    "universe": "2026년 3월 XLSX 29,337행: tariff 19,694·MPU 9,643. 비주거 raw requested kW 10,000 이상 후보 58행.",
+    "selection": "Commercial 58행 수록: 진행 27·Closed 31. 원문 raw kW 보존, 정규화 MW 전부 공란; 주거 이상값 225행 제외.",
+    "coverage": "filtered-register",
+    "sourceRows": 29337,
+    "loadedRows": 58,
+    "sourceDate": "2025-12-31",
+    "sourceDateMeaning": "원장 기준일; 공개 Attachment B 2026-03-31 보고 및 2026-04-01 게시와 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.sdge.com/sites/default/files/regulatory/Public%20Attachment%20B%20Energization%20Report%203.31.26.xlsx",
+    "gaps": [
+      "전력회사 설명상 요청 kW 과대입력·암페어 오입력·연구 후 미정정 가능성; 58개 검증 대규모 고객 해석 제외.",
+      "고객 ID·도시 가림; Closed의 ready-for-service/첫 계량기 설정과 전 시설 상업운전의 차이."
+    ],
+    "nextAction": "후속 원장과 정식 부하 연구 결과·단위 정정·실통전 정의 확인"
+  },
+  {
+    "id": "california-ladwp",
+    "region": "CAISO",
+    "operator": "LADWP",
+    "title": "서비스 설계 절차·항만 전기화 근거",
+    "universe": "LADWP 서비스 안내와 Port of Los Angeles ZEPEO 프로그램; 전체 고객 요청 원장 분모 미상.",
+    "selection": "공식 설계 절차 및 2026-05-28 항만 안건 확인; 전 고객 명세 미취득.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-05-28",
+    "sourceDateMeaning": "별도 항만 안건일; LADWP 전체 고객 원장 기준일 아님.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.ladwp.com/construction-services/electric-services-faqs",
+    "gaps": [
+      "항만 213/306 MVA의 인프라 프로그램과 개별 고객 신청 구별; 중복·역률의 임의 변환 제외."
+    ],
+    "nextAction": "LADWP 이사회 특별계약·산업 서비스 신청표 및 ZEPEO 개별 시설 분해 조사"
+  },
+  {
+    "id": "california-smud",
+    "region": "CAISO",
+    "operator": "SMUD",
+    "title": "50 MW 초과 잠재 프로젝트 집계",
+    "universe": "공식 페이지의 초기 잠재 프로젝트 2개; 승인된 대규모 부하 프로젝트 없음의 해당 페이지 설명 범위.",
+    "selection": "2개 집계와 연구 초기 상태 보존; 두 프로젝트의 데이터센터 업종 추정 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": null,
+    "sourceDateMeaning": "페이지의 정확 작성·집계 기준일 미명시; 2026-10-03 확인일.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.smud.org/Corporate/About-us/Reliability/Large-electrical-load-project-growth",
+    "gaps": [
+      "고객명·위치 비공개 및 NDA 설명; 전체 소매 서비스 신청 원장과 개별 MW 미확보."
+    ],
+    "nextAction": "대규모 부하 정책·이사회 승인과 연구 결과의 후속 공개 확인"
+  },
+  {
+    "id": "california-remaining-utilities",
+    "region": "CAISO",
+    "operator": "캘리포니아 잔여 전력회사",
+    "title": "공영·소규모 IOU 미검토 범위",
+    "universe": "Silicon Valley Power·IID·Burbank·Glendale·Pasadena·Anaheim·Riverside·Modesto/Turlock·Liberty·Bear Valley 등 개별 고객 요청.",
+    "selection": "각 사업자 고객 원장의 독립 조사 미완료; CPUC 통전 자료 인덱스는 후속 조사 참고 경로이며 공영 전력회사 전수 포함을 의미하지 않음.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": null,
+    "sourceDate": null,
+    "sourceDateMeaning": "미검토 원장의 기준일 미상.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/infrastructure/energization/energization-data-reporting-requirements-and-data-reporting-template",
+    "gaps": [
+      "PG&E·SCE·SDG&E·LADWP·SMUD 확인 범위로 캘리포니아 전체의 근접 전수 주장 불가."
+    ],
+    "nextAction": "서비스권역별 공식 신청·산업 특별계약·이사회 자료의 독립 조사"
+  },
+  {
+    "id": "ak-chugach",
+    "region": "AK",
+    "operator": "Chugach Electric",
+    "title": "상업 서비스 신청 절차",
+    "universe": "Chugach 상업 서비스 신청·엔지니어링 안내; 대규모 고객 원장 분모 미상.",
+    "selection": "공식 신청 체크리스트 확인; 개별 고객 원장 미취득.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": null,
+    "sourceDateMeaning": "안내 문서의 정확 작성·원장 기준일 미명시.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.chugachelectric.com/services/construction-and-engineering",
+    "gaps": [
+      "확인한 공사·엔지니어링 자료에 전 고객 요청표 없음; 기타 규제 사건의 전수 조사 미완료."
+    ],
+    "nextAction": "RCA 규제자료·산업 특별계약 및 고객 원장 공개 범위 조사"
+  },
+  {
+    "id": "ak-gvea",
+    "region": "AK",
+    "operator": "Golden Valley Electric Association",
+    "title": "기존 산업 고객 판매 집계",
+    "universe": "2025년 기존 산업 계정 6개의 전력사용 비중 44%; 신규 신청 고객 분모 미상.",
+    "selection": "2026-08-13 공식 이사회 요약 확인; 기존 6개 고객의 신규 신청행 생성 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-08-13",
+    "sourceDateMeaning": "이사회 요약일; 에너지 판매 지표 기간은 2025년.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.gvea.com/news-releases/gvea-board-meeting-recap-august-13-2026/",
+    "gaps": [
+      "기존 고객명·요청 MW·현재 신청 단계 미공개; 6개 기존 계정의 대기 고객 전환 제외."
+    ],
+    "nextAction": "RCA 규제자료·산업 특별계약 및 고객 원장 공개 범위 조사"
+  },
+  {
+    "id": "ak-mea",
+    "region": "AK",
+    "operator": "Matanuska Electric Association",
+    "title": "서비스 절차·대규모 부하 의견 수렴",
+    "universe": "MEA 서비스 요청·회원 의견수렴·자본공사 프로그램; 고객 원장 분모 미상.",
+    "selection": "공식 절차·설문·사업계획 확인; 고객별 ID·요청 MW 표 미취득.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": null,
+    "sourceDateMeaning": "안내·의견수렴의 정확 집계 기준일 미명시.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.mea.coop/news/mea-seeking-member-input-on-data-centers-through-member-survey",
+    "gaps": [
+      "의견수렴과 전력회사 공사 계획만으로 고객 신청 명세·대기 MW 산출 불가."
+    ],
+    "nextAction": "RCA 규제자료·산업 특별계약 및 고객 원장 공개 범위 조사"
+  },
+  {
+    "id": "ak-hea",
+    "region": "AK",
+    "operator": "Homer Electric Association",
+    "title": "서비스 안내·신청 건수 집계",
+    "universe": "HEA 서비스 절차 및 월간 전체 신청 건수; 대규모 산업 고객 분모 미상.",
+    "selection": "2026년 9월 CEO 보고의 신청 집계와 서비스 안내 확인; 산업별 고객행 미취득.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-09",
+    "sourceDateMeaning": "월간 CEO 보고서의 월; 고객 접수 재고의 정확 기준일 미명시.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.homerelectric.com/2026/09/september-2026-monthly-ceo-report/",
+    "gaps": [
+      "전체 신청 건수에서 대규모 산업 고객 분리 불가; 개별 신청표 미확보."
+    ],
+    "nextAction": "RCA 규제자료·산업 특별계약 및 고객 원장 공개 범위 조사"
+  },
+  {
+    "id": "ak-remaining-utilities",
+    "region": "AK",
+    "operator": "알래스카 잔여 공영·협동조합·독립 산업시설",
+    "title": "Railbelt 외 잔여 조사 범위",
+    "universe": "확인한 Railbelt 4개 전력회사 외 동남부·농촌·마을 전력회사 및 독립전원 산업시설; 전체 분모 미상.",
+    "selection": "개별 원장 독립 조사 미완료; Chugach 서비스 페이지는 확인된 범위의 참고 경로.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": null,
+    "sourceDate": null,
+    "sourceDateMeaning": "미검토 원장의 기준일 미상.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.chugachelectric.com/services/construction-and-engineering",
+    "gaps": [
+      "Donlin 광산 153 MW는 과거 EIS의 독립전원 평균 부하이며 유틸리티 신청 원장 대체 불가."
+    ],
+    "nextAction": "지역별 RCA 사건·공영/협동조합 자료와 독립전원 산업시설의 공급 경로 분리 조사"
+  },
+  {
+    "id": "hi-hawaiian-electric",
+    "region": "HI",
+    "operator": "Hawaiian Electric / Maui Electric / Hawaii Electric Light",
+    "title": "대규모 고객 서비스 절차",
+    "universe": "Hawaiian Electric 그룹 공통 서비스 안내; 3개 전력회사의 전체 산업 고객 신청 분모 미상.",
+    "selection": "공통 large-customer 신청·엔지니어링 절차 확인; 개별 3개사의 사건 전수조사·고객 원장 취득 미완료.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": null,
+    "sourceDateMeaning": "서비스 안내의 정확 작성·원장 기준일 미명시.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.hawaiianelectric.com/electrical-services/upgrade-modify-or-install-service",
+    "gaps": [
+      "실명 고객·요청 MW·단계 명세 미확보; 공통 절차 확인을 3개사 독립 전수조사로 간주 불가."
+    ],
+    "nextAction": "Hawaii PUC 사건 및 각 섬 전력회사의 산업 서비스·특별계약 자료 조사"
+  },
+  {
+    "id": "hi-kiuc",
+    "region": "HI",
+    "operator": "Kauai Island Utility Cooperative",
+    "title": "서비스 신청·설치 절차",
+    "universe": "KIUC 서비스 신청·설치 매뉴얼; 카우아이 대규모 고객 요청 전체 분모 미상.",
+    "selection": "공식 서비스 안내·2020년 12월 개정 매뉴얼 확인; 고객별 신청 원장 미취득.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2020-12",
+    "sourceDateMeaning": "설치 매뉴얼 개정 월; 현재 고객 요청 기준일 아님.",
+    "checkedAt": "2026-10-03",
+    "url": "https://kiuc.coop/start-or-stop-service",
+    "gaps": [
+      "고객별 요청 MW·진행 단계 미확보; 미확보를 대규모 신청 0건으로 해석 제외."
+    ],
+    "nextAction": "KIUC 이사회·Hawaii PUC 산업 서비스 사건과 고객 원장 공개 범위 조사"
+  },
+  {
+    "id": "ercot-llwg-aggregate",
+    "region": "ERCOT",
+    "operator": "ERCOT",
+    "title": "대규모 부하 상태·업종 집계",
+    "universe": "2026-06-18 상태표의 추적 부하 466.5 GW; 운영·승인·연구·미제출 포함. 공개 개별 고객행 분모 미상.",
+    "selection": "상태·업종·TSP 집계 및 승인 8,927 MW·관측 피크의 차이 보존; 익명 개별행 생성 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-06-18",
+    "sourceDateMeaning": "6월 19일 LLWG 자료의 게시·상태표 기준; 이후 Batch Zero와 다른 시점·모집단.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.ercot.com/files/docs/2026/06/18/June-19-LLWG-Report.pptx",
+    "gaps": [
+      "후속 Batch Zero 125.4/127.9 GW 원문 차이 미해명; 전체 요청량의 대체·단순 차감 제외.",
+      "발표 상태별 반올림 및 5.7 GW 역대 비동시 피크·월간 동시 피크의 차이."
+    ],
+    "nextAction": "후속 LLWG 상태표·Batch Zero 정정 및 고객명 비공개 범위 내 집계 차분 확인"
+  },
+  {
+    "id": "ercot-confidential-roster",
+    "region": "ERCOT",
+    "operator": "ERCOT / RIOO / TSP·DSP",
+    "title": "고객정보 비공개·집계 공개 규칙",
+    "universe": "NPRR1267의 고객 정보 기밀성 및 Batch Zero 개별 분류·검증 제출; 공개 전체 고객 분모 미상.",
+    "selection": "개별 분류의 TSP/DSP 전달 및 RIOO 제출 열람 제한 확인; 공개 원장으로 가장한 고객행 생성 제외.",
+    "coverage": "not-public",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-09-21",
+    "sourceDateMeaning": "RFI 열람 제한 공지일; NPRR1267 승인일 2025-07-31 별도.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.ercot.com/services/comm/mkt_notices/M-C092126-01",
+    "gaps": [
+      "NPRR1267의 집계 공개 요구와 공개 공지의 개별 명세 부재; 기업별 사례로 전체 비공개 원장 복원 불가."
+    ],
+    "nextAction": "NPRR1267·RIOO 공개범위 및 후속 공식 집계의 기준 정의 추적"
+  },
+  {
+    "id": "ercot-oncor",
+    "region": "ERCOT",
+    "operator": "Oncor",
+    "title": "활성 송전 LC&I 요청 집계",
+    "universe": "2026-06-30 Oncor 활성 송전 LC&I POI 요청 737건; 데이터센터 282 GW·기타 산업 16 GW 초과.",
+    "selection": "업종·요청 집계 보존; 예상 Batch Zero 44 GW에 기존 연결·램프 8 GW 포함의 범위 구분.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-06-30",
+    "sourceDateMeaning": "Q2 종료 요청 집계 기준일; 실적 발표일 2026-08-06과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.oncor.com/content/oncorwww/wire/en/home/newsroom/oncor-reports-second-quarter-2026-results.html",
+    "gaps": [
+      "공개 고객명·ID·철회·중복 및 개별 단계 표 없음; ERCOT 중앙 집계와 중복."
+    ],
+    "nextAction": "후속 TSP 분기 요청·연결·Batch Zero 분류의 동일 모집단 비교"
+  },
+  {
+    "id": "ercot-centerpoint",
+    "region": "ERCOT",
+    "operator": "CenterPoint Houston Electric",
+    "title": "Batch Zero 제출·예상 적격 집계",
+    "universe": "2026-07-28 공개 제출량 17 GW 초과·예상 적격 약 14 GW; 프로젝트 수 미공개.",
+    "selection": "유틸리티의 제출·예상치를 공식 ERCOT 최종 배정과 구별; 개별 고객행 없음.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-07-28",
+    "sourceDateMeaning": "실적 발표·기대치 공개일; 9월 조건부 결과 기준일로 전용 제외.",
+    "checkedAt": "2026-10-03",
+    "url": "https://investors.centerpointenergy.com/news-releases/news-release-details/centerpoint-energy-reports-strong-q2-2026-results-provides",
+    "gaps": [
+      "고객별 전체 명세·현재 MW·중복 미공개; Baytown 등 개별 송전 사례 및 ERCOT 합계와 단순 합산 제외."
+    ],
+    "nextAction": "후속 제출·조건부 분류와 Baytown 등 공식 RPG 근거의 ID 연결"
+  },
+  {
+    "id": "gpc-main-register",
+    "region": "Southeast",
+    "operator": "Georgia Power",
+    "title": "Q2 대규모 경제개발 Main 원장",
+    "universe": "공개 Main 118행 전체; 공개되지 않은 organic growth 임계값을 넘는 상업·산업 경제개발 프로젝트. 모든 서비스 신청 분모와 차이.",
+    "selection": "118행·최종 발표 부하 80,059.479 MW 및 업종·단계 원문 전량 보존. 기술검토 86·서비스 요청 10·공급계약 22행.",
+    "coverage": "full-register",
+    "sourceRows": 118,
+    "loadedRows": 118,
+    "sourceDate": "2026-06-30",
+    "sourceDateMeaning": "분기 원장 기준일; 게시일 2026-08-17. 10월 현재 대기 재고와 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://psc.ga.gov/search/facts-document/?documentId=227753",
+    "gaps": [
+      "실명·위치 118행 전량 가림; 순수 미통전 잔량 118행 전량 미확인.",
+      "기존/램프·장래 최종 부하 포함; 총 경제개발 84,800 MW와 공개 선별표의 범위 차이."
+    ],
+    "nextAction": "후속 분기 Main 및 변경 6개 시트 전체 차분; 익명 행의 MW 단독 매칭 제외"
+  },
+  {
+    "id": "gpc-removed-screen",
+    "region": "Southeast",
+    "operator": "Georgia Power",
+    "title": "Q2 보고 대상 제외 이력",
+    "universe": "Removed Projects 시트 6행·발표 MW 1,382; Main 118행 밖의 역사적 보고 대상 제외 항목.",
+    "selection": "제외 6행 별도 수록; 임계값 미달 882 MW 포함으로 전량 취소·철회 처리 제외. 나머지 변경 5시트의 행 이력은 Main과 중복 가능.",
+    "coverage": "full-register",
+    "sourceRows": 6,
+    "loadedRows": 6,
+    "sourceDate": "2026-06-30",
+    "sourceDateMeaning": "Q2 변경표 기준일; 실제 개별 고객 종료일과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://psc.ga.gov/search/facts-document/?documentId=227753",
+    "gaps": [
+      "익명 변경행의 Main ID 연결 미확정; 제외 이유와 실제 서비스 중단·계약 취소의 차이."
+    ],
+    "nextAction": "제외 사유·후속 복귀 및 안정적 익명 식별자 공개 여부 확인"
+  },
+  {
+    "id": "gpc-named-openai",
+    "region": "Southeast",
+    "operator": "Georgia Power",
+    "title": "OpenAI Effingham County 실명 발표",
+    "universe": "실명 공급계약 발표 1건·3,200 MW; 공개 Main 118행과의 동일 고객 대응 미확정.",
+    "selection": "회사 실명 발표를 익명 Main·Southern 합계와 분리 수록; 계약·규제 승인 발표 및 조건부 수요감축 약정 구분.",
+    "coverage": "case",
+    "sourceRows": 1,
+    "loadedRows": 1,
+    "sourceDate": "2026-08-26",
+    "sourceDateMeaning": "회사 발표일; 계약 용량·수요감축의 실가동 기준일과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.prnewswire.com/news-releases/georgia-powers-contract-with-openai-approved-latest-approval-part-of-portfolio-of-large-load-contracts-delivering-approximately-950-million-in-annual-savings-beginning-in-2029-302861080.html",
+    "gaps": [
+      "Main 118행·Southern 계약 포트폴리오와의 중복 가능성; 실제 통전·공정별 MW 미확보."
+    ],
+    "nextAction": "PSC 사건의 서비스계약·일정·익명 원장 연결 근거 확인"
+  },
+  {
+    "id": "southeast-duke-advanced",
+    "region": "Southeast",
+    "operator": "Duke Energy Carolinas / Duke Energy Progress",
+    "title": "Advanced Development 공개 집계",
+    "universe": "2026년 2월 Spring 보고 범위 Advanced 43개·7,941 MW; Developing 약 6,000 MW와 별도 범위. 전체 초기 문의 분모 미상.",
+    "selection": "9월 25일 증언의 수정 표 사용; 4월 원문 7,946 MW·ESA 4,337/4,332 MW 상충 이력 보존. 개별 43행 생성 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-02",
+    "sourceDateMeaning": "Spring 보고의 명시 기준월; 2026-09-25는 최신 증언 발표일. Developing의 정확 기준일 별도 미명시.",
+    "checkedAt": "2026-10-03",
+    "url": "https://dms.psc.sc.gov/Attachments/Matter/4975de54-4beb-444e-9ca1-0f0ee7016b3b",
+    "gaps": [
+      "43개 실명·개별 MW 전량 미공개; 완전 운영 4건의 기본 전망 이동 및 도매 2건 약 900 MW 별도.",
+      "Duke 기업 전체 계약·자원 용량의 Carolinas 임의 배정 제외."
+    ],
+    "nextAction": "다음 반기 Advanced/Developing 표와 운영 이동·DEC/DEP 세부 분해 확인"
+  },
+  {
+    "id": "southeast-tva-events",
+    "region": "Southeast",
+    "operator": "Tennessee Valley Authority",
+    "title": "공개 Power Availability 승인 사건",
+    "universe": "2024~2026년 공식 이사회 인덱스에서 확인한 3개 승인 사건; 고유 고객·전체 신청 분모 미상.",
+    "selection": "xAI 150 MW 1건 및 2026년 익명 100 MW 초과 승인 2건의 사건별 근거 보존; 임계값을 정확 MW로 대체 제외.",
+    "coverage": "case",
+    "sourceRows": 3,
+    "loadedRows": 0,
+    "sourceDate": null,
+    "sourceDateMeaning": "사건일 2024-11-07·2026-02-11·2026-08-20 별도 보존; 전체 묶음 기준일 없음.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.tva.com/about-tva/our-leadership/board-of-directors/approved-resolutions",
+    "gaps": [
+      "익명 2건의 동일 고객 반복 여부·정확 MW·명칭 미공개 메모 수록; 전체 신청 원장 대체 불가."
+    ],
+    "nextAction": "후속 이사회 결의·공개 계약에서 고객 중복·실통전 근거 확인"
+  },
+  {
+    "id": "southeast-southern-contracts",
+    "region": "Southeast",
+    "operator": "Southern / Georgia Power / Alabama Power / Mississippi Power",
+    "title": "연결 기준 대규모 부하 계약 집계",
+    "universe": "Southern 연결 기준 31개 계약·17 GW; Georgia 포함 및 각 회사의 공개 계약 부분집합.",
+    "selection": "회사별 계약 범위와 규제승인 조건 구분; Alabama 공식 페이지의 용량·일정·공급조건 가림 설명 확인.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-07-30",
+    "sourceDateMeaning": "Q2 실적 발표일; 고객별 계약·통전일과 구별.",
+    "checkedAt": "2026-10-03",
+    "url": "https://s27.q4cdn.com/273397814/files/doc_financials/2026/q2/SO-2026-Q2-Earnings-Call-Final.pdf",
+    "gaps": [
+      "공개 고객별 전수 명세 미확보; GPC Main·OpenAI·다른 실명 산업 사례와 단순 합산 제외."
+    ],
+    "nextAction": "회사별 PSC 계약 공시·공개 가림 범위 및 순수 미통전 잔량 확인"
+  },
+  {
+    "id": "southeast-fpl-interest",
+    "region": "Southeast",
+    "operator": "Florida Power & Light",
+    "title": "대규모 부하 관심·협의 집계",
+    "universe": "대규모 관심 약 21 GW·고급 협의 12 GW의 부분집합; 전체 정식 서비스 신청 고객 수 미상.",
+    "selection": "관심·협의·체결계약 구분; 두 집계 간 합산 및 전 고객행 추정 생성 제외.",
+    "coverage": "aggregate",
+    "sourceRows": null,
+    "loadedRows": 0,
+    "sourceDate": "2026-07-24",
+    "sourceDateMeaning": "Q2 실적 발표일; 고객별 계약·접속심사 기준일 미공개.",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000058/neeq22026exhibit99.htm",
+    "gaps": [
+      "개별 ID·MW·정식 신청·보증금·연구 상태 미공개; 유틸리티 소유 수소 파일럿의 소매 고객 큐 전용 제외."
+    ],
+    "nextAction": "FPSC 대규모 부하 요금제의 실제 계약·공급 일정 및 후속 고객 공개 확인"
+  },
+  {
+    "id": "southeast-remaining-utilities",
+    "region": "Southeast",
+    "operator": "Dominion SC / Santee Cooper / 남동부 잔여 전력회사",
+    "title": "개별 고객 원장 조사 공백",
+    "universe": "확인한 IRP·규제사건·실명 산업 발표 외 남동부 IOU·공영·협동조합의 전체 산업 고객 요청; 분모 미상.",
+    "selection": "SC 일부 IRP·요금 사건 및 Mt. Holly 등 실명 발표 확인; Dominion SC·Santee Cooper 전체 고객표와 다른 잔여 사업자 독립 조사 미완료.",
+    "coverage": "not-reviewed",
+    "sourceRows": null,
+    "loadedRows": null,
+    "sourceDate": null,
+    "sourceDateMeaning": "개별 미검토 원장의 기준일 미상; 공식 docket 경로는 조사 참고용.",
+    "checkedAt": "2026-10-03",
+    "url": "https://dms.psc.sc.gov/Web/Dockets/Detail/119498",
+    "gaps": [
+      "13개 선택 산업시설 사례의 신청 MW 전량 미확인; 배터리·반도체·금속·수소 사례의 전수 대표성 없음."
+    ],
+    "nextAction": "전력회사별 PUC 신청·특별계약·공영 이사회 표와 산업 프로젝트 원장 순차 조사"
+  }
+]

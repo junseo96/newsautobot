@@ -1,0 +1,188 @@
+[
+  {
+    "id": "ercot-june",
+    "title": "ERCOT Large Load Interconnection Status Update, June 19 2026",
+    "url": "https://www.ercot.com/files/docs/2026/06/18/June-19-LLWG-Report.pptx",
+    "publishedAt": "2026-06-18"
+  },
+  {
+    "id": "ercot-batch",
+    "title": "ERCOT Batch Zero Conditional Classification",
+    "url": "https://www.ercot.com/services/comm/mkt_notices/M-A080326-04",
+    "publishedAt": "2026-09-03"
+  },
+  {
+    "id": "ercot-rfi",
+    "title": "ERCOT RFI visibility restrictions",
+    "url": "https://www.ercot.com/services/comm/mkt_notices/M-C092126-01",
+    "publishedAt": "2026-09-21"
+  },
+  {
+    "id": "riot-rockdale",
+    "title": "Riot Rockdale site",
+    "url": "https://www.riotplatforms.com/locations/rockdale/",
+    "publishedAt": null
+  },
+  {
+    "id": "riot-corsicana",
+    "title": "Riot Corsicana site",
+    "url": "https://www.riotplatforms.com/locations/corsicana/",
+    "publishedAt": null
+  },
+  {
+    "id": "riot-dc",
+    "title": "Riot data centers",
+    "url": "https://www.riotplatforms.com/datacenters/",
+    "publishedAt": null
+  },
+  {
+    "id": "riot-amd",
+    "title": "Riot Rockdale land acquisition and AMD lease",
+    "url": "https://www.riotplatforms.com/riot-announces-fee-simple-acquisition-of-land-and-first-data-center-lease-with-amd-at-the-rockdale-site/",
+    "publishedAt": null
+  },
+  {
+    "id": "mara-2025",
+    "title": "MARA 2025 Form 10-K",
+    "url": "https://ir.mara.com/sec-filings/all-sec-filings/content/0001507605-26-000007/mara-20251231.htm",
+    "publishedAt": "2026-03-02"
+  },
+  {
+    "id": "mara-2024",
+    "title": "MARA 2024 Form 10-K",
+    "url": "https://ir.mara.com/sec-filings/all-sec-filings/content/0001507605-25-000003/mara-20241231.htm",
+    "publishedAt": "2025-03-03"
+  },
+  {
+    "id": "mara-2026q2",
+    "title": "MARA Q2 2026 Form 10-Q",
+    "url": "https://ir.mara.com/sec-filings/all-sec-filings/content/0001507605-26-000022/mara-20260630.htm",
+    "publishedAt": "2026-08-06"
+  },
+  {
+    "id": "mara-garden",
+    "title": "MARA acquisition of Garden City mining site",
+    "url": "https://ir.mara.com/news-events/press-releases/detail/1350/marathon-digital-holdings-announces-the-closing-of-its-acquisition-of-a-200-megawatt-bitcoin-mining-data-center-adjacent-to-a-wind-farm",
+    "publishedAt": "2024-04-02"
+  },
+  {
+    "id": "hut-platform",
+    "title": "Hut 8 platform",
+    "url": "https://www.hut8.com/our-platform",
+    "publishedAt": null
+  },
+  {
+    "id": "hut-2025",
+    "title": "Hut 8 2025 results",
+    "url": "https://www.hut8.com/news-insights/press-releases/hut-8-reports-fourth-quarter-and-full-year-2025-results",
+    "publishedAt": "2026-02-25"
+  },
+  {
+    "id": "hut-texas",
+    "title": "Hut 8 Texas development statement",
+    "url": "https://www.hut8.com/news-insights/press-releases/hut-8-affirms-commitment-to-responsible-data-center-development-following-directive-from-texas",
+    "publishedAt": null
+  },
+  {
+    "id": "hut-vega",
+    "title": "Hut 8 energizes Vega",
+    "url": "https://www.hut8.com/news-insights/press-releases/hut-8-energizes-vega-data-center",
+    "publishedAt": "2025-06-30"
+  },
+  {
+    "id": "cipher-sites",
+    "title": "Cipher Digital infrastructure",
+    "url": "https://cipherdigital.com/infrastructure/",
+    "publishedAt": null
+  },
+  {
+    "id": "cipher-q2",
+    "title": "Cipher Digital second quarter 2026 update",
+    "url": "https://investors.cipherdigital.com/news-releases/news-release-details/cipher-digital-provides-second-quarter-2026-business-update",
+    "publishedAt": "2026-08-04"
+  },
+  {
+    "id": "cipher-blackpearl",
+    "title": "Cipher Black Pearl project financing exhibit",
+    "url": "https://investors.cipherdigital.com/static-files/ea18cc35-53af-4e32-81a7-32a835429abf",
+    "publishedAt": null
+  },
+  {
+    "id": "cipher-conversion",
+    "title": "Cipher full year 2025 business update slides",
+    "url": "https://investors.cipherdigital.com/static-files/58e46e77-13f9-4514-8c2a-2c7695cf2b4a",
+    "publishedAt": "2026-02-24"
+  },
+  {
+    "id": "freeport-ercot",
+    "title": "ERCOT 2015 Electric System Constraints and Needs",
+    "url": "https://www.ercot.com/files/docs/2015/12/31/2015ercotconstraintsandneedsreport.pdf",
+    "publishedAt": "2015-12-31"
+  },
+  {
+    "id": "freeport-current",
+    "title": "Freeport LNG overview",
+    "url": "https://freeportlng.com/about/about-overview",
+    "publishedAt": null
+  },
+  {
+    "id": "samsung-grid",
+    "title": "Oncor engineering testimony filed in PUCT 58050 item 4",
+    "url": "https://interchange.puc.texas.gov/Documents/58050_4_1500376.PDF",
+    "publishedAt": null
+  },
+  {
+    "id": "samsung-current",
+    "title": "Samsung Taylor construction and operations update",
+    "url": "https://semiconductor.samsung.com/sas/local-news/samsung-austin-semiconductors-two-campuses-inject-10-9b-into-central-texas-economy-in-2025/",
+    "publishedAt": "2026-06-10"
+  },
+  {
+    "id": "cmc-grid",
+    "title": "GVEC supplemental CCN response, PUCT 41967 item 7",
+    "url": "https://interchange.puc.texas.gov/Documents/41967_7_774212.PDF",
+    "publishedAt": null
+  },
+  {
+    "id": "cmc-current",
+    "title": "CMC energy and climate",
+    "url": "https://esg.cmc.com/environmental/environmental-stewardship/energy-and-climate/",
+    "publishedAt": null
+  },
+  {
+    "id": "cmc-2026",
+    "title": "CMC steel mills compliance certificate",
+    "url": "https://www.cmc.com/getmedia/78fd6981-893e-47d7-add7-34b10f1968da/CMC-Steel-Mills-General-Compliance-Certificate.pdf",
+    "publishedAt": "2026-01-20"
+  },
+  {
+    "id": "baytown-initial",
+    "title": "CenterPoint Baytown Area Load Addition RPG presentation",
+    "url": "https://www.ercot.com/files/docs/2024/11/11/CNP_Baytown_Area_Load_Addition_project_20241112.pdf",
+    "publishedAt": "2024-11-11"
+  },
+  {
+    "id": "baytown-review",
+    "title": "ERCOT Baytown Independent Review and Board recommendation",
+    "url": "https://www.ercot.com/files/docs/2025/09/15/7.1-CNP-Baytown-Area-Load-Addition-Project.pdf",
+    "publishedAt": "2025-09-15"
+  },
+  {
+    "id": "canaan-acquisition",
+    "title": "Canaan acquires 49 percent interest in Alborz, Bear and Chief Mountain",
+    "url": "https://investor.canaan-creative.com/news-releases/news-release-details/canaan-inc-acquires-cipher-minings-interest-multiple-operational",
+    "publishedAt": "2026-02-23"
+  },
+  {
+    "id": "canaan-current",
+    "title": "Canaan August 2026 mining update",
+    "url": "https://investor.canaan-creative.com/news-releases/news-release-details/canaan-inc-provides-august-2026-bitcoin-production-and-mining",
+    "publishedAt": null
+  },
+  {
+    "id": "cipher-abc",
+    "title": "Cipher portfolio presentation with ABC site capacities",
+    "url": "https://investors.cipherdigital.com/static-files/f00c5ff3-78e0-4cbd-b8e9-b9c32edb13c9",
+    "publishedAt": null
+  }
+]

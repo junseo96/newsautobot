@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/teac/2026/20261006/20261006-informational-only---m-3-process-needs-status.xlsx",
+    "localPath": "/workspace/scratch/5efc33d74d8e/research-census/pjm-miso/raw/20261006-informational-only---m-3-process-needs-status.xlsx",
+    "sourceAsOf": "2026-10-01",
+    "publicationDate": "2026-10-01",
+    "checkedAt": "2026-10-03",
+    "sha256": "2ac9357236c382aad49e01f697e79b1e7e704fd86d261bf5b015d1cff32c5d54",
+    "bytes": 3609913
+  },
+  {
+    "url": "https://cdn.misoenergy.org/MTEP%20Projects%20Under%20Evaluation368757.xlsx",
+    "localPath": "/workspace/scratch/5efc33d74d8e/research-census/pjm-miso/raw/MTEP Projects Under Evaluation368757.xlsx",
+    "sourceAsOf": "2026-07-31",
+    "publicationDate": null,
+    "checkedAt": "2026-10-03",
+    "sha256": "40f325fe4ce7cb4dbc24207219725f623956efafdf6febb2e67a90accb24e72e",
+    "bytes": 127342
+  },
+  {
+    "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226",
+    "localPath": "/workspace/scratch/5efc33d74d8e/research-census/pjm-miso/raw/Appendix A Status Report575959.xlsx",
+    "sourceAsOf": "2026-08-04",
+    "publicationDate": null,
+    "checkedAt": "2026-10-03",
+    "sha256": "55b8a60fc0a4159d9de52a5c1f83be04cfaa2c60468126408d9968782eb0c9dc",
+    "bytes": 537983
+  }
+]

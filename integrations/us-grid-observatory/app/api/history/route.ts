@@ -1,0 +1,2 @@
+import {binding} from '@/lib/grid-db';
+export async function GET(request:Request){const region=new URL(request.url).searchParams.get('region')||'PJM';try{const r=await binding().prepare('SELECT observed_at,payload FROM snapshots WHERE region=? ORDER BY observed_at DESC LIMIT 120').bind(region).all<{observed_at:string;payload:string}>();return Response.json({history:r.results.map(x=>({date:x.observed_at,...JSON.parse(x.payload)}))})}catch{return Response.json({history:[],warning:'이력 저장소 조회 불가'})}}

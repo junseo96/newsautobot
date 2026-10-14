@@ -1,0 +1,24 @@
+{
+  "count": 13,
+  "industryCounts": {
+    "Aluminum recycling and rolling": 1,
+    "Aluminum rolling and recycling": 1,
+    "Automotive and battery manufacturing": 2,
+    "Automotive manufacturing": 2,
+    "Battery manufacturing": 1,
+    "Electrolytic hydrogen": 2,
+    "Primary aluminum smelting": 1,
+    "Semiconductor silicon-carbide materials": 1,
+    "Steel coating/manufacturing": 1,
+    "Steel manufacturing": 1
+  },
+  "wholeFacilityLoadMWUnknownCount": 13,
+  "gridRequestMWUnknownCount": 13,
+  "electricalEquipmentRatingKnownCount": 2,
+  "coverage": "Purposive named industrial supplement, not a complete list or statistically representative sample. No denominator for all Southeast industrial projects.",
+  "confirmedCancelledCount": 0,
+  "delayedCases": [
+    "Ford Tennessee Truck Plant (company timing shift)",
+    "VinFast North Carolina (state litigation and delay allegation)"
+  ]
+}

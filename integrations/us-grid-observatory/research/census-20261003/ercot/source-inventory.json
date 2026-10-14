@@ -1,0 +1,105 @@
+[
+  {
+    "agency": "ERCOT LLWG",
+    "scope": "All Large Load interconnection tickets represented in June 18 status update; includes operating and proposed stages",
+    "threshold": "Large Load process generally >=75 MW; historical interim entries also included",
+    "recordCount": null,
+    "sourceDate": "2026-06-18",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.ercot.com/files/docs/2026/06/18/June-19-LLWG-Report.pptx",
+    "disclosure": "aggregate",
+    "gap": "No project/customer rows or customer-to-LLI match; cannot produce exhaustive named census.",
+    "found": "466.5 GW status table, type shares, TSP/zone aggregates, approval and observed-demand distinctions"
+  },
+  {
+    "agency": "ERCOT Batch Zero / RIOO",
+    "scope": "Individual provisional classifications and verification submissions",
+    "threshold": "Batch Zero eligibility rules, generally Large Loads >=75 MW; separate RFI for substantiated 25–75 MW data centers",
+    "recordCount": null,
+    "sourceDate": "2026-09-21",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.ercot.com/services/comm/mkt_notices/M-C092126-01",
+    "disclosure": "not-public",
+    "gap": "Classification sent to interconnecting TSP/DSP; submissions visibility restricted. Public notices describe process, not a full roster."
+  },
+  {
+    "agency": "ERCOT RPG / CenterPoint",
+    "scope": "Baytown customer-specific transmission project",
+    "threshold": "Transmission reliability project; no census threshold",
+    "recordCount": 1,
+    "sourceDate": "2025-09-15",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.ercot.com/files/docs/2025/09/15/7.1-CNP-Baytown-Area-Load-Addition-Project.pdf",
+    "disclosure": "case",
+    "gap": "Customer name withheld; transmission endorsement is not load energization approval."
+  },
+  {
+    "agency": "PUCT / Oncor",
+    "scope": "Samsung Taylor grid-construction evidence in engineer testimony",
+    "threshold": null,
+    "recordCount": 1,
+    "sourceDate": null,
+    "checkedAt": "2026-10-03",
+    "url": "https://interchange.puc.texas.gov/Documents/58050_4_1500376.PDF",
+    "disclosure": "case",
+    "gap": "No verified load MW; raw PDF blocked, indexed primary excerpt only."
+  },
+  {
+    "agency": "PUCT / GVEC",
+    "scope": "CMC Seguin historical industrial load and transmission need",
+    "threshold": null,
+    "recordCount": 1,
+    "sourceDate": null,
+    "checkedAt": "2026-10-03",
+    "url": "https://interchange.puc.texas.gov/Documents/41967_7_774212.PDF",
+    "disclosure": "case",
+    "gap": "Historical 2016 forecast; current metered demand unavailable. Raw PDF blocked."
+  },
+  {
+    "agency": "Corporate primary disclosures / SEC",
+    "scope": "Riot, MARA, Hut 8, Cipher, Canaan, Freeport, Samsung, CMC site evidence",
+    "threshold": "No common reporting threshold",
+    "recordCount": 15,
+    "sourceDate": null,
+    "checkedAt": "2026-10-03",
+    "url": "https://www.sec.gov/edgar/search/",
+    "disclosure": "selected-cases",
+    "gap": "Company site capacity is not standardized requested load, grid approval, actual draw or public utility queue linkage."
+  },
+  {
+    "agency": "ERCOT NPRR1267",
+    "scope": "Public large-load interconnection status reporting policy",
+    "threshold": "Large Load report scope",
+    "recordCount": null,
+    "sourceDate": "2025-07-31",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.ercot.com/mktrules/issues/NPRR1267",
+    "disclosure": "aggregate-only-policy",
+    "gap": "Approved rule expressly says customer information is confidential and large-load information must be aggregated."
+  },
+  {
+    "agency": "Oncor",
+    "scope": "Active transmission Large Commercial and Industrial POI requests at Q2 2026 end",
+    "threshold": "LC&I transmission POI requests; numerical floor not stated in earnings release",
+    "recordCount": 737,
+    "sourceDate": "2026-06-30",
+    "publicationDate": "2026-08-06",
+    "checkedAt": "2026-10-03",
+    "url": "https://www.oncor.com/content/oncorwww/wire/en/home/newsroom/oncor-reports-second-quarter-2026-results.html",
+    "disclosure": "aggregate",
+    "found": "282 GW data-center requests; over 16 GW other industry. Expected Batch Zero 44 GW includes 8 GW already interconnected and ramping.",
+    "gap": "No customer roster, queue IDs, withdrawal/duplicate flags or current requested MW by named customer."
+  },
+  {
+    "agency": "CenterPoint Houston Electric",
+    "scope": "Utility Batch Zero submissions and expected eligibility",
+    "threshold": "Batch Zero criteria",
+    "recordCount": null,
+    "sourceDate": "2026-07-28",
+    "checkedAt": "2026-10-03",
+    "url": "https://investors.centerpointenergy.com/news-releases/news-release-details/centerpoint-energy-reports-strong-q2-2026-results-provides",
+    "disclosure": "aggregate",
+    "found": "Over 17 GW submitted; approximately 14 GW expected eligible, not final ERCOT allocation.",
+    "gap": "No public customer-level full roster; overlaps ERCOT central totals."
+  }
+]

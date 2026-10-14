@@ -1,0 +1,3 @@
+import {loadCoverage,loadObservations} from '@/lib/load-observations';
+import {binding} from '@/lib/grid-db';
+export async function GET(){const [data,coverage]=await Promise.all([loadObservations(),loadCoverage()]);let history:unknown[]=[];try{const rows=await binding().prepare('SELECT checked_at,details FROM update_runs WHERE status=? ORDER BY checked_at DESC LIMIT 24').bind('load-observations').all<{checked_at:string;details:string}>();history=rows.results.map(r=>({checkedAt:r.checked_at,...JSON.parse(r.details)}))}catch{}return Response.json({...data,coverage,history},{headers:{'Cache-Control':'private, max-age=60'}})}

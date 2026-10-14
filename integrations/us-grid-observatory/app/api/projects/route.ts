@@ -1,0 +1,2 @@
+import {projectsFor,compactLoadProject} from '@/lib/grid-db';
+export async function GET(request:Request){const p=new URL(request.url).searchParams,region=p.get('region')||undefined,id=p.get('id');let rows=await projectsFor(region);if(id)rows=rows.filter(r=>r.id===id);if(p.get('compact')==='1')rows=rows.map(compactLoadProject);return Response.json({records:rows},{headers:{'Cache-Control':'private,max-age=60'}})}

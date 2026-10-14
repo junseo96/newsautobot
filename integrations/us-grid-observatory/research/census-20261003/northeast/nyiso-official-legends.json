@@ -1,0 +1,139 @@
+{
+  "status": {
+    "0": "Withdrawn",
+    "1": "Scoping Meeting Pending",
+    "2": "FES Pending",
+    "3": "FES in Progress",
+    "3A": "FES Approved/Performed",
+    "4": "SRIS/SIS Pending",
+    "5": "SRIS/SIS in Progress",
+    "5P": "SRIS Commenced, Stopped and Pending Adoption of IP",
+    "6": "SRIS/SIS Approved",
+    "7": "FS Pending",
+    "8": "Rejected Cost Allocation/Next FS Pending",
+    "9": "FS in Progress",
+    "10": "Accepted Cost Allocation/IA in Progress",
+    "11": "IA Completed",
+    "12": "Under Construction",
+    "13": "In Service for Test",
+    "14": "In Service Commercial",
+    "15": "Partial In-Service",
+    "P": "Pending Adoption of IP Compliance with Order 2023"
+  },
+  "endUse": {
+    "DAT": "Data Center",
+    "DAT-AI": "AI Data center",
+    "DAT-CM": "Cryptocurrency mining data center",
+    "M": "Manufacturing",
+    "M-CH": "Microchip fabrication",
+    "M-CG": "Consumable Goods",
+    "M-IN": "Industrial Goods",
+    "RD": "Research and Development",
+    "HP": "Hydrogen Production",
+    "O": "Other"
+  },
+  "verbatimWorksheetNotes": [
+    {
+      "sourceRow": 77,
+      "fields": {
+        "B": "End-Use Key"
+      }
+    },
+    {
+      "sourceRow": 78,
+      "fields": {
+        "B": "DAT Data Center"
+      }
+    },
+    {
+      "sourceRow": 79,
+      "fields": {
+        "B": "    AI AI Data center"
+      }
+    },
+    {
+      "sourceRow": 80,
+      "fields": {
+        "B": "    CM Cryptocurrency mining data center"
+      }
+    },
+    {
+      "sourceRow": 81,
+      "fields": {
+        "B": "M Manufacturing"
+      }
+    },
+    {
+      "sourceRow": 82,
+      "fields": {
+        "B": "    CH Microchip fabrication"
+      }
+    },
+    {
+      "sourceRow": 83,
+      "fields": {
+        "B": "    CG Consumable Goods"
+      }
+    },
+    {
+      "sourceRow": 84,
+      "fields": {
+        "B": "    IN Industrial Goods"
+      }
+    },
+    {
+      "sourceRow": 85,
+      "fields": {
+        "B": "RD Research and Development"
+      }
+    },
+    {
+      "sourceRow": 86,
+      "fields": {
+        "B": "HP Hydrogen Production"
+      }
+    },
+    {
+      "sourceRow": 87,
+      "fields": {
+        "B": "O Other"
+      }
+    },
+    {
+      "sourceRow": 89,
+      "fields": {
+        "A": "NOTES:"
+      }
+    },
+    {
+      "sourceRow": 90,
+      "fields": {
+        "B": "● Project status # Key:0=Withdrawn, 1=Scoping Meeting Pending, 2=FES Pending, 3=FES in Progress,3A=FES Approved/Performed, 4=SRIS/SIS Pending, 5=SRIS/SIS in Progress, 5P=SRIS Commenced, Stopped and Pending  Adoption of IP, 6=SRIS/SIS Approved, 7=FS Pending, 8=Rejected Cost Allocation/Next FS Pending, 9=FS in Progress, 10=Accepted Cost Allocation/IA in Progress, "
+      }
+    },
+    {
+      "sourceRow": 91,
+      "fields": {
+        "B": "11=IA Completed, 12=Under Construction, 13=In Service for Test, 14=In Service Commercial, 0=Withdrawn, 15=Partial In-Service, P=Pending Adoption of IP Compliance with Order 2023"
+      }
+    },
+    {
+      "sourceRow": 92,
+      "fields": {
+        "B": "● Availability of Studies  Key: None=Not Available, FES=Feasibility Study Available, SRIS=System Reliability Impact Study Available, FS=Facilities Study and/or ATRA Available"
+      }
+    },
+    {
+      "sourceRow": 93,
+      "fields": {
+        "B": "● Proposed In-Service Dates, Proposed Initial Synchronization Dates and Commercial Operation Dates (COD) are shown in format Year/Qualifier, where Qualifier may indicate the month, season, or quarter."
+      }
+    },
+    {
+      "sourceRow": 94,
+      "fields": {
+        "B": "● The column labeled \"SIS Bundle\" refers to the groupings of load projects being studied in the same post project SIS case (bundle), as described in the SIS scope. The SIS code is in the following format, \"XX-Y\", where \"XX\" is the year the SIS scope was approved, and \"Y\" is a serial number within the given year."
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "name": "GlobalFoundries Burlington/Essex Junction Fab9 SiGe expansion",
+    "region": "ISO-NE",
+    "state": "VT",
+    "industry": "semiconductor",
+    "asof": "2026-09-17",
+    "source": "https://gf.com/news-and-events/news/globalfoundries-and-marvell-expand-collaboration-fornext-generation-optical-connectivity/",
+    "finding": "Official GlobalFoundries/Marvell announcement confirms a multi-year agreement to expand SiGe manufacturing capacity at existing Burlington facility.",
+    "gridRequestMW": null,
+    "queueId": null,
+    "status": "industrial_expansion_confirmed_new_grid_request_unverified",
+    "additive": false,
+    "missing": ["incremental electric demandMW", "new utility service or interconnection application", "study status", "commercial schedule"],
+    "countAsQueueProject": false
+  },
+  {
+    "name": "Commonwealth Fusion Systems SPARC / Devens campus",
+    "region": "ISO-NE",
+    "state": "MA",
+    "industry": "research_and_development",
+    "asof": null,
+    "checkedAt": "2026-10-03",
+    "source": "https://www.cfs.energy/devens-campus/devens-info/",
+    "finding": "Official site confirms built manufacturing/research facilities and SPARC under construction. SPARC is not a grid-connected electricity-producing power plant.",
+    "gridRequestMW": null,
+    "queueId": null,
+    "status": "industrial_research_site_confirmed_new_grid_request_unverified",
+    "additive": false,
+    "missing": ["electric load requestMW", "utility connection request", "connection stage"],
+    "countAsQueueProject": false
+  },
+  {
+    "name": "Electric Hydrogen Devens electrolyzer gigafactory",
+    "region": "ISO-NE",
+    "state": "MA",
+    "industry": "electrolyzer_manufacturing",
+    "asof": "2024-12-06",
+    "source": "https://eh2.com/gigafactory-ribbon-cutting/",
+    "finding": "Company confirms factory opening. Published1.2GW is annual electrolyzer manufacturing capacity, not this customer's electric load.",
+    "gridRequestMW": null,
+    "queueId": null,
+    "status": "factory_opened_no_pending_grid_request_evidence",
+    "additive": false,
+    "missing": ["electric customer peak load", "incremental service request, if any"],
+    "countAsQueueProject": false
+  },
+  {
+    "name": "Sublime Systems Holyoke electrochemical cement facility",
+    "region": "ISO-NE",
+    "state": "MA",
+    "industry": "cement_materials",
+    "asof": "2024-11-13",
+    "source": "https://www.energy.gov/cmei/oced/articles/award-wednesdays-november-13-2024",
+    "finding": "DOE confirms planned ultra-low-carbon cement manufacturing facility. Later news indicates a pause but current company/utility primary status and interconnection evidence were not established.",
+    "gridRequestMW": null,
+    "queueId": null,
+    "status": "industrial_project_confirmed_current_grid_request_unverified",
+    "additive": false,
+    "missing": ["latest primary project status", "electric demandMW", "HG&E service application/status"],
+    "countAsQueueProject": false
+  }
+]

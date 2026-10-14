@@ -1,0 +1,176 @@
+[
+  {
+    "id": "GPC_2026Q2_REMOVED_PROJECTS_R2",
+    "name": null,
+    "sourceSheet": "Removed Projects",
+    "row": 2,
+    "values": [
+      null,
+      "REDACTED",
+      450,
+      "No Decision"
+    ],
+    "asOf": "2026-06-30",
+    "publishedAt": "2026-08-17",
+    "sourceUrl": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227753/109137",
+    "matchedMainRow": null,
+    "additive": false,
+    "previousAnnouncedLoadMW": 450,
+    "rawRemovalReason": "No Decision",
+    "status": "removed_from_report",
+    "reason": "No Decision",
+    "cancelledConfirmed": false,
+    "rawStatus": "removed_from_screen",
+    "include": false,
+    "sourceRowId": "GPC_2026Q2_REMOVED_PROJECTS_R002",
+    "sourceFields": {
+      "rawRemovalReason": "No Decision",
+      "note1": null
+    }
+  },
+  {
+    "id": "GPC_2026Q2_REMOVED_PROJECTS_R3",
+    "name": null,
+    "sourceSheet": "Removed Projects",
+    "row": 3,
+    "values": [
+      null,
+      "REDACTED",
+      405,
+      "See Note 1"
+    ],
+    "asOf": "2026-06-30",
+    "publishedAt": "2026-08-17",
+    "sourceUrl": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227753/109137",
+    "matchedMainRow": null,
+    "additive": false,
+    "previousAnnouncedLoadMW": 405,
+    "rawRemovalReason": "See Note 1",
+    "status": "below_reporting_threshold",
+    "reason": "Project still active but load now below large-load customer threshold",
+    "cancelledConfirmed": false,
+    "rawStatus": "removed_from_screen",
+    "include": false,
+    "sourceRowId": "GPC_2026Q2_REMOVED_PROJECTS_R003",
+    "sourceFields": {
+      "rawRemovalReason": "See Note 1",
+      "note1": "The project is still active but load is now below the large load customer threshold."
+    }
+  },
+  {
+    "id": "GPC_2026Q2_REMOVED_PROJECTS_R4",
+    "name": null,
+    "sourceSheet": "Removed Projects",
+    "row": 4,
+    "values": [
+      null,
+      "REDACTED",
+      252,
+      "See Note 1"
+    ],
+    "asOf": "2026-06-30",
+    "publishedAt": "2026-08-17",
+    "sourceUrl": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227753/109137",
+    "matchedMainRow": null,
+    "additive": false,
+    "previousAnnouncedLoadMW": 252,
+    "rawRemovalReason": "See Note 1",
+    "status": "below_reporting_threshold",
+    "reason": "Project still active but load now below large-load customer threshold",
+    "cancelledConfirmed": false,
+    "rawStatus": "removed_from_screen",
+    "include": false,
+    "sourceRowId": "GPC_2026Q2_REMOVED_PROJECTS_R004",
+    "sourceFields": {
+      "rawRemovalReason": "See Note 1",
+      "note1": "The project is still active but load is now below the large load customer threshold."
+    }
+  },
+  {
+    "id": "GPC_2026Q2_REMOVED_PROJECTS_R5",
+    "name": null,
+    "sourceSheet": "Removed Projects",
+    "row": 5,
+    "values": [
+      null,
+      "REDACTED",
+      180,
+      "See Note 1"
+    ],
+    "asOf": "2026-06-30",
+    "publishedAt": "2026-08-17",
+    "sourceUrl": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227753/109137",
+    "matchedMainRow": null,
+    "additive": false,
+    "previousAnnouncedLoadMW": 180,
+    "rawRemovalReason": "See Note 1",
+    "status": "below_reporting_threshold",
+    "reason": "Project still active but load now below large-load customer threshold",
+    "cancelledConfirmed": false,
+    "rawStatus": "removed_from_screen",
+    "include": false,
+    "sourceRowId": "GPC_2026Q2_REMOVED_PROJECTS_R005",
+    "sourceFields": {
+      "rawRemovalReason": "See Note 1",
+      "note1": "The project is still active but load is now below the large load customer threshold."
+    }
+  },
+  {
+    "id": "GPC_2026Q2_REMOVED_PROJECTS_R6",
+    "name": null,
+    "sourceSheet": "Removed Projects",
+    "row": 6,
+    "values": [
+      null,
+      "REDACTED",
+      50,
+      "Site"
+    ],
+    "asOf": "2026-06-30",
+    "publishedAt": "2026-08-17",
+    "sourceUrl": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227753/109137",
+    "matchedMainRow": null,
+    "additive": false,
+    "previousAnnouncedLoadMW": 50,
+    "rawRemovalReason": "Site",
+    "status": "removed_from_report",
+    "reason": "Site",
+    "cancelledConfirmed": false,
+    "rawStatus": "removed_from_screen",
+    "include": false,
+    "sourceRowId": "GPC_2026Q2_REMOVED_PROJECTS_R006",
+    "sourceFields": {
+      "rawRemovalReason": "Site",
+      "note1": null
+    }
+  },
+  {
+    "id": "GPC_2026Q2_REMOVED_PROJECTS_R7",
+    "name": null,
+    "sourceSheet": "Removed Projects",
+    "row": 7,
+    "values": [
+      null,
+      "REDACTED",
+      45,
+      "See Note 1"
+    ],
+    "asOf": "2026-06-30",
+    "publishedAt": "2026-08-17",
+    "sourceUrl": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227753/109137",
+    "matchedMainRow": null,
+    "additive": false,
+    "previousAnnouncedLoadMW": 45,
+    "rawRemovalReason": "See Note 1",
+    "status": "below_reporting_threshold",
+    "reason": "Project still active but load now below large-load customer threshold",
+    "cancelledConfirmed": false,
+    "rawStatus": "removed_from_screen",
+    "include": false,
+    "sourceRowId": "GPC_2026Q2_REMOVED_PROJECTS_R007",
+    "sourceFields": {
+      "rawRemovalReason": "See Note 1",
+      "note1": "The project is still active but load is now below the large load customer threshold."
+    }
+  }
+]

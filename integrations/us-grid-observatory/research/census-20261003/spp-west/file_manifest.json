@@ -1,0 +1,1652 @@
+[
+  {
+    "path": "__pycache__/parse_registers.cpython-312.pyc",
+    "bytes": 14954,
+    "sha256": "96b7fdc5b51edc86cfdc0446139b16e92fb9d325691aa8521dc13484ba583a19"
+  },
+  {
+    "path": "add_black_hills.py",
+    "bytes": 4729,
+    "sha256": "78ade6b51ff6cf7775d8b4ac96ee471c90700b531b8f3908ed2915e5cb41f0e8"
+  },
+  {
+    "path": "bpa_all_ll_rows.json",
+    "bytes": 1115745,
+    "sha256": "6f39ab6bc57c08cff35c8fb9e06053e73157f7f84e779c7a3e6a143c3983ae1f"
+  },
+  {
+    "path": "bpa_changes_from_site.json",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "bpa_normalized_projects.json",
+    "bytes": 1485225,
+    "sha256": "a60124f817bb692f830062d0e99c7a3962bcf68984b23748e87bd978c1e55c7e"
+  },
+  {
+    "path": "bpa_summary.json",
+    "bytes": 1181,
+    "sha256": "e5ae00c5c614d27933652da3d45e2820b3587eff78065c20f869d5717daede35"
+  },
+  {
+    "path": "fetch_dpns.py",
+    "bytes": 1233,
+    "sha256": "680f550afaac15cb2acf181d712f7f7898d88c15175a2d878f99d042f64ca27e"
+  },
+  {
+    "path": "fetch_spp_archive.py",
+    "bytes": 1632,
+    "sha256": "70b7362e2e29bf9e2f09be8fb9c51f4a6081224f310d072024a1472d803d8d57"
+  },
+  {
+    "path": "fetch_west_sources.py",
+    "bytes": 2034,
+    "sha256": "b61fa68d79701b4b0a54106a9e4d66d458d339935daeead1f6288c7d3e2bed75"
+  },
+  {
+    "path": "normalize_spp.py",
+    "bytes": 9081,
+    "sha256": "124f9216f962b5e8c6c8299da2c16caac3e83059c93961165afdfe8c5acfc282"
+  },
+  {
+    "path": "parse_registers.py",
+    "bytes": 7653,
+    "sha256": "94a758f7814795935a2b80fe7f89b6f69a0ae1701e352d5b84b8f223e314034b"
+  },
+  {
+    "path": "raw/acc_april2026_workshop.html",
+    "bytes": 36699,
+    "sha256": "7d24d5902172aba7abaa37bb3fb3de946e25e6335cbbded6f4231b909c0fdc8f"
+  },
+  {
+    "path": "raw/blackhills_EL26-008.html",
+    "bytes": 12062,
+    "sha256": "d32cbd6281b1534380ce54481294142133ed744f833be3cc0680543b1f7b2d12"
+  },
+  {
+    "path": "raw/blackhills_EL26-008_amended_agreement.pdf",
+    "bytes": 3343698,
+    "sha256": "acd338f16f148118ae766a63f17e59846f620a416db791186b6ced76b08620c1"
+  },
+  {
+    "path": "raw/blackhills_EL26-008_amended_agreement.txt",
+    "bytes": 84911,
+    "sha256": "9c5bc1b790c15f64f57d77b425a23681bda76df7f0e94fd1ff6c1b2fd2a2df37"
+  },
+  {
+    "path": "raw/blackhills_EL26-008_application.pdf",
+    "bytes": 1277052,
+    "sha256": "0943abae98d073ba9ca7f1d6b171726702062a453edeacd96685776f350abbd5"
+  },
+  {
+    "path": "raw/bpa_queue.xlsx",
+    "bytes": 228293,
+    "sha256": "ab2c2d163ded1e3309877b91175d0b63e28265afff5e34dafab4f4cd3d15f662"
+  },
+  {
+    "path": "raw/colorado_puc_april2026.html",
+    "bytes": 144732,
+    "sha256": "1bae76cce9de79c3891e859b203810cb70a88899015d4bb334e0aec5806d0245"
+  },
+  {
+    "path": "raw/download_manifest.json",
+    "bytes": 3447,
+    "sha256": "872ecd5899b970cdb1dd2c9095d9c47da9038cf17462a1b2d483383be8d97633"
+  },
+  {
+    "path": "raw/idaho_brisbie_order37178.html",
+    "bytes": 3354,
+    "sha256": "9531e63c7c2cc231ce02915c177e739e947bdbd3b50788f5dc26cec563cd02b9"
+  },
+  {
+    "path": "raw/idaho_chobani_order37101.html",
+    "bytes": 3354,
+    "sha256": "660d35c1cc67b1cd1d56a45412ddf9e9afb9ebaaee408973d19e74f2aa12ab6e"
+  },
+  {
+    "path": "raw/idaho_micron_order37039.html",
+    "bytes": 3354,
+    "sha256": "5424c50aa095c3fd648ee568ade8e4e0152e9084c0df01869086d48158f96ba2"
+  },
+  {
+    "path": "raw/idaho_micron_order37092.html",
+    "bytes": 3354,
+    "sha256": "f4cac83842208914267015716102d2193f12d92d7f4bd07cb56609008a5d97e6"
+  },
+  {
+    "path": "raw/nvenergy_2026_irp_volume6.pdf",
+    "bytes": 903721,
+    "sha256": "aae1edccd87fe3cd5db1651061ebeac66862708717b49de2c6911f960c307a34"
+  },
+  {
+    "path": "raw/nvenergy_2026_irp_volume6.txt",
+    "bytes": 137589,
+    "sha256": "5243efb8aeb9e8c8498aa6fb120a09a7afadcbb7d15097f2e306f032cbe51566"
+  },
+  {
+    "path": "raw/nvenergy_data_fact_sheet.pdf",
+    "bytes": 342983,
+    "sha256": "cfad7b9c6e27248b657413615b2090d46b9723eaafcdab18b78f62d20e870ace"
+  },
+  {
+    "path": "raw/nvenergy_filings.html",
+    "bytes": 26834,
+    "sha256": "c1ddd7ffc799c7e506a929d7cc598111eb961814657e3897cfd5a55f06d37bf5"
+  },
+  {
+    "path": "raw/pacificorp_irp_pim4.pdf",
+    "bytes": 5141662,
+    "sha256": "41739b57b9204150153c5ea02b0e2f89bf68c08752908a13f547ed0412d3f16d"
+  },
+  {
+    "path": "raw/pacificorp_irp_pim4.txt",
+    "bytes": 177152,
+    "sha256": "87b2cc68bd7c27e7998481a10c5d3171076d74771ae4b698193db6b29bda3d9a"
+  },
+  {
+    "path": "raw/pacificorp_irp_pim6.pdf",
+    "bytes": 2817230,
+    "sha256": "204ef045f5a0856ad43dd3803d3ed7f098d17dc550171223a4e979c17f929ee5"
+  },
+  {
+    "path": "raw/pacificorp_irp_pim6.txt",
+    "bytes": 73932,
+    "sha256": "8ec2543a3318a1f5813a0cb30e9f258c00dd037e2804ef0cbb4cede2ff9bac8f"
+  },
+  {
+    "path": "raw/pacificpower_service_process.html",
+    "bytes": 79094,
+    "sha256": "58bdcef577bafb4abc0571b0b245c74b0d611985b7de8768a4c770c7e7642733"
+  },
+  {
+    "path": "raw/spp_2010_2010_SPP_Exxon-Mobil_and_TransCanada_Load_Study_Report_2010-04-23_Final.doc",
+    "bytes": 4613632,
+    "sha256": "170aa709a06aa862f0a48e7cea706a445fb6ba46123ae07116e270610716ca4b"
+  },
+  {
+    "path": "raw/spp_2010_AQ_-_01-11_January_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "7424fd5129e80fdf12925040979cc092d147e67e46b3fcb0b411b8a8d4d7a3f3"
+  },
+  {
+    "path": "raw/spp_2010_AQ_-_06_June_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "185f28cd1d19d50220744f05419a400f12d32e5bd1da4d81755e01ae0d18b7b0"
+  },
+  {
+    "path": "raw/spp_2010_AQ_-_08_August_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "04a0314538e6a7dc0aceb5339d2d4b8d302f96faf671b03e634efe56e1258f96"
+  },
+  {
+    "path": "raw/spp_2010_AQ_-_09_September_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "4f36018becc88b4f40841a1d4ff17814bb790ba6c281a999d22b82dcfece1914"
+  },
+  {
+    "path": "raw/spp_2010_AQ_-_10_October_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "471c272be14969c40a11d93f8ca79fded18b61a3c3758906324c79ad8acee9a5"
+  },
+  {
+    "path": "raw/spp_2010_AQ_-_11_November_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "fc831ab6aa1ae66e0f87089126a6e912c7d15ce25582ae63bd10f10f347266ff"
+  },
+  {
+    "path": "raw/spp_2010_AQ_-_12_December_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "f8dbab408a4b3065b4fdff88238f54d00703e0642784ffb5a80bc0c1b0d0e5ed"
+  },
+  {
+    "path": "raw/spp_2010_AQ_-_May_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "3184d28d68011a49ee97249caf0772e51e7196fce4ad5590894a5263099fa649"
+  },
+  {
+    "path": "raw/spp_2010_index.html",
+    "bytes": 11902,
+    "sha256": "2a89ab6336ae57fc52681e3cecbeaf7c7b7a9c22be9fcba74c5b3832a8dcf8bf"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_01-11_January_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "7424fd5129e80fdf12925040979cc092d147e67e46b3fcb0b411b8a8d4d7a3f3"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_01_-_12_January_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "9ec7b30024d3ea8bb6f41f5dc87b5b4e8b11d9351983b338a6081845f7493f33"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_01_-_12_January_Preliminary_Assessments_-_Amended_022112.xls",
+    "bytes": 29696,
+    "sha256": "bb376cb71dc412a2a51a0ddee98eaf787017fbbfb54057d801fd7eb99bffb45e"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_02-11_February_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "d68f6523b12765b520a4b6654cddac0e0b1857346234d1876434a16c08d03cb7"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_03-11_March_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "e0737a501325e5db22832da5d9ce1a5f7256737c306366a9633c799657e1ce9e"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_04-11_April_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "a81ca0e4af85fd81021f61a3cb367f3d47d21ae496fcfbff4598037f8c6e39c7"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_05-11_May_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "fdef9e9053bb9b97a68f05e73bd69df65f50252b0e1f23a611dcabfb6d4b6c95"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_06-11_June_Preliminary_Assessments.xls",
+    "bytes": 35840,
+    "sha256": "74cff1b90eefbfd45a3d326a39080553336f7ec4d320c77415a8aae28d42eba0"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_07-11_July_Preliminary_Assessments.xls",
+    "bytes": 35840,
+    "sha256": "265b1137b69c27fcc3862177474d52ffab7ba36cd0533e0bcb03621a8326ac29"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_08-11_August_Preliminary_Assessments.xls",
+    "bytes": 35840,
+    "sha256": "26047ea2eb83abb6de12e25ae63994e37bf0e6320550c471543864c22bb110ce"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_09-11_September_Preliminary_Assessments.xls",
+    "bytes": 35840,
+    "sha256": "56a5c3536cfa5700240bf984c85cfc1b63d571968e77a2219fef9d71ef2a3b19"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_10_-_11_October_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "d1df98ff6aa11996390c3babb46fece3b5a078baabba12f59680a6c4ea1d83a5"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_11_-_11_November_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "bd060cd9f7f94f1f27a8f28a1f23a3b30e31ad995ba08b2a393591cbc441d613"
+  },
+  {
+    "path": "raw/spp_2011_AQ_-_12_-_11_December_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "a9b59d23c2f17d28cd7ecd4b48a6b46b5ed89438443ec813485c202eb560168e"
+  },
+  {
+    "path": "raw/spp_2011_index.html",
+    "bytes": 15366,
+    "sha256": "b2231f9a1f0622ec58f230b00fd10e194d52621f901aca2f673ebc3e47c7ac62"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_01_-_12_January_Preliminary_Assessments_-_Amended_022112.xls",
+    "bytes": 29696,
+    "sha256": "bb376cb71dc412a2a51a0ddee98eaf787017fbbfb54057d801fd7eb99bffb45e"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_02-12_February_Preliminary_Assessments.xls",
+    "bytes": 30208,
+    "sha256": "2335dea193f05b8ef6651775dfeb7cd60b2e560b73d30242642506e44ed63935"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_03-12_March_Preliminary_Assessments.xls",
+    "bytes": 32768,
+    "sha256": "903f7ead83b4e2d5f5a0ed3b4bab8f44fda70cff0784ea88c851682a83a26287"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_04-12_April_Preliminary_Assessments.xls",
+    "bytes": 30720,
+    "sha256": "8d4ae78dea8d3d7cb23afad64044d5be8cc646832d8dd9a04d8f0567f4d9cf98"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_05-12_May_Preliminary_Assessments.xls",
+    "bytes": 30208,
+    "sha256": "1ad9523ff434fa0ea22cdeeb73a89b4ae542b9b5df3bd0566acd180e72c1a7a3"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_06-12_June_Preliminary_Assessments.xls",
+    "bytes": 36352,
+    "sha256": "654ae3092814fe0fdfe6719537d72d900dd1e8c2a6bca2d7bf1795e0d4a1c9c0"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_07-12_July_Preliminary_Assessments.xls",
+    "bytes": 36864,
+    "sha256": "927e66e705d41278d906d2db9f06d1dcf2c073c0e97a3a7e2fafbd9a33e204c8"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_08-12_August_Preliminary_Assessments.xls",
+    "bytes": 34816,
+    "sha256": "1660b0fbac8d9a4be737ba6992e1279521093589ca0302bd5e8647c7bbc76e62"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_09-12_September_Preliminary_Assessments_-_AMENDED.xls",
+    "bytes": 30208,
+    "sha256": "6fa80642a6551dd3b6ed372f532be291c7e35ea82c4d59cec49b2e4a3517a6e4"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_10-12_October_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "c7a56ebd32c11c635190ad78c54da9b5f2f90ba15dfb3921ab42f91e44c53b99"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_11-12_November_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "c1240bec7c1770544cf3a36ff6f145551df83386964a526845dc8e83df4fe7cf"
+  },
+  {
+    "path": "raw/spp_2012_AQ_-_12-12_December_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "0e690febaa6acb72492209ab259da855f427f13f7d60667db0b898603f784d08"
+  },
+  {
+    "path": "raw/spp_2012_index.html",
+    "bytes": 13986,
+    "sha256": "089bf9349722ea3b661762ed58c2162cd5ddf0e3df5ab4cd5af05809333e8547"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_1-13_January_Preliminary_Assessments.xls",
+    "bytes": 23552,
+    "sha256": "e1460a7dabc1f5a3b1fafe3c55d47f842d8f5f71dc36fc9ddb52ee4aa342ba1c"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_10-13_October_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "c363821992fa2eb9fd8fe0141bedb6b691725ba459eb0cb8bac2a5128ef873df"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_11-13_November_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "262b27c74c5d70ecbd4b70cb47770fe64030bb5c6117a53c9a8a20aaf8e58694"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_12-13_December_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "dc81e9b3faac6091e25c6d804a5fcde64ece56d2c2b3f58b747c87e41c7693a6"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_2-13_February_Preliminary_Assessments.xls",
+    "bytes": 23552,
+    "sha256": "dc7eed20cde26eaa9e7f07d3fa70254f8be5195d39320d83112c82c353396154"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_3-13_March_Preliminary_Assessments.xls",
+    "bytes": 29696,
+    "sha256": "bdb474d9b9613ed7e6ac86fe084439d9b8626526661b002c2bdd8bf88e238f5a"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_4-13_April_Preliminary_Assessments.xls",
+    "bytes": 24064,
+    "sha256": "c7477df24166e5d5e64f2fc4a2b761f3a8141b6728bd45671abf4db4cddc0767"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_5-13_May_Preliminary_Assessments.xls",
+    "bytes": 28672,
+    "sha256": "9109b1ce0bf8ba7e77dfc92c1a11427bf23dd1d96ec31e5afacf0353bc881704"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_6-13_June_Preliminary_Assessments_-_Amended.xls",
+    "bytes": 29184,
+    "sha256": "e51880e8c93ecd0273ac491b46d3b2886e5626b96bb93221c943e8eee80e6b21"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_7-13_July_Preliminary_Assessments.xls",
+    "bytes": 28672,
+    "sha256": "d22580644b9fe870a8bd9bb56139f333c243e40619ccdb9f8fd59c70f69ec45a"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_8-13_August_Preliminary_Assessments.xls",
+    "bytes": 28672,
+    "sha256": "85a03fd5282a8c1ffc7941d91c8c659bbe476750d5b8ed596fc5400e56be8cdc"
+  },
+  {
+    "path": "raw/spp_2013_AQ_-_9-13_September_Preliminary_Assessments_1.xls",
+    "bytes": 28672,
+    "sha256": "cefb60f4f94a9aa55efecf6a9710f5592516efb8ca9a7e4a4dc3e8d5b1e2de69"
+  },
+  {
+    "path": "raw/spp_2013_index.html",
+    "bytes": 13949,
+    "sha256": "aeed47a6317c6eae8b3dec5cf447d914bcaddb1f8359f79b3c885d2f9357d462"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_1-14_January_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "8a255307c0bae254163eb61254af4d0160be50a7180441b01ff60eda44e656ec"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_10-14_October_Prelim_Assessment.xls",
+    "bytes": 41984,
+    "sha256": "43d9912081f81b3e3d5d6322c3d24eefc69f6df10fc6341a6b6f5ed2d253e2de"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_2-14_February_Preliminary_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "fb32ae686d2a2011c630e9d42680b578d5598765e1b7c4b4691d60acb7a5b138"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_3-14_March_Preliminary_Assments.xls",
+    "bytes": 29184,
+    "sha256": "2846269482c0c2cf07021a59c2426f8d986f09f78353e9b2da2443fb135e0f1b"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_4-14_April_Prelim_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "7b76cf7081d4f151f0f9098f2aec40a2a02559dcf6e3fe7e66d1accc58682b06"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_5-14_May_Prelim_Assessments.xls",
+    "bytes": 29184,
+    "sha256": "99c1b1c4e84e8466973ef9517711f44032bad42155f97bcbc34c70e961e90a8c"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_6-14_June_Prelim_Assessment.xls",
+    "bytes": 30208,
+    "sha256": "140a3818545fe226769525894f28d8ab0ae67add80082641fecc43629df933a8"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_7-14_July_Prelim_Assessment.xls",
+    "bytes": 40960,
+    "sha256": "42db475b7bcdeec205b0a4583e67516b970d87da1cd087b00b2c2d73c0638a9a"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_8-14_August_Prelim_Assessment.xls",
+    "bytes": 41472,
+    "sha256": "d5c973626769af6ec27a6182c66d60b21ffef98b386d209dd4747b15622c53d6"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_9-14_September_Prelim_Assessment.xls",
+    "bytes": 41984,
+    "sha256": "ed6a35cd181828406180a92a22b64091ef105d71faaea70bedafb6f038bc56eb"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_December_2014_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "f7a39807fd03277f8e18c7aa233a10ac59f00278053453874d703ee65093c4a7"
+  },
+  {
+    "path": "raw/spp_2014_AQ_-_November_2014_Prelim_Assessment.xls",
+    "bytes": 39424,
+    "sha256": "4ec80d297e57863e3bad688e86c4da97c7f6f882247ad9f4229165490e43358e"
+  },
+  {
+    "path": "raw/spp_2014_index.html",
+    "bytes": 13881,
+    "sha256": "5470c574671a636c7a5556683f33060350ea1ebebc4226a0ea5c875756ba5c23"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_April_2015_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "246146a7ea27f332efc99f77bd6c1eee04c7fbe44ea99d82bb74ef498bfc0dd5"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_August_2015_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "700c9a2b0ad423ff5cfd0c5a487dc469cba7db8448fcf5744503ba9e3b84e813"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_December_2015_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "3c24db02a4b042b5dbd10781b77a1be6d15074f796328001044efcd0d63e939e"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_February_2015_Prelim_Assessment.xls",
+    "bytes": 39424,
+    "sha256": "caa80946c5eda7db39f9161c227b672ba9dec1763f2d8d41007361c9d5caeb75"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_January_2015_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "a16cdfb2ccb88c4cb2b5a4d1baee18efcc6a96bafcdd4e740fb8fdbedd7a749a"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_July_2015_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "62475edd010b4654e32658914def22012e97f409bb8f0c4559720cddcd57630b"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_June_2015_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "9f1c1226192615ee1447aec3ca22344e8ea34c178a9a828d4f6afcf2808a0adc"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_March_2015_Prelim_Assessment.xls",
+    "bytes": 39424,
+    "sha256": "b877962be9ea36383e12ae9fe5d796cffd868c6540af31c9a617ac364e7d5de6"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_May_2015_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "f53c4cafe90670e879a9797456ac9d8cf9c7873158d9d9818ce2570e0176949e"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_November_2015_Prelim_Assessment.xls",
+    "bytes": 39424,
+    "sha256": "b89d6d3127b1f232ca7253bc2a5ae1ae868fcac10fda042f9517b0f8f1905555"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_October_2015_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "dab041013094e2eb36a22b30dd5e5171d273b86c94155c7ddca51e7a0d7cae05"
+  },
+  {
+    "path": "raw/spp_2015_AQ_-_September_2015_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "c8c5ee4f00fdb5b4595b429f0b5f25984fcdd2dca86818e35208911bbc03a4f7"
+  },
+  {
+    "path": "raw/spp_2015_index.html",
+    "bytes": 13861,
+    "sha256": "8ccb4de57ca19a8d9e2594235361b33aeb9c7170514a2358723cd79828fb13be"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_April_2016_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "2ec19d27ab011f2212efa268d1c52744397d7ff330794c86782d6116cd268420"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_August_2016_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "d58f291290dfbd73bd6c2e3277faa4edf35730252f6d7e7909f6d8df560dedf8"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_December_2016_Prelim_Assessment_.xls",
+    "bytes": 37888,
+    "sha256": "f11e9dd4bfa10a16c6c9fb6b2bae8e183e73450fe5e20563896f8830937af5e3"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_February_2016_Prelim_Assessment.xls",
+    "bytes": 39424,
+    "sha256": "895b78db2eac6fc7193ea87dc4a07793e2866ea6e1b62c6cd658732b6f8f6a18"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_January_2016_Prelim_Assessment.xls",
+    "bytes": 38400,
+    "sha256": "9c369f91d0a60892939b6aecc310faea7961a2e00cff56907cf70c318295311e"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_July_2016_Prelim_Assessment.xls",
+    "bytes": 38400,
+    "sha256": "70441597b1d5aee2a182105e30e31a77dbec5e605a6130e826b2734aa8931297"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_June_2016_Prelim_Assessment.xls",
+    "bytes": 37888,
+    "sha256": "07428dba8519472621f4e35defb243daeb61722affa4a12026fc32b4612edd61"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_March_2016_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "21b1c644bec2d7ec0fff5d5dbf72fbe62bd4aa18ac9095dd162dfd4317a25cb3"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_May_2016_Prelim_Assessment.xls",
+    "bytes": 38400,
+    "sha256": "9794da8598f0fc0ee9b38cc637884910c63b0b7c27aef3f00ecc4969373db901"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_November_2016_Prelim_Assessment.xls",
+    "bytes": 37888,
+    "sha256": "f5a4da176b3d67c4471638abf8b1963cfba938988cc2f7ae9a1d4de16fc1e373"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_October_2016_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "1c3228a5eb98a83894089fa6828cff159302095a361fb8dcfb255d6d7f0b0217"
+  },
+  {
+    "path": "raw/spp_2016_AQ_-_September_2016_Prelim_Assessment.xls",
+    "bytes": 38912,
+    "sha256": "0bd16c11aa2819d76c9bc628634356c08627d1c06d96c35c0c78a5aa4d125d20"
+  },
+  {
+    "path": "raw/spp_2016_index.html",
+    "bytes": 13862,
+    "sha256": "221f0420ceb6851b00f64b2ade82ecb43eb47de193c03adca2389bffe056afc7"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_April_2017_Prelim_Assessment.xls",
+    "bytes": 37376,
+    "sha256": "341978a39374f71b9d33a84bdd7a82656267b1ec5288aee9dbbc899695c3c2c4"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_August_2017_Prelim_Assessment.xls",
+    "bytes": 38400,
+    "sha256": "ec557a02c82eb855b09ba9ab6e6d8d1ebde284a4e12d39c0367a028f76857425"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_December_2017_Prelim_Assessment_b.xls",
+    "bytes": 36864,
+    "sha256": "89135eddd58463ecefe09d72eba62d9074d60b639ab2eaf9bbf3dc885f3c9a28"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_February_2017_Prelim_Assessment.xls",
+    "bytes": 37376,
+    "sha256": "4062b50a93d12d8779a9ca8ef23e4ba2e889bac19b1fb50a9c16dd63e570a50c"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_January_2017_Prelim_Assessment.xls",
+    "bytes": 37888,
+    "sha256": "d6e854538c344f625dbcec33125c0e5b142df3fe1dae3504c23c49bd3e6a6b33"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_July_2017_Prelim_Assessment.xls",
+    "bytes": 37888,
+    "sha256": "96e11378bb0852a4fb267e94b1e5939a426d8b8cdd4a3b27995263a52d7dd3db"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_June_2017_Prelim_Assessment.xls",
+    "bytes": 37888,
+    "sha256": "5911ceabf34c16e253bc917a69ebd90161abad41f4a42ad4c48fcd5f681ba7aa"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_March_2017_Prelim_Assessment.xls",
+    "bytes": 37888,
+    "sha256": "99a558d83b21d356b1dac6516c737996e00db700fcbf0cee7c905ff9ecd9f8c6"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_May_2017_Prelim_Assessment.xls",
+    "bytes": 38400,
+    "sha256": "8b5c3ac0af688514c99f69a8de75670eebb6252437b3505833e66af8f823ce6d"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_November_2017_Prelim_Assessment.xls",
+    "bytes": 30208,
+    "sha256": "d89475da5ced916d103ba983a543f988e4d72e8869aafc8a42fb8e9ddf4018c0"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_October_2017_Prelim_Assessment.xls",
+    "bytes": 37376,
+    "sha256": "8e367f0b202b8827474081d0acbdad1a90183838d23d0763e454f5cb1cfa5b29"
+  },
+  {
+    "path": "raw/spp_2017_AQ_-_September_2017_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "22078b1b2c709b4ac6ca40501a550c692ad265daba58a303bab80a2f85bd9307"
+  },
+  {
+    "path": "raw/spp_2017_index.html",
+    "bytes": 13863,
+    "sha256": "2a04609622e0ea4e3ff158d055d94c189547a63b9c1a1c20e7b9d153664ba397"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_April_2018_Prelim_Assessment.xls",
+    "bytes": 37888,
+    "sha256": "ebe2112c092eb04a5f53762cc305b1f3f417505afe594243751c815ba3a0b016"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_August_2018_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "3dc83ae8d400f1747921c17b2c238cc81a7441f13f38d1af156cdb1cdb4e82af"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_December_2018_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "58d9f6b47e361acac5732a366ee6084242c3752fe018146e60c5b6ba0fba7668"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_February_2018_Prelim_Assessment.xls",
+    "bytes": 37888,
+    "sha256": "62ddfa3a2b66e6e9b287ff9b7429c17166bedf983d6f662b19e8582e8c67f65c"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_January_2018_Prelim_Assessment.xls",
+    "bytes": 37376,
+    "sha256": "01013b9ba5c2823c5b3b63a840d7327767c04b851c928a526ac9332910f3502b"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_July_2018_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "7ccdc67782a4cac77e62da22d171262e996a02a41f7cb0f87059a1213fe952dd"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_June_2018_Prelim_Assessment.xls",
+    "bytes": 36352,
+    "sha256": "21c5908e9e805e550f8e4a8c8d911523847782352ba55674d44b072080497797"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_March_2018_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "9033217812c43eef7b70aa37c39e150754fa7a41cb06f3085e339c2ff0eedcdd"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_May_2018_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "f06d83a16365a8b24a6b8e7920854c7e29ba272803dde25a71afe6334c1f03de"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_November_2018_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "b468b33498e26f51b049f7c73466339a90e50c26ac5a21e2a8572242fb99bdb0"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_October_2018_Prelim_Assessment.xls",
+    "bytes": 37376,
+    "sha256": "a938bc9724ac5ed8022d2bfa532cf7619f61f4ca76f98913a17280fbc48bef8a"
+  },
+  {
+    "path": "raw/spp_2018_AQ_-_September_2018_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "8f4a4210eb713113dc7aff53c694fe76f691afa1e4a71c93ab216ddce32ead84"
+  },
+  {
+    "path": "raw/spp_2018_index.html",
+    "bytes": 13861,
+    "sha256": "4cd6ce327ba6a2c5b52b9f2ad490b5baeef600cccdd5b9f9ff8699cf139d9c2e"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_April_2019_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "faff306fc4ba8f6975db4c1cf8c6698eec068404c826db38911b2df50906359b"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_August_2019_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "075d1b4bb5136eb3d633aee4c20cebc2f6e9a4ceecaa942181e29b23c7d85312"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_December_2019_Prelim_Assessment.xls",
+    "bytes": 36352,
+    "sha256": "e81a77428970629226cda9286eccc4189c7643ad1ae230c1542a5b5d1057c1e7"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_February_2019_Prelim_Assessment_Rev3.xls",
+    "bytes": 37888,
+    "sha256": "6b4c7d795eeefe8c28f108e4fcd76c9df233376a0601ea8121f770a24f104fb0"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_January_2019_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "21d6727cedb1c92f5753e999e906e94dc42c10563ac8fb2a6170482843474561"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_July_2019_Prelim_Assessment.xls",
+    "bytes": 37376,
+    "sha256": "8b3347cd297c1726a245ecbeaf37856c0b2b34800cbb02fe43eeeeab5235f918"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_June_2019_Prelim_Assessment_Rev4.xls",
+    "bytes": 37376,
+    "sha256": "29b6893870ebef7ca04c4e23a43079906479a4e9af1c2d4cacf320cd706b4e39"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_March_2019_Prelim_Assessment.xls",
+    "bytes": 37888,
+    "sha256": "2ddd587f9334eec27c5d1e999ffa2ff24ed8fde6d819961a4b66512528030c2e"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_May_2019_Prelim_Assessment.xls",
+    "bytes": 37888,
+    "sha256": "44fa2ffcc4f98854561260e52cf23cf54f474b39fc3c9d2bd23cf340e4de4599"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_November_2019_Prelim_Assessment.xls",
+    "bytes": 38400,
+    "sha256": "7a572a1ae0fadbd23653863fe734f948ca890ec2331b0aa8a776cecb174defbf"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_October_2019_Prelim_Assessment.xls",
+    "bytes": 37376,
+    "sha256": "820d1530fa3766aacae09906d20d57c722580b9d7babb42a2eaae2979cd2fda6"
+  },
+  {
+    "path": "raw/spp_2019_AQ_-_September_2019_Prelim_Assessment.xls",
+    "bytes": 36352,
+    "sha256": "29fb6b5e21ea54beb3a52b601a863cc6df74b58a54479747db53be1cd6149af5"
+  },
+  {
+    "path": "raw/spp_2019_index.html",
+    "bytes": 13867,
+    "sha256": "cfccdc9b19e0e689574a5a6631dc72d2cf5fb3a9ebcdb897cae4d2bc0baa569c"
+  },
+  {
+    "path": "raw/spp_2020_AQ_-_April_2020_Prelim_Assessment.xls",
+    "bytes": 36352,
+    "sha256": "227cf125bb801e711adf02ee433b70d854316de7f0b74166dc50cca5e59326bf"
+  },
+  {
+    "path": "raw/spp_2020_AQ_-_February_2020_Prelim_Assessment.xls",
+    "bytes": 36864,
+    "sha256": "58ad550776b7eeb601226f2c043f6daec3528652f7ef8afd09d38e8fbcd4d647"
+  },
+  {
+    "path": "raw/spp_2020_AQ_-_January_2020_Prelim_Assessment.xls",
+    "bytes": 36352,
+    "sha256": "7ca91c07c08b079762d7d1134c4a2fcbdfaf4c9e095b36e6152bd640fb8326b9"
+  },
+  {
+    "path": "raw/spp_2020_AQ_-_July_2020_Prelim_Assessment_Rev2.xls",
+    "bytes": 36864,
+    "sha256": "1d802d0b8ca251a4b4c72ea3358218ae0d41eb70d9899ea86d218cf95970cd07"
+  },
+  {
+    "path": "raw/spp_2020_AQ_-_June_2020_Prelim_Assessment.xls",
+    "bytes": 36352,
+    "sha256": "ac14a945c46400191978db87f3189ed0ed3e154020964f1ada24f8b39820d404"
+  },
+  {
+    "path": "raw/spp_2020_AQ_-_March_2020_Prelim_Assessment.xls",
+    "bytes": 36352,
+    "sha256": "deecd71ca5f27687570edb68ed467d3a3ae7546307443ad4daaeaff9cfb2fcd4"
+  },
+  {
+    "path": "raw/spp_2020_AQ_-_May_2020_Prelim_Assessment.xls",
+    "bytes": 36352,
+    "sha256": "db0316fe1674aaf816fccbf1d2a207c09abec24a8d2dd52262528ec492944deb"
+  },
+  {
+    "path": "raw/spp_2020_Preliminary_Assessment_Posting_August_2020_Rev2.xlsx",
+    "bytes": 10239,
+    "sha256": "01fece924d82867528750f40da041cc3ef6d7d47a65fad2a2b2a7bd56b0f29e4"
+  },
+  {
+    "path": "raw/spp_2020_Preliminary_Assessment_Posting_December_2020.xlsx",
+    "bytes": 9686,
+    "sha256": "c3dc91f581db69688057e2dd9301bec248429e852da80659eeedb3835b5ba7bf"
+  },
+  {
+    "path": "raw/spp_2020_Preliminary_Assessment_Posting_November_2020.xlsx",
+    "bytes": 9683,
+    "sha256": "1799754724f284b2db2cad075b7741afd4a02355eeba2df4f531a95c0316ae34"
+  },
+  {
+    "path": "raw/spp_2020_Preliminary_Assessment_Posting_October_2020.xlsx",
+    "bytes": 9879,
+    "sha256": "ea859843a946618f2245f45eca2c968ea954d380d3d2ea689a70f1af623ad947"
+  },
+  {
+    "path": "raw/spp_2020_Preliminary_Assessment_Posting_September_2020.xlsx",
+    "bytes": 10003,
+    "sha256": "3aa8ac8741e4c9cc5b78291b7ad4c8b96cb8e402529c4135e72bf8362e4199b4"
+  },
+  {
+    "path": "raw/spp_2020_index.html",
+    "bytes": 13915,
+    "sha256": "4409cfe986fe86b0dca22ca02ef8e51652cbd90a10ad8f4429d4f900868eb60e"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_April_2021.xlsx",
+    "bytes": 10481,
+    "sha256": "9fa6ea53b7c27571fa3cee3e9f6030427a1ac6f2bc4a56e63ac8a77d201a982c"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_August_2021_Rev.3.xlsx",
+    "bytes": 10891,
+    "sha256": "8d2d436c23cb6fa9e911a09639fb5b30ec380ce75dcf0005c3fcabbc2fd2a08b"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_December_2021.xlsx",
+    "bytes": 10225,
+    "sha256": "ec9f87444025794823f09739a2860e63407897130624acb018c38d05cbe11654"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_February_2021.xlsx",
+    "bytes": 10006,
+    "sha256": "f716c7ced07d0e90c486ecc68588ca650315be5bb7f29fd1432c79c5458c0dbc"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_January_2021.xlsx",
+    "bytes": 9935,
+    "sha256": "e34f964afaf3f9ce759e343ac574b9ec5222bf767044f8b05b4db37e07097c2a"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_July_2021_Rev2.xlsx",
+    "bytes": 10020,
+    "sha256": "15008da589655463b8213f93271fb64f8f2dc85012e1c7ef0d12ce5bb1593bff"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_June_2021.xlsx",
+    "bytes": 10003,
+    "sha256": "bb1b4d418d8c1cbaf18dcbe44701ceafa6ddd92062d8d7cbdafa8afc81ff107f"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_March_2021.xlsx",
+    "bytes": 10391,
+    "sha256": "73686e75b2445093ce7d2711627450b81713a4a795a38cc77456539bc6c5bad1"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_May_2021.xlsx",
+    "bytes": 10049,
+    "sha256": "39d8e916bd7ae2566032db5f405922ce9c13535e548cacf1a6168c57c24daf78"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_November_2021.xlsx",
+    "bytes": 9868,
+    "sha256": "e7b17ff1d3d07e79e50e175084dbff06ec8c8feffcd75c720125fa42a0459cf9"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_October_2021_rev_12.3.21.xlsx",
+    "bytes": 10095,
+    "sha256": "13e021c6b01d8414f2ba3cb28559ff51ba2073140d31b9e7e43ac843fd7efbb3"
+  },
+  {
+    "path": "raw/spp_2021_Preliminary_Assessment_Posting_September_2021.xlsx",
+    "bytes": 10348,
+    "sha256": "d9240b0c062d2081ed753292e2ebfe2dfd654ea792eb2131d8cb8728c2a942ac"
+  },
+  {
+    "path": "raw/spp_2021_index.html",
+    "bytes": 13992,
+    "sha256": "e5b5b609b5e7557696682cd2add448457b6bd600a1c2ab08cfe18d06a2d64da6"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessment_Posting_April_2022.xlsx",
+    "bytes": 10158,
+    "sha256": "8d33afa3418a3720ebba353df0438e7aa2fbbda7fdd4d5a175cced9ad7cdcc8a"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessment_Posting_December_2022.xlsx",
+    "bytes": 11092,
+    "sha256": "156b58404795e2aa27c2e947b36e60ac3c3af196783b36db7d253742945434a0"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessment_Posting_February_2022.xlsx",
+    "bytes": 10475,
+    "sha256": "890ce3f364becc4069389d6e89c0145e58d0258184adca3d84abe620d7abac80"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessment_Posting_January_2022.xlsx",
+    "bytes": 10286,
+    "sha256": "ecf880240a61ccfeef890876c9ed0d355e4fa6f3c291da1c25874f52fc81d101"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessment_Posting_July_2022.xlsx",
+    "bytes": 9948,
+    "sha256": "3e75dac1143cd0be58e5332cb376a1f6f7e55d7e2f4bd66880a369eaa2039547"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessment_Posting_June_2022.xlsx",
+    "bytes": 11153,
+    "sha256": "214de7fee5dba0020417d65ed8e3a25c0a58a4cdbfd5152961ec665b058ca702"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessment_Posting_March_2022_Rev..xlsx",
+    "bytes": 10237,
+    "sha256": "18ce55bbe1c15676d33a28b02664225df90c3b03d1014cc19b60c9d7e2308bda"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessment_Posting_November_2022.xlsx",
+    "bytes": 9867,
+    "sha256": "7bbe9ca06446a38f33ccc868e4817cce52e0b466dd3a96ecedf9dc351cc10f86"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessment_Posting_October_2022.xlsx",
+    "bytes": 10176,
+    "sha256": "312f1da3b8eb9e4d35fa1dc772813a747e01ce6ec22053299e236a5670e3a5d2"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessment_Posting_September_2022.xlsx",
+    "bytes": 10145,
+    "sha256": "9c428fed677ed074f28bb0f1fbd179d99ebaa0353aa3dbe755ef03b445af6c6a"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessment_Posting__August_2022.xlsx",
+    "bytes": 10167,
+    "sha256": "26630941b0ae0a620ae11a52a3baa2ea5faacee0e7a3bd72e57063ccf9f8f2db"
+  },
+  {
+    "path": "raw/spp_2022_Preliminary_Assessments_Posting_May_2022.xlsx",
+    "bytes": 10198,
+    "sha256": "04aab4efb4ef46843ad426cc9fcca5d135aaf4d6449a6901c3107bee4946f162"
+  },
+  {
+    "path": "raw/spp_2022_index.html",
+    "bytes": 13978,
+    "sha256": "d007287d36bc0276bb08631c905b298183920501e2ff56af021ce3ea8845057b"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_April_2023.xlsx",
+    "bytes": 10017,
+    "sha256": "005e3ea6e0fc50ac64b0d70576cbc66f4a773c34f2d8ab0609797e20e1827619"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_August_2023.xlsx",
+    "bytes": 9950,
+    "sha256": "c0e25ed27d0be1ab4f6ac9961efe7afb4bfc1c25a3e9182b4ce3b359a96f4c65"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_December_2023.xlsx",
+    "bytes": 9969,
+    "sha256": "6c2bbff992338762db8afa4c1058ae07912bd976f07eae982dccd176a0e00f30"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_February_2023.xlsx",
+    "bytes": 10204,
+    "sha256": "cdc52e97e2bfbe8b8c9f374ff474a82166ca8d69745820462d18e547907e1ea6"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_January_2023.xlsx",
+    "bytes": 9997,
+    "sha256": "cd5354e65193c38cd55179b42b0ee5f456ac3ba559e88b596d8604a76d70a789"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_July_2023.xlsx",
+    "bytes": 10160,
+    "sha256": "034b28f1bece575638b8ec61059ae581b72ba750b1dea6e1c9d3675e816a8bf8"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_June_2023_Revised.xlsx",
+    "bytes": 10094,
+    "sha256": "ab064f68ecee709c0614e28162a11d1e9e7f31b21ecc76a0d799e98643ef47c1"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_March_2023.xlsx",
+    "bytes": 10104,
+    "sha256": "8402e385ef9abf74584f8c5ccde24b2337f484dc35f05e59be7a54877d069788"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_May_2023.xlsx",
+    "bytes": 10066,
+    "sha256": "febd984d282cbd90b1d65c5f8136f6fc5c4130ceed964a86c83893966db467c6"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_November_2023.xlsx",
+    "bytes": 10124,
+    "sha256": "626a3c185d615edc896550c109d436a0724ed4b89ecc30fa72798c652ebd4461"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_October_2023.xlsx",
+    "bytes": 10062,
+    "sha256": "bceb7d895e97d8bec74a52c017273fe6d6880e91a0d7244da31ebcc8133c72c1"
+  },
+  {
+    "path": "raw/spp_2023_Preliminary_Assessment_Posting_September_2023.xlsx",
+    "bytes": 9728,
+    "sha256": "d1f2e85d40d003d01bac521d461fe98a747481efabdc2473ac5b9e6855ef93e5"
+  },
+  {
+    "path": "raw/spp_2023_index.html",
+    "bytes": 13977,
+    "sha256": "b16ee3fcb3450b15c3d0537292166af07b915b6f9ebd99674c00b2ca020a1162"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_April_2024.xlsx",
+    "bytes": 12080,
+    "sha256": "36564b25614408f9f92b9b3b69bcb37523a761c1357a74b92457df019ca66446"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_August_2024.xlsx",
+    "bytes": 12132,
+    "sha256": "114d19a614dd53a9b447f60d1f94b3de00a2f32d33184a10cccdeec1ef2e1972"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_December_2024.xlsx",
+    "bytes": 12633,
+    "sha256": "0aa1fe49fa4af1a93d190b1b61bcabb7bb291da0f3458e2d93a581da89fd2216"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_February_2024.xlsx",
+    "bytes": 11489,
+    "sha256": "e50815ea13e293e0bf7609695218abc523181b723c0ba44ea008aa4b9a6a0c52"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_January_2024.xlsx",
+    "bytes": 10468,
+    "sha256": "b2b5b3fdb82f2219e7bfa04e71aa2a35f088d79c09ba8eb550182b05cef34e28"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_July_2024.xlsx",
+    "bytes": 12705,
+    "sha256": "a6456627db02fff52f34b984d4be9f389306b250cbbaccf4bcfac4774d553c6d"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_June_2024.xlsx",
+    "bytes": 11926,
+    "sha256": "809a78fabda940e4f23cae5c6c4025338dd4b217f6b05caef01bb745541f15e2"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_March_2024.xlsx",
+    "bytes": 11825,
+    "sha256": "bd17b65a500c59439ee0827640de958cc0427217f06924eeb6f89377b6ea970d"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_May_2024.xlsx",
+    "bytes": 12016,
+    "sha256": "b8e5e33c35f5f333a3e2cbf051f5f483de8fea9e60ba4872dc1946806d9b1bc4"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_November_2024.xlsx",
+    "bytes": 12473,
+    "sha256": "7bbffc8c685a5ad8253f1505f3337123db89f1b0197c17694959a498431473a1"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_October_2024.xlsx",
+    "bytes": 12315,
+    "sha256": "32cc779c2f9982a27b6757ebaee83e9c7e55a7a759926488da11a689ce5f9926"
+  },
+  {
+    "path": "raw/spp_2024_Preliminary_Assessment_Posting_September_2024.xlsx",
+    "bytes": 12202,
+    "sha256": "39733f680d61f17c35e5494fe47d2fa164c5baea4b880270aa476e433f4579f4"
+  },
+  {
+    "path": "raw/spp_2024_index.html",
+    "bytes": 13969,
+    "sha256": "cd8a2f1f94ea65e31b773f03858ff0c3af4803e85b4402d6fb394d1fb0cd9af9"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_April_2025.xlsx",
+    "bytes": 12249,
+    "sha256": "dce1ff39152260e2a0b5f9124f39ee2f1d25c1a5187443293705808d45d334ca"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_August_2025.xlsx",
+    "bytes": 12115,
+    "sha256": "059cde9598900c0796bfc6920fd0337353651a3d38c0028688d0808be7ee73a8"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_December_2025.xlsx",
+    "bytes": 12350,
+    "sha256": "0a712419e46482ccbfdc0dba37aeb9295d81375201a105d0985d89631f9b638d"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_February_2025.xlsx",
+    "bytes": 12482,
+    "sha256": "af534c7dabb6c81d02316701abb9848b9daf3af64ea6beac962bb495c83af4e0"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_January_2025.xlsx",
+    "bytes": 12121,
+    "sha256": "04bbba1c9b1d2efffe99b84c18c9f1465928815eb3d84d1f73f6e473d06e2dd0"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_July_2025.xlsx",
+    "bytes": 11965,
+    "sha256": "602be42adb53562c27a75f8c32ee2a18ff1041c2c382465e69a20171bb940a1c"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_June_2025.xlsx",
+    "bytes": 11884,
+    "sha256": "c81d308072a4d33b648401a122236b8e478dc9a6a88f870ee37ceaa9e3fe8201"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_March_2025.xlsx",
+    "bytes": 12033,
+    "sha256": "3ef018aeb7d3303484f197c44e6ace09621b19f18a70a403f43682d7c6d4a73f"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_May_2025_b.xlsx",
+    "bytes": 11922,
+    "sha256": "bdf3ffcd48688b67e3ae86f9452de712cd8f4157108b78995a2cd59c12fee25f"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_November_2025.xlsx",
+    "bytes": 11803,
+    "sha256": "74087cd4809eb49a85916ecc54ca28ec1a4f14f7186e5fd180a90664e7e1ed24"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_October_2025.xlsx",
+    "bytes": 12328,
+    "sha256": "717bf99c3a294e4ce125710fdac46a55b3d419b36ef9e9984b8d8facf8686e97"
+  },
+  {
+    "path": "raw/spp_2025_Preliminary_Assessment_Posting_September_2025.xlsx",
+    "bytes": 12245,
+    "sha256": "9c1748c2f843bb82d465651914996a79f33f3a3655e1aace8745f1f305a7132d"
+  },
+  {
+    "path": "raw/spp_2025_index.html",
+    "bytes": 13969,
+    "sha256": "42988e45d526134cf9242f39242dd4b11b83de51cd0899b26029ec76c6db204b"
+  },
+  {
+    "path": "raw/spp_2026_Preliminary_Assessment_Posting_April_2026.xlsx",
+    "bytes": 11995,
+    "sha256": "5e770cd7e9a1fd54aee5d2586afe8798a411e944b45fe8ad6ef37cb5d7760c95"
+  },
+  {
+    "path": "raw/spp_2026_Preliminary_Assessment_Posting_August_2026.xlsx",
+    "bytes": 12258,
+    "sha256": "7b782f7a5cb9b48b55f05225dded695168b171d5153ac6f9b9c5053f7cf5601a"
+  },
+  {
+    "path": "raw/spp_2026_Preliminary_Assessment_Posting_February_2026.xlsx",
+    "bytes": 12085,
+    "sha256": "0d6c207648396ef15706e4e1b2128f013149ac7a4d0c0bbd9550b05e92600234"
+  },
+  {
+    "path": "raw/spp_2026_Preliminary_Assessment_Posting_January_2026.xlsx",
+    "bytes": 12119,
+    "sha256": "b0785af305471b80e3c0fbe16424f11c1ca73f8e6cb3d0e5e2ef78a9ce66f3c2"
+  },
+  {
+    "path": "raw/spp_2026_Preliminary_Assessment_Posting_July_2026.xlsx",
+    "bytes": 11718,
+    "sha256": "7fca057c0ee890433290c9a2a4e47d88f57730c2ad983b58881883fe56af714e"
+  },
+  {
+    "path": "raw/spp_2026_Preliminary_Assessment_Posting_June_2026.xlsx",
+    "bytes": 12302,
+    "sha256": "0c28b4e128321775c0aec05d3620805e4ca83f71306ec8a6e07d96915977b61b"
+  },
+  {
+    "path": "raw/spp_2026_Preliminary_Assessment_Posting_March_2026.xlsx",
+    "bytes": 12297,
+    "sha256": "a8c94941c689557b6eb1c93284536e5ec21f64d1e284e3212247fbfca8b0e3f8"
+  },
+  {
+    "path": "raw/spp_2026_Preliminary_Assessment_Posting_May_2026.xlsx",
+    "bytes": 12060,
+    "sha256": "d3ee07832bef64ff7f21693781444fb1267820252099be40c0b194473102122e"
+  },
+  {
+    "path": "raw/spp_2026_Preliminary_Assessment_Posting_September_2026.xlsx",
+    "bytes": 12195,
+    "sha256": "c40ed2bf4aa4510d29ed5ca3f262cda18a63ba42c132b101b40b7e9614462244"
+  },
+  {
+    "path": "raw/spp_2026_index.html",
+    "bytes": 11888,
+    "sha256": "b94dd6369e00e79791a52a04601addc2956b97c7d266a737be4a8b7adf7dc816"
+  },
+  {
+    "path": "raw/spp_Preliminary_Assessment_Posting_April_2026.xlsx",
+    "bytes": 11995,
+    "sha256": "5e770cd7e9a1fd54aee5d2586afe8798a411e944b45fe8ad6ef37cb5d7760c95"
+  },
+  {
+    "path": "raw/spp_Preliminary_Assessment_Posting_August_2026.xlsx",
+    "bytes": 12258,
+    "sha256": "7b782f7a5cb9b48b55f05225dded695168b171d5153ac6f9b9c5053f7cf5601a"
+  },
+  {
+    "path": "raw/spp_Preliminary_Assessment_Posting_February_2026.xlsx",
+    "bytes": 12085,
+    "sha256": "0d6c207648396ef15706e4e1b2128f013149ac7a4d0c0bbd9550b05e92600234"
+  },
+  {
+    "path": "raw/spp_Preliminary_Assessment_Posting_January_2026.xlsx",
+    "bytes": 12119,
+    "sha256": "b0785af305471b80e3c0fbe16424f11c1ca73f8e6cb3d0e5e2ef78a9ce66f3c2"
+  },
+  {
+    "path": "raw/spp_Preliminary_Assessment_Posting_July_2026.xlsx",
+    "bytes": 11718,
+    "sha256": "7fca057c0ee890433290c9a2a4e47d88f57730c2ad983b58881883fe56af714e"
+  },
+  {
+    "path": "raw/spp_Preliminary_Assessment_Posting_June_2026.xlsx",
+    "bytes": 12302,
+    "sha256": "0c28b4e128321775c0aec05d3620805e4ca83f71306ec8a6e07d96915977b61b"
+  },
+  {
+    "path": "raw/spp_Preliminary_Assessment_Posting_March_2026.xlsx",
+    "bytes": 12297,
+    "sha256": "a8c94941c689557b6eb1c93284536e5ec21f64d1e284e3212247fbfca8b0e3f8"
+  },
+  {
+    "path": "raw/spp_Preliminary_Assessment_Posting_May_2026.xlsx",
+    "bytes": 12060,
+    "sha256": "d3ee07832bef64ff7f21693781444fb1267820252099be40c0b194473102122e"
+  },
+  {
+    "path": "raw/spp_Preliminary_Assessment_Posting_September_2026.xlsx",
+    "bytes": 12195,
+    "sha256": "c40ed2bf4aa4510d29ed5ca3f262cda18a63ba42c132b101b40b7e9614462244"
+  },
+  {
+    "path": "raw/spp_all_index.html",
+    "bytes": 10935,
+    "sha256": "d19811ecbda6f54973ee789504d6721e3f406cfdbb723bb3488a1dce32ee9183"
+  },
+  {
+    "path": "raw/spp_archive_manifest.json",
+    "bytes": 113098,
+    "sha256": "89ce72a0a58fe1ff855c10a30239c6fb96b0bee55ae0c9006fc28f7d7ba66fe5"
+  },
+  {
+    "path": "raw/spp_download_manifest.json",
+    "bytes": 2039,
+    "sha256": "45f04fb863580052f000c66c05f14f2633197614c358540bc4ca6d8a474539af"
+  },
+  {
+    "path": "raw/spp_dpns_2022_DPA-2022-August-1629.pdf",
+    "bytes": 1243634,
+    "sha256": "176e24decf89c5d7d57ad40eb11c0215e8a52d32a300daf30fd78af40f1bc07b"
+  },
+  {
+    "path": "raw/spp_dpns_2022_DPA-2022-August-1629.txt",
+    "bytes": 31667,
+    "sha256": "bd328ef527d2ef69fbc1b7fef73dfff8c355322e1bdb1852a5dd3a249a82ce5f"
+  },
+  {
+    "path": "raw/spp_dpns_2022_DPA-2022-October-1665_White_Deer.pdf",
+    "bytes": 1637211,
+    "sha256": "bd41410ff83573bd68fbd2376e414635d5ffe23fdf862f12326e76d28ed17423"
+  },
+  {
+    "path": "raw/spp_dpns_2022_DPA-2022-October-1665_White_Deer.txt",
+    "bytes": 75302,
+    "sha256": "43df264637071348f13a51d8ed45b36d9bb91c18483fe9922d713c06ab4707a6"
+  },
+  {
+    "path": "raw/spp_dpns_2022_DPNS-2022-September-1658.pdf",
+    "bytes": 666655,
+    "sha256": "c9452aa3e44e5639e9e4a912ccb0b45f7cdbc102d2623117b4f899d1edb4fb68"
+  },
+  {
+    "path": "raw/spp_dpns_2022_DPNS-2022-September-1658.txt",
+    "bytes": 39169,
+    "sha256": "278280e8264560cb9baf5080caec32e2ea89687ab1eaf76979c51326a8b342b9"
+  },
+  {
+    "path": "raw/spp_dpns_2022_index.html",
+    "bytes": 6306,
+    "sha256": "74a224d46beadad28e2545cd49514d5ffe37ec98bd4b3c9f2904a116599cbe8c"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPA-2023-April-1765_SPS_Cluster_C_(with_2025ITP).pdf",
+    "bytes": 1822060,
+    "sha256": "ba06d9c3b9b50f848b21c450feea0ea5af98841edaa5ba14aa429996cbff08f6"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPA-2023-April-1765_SPS_Cluster_C_(with_2025ITP).txt",
+    "bytes": 217418,
+    "sha256": "3edbe3e3bca141c9cc7dfbdb847543f09dbca402cdda01b3ea36a223a91c755e"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPA-2023-February-1719_SPS_Cluster_B_updated_(8_20_24).pdf",
+    "bytes": 1210879,
+    "sha256": "19b9b8a10cacc8f184f6725d4c20d521b832f328a2474aa585eb49ce21151d18"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPA-2023-February-1719_SPS_Cluster_B_updated_(8_20_24).txt",
+    "bytes": 103941,
+    "sha256": "8bc5044724db6fe023e8e24cfefa5ff2cf2c8c05adadc3ca305417688e743a17"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPA-2023-January-1715-1716.pdf",
+    "bytes": 819768,
+    "sha256": "9863e4c1bcf174c3fb28bf378cccf320d92096b6c70316ef22ce7bbd1320a012"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPA-2023-January-1715-1716.txt",
+    "bytes": 55074,
+    "sha256": "1903e3c5688796acad753648c9ec7b6336b7e8081a8c4d3e5bb31060604975bf"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPNS-2023-April-1762.pdf",
+    "bytes": 667208,
+    "sha256": "7cb439512ce7a678a4e78a8fefcb04ee20d4fe19fd19ad4996f1a064d8c805ed"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPNS-2023-April-1762.txt",
+    "bytes": 24338,
+    "sha256": "5debfed6e385d35101ed638625a4043084e64784613695869307165a3f1a3f5a"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPNS-2023-June-1790.pdf",
+    "bytes": 1124455,
+    "sha256": "5597d8597482cab31001e42e1151d306fe769b400467de03ea782d67c9f28212"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPNS-2023-June-1790.txt",
+    "bytes": 34671,
+    "sha256": "2898825923af463378bdc0c3da686391d03d953c8772a559b5eb98787b6194be"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPNS-2023-October-1856.pdf",
+    "bytes": 485887,
+    "sha256": "30701c7e7b53a3f6ee60849d89b5ba84b65a8f6f029fa1e5645a13a500aa008f"
+  },
+  {
+    "path": "raw/spp_dpns_2023_DPNS-2023-October-1856.txt",
+    "bytes": 16872,
+    "sha256": "08d063bbcd0da7a9c6708e79070b270d93caa6e73ad15861560d7172ef1e62cc"
+  },
+  {
+    "path": "raw/spp_dpns_2023_index.html",
+    "bytes": 7046,
+    "sha256": "f6739af89c8f779f551d41395752a0b6a1db4b72f6bad3bebbdb0b691c3665eb"
+  },
+  {
+    "path": "raw/spp_dpns_2024_DPA-2024-November-2060_PCA_Phase_3.pdf",
+    "bytes": 562002,
+    "sha256": "609af64864c3f2eb276cdde8e9ce9611e699bbe394594bc025da925aedd09d4f"
+  },
+  {
+    "path": "raw/spp_dpns_2024_DPA-2024-November-2060_PCA_Phase_3.txt",
+    "bytes": 19512,
+    "sha256": "bbbf6d618b9ed294ae916ba94d809ea81d71a792d3d4c156917054ccc728cf0c"
+  },
+  {
+    "path": "raw/spp_dpns_2024_DPA-2024-October-2044.pdf",
+    "bytes": 667358,
+    "sha256": "eb0c70d275061d389db6d332c1ffa649f98b4dfbbbf6f64f3aa36fba65968a1f"
+  },
+  {
+    "path": "raw/spp_dpns_2024_DPA-2024-October-2044.txt",
+    "bytes": 26769,
+    "sha256": "b861723d95e81c98a0c5f688e57e0d997f0853703582f8ddf8fd9b4e3ad9d612"
+  },
+  {
+    "path": "raw/spp_dpns_2024_DPNS-2024-March-1919_Delaware_Cluster.pdf",
+    "bytes": 538335,
+    "sha256": "8ca4f3089b0b48726960544ac7b23c791517a9386853b4a1bd04b5e1f44782fa"
+  },
+  {
+    "path": "raw/spp_dpns_2024_DPNS-2024-March-1919_Delaware_Cluster.txt",
+    "bytes": 24444,
+    "sha256": "6f3d0afb8c7d5cfa494661da4067d0790cbf6106c887bdcd3f8ff0cb3d0a9925"
+  },
+  {
+    "path": "raw/spp_dpns_2024_DPNS-2024-March-1924_Claremore_138.pdf",
+    "bytes": 802666,
+    "sha256": "6489b840c929a8cdf9b92ecc7c556a7b9dd43753754578ed80c899e57327fa47"
+  },
+  {
+    "path": "raw/spp_dpns_2024_DPNS-2024-March-1924_Claremore_138.txt",
+    "bytes": 45554,
+    "sha256": "fbed1a9eb2696d2b12da61c495128c357180bb73766300d3f06e8c3ed34f9b57"
+  },
+  {
+    "path": "raw/spp_dpns_2024_index.html",
+    "bytes": 6755,
+    "sha256": "de14f7ad2eeca3e2353a69f3c180cedc03c576dd4408d287ab47823ec120ce57"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-December-2263_Iren_Pittsburg_6_4_2026.pdf",
+    "bytes": 1282650,
+    "sha256": "5a1ca4d7314eaf5d53b65ba3785e59cabeb91c0df8ff27cd3861f5c1916680f9"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-December-2263_Iren_Pittsburg_6_4_2026.txt",
+    "bytes": 90707,
+    "sha256": "968e1be730b3c503bbf16f7970782f38146a458cda3eaa9dd53358e0c297183d"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-January-2082_Shale_and_Mica.pdf",
+    "bytes": 760211,
+    "sha256": "55b39a5cb0f8f78790f52f02afe235dadbd77527a083b1423c66e5d29f918845"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-January-2082_Shale_and_Mica.txt",
+    "bytes": 35026,
+    "sha256": "1bd56f76330d43071cb9636b5cba6d3385c9c496a17ab7c3a4f154e26174da2c"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-July-2161_Expo_Sub_Updated.pdf",
+    "bytes": 675672,
+    "sha256": "72993ccb445f921590e107ad19e997597be6f446978902823533e12a4c3b9ad9"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-July-2161_Expo_Sub_Updated.txt",
+    "bytes": 22760,
+    "sha256": "3576b9fa51ffea9fe91a7d242b25f4d705b1cd26b0a05da04a7c50c8530977c0"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-November-2233_R3.pdf",
+    "bytes": 878000,
+    "sha256": "2bed1b5d2fa0e5a242c1d871a969efb429f00a37e6395330102357915982a1a3"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-November-2233_R3.txt",
+    "bytes": 59904,
+    "sha256": "f6c9139cf53ed532cd17cecae25ad4555cc9b8d9a3e112fa141ccc7e68bd5f9c"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-October-2218_Claremore_R1.pdf",
+    "bytes": 1659600,
+    "sha256": "e607081f1591ff64fb9dcd509d513b3dff9bc947d517bdd7d7cea0fe9794da61"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-October-2218_Claremore_R1.txt",
+    "bytes": 170432,
+    "sha256": "537fcdb0b2905c8a9632cd3601b9b227331a896bc1ab5ebd90d20bfd942df5fc"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-October-2223_Cloverleaf.pdf",
+    "bytes": 713777,
+    "sha256": "3d4647021c84ae363531bc247206d133d54adbfbf26d1013780a5b095a4aedc2"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-October-2223_Cloverleaf.txt",
+    "bytes": 26904,
+    "sha256": "8fa6fc5758ab9f851cb911c9a25d6d74493f3bb6fbd89541fbc517aee3a621e8"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-September-2193_Stack.pdf",
+    "bytes": 709930,
+    "sha256": "6763e7895241ea443b8071cfa8a038728dd75a8f9318f8ba63206d816dddf269"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-September-2193_Stack.txt",
+    "bytes": 36972,
+    "sha256": "253c2fe15b4317c4e34808a7ad1f31cfe2fc9d7ea59e2299d26231432118474e"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-September-2207_Astra_North_Updated_9_9_26.pdf",
+    "bytes": 1086325,
+    "sha256": "d55a72793baed837246119e16878bb8501c8b7394bb456de5a27735e1c85d401"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPA-2025-September-2207_Astra_North_Updated_9_9_26.txt",
+    "bytes": 78643,
+    "sha256": "a93a95fa7c0d1a848723feb0bd811f799a79c75fcb258fcb9353f26c73789b25"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPNS-2024-March-1919.pdf",
+    "bytes": 538335,
+    "sha256": "8ca4f3089b0b48726960544ac7b23c791517a9386853b4a1bd04b5e1f44782fa"
+  },
+  {
+    "path": "raw/spp_dpns_2025_DPNS-2024-March-1919.txt",
+    "bytes": 24444,
+    "sha256": "6f3d0afb8c7d5cfa494661da4067d0790cbf6106c887bdcd3f8ff0cb3d0a9925"
+  },
+  {
+    "path": "raw/spp_dpns_2025_index.html",
+    "bytes": 7784,
+    "sha256": "c0dc56eb61137a5781f036d6cd2a78128fb40675baebf2afaf2ef63eafeecfb2"
+  },
+  {
+    "path": "raw/spp_dpns_2026_DPA-2026-May-2350_Sofidel.pdf",
+    "bytes": 671881,
+    "sha256": "09255e74e132648cf5a5e05ce4969292f1f1827bbed9a30ab3056a5adbe9adac"
+  },
+  {
+    "path": "raw/spp_dpns_2026_DPA-2026-May-2350_Sofidel.txt",
+    "bytes": 31051,
+    "sha256": "bd257603ce54cc4faf956076bc557b4d63afce8dcccf2bb7b4bc91f48c7f8532"
+  },
+  {
+    "path": "raw/spp_dpns_2026_HDPS_Report_(PLP-2026-March-0017-H_Quindaro)_Updated.docx",
+    "bytes": 839374,
+    "sha256": "9ce5b963fd125634715f1d020138baf395ebcc37d6df602a6abe57e901312e0b"
+  },
+  {
+    "path": "raw/spp_dpns_2026_HDPS_Report_(PLP-2026-March-0017-H_Quindaro)_Updated.txt",
+    "bytes": 22876,
+    "sha256": "b7d8a9149f503c05456696d24bd3f558f3be16416f491aeea7bf98329ff5856a"
+  },
+  {
+    "path": "raw/spp_dpns_2026_PLPS_Report_(PLP-2026-January-0004-H_Aether_2)_updated(7_16_2026).docx",
+    "bytes": 651882,
+    "sha256": "aa49f318cb25a39db1ccce39811c0ed7b8e87bd3184595b8b4960d58eeda0b66"
+  },
+  {
+    "path": "raw/spp_dpns_2026_PLPS_Report_(PLP-2026-January-0004-H_Aether_2)_updated(7_16_2026).txt",
+    "bytes": 23039,
+    "sha256": "dbd8d0430c31fa9f5bdef185fb5bd0819f8a9924d7041dbc030339244bba3270"
+  },
+  {
+    "path": "raw/spp_dpns_2026_index.html",
+    "bytes": 6371,
+    "sha256": "87e3101c83395756d07b4975bef509eabd07e7846040dfa4db86ddbfd6a35eb0"
+  },
+  {
+    "path": "raw/spp_dpns_manifest.json",
+    "bytes": 10459,
+    "sha256": "f709c3e6fcd32b050e573a608479d59b8c16cb60817237b97e46b0d36fed2504"
+  },
+  {
+    "path": "raw/west_sources_manifest.json",
+    "bytes": 3339,
+    "sha256": "c6533c2886a2f80f77c36c8c417ac6594cd9ea00ea2775bca07b0589cd1ed9b2"
+  },
+  {
+    "path": "research_handoff.json",
+    "bytes": 3823,
+    "sha256": "05ff2d58534498cca25f8f52af61d5bf52adf4267d5baec804d129693c40b0ab"
+  },
+  {
+    "path": "spp_2026_new_rows.json",
+    "bytes": 27249,
+    "sha256": "f4f92db6fd6b48405f11bba3f844d630a999d22587217438547f2b9097e189d3"
+  },
+  {
+    "path": "spp_all_assessment_rows.json",
+    "bytes": 2742436,
+    "sha256": "dc432bc3cbe58be2a116dd0bad12e600339d6071dff31f4730bd2363726f853e"
+  },
+  {
+    "path": "spp_archive_summary.json",
+    "bytes": 37896,
+    "sha256": "6d5f2d20f602ee42b11bcae59cf5ae4c830fa1362f982322a2fb824f5b0194f2"
+  },
+  {
+    "path": "spp_normalization_summary.json",
+    "bytes": 525,
+    "sha256": "be1b7f93215d445d8b6aa86c005919121a9c4d8c2e371c8c4d4bfddecc2c5401"
+  },
+  {
+    "path": "spp_normalized_projects.json",
+    "bytes": 5604017,
+    "sha256": "8a0e3de87800d770ff3c7985b81c0450b5c5652286f3c2eacd924018c4a280b3"
+  },
+  {
+    "path": "spp_parse_empty_workbooks.json",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "spp_study_evidence.json",
+    "bytes": 37624,
+    "sha256": "9eb51f49cf69719ccf19c6caef2dcf2dca0172404a0107f270dd549202ccc8a1"
+  },
+  {
+    "path": "west_additional_contract_records.json",
+    "bytes": 10041,
+    "sha256": "d6b73320f750ac38dd68f44eed59ddf58b4cfaa5f9ba5898313915a4f25dae7b"
+  },
+  {
+    "path": "west_coverage_gaps.json",
+    "bytes": 8803,
+    "sha256": "a3d6d317dbfd8e12503f2cc31b3d52a211916ca66fce1b660ca49db656e12c42"
+  },
+  {
+    "path": "west_new_aggregate_observations.json",
+    "bytes": 7177,
+    "sha256": "0c3bbe643d5b5790449a9043e816e13aecd72b36255a32ae4132428c20ebce5a"
+  },
+  {
+    "path": "write_west_findings.py",
+    "bytes": 12035,
+    "sha256": "fc38ca8db8b5c03f7f14fec723192962903d4822c5ace16c6d9727911960ee3c"
+  }
+]

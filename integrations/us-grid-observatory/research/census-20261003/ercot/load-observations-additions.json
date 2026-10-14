@@ -1,0 +1,69 @@
+[
+  {
+    "id": "ERCOT_LLWG_ALL_LOAD_STATUS_20260618",
+    "region": "ERCOT",
+    "operator": "ERCOT",
+    "metricLabel": "대규모 부하 접속 절차 전체 추적량·단계별 구성",
+    "valueGW": 466.5,
+    "valueQualifier": "~",
+    "stageClass": "mixed",
+    "asOf": "2026-06-18",
+    "asOfNote": "자료 2쪽의 기본 기준일 2026-06-18; 웹 게시일 2026-06-18, LLWG 발표일 2026-06-19. 별도 6월 2일 Batch Zero 도표는 본 수치에 미사용.",
+    "publicationDate": "2026-06-18",
+    "sourceUrl": "https://www.ercot.com/files/docs/2026/06/18/June-19-LLWG-Report.pptx",
+    "sourceTitle": "ERCOT 대규모 부하 접속 현황 — 2026년 6월 19일 LLWG 자료",
+    "evidenceText": "공식 자료 4쪽의 전체 추적량 466.5 GW. 연구 미제출 257.6, ERCOT 검토 중 151.1, 9.4조 연구요건만 충족 11.8, 9.4·9.5조 연구·이행약정 요건 충족 37.1, 통전 승인 후 미가동 3.2, 관측 가동 5.7 GW. 5.7 GW는 개별 부하의 역대 비동시 최대 소비량 합계. 별도 8·9쪽의 6월 관측치는 비동시 3.900 GW, 동시 3.675 GW로 구별.",
+    "scope": "2022~2033년 접속·가동 연도별 누적 도표의 전체 대상: 운영 부하와 미가동·검토·연구 미제출 프로젝트가 함께 포함된 LLIS 집계. 6월 정리 과정에서 중복·취소 티켓 제거 및 동일 부하의 단계별 티켓 통합. 438 GW 초과 보도자료, Oncor·CenterPoint 집계 및 Batch Zero 집계와 중첩되므로 합산 불가.",
+    "includesEnergized": true,
+    "additive": false,
+    "collectionMethod": "ERCOT 원본 PPTX 다운로드 후 자료 2·4·8·9쪽과 삽입 도표 직접 확인; 원문 GW와 반올림 수치 유지. 게시일·자료 기준일·회의 발표일 구분.",
+    "nextAction": "후속 동일 범위 LLIS 현황과 비교 시 단계 정의·중복 정리·Batch Zero 전환 여부 확인; 공개 고객 식별번호 확보 시 개별 사례 연결.",
+    "remainingGap": "공개 고객별 전수 명부와 LLI 매칭 부재. 466.5 GW는 확정 계약량·신규 미통전 대기량·동시 최대수요가 아님. 5.7 GW 관측 가동과 8.927 GW 통전 승인량도 서로 다른 기준. 같은 날 보도자료의 438 GW 초과 수치와 정확한 추출시점·범위 차이는 미해결.",
+    "checkedAt": "2026-10-03",
+    "metricBasis": "LLIS 접속 절차의 전체 단계 혼합량; 신규 부하·확정 접속·동시 수요로 대체 불가",
+    "stageBreakdown": [
+      {
+        "stageClass": "request",
+        "stage": "연구 미제출",
+        "valueGW": 257.6,
+        "projectCount": null,
+        "criterion": "Planning Guide 9.3.2조 연구 착수 절차 요건 미충족"
+      },
+      {
+        "stageClass": "study",
+        "stage": "ERCOT 검토 중",
+        "valueGW": 151.1,
+        "projectCount": null,
+        "criterion": "Planning Guide 9.3.3조에 따른 연구 절차 진행 중"
+      },
+      {
+        "stageClass": "study",
+        "stage": "연구요건만 충족 — 9.4조",
+        "valueGW": 11.8,
+        "projectCount": null,
+        "criterion": "필수 LLIS 연구 완료, 9.5조 이행약정 요건 미충족; 중요 가정 변경 시 재연구 가능"
+      },
+      {
+        "stageClass": "contract",
+        "stage": "연구·이행약정 요건 충족 — 9.4·9.5조",
+        "valueGW": 37.1,
+        "projectCount": null,
+        "criterion": "필수 LLIS 연구와 9.5조 이행약정 요건 충족; 운영부서의 통전 승인과 구분"
+      },
+      {
+        "stageClass": "mixed",
+        "stage": "통전 승인 후 미가동",
+        "valueGW": 3.2,
+        "projectCount": null,
+        "criterion": "ERCOT 운영부서 통전 승인 취득, 실제 운영은 아직 관측되지 않은 MW"
+      },
+      {
+        "stageClass": "energized",
+        "stage": "관측 가동 — 역대 비동시 최대치",
+        "valueGW": 5.7,
+        "projectCount": null,
+        "criterion": "통전 승인 및 실제 운영 관측; 각 부하의 역대 최대 소비량을 합산한 비동시 수치"
+      }
+    ]
+  }
+]

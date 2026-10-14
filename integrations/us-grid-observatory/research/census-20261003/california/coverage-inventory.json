@@ -1,0 +1,451 @@
+{
+  "checkedAt": "2026-10-03",
+  "coverageStatement": "14 coverage entries; 12 examined entity/group entries and 2 explicit unexamined residual categories. No state or utility is claimed fully censused. Public-source absence is not proof of zero projects.",
+  "entries": [
+    {
+      "utility": "CAISO",
+      "state": "CA",
+      "checkedAt": "2026-10-03",
+      "granularity": "Process and stakeholder policy; no load-request row register located in examined sources",
+      "sources": [
+        {
+          "url": "https://stakeholdercenter.caiso.com/StakeholderInitiatives/Large-loads",
+          "title": "CAISO Large loads stakeholder initiative",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": "Draft-final proposal September 24, 2026; October 1 discussion and October 15 comments. Not a list of customers."
+        },
+        {
+          "url": "https://www.caiso.com/documents/issue-paper-large-load-consideration-jan-20-2026.pdf",
+          "title": "Large Load Considerations issue paper",
+          "publishedAt": "2026-01-20",
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "remainingGap": "CAISO generation interconnection queue is not a retail load queue. Customer requests sit with serving utilities; examined stakeholder documents do not enumerate them.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "process_only",
+      "importedRows": 0
+    },
+    {
+      "utility": "PG&E",
+      "state": "CA",
+      "checkedAt": "2026-10-03",
+      "granularity": "Full public September 2025 service-request workbook; industrial subset extracted",
+      "sources": [
+        {
+          "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/infrastructure/energization/pge-september-2025-biannual-energization-data-report_20250930.xlsx",
+          "title": "September 2025 biannual energization workbook",
+          "publishedAt": "2025-09-30",
+          "asOf": "2025-06-30",
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/infrastructure/energization/pge-biannual-energization-report-public_20250930.pdf",
+          "title": "September 2025 narrative",
+          "publishedAt": "2025-09-30",
+          "asOf": "2025-06-30",
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://docs.cpuc.ca.gov/PublishedDocs/Efile/G000/M604/K023/604023792.PDF",
+          "title": "March 2026 narrative",
+          "publishedAt": "2026-04-01",
+          "asOf": "2025-12-31",
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://docs.cpuc.ca.gov/PublishedDocs/Efile/G000/M604/K025/604025633.PDF",
+          "title": "Notice of availability of March 2026 public workbook",
+          "publishedAt": "2026-04-02",
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": "Directs to PG&E archive, case R.24-01-018, filing date March 31, 2026"
+        },
+        {
+          "url": "https://pgera.azurewebsites.net/Regulation/search",
+          "title": "PG&E public regulatory archive",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/infrastructure/energization/energization-data-reporting-requirements-and-data-reporting-template",
+          "title": "CPUC energization publication index",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "remainingGap": "Latest March 2026 narrative was obtained but accompanying public XLSX was not retrieved through archive search. The extracted June 2025 snapshot must not be presented as current queue. September 2026 not linked on examined CPUC portal. Public customer names, cities and requested capacity missing; many ordinary commercial entries cannot be classified as high load.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "public_register_partial_vintage",
+      "fullWorkbookRows": 55284,
+      "tariffRows": 25207,
+      "mpuRows": 30077,
+      "selectedRows": 196,
+      "selectedByStage": {
+        "in_progress": 133,
+        "energized": 35,
+        "cancelled": 28
+      },
+      "highLoadSelection": "Explicit New Industrial classification; capacity is undisclosed for all selected rows. Not 196 confirmed >=10 MW customers.",
+      "latestRegisterAsOf": "2025-06-30",
+      "latestNarrativeAsOf": "2025-12-31"
+    },
+    {
+      "utility": "SCE",
+      "state": "CA",
+      "checkedAt": "2026-10-03",
+      "granularity": "Narrative and confidentiality filing; public spreadsheet named but not reliably acquired",
+      "sources": [
+        {
+          "url": "https://docs.cpuc.ca.gov/PublishedDocs/Efile/G000/M604/K030/604030059.PDF",
+          "title": "March 2026 narrative and mixed-media Attachment A",
+          "publishedAt": "2026-04-01",
+          "asOf": "2025-12-31",
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://docs.cpuc.ca.gov/PublishedDocs/Efile/G000/M604/K002/604002989.PDF",
+          "title": "Motion for confidential treatment of energization data",
+          "publishedAt": "2026-04-01",
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/infrastructure/energization/scepubliceet-september-2025-report20250930ver2.xlsx",
+          "title": "CPUC SCE September 2025 workbook link",
+          "publishedAt": "2025-09-30",
+          "asOf": "2025-06-30",
+          "checkedAt": "2026-10-03",
+          "note": "Repeated requests returned zero-byte body"
+        },
+        {
+          "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/infrastructure/energization/energization-data-reporting-requirements-and-data-reporting-template",
+          "title": "CPUC energization publication index",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "remainingGap": "March 2026 public Attachment A is described as a mixed-media docket filing; no retrievable XLSX obtained. Official September 2025 publiceet link yielded empty response. Alternative SCE-labeled URL actually contains SDG&E sheets/notes and was excluded. Zero imported rows means missing acquisition, not no large customers.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "register_exists_acquisition_gap",
+      "importedRows": 0
+    },
+    {
+      "utility": "SDG&E",
+      "state": "CA",
+      "checkedAt": "2026-10-03",
+      "granularity": "Full public March 2026 service-request workbook; unvalidated nonresidential large raw-number candidates extracted",
+      "sources": [
+        {
+          "url": "https://www.sdge.com/sites/default/files/regulatory/Public%20Attachment%20B%20Energization%20Report%203.31.26.xlsx",
+          "title": "Public Attachment B, March 31 2026 energization workbook",
+          "publishedAt": "2026-04-01",
+          "asOf": "2025-12-31",
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://docs.cpuc.ca.gov/PublishedDocs/Efile/G000/M603/K533/603533572.PDF",
+          "title": "March 2026 narrative",
+          "publishedAt": "2026-04-01",
+          "asOf": "2025-12-31",
+          "checkedAt": "2026-10-03",
+          "note": "PDF pages 7–8 explain Step 8 and preliminary capacity quality limits"
+        },
+        {
+          "url": "https://www.sdge.com/rates-and-regulations/proceedings/Order-Instituting-Rulemaking-to-Establish-Energization-Timelines",
+          "title": "SDG&E official proceeding index",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "remainingGap": "IDs and city are redacted. Commercial is not an industry classification. Utility warns requested kW can be inflated or wrongly entered amperes and remain uncorrected after formal load study. No MW totals or unique-customer counts can be inferred. Closed may mean ready-for-service/first-meter setting rather than full-site commercial operation. September 2026 data not acquired.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "public_register_with_material_quality_limits",
+      "fullWorkbookRows": 29337,
+      "tariffRows": 19694,
+      "mpuRows": 9643,
+      "selectedRows": 58,
+      "selectedByStage": {
+        "ongoing": 27,
+        "closed": 31
+      },
+      "excludedResidentialRawAnomalies": 225,
+      "highLoadSelection": "Nonresidential raw requested kW >=10000; 58 Commercial intake candidates. All normalized MW fields remain null.",
+      "latestRegisterAsOf": "2025-12-31"
+    },
+    {
+      "utility": "LADWP",
+      "state": "CA",
+      "checkedAt": "2026-10-03",
+      "granularity": "Service-planning instructions plus named port infrastructure program",
+      "sources": [
+        {
+          "url": "https://www.ladwp.com/construction-services/electric-services-faqs",
+          "title": "Electric services construction FAQs",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://www.ladwp.com/events/2026-09-10/power-service-planning-design-process",
+          "title": "Power service planning and design process event",
+          "publishedAt": "2026-09-10",
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://portoflosangeles.org/commission/agenda-archive-and-videos/agendas/2026/05282026-regular-agenda",
+          "title": "Port board agenda including ZEPEO",
+          "publishedAt": "2026-05-28",
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "remainingGap": "No public all-customer service-request register located in examined service-planning pages. Port MVA figures are an aggregate infrastructure program, not identified utility queue requests.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "process_and_named_project",
+      "importedRegisterRows": 0
+    },
+    {
+      "utility": "SMUD",
+      "state": "CA",
+      "checkedAt": "2026-10-03",
+      "granularity": "Official large-load aggregate: two potential projects above 50 MW",
+      "sources": [
+        {
+          "url": "https://www.smud.org/Corporate/About-us/Reliability/Large-electrical-load-project-growth",
+          "title": "Large electrical load project growth",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": "Current page says two early-stage potential projects, no approved large-load projects, policy expected early 2027"
+        },
+        {
+          "url": "https://www.smud.org/Corporate/Do-Business-with-SMUD/Commercial-Development",
+          "title": "Commercial development process",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "remainingGap": "Customer identities/locations withheld for privacy and NDAs. Two potential requests are feasibility/transmission-study stage and not two confirmed DCs. No row-level service register obtained.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "aggregate_only",
+      "aggregatePotentialProjects": 2,
+      "aggregateThresholdMW": 50,
+      "importedRegisterRows": 0
+    },
+    {
+      "utility": "Chugach Electric",
+      "state": "AK",
+      "checkedAt": "2026-10-03",
+      "granularity": "Commercial application/checklist process",
+      "sources": [
+        {
+          "url": "https://www.chugachelectric.com/services/construction-and-engineering",
+          "title": "Construction and engineering",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://www.chugachelectric.com/system/files/Information%20Checklist%20for%20mock.pdf",
+          "title": "Engineering checklist",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "remainingGap": "No public customer request queue or comprehensive load register located in examined construction materials.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "process_only",
+      "importedRegisterRows": 0
+    },
+    {
+      "utility": "Golden Valley Electric Association",
+      "state": "AK",
+      "checkedAt": "2026-10-03",
+      "granularity": "Board aggregate of existing industrial accounts",
+      "sources": [
+        {
+          "url": "https://www.gvea.com/news-releases/gvea-board-meeting-recap-august-13-2026/",
+          "title": "August 13 board recap",
+          "publishedAt": "2026-08-13",
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": "2025 six industrial accounts used 44 percent of energy; existing sales is not a pending-load register"
+        }
+      ],
+      "remainingGap": "Individual names/request MW/stages not disclosed in examined recap; no request register obtained. Existing six industrial customers must not be counted as six new requests.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "aggregate_only",
+      "importedRegisterRows": 0
+    },
+    {
+      "utility": "Matanuska Electric Association",
+      "state": "AK",
+      "checkedAt": "2026-10-03",
+      "granularity": "Service request instructions and large-load member consultation",
+      "sources": [
+        {
+          "url": "https://www.mea.coop/news/mea-seeking-member-input-on-data-centers-through-member-survey",
+          "title": "Large-load/data-center member survey",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://www.mea.coop/account-services/sign-up-for-service",
+          "title": "Service initiation",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://www.mea.coop/major-projects/2026-capital-improvement-projects",
+          "title": "2026 capital improvement projects",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "remainingGap": "Consultation and utility construction program do not expose customer identities or project-level requested MW; no public request register obtained.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "process_only",
+      "importedRegisterRows": 0
+    },
+    {
+      "utility": "Homer Electric Association",
+      "state": "AK",
+      "checkedAt": "2026-10-03",
+      "granularity": "Service instructions and aggregate applications reporting",
+      "sources": [
+        {
+          "url": "https://www.homerelectric.com/member-services/new-construction/new-home-business/",
+          "title": "New home/business electric service",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://www.homerelectric.com/2026/09/september-2026-monthly-ceo-report/",
+          "title": "September 2026 CEO report",
+          "publishedAt": "2026-09",
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "remainingGap": "Aggregate application chart cannot identify high-load industrial customers; no row register obtained.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "aggregate_and_process",
+      "importedRegisterRows": 0
+    },
+    {
+      "utility": "Hawaiian Electric group (Oahu, Maui Electric, Hawaii Electric Light)",
+      "state": "HI",
+      "checkedAt": "2026-10-03",
+      "granularity": "Group large-customer service process",
+      "sources": [
+        {
+          "url": "https://www.hawaiianelectric.com/electrical-services/upgrade-modify-or-install-service",
+          "title": "Upgrade, modify or install service",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://www.hawaiianelectric.com/documents/electrical_services/large_customer_NSC_brochure_web.pdf",
+          "title": "Large Customer New Service Connection brochure",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "remainingGap": "Group public instructions cover applications and engineering, but no named all-customer large-load request register located. This is a shared process check, not independent exhaustive docket surveys of all three utilities.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "group_process_only",
+      "importedRegisterRows": 0
+    },
+    {
+      "utility": "Kauai Island Utility Cooperative",
+      "state": "HI",
+      "checkedAt": "2026-10-03",
+      "granularity": "Service application and installation manual",
+      "sources": [
+        {
+          "url": "https://kiuc.coop/start-or-stop-service",
+          "title": "Start or stop service",
+          "publishedAt": null,
+          "asOf": null,
+          "checkedAt": "2026-10-03",
+          "note": null
+        },
+        {
+          "url": "https://kiuc.coop/sites/default/files/2025-03/kiuc_service_installation_manual_rev2020-12.pdf",
+          "title": "Service installation manual",
+          "publishedAt": null,
+          "asOf": "2020-12",
+          "checkedAt": "2026-10-03",
+          "note": null
+        }
+      ],
+      "remainingGap": "No public all-customer high-load request register located in examined materials; no inference of zero high-load projects.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "process_only",
+      "importedRegisterRows": 0
+    },
+    {
+      "utility": "Other California municipal utilities and smaller IOUs",
+      "state": "CA",
+      "checkedAt": "2026-10-03",
+      "granularity": "Not individually examined in this assigned utility scope",
+      "sources": [],
+      "remainingGap": "Silicon Valley Power, IID, Burbank, Glendale, Pasadena, Anaheim, Riverside, Modesto/Turlock, Liberty, PacifiCorp, Bear Valley and other utilities remain outside this assigned six-utility examination. Near-census California claim would require them.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "not_examined",
+      "importedRegisterRows": 0
+    },
+    {
+      "utility": "Other Alaska municipal, cooperative and village utilities",
+      "state": "AK",
+      "checkedAt": "2026-10-03",
+      "granularity": "Not individually examined",
+      "sources": [],
+      "remainingGap": "Only four named Railbelt utility public-source checks above. Southeast and rural/village utilities and off-grid industrial owners not comprehensively surveyed. Donlin named evidence is not a utility register.",
+      "allCustomersSurveyed": false,
+      "coverageStatus": "not_examined",
+      "importedRegisterRows": 0
+    }
+  ]
+}

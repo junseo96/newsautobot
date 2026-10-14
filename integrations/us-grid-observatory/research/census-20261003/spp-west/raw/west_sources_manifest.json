@@ -1,0 +1,78 @@
+[
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/pacificorp_irp_pim6.pdf",
+    "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2027-irp/PacifiCorp_2027_IRP_PIM_6.pdf",
+    "bytes": 2817230,
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/pacificorp_irp_pim4.pdf",
+    "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2027-irp/PacifiCorp_2027_IRP_PIM_4.pdf",
+    "bytes": 5141662,
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/nvenergy_filings.html",
+    "url": "https://www.nvenergy.com/about-nvenergy/rates-regulatory/recent-regulatory-filings",
+    "bytes": 26834,
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/srp_lcip.html",
+    "url": "https://www.srpnet.com/about/data-center-facts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/pacificpower_service_process.html",
+    "url": "https://www.pacificpower.net/working-with-us/large-service-requests.html",
+    "bytes": 79094,
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/utah_2603505.html",
+    "url": "https://psc.utah.gov/2026/02/10/docket-no-26-035-05/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/idaho_micron_order37039.html",
+    "url": "https://lf-puc.idaho.gov/WebLink/DocView.aspx?dbid=0&id=158085",
+    "bytes": 3354,
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/idaho_micron_order37092.html",
+    "url": "https://lf-puc.idaho.gov/WebLink/DocView.aspx?dbid=0&id=159551",
+    "bytes": 3354,
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/idaho_chobani_order37101.html",
+    "url": "https://lf-puc.idaho.gov/WebLink/DocView.aspx?dbid=0&id=159765",
+    "bytes": 3354,
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/idaho_brisbie_order37178.html",
+    "url": "https://lf-puc.idaho.gov/WebLink/DocView.aspx?dbid=0&id=161976",
+    "bytes": 3354,
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/nvenergy_data_fact_sheet.pdf",
+    "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/help/brochures/Data-Centers-Fact-Sheet.pdf",
+    "bytes": 342983,
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/colorado_puc_april2026.html",
+    "url": "https://content.govdelivery.com/accounts/CODORA/bulletins/4136266",
+    "bytes": 144732,
+    "retrievedAt": "2026-10-03"
+  },
+  {
+    "file": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/acc_april2026_workshop.html",
+    "url": "https://www.azcc.gov/news/home/2026/04/20/acc-large-load-data-center-workshop-highlights",
+    "bytes": 36699,
+    "retrievedAt": "2026-10-03"
+  }
+]

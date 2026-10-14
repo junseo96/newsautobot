@@ -1,0 +1,3772 @@
+{
+  "schemaVersion": 1,
+  "asof": "2026-10-02",
+  "generationAsOf": "2025-12-31",
+  "stages": [
+    {
+      "code": "G1",
+      "label": "접수·검토 착수 전",
+      "low": 100,
+      "high": 100,
+      "point": 100,
+      "note": "Not Started / Received"
+    },
+    {
+      "code": "G2",
+      "label": "타당성·초기검토",
+      "low": 85,
+      "high": 85,
+      "point": 85,
+      "note": "Feasibility Study"
+    },
+    {
+      "code": "G3",
+      "label": "계통영향 검토",
+      "low": 70,
+      "high": 70,
+      "point": 70,
+      "note": "System Impact Study"
+    },
+    {
+      "code": "GC",
+      "label": "클러스터 검토·세부단계 불명",
+      "low": 50,
+      "high": 85,
+      "point": "n.a.",
+      "note": "Cluster Study; 개별 단계 확인 전 범위"
+    },
+    {
+      "code": "G4",
+      "label": "설비검토·비용배분",
+      "low": 50,
+      "high": 50,
+      "point": 50,
+      "note": "Facility Study; 완료와 진행 여부 별도"
+    },
+    {
+      "code": "G5",
+      "label": "접속계약 협의",
+      "low": 40,
+      "high": 40,
+      "point": 40,
+      "note": "IA Pending"
+    },
+    {
+      "code": "G6",
+      "label": "접속계약 체결",
+      "low": 30,
+      "high": 30,
+      "point": 30,
+      "note": "IA Executed; 인허가·자금·망보강 별도"
+    },
+    {
+      "code": "G7",
+      "label": "접속·발전설비 공사",
+      "low": 15,
+      "high": 15,
+      "point": 15,
+      "note": "Construction; 수용가 건물 착공만으로 부여 금지"
+    },
+    {
+      "code": "G8",
+      "label": "통전·상업운전",
+      "low": 0,
+      "high": 0,
+      "point": 0,
+      "note": "현재 대기열 집계 제외"
+    },
+    {
+      "code": "GU",
+      "label": "단계 미상",
+      "low": 0,
+      "high": 100,
+      "point": "n.a.",
+      "note": "자료 미공개·In Progress unknown; 점수 확정 불가"
+    },
+    {
+      "code": "GN",
+      "label": "접속계약 미체결·세부단계 불명",
+      "low": 40,
+      "high": 100,
+      "point": "n.a.",
+      "note": "NO IA만 확인; 인허가 상태 추론 금지"
+    },
+    {
+      "code": "GS",
+      "label": "중단·보류",
+      "low": 0,
+      "high": 100,
+      "point": "n.a.",
+      "note": "중단 사유·재개 조건 별도 확인"
+    },
+    {
+      "code": "BC",
+      "label": "BPA 측 완료·수용가 통전 미확인",
+      "low": 0,
+      "high": 30,
+      "point": "n.a.",
+      "note": "BPA Completed와 Energized 구별"
+    },
+    {
+      "code": "W",
+      "label": "철회",
+      "low": "n.a.",
+      "high": "n.a.",
+      "point": "n.a.",
+      "note": "유효 대기열과 점수 집계 제외"
+    }
+  ],
+  "regions": [
+    {
+      "id": "CAISO",
+      "generationGW": 77.87150202944308,
+      "storageGW": 110.66326874,
+      "generationCount": 428,
+      "loadGW": null,
+      "loadCount": null,
+      "loadRecords": 254,
+      "scoreLow": 57.17258140321931,
+      "scoreHigh": 58.51716828380126,
+      "unknownCount": 6,
+      "stages": [
+        {
+          "code": "G1",
+          "label": "접수·검토 착수 전",
+          "gw": 22.8392612858,
+          "storageGW": 30.57085871,
+          "count": 107
+        },
+        {
+          "code": "G2",
+          "label": "타당성·초기검토",
+          "gw": 0.0,
+          "storageGW": 0.05,
+          "count": 1
+        },
+        {
+          "code": "G3",
+          "label": "계통영향 검토",
+          "gw": 13.665823447000001,
+          "storageGW": 22.309331524,
+          "count": 78
+        },
+        {
+          "code": "GC",
+          "label": "클러스터 검토·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G4",
+          "label": "설비검토·비용배분",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G5",
+          "label": "접속계약 협의",
+          "gw": 0.2,
+          "storageGW": 0.2,
+          "count": 1
+        },
+        {
+          "code": "G6",
+          "label": "접속계약 체결",
+          "gw": 40.11936729664307,
+          "storageGW": 56.102628506,
+          "count": 235
+        },
+        {
+          "code": "G7",
+          "label": "접속·발전설비 공사",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G8",
+          "label": "통전·상업운전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GU",
+          "label": "단계 미상",
+          "gw": 1.04705,
+          "storageGW": 1.43045,
+          "count": 6
+        },
+        {
+          "code": "GN",
+          "label": "접속계약 미체결·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GS",
+          "label": "중단·보류",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "BC",
+          "label": "BPA 측 완료·수용가 통전 미확인",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "W",
+          "label": "철회",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "ERCOT",
+      "generationGW": 242.68679999999998,
+      "storageGW": 165.31526000000002,
+      "generationCount": 1796,
+      "loadGW": null,
+      "loadCount": null,
+      "loadRecords": 0,
+      "scoreLow": 43.087872226590385,
+      "scoreHigh": 43.09096128666354,
+      "unknownCount": 10,
+      "stages": [
+        {
+          "code": "G1",
+          "label": "접수·검토 착수 전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G2",
+          "label": "타당성·초기검토",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G3",
+          "label": "계통영향 검토",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GC",
+          "label": "클러스터 검토·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G4",
+          "label": "설비검토·비용배분",
+          "gw": 158.83968,
+          "storageGW": 129.77829,
+          "count": 1208
+        },
+        {
+          "code": "G5",
+          "label": "접속계약 협의",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G6",
+          "label": "접속계약 체결",
+          "gw": 83.83962,
+          "storageGW": 35.44736,
+          "count": 578
+        },
+        {
+          "code": "G7",
+          "label": "접속·발전설비 공사",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G8",
+          "label": "통전·상업운전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GU",
+          "label": "단계 미상",
+          "gw": 0.0075,
+          "storageGW": 0.08961,
+          "count": 10
+        },
+        {
+          "code": "GN",
+          "label": "접속계약 미체결·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GS",
+          "label": "중단·보류",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "BC",
+          "label": "BPA 측 완료·수용가 통전 미확인",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "W",
+          "label": "철회",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "ISO-NE",
+      "generationGW": 7.715836992025373,
+      "storageGW": 6.907341987609859,
+      "generationCount": 72,
+      "loadGW": null,
+      "loadCount": null,
+      "loadRecords": 2,
+      "scoreLow": 34.15249830097689,
+      "scoreHigh": 36.09655181267019,
+      "unknownCount": 21,
+      "stages": [
+        {
+          "code": "G1",
+          "label": "접수·검토 착수 전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G2",
+          "label": "타당성·초기검토",
+          "gw": 0.18,
+          "storageGW": 0.55,
+          "count": 3
+        },
+        {
+          "code": "G3",
+          "label": "계통영향 검토",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GC",
+          "label": "클러스터 검토·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G4",
+          "label": "설비검토·비용배분",
+          "gw": 1.332,
+          "storageGW": 0.0,
+          "count": 3
+        },
+        {
+          "code": "G5",
+          "label": "접속계약 협의",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G6",
+          "label": "접속계약 체결",
+          "gw": 6.053836992025373,
+          "storageGW": 2.554741989135739,
+          "count": 45
+        },
+        {
+          "code": "G7",
+          "label": "접속·발전설비 공사",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G8",
+          "label": "통전·상업운전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GU",
+          "label": "단계 미상",
+          "gw": 0.15,
+          "storageGW": 3.802599998474121,
+          "count": 21
+        },
+        {
+          "code": "GN",
+          "label": "접속계약 미체결·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GS",
+          "label": "중단·보류",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "BC",
+          "label": "BPA 측 완료·수용가 통전 미확인",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "W",
+          "label": "철회",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "MISO",
+      "generationGW": 295.1179899999999,
+      "storageGW": 55.0066,
+      "generationCount": 1646,
+      "loadGW": null,
+      "loadCount": null,
+      "loadRecords": 161,
+      "scoreLow": 19.746517507995016,
+      "scoreHigh": 78.98856185133643,
+      "unknownCount": 1203,
+      "stages": [
+        {
+          "code": "G1",
+          "label": "접수·검토 착수 전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G2",
+          "label": "타당성·초기검토",
+          "gw": 0.25839999999999996,
+          "storageGW": 0.0,
+          "count": 1
+        },
+        {
+          "code": "G3",
+          "label": "계통영향 검토",
+          "gw": 0.2059,
+          "storageGW": 0.0,
+          "count": 1
+        },
+        {
+          "code": "GC",
+          "label": "클러스터 검토·세부단계 불명",
+          "gw": 73.27881,
+          "storageGW": 17.2898,
+          "count": 499
+        },
+        {
+          "code": "G4",
+          "label": "설비검토·비용배분",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G5",
+          "label": "접속계약 협의",
+          "gw": 25.636419999999998,
+          "storageGW": 0.25,
+          "count": 132
+        },
+        {
+          "code": "G6",
+          "label": "접속계약 체결",
+          "gw": 26.979749999999996,
+          "storageGW": 1.131,
+          "count": 187
+        },
+        {
+          "code": "G7",
+          "label": "접속·발전설비 공사",
+          "gw": 19.60823,
+          "storageGW": 0.215,
+          "count": 122
+        },
+        {
+          "code": "G8",
+          "label": "통전·상업운전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GU",
+          "label": "단계 미상",
+          "gw": 149.15048,
+          "storageGW": 36.1208,
+          "count": 704
+        },
+        {
+          "code": "GN",
+          "label": "접속계약 미체결·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GS",
+          "label": "중단·보류",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "BC",
+          "label": "BPA 측 완료·수용가 통전 미확인",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "W",
+          "label": "철회",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "NYISO",
+      "generationGW": 16.0482,
+      "storageGW": 11.071,
+      "generationCount": 190,
+      "loadGW": 14.232899999999999,
+      "loadCount": 53,
+      "loadRecords": 74,
+      "scoreLow": 37.330417118430724,
+      "scoreHigh": 77.76236587280816,
+      "unknownCount": 89,
+      "stages": [
+        {
+          "code": "G1",
+          "label": "접수·검토 착수 전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G2",
+          "label": "타당성·초기검토",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G3",
+          "label": "계통영향 검토",
+          "gw": 6.0553,
+          "storageGW": 1.575,
+          "count": 42
+        },
+        {
+          "code": "GC",
+          "label": "클러스터 검토·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G4",
+          "label": "설비검토·비용배분",
+          "gw": 3.5042999999999997,
+          "storageGW": 0.37389999999999995,
+          "count": 59
+        },
+        {
+          "code": "G5",
+          "label": "접속계약 협의",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G6",
+          "label": "접속계약 체결",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G7",
+          "label": "접속·발전설비 공사",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G8",
+          "label": "통전·상업운전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GU",
+          "label": "단계 미상",
+          "gw": 6.4886,
+          "storageGW": 9.1221,
+          "count": 89
+        },
+        {
+          "code": "GN",
+          "label": "접속계약 미체결·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GS",
+          "label": "중단·보류",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "BC",
+          "label": "BPA 측 완료·수용가 통전 미확인",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "W",
+          "label": "철회",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "PJM",
+      "generationGW": 101.60171940000001,
+      "storageGW": 29.009100000000004,
+      "generationCount": 1134,
+      "loadGW": null,
+      "loadCount": null,
+      "loadRecords": 1134,
+      "scoreLow": 62.05586855452369,
+      "scoreHigh": 62.05586855452369,
+      "unknownCount": 0,
+      "stages": [
+        {
+          "code": "G1",
+          "label": "접수·검토 착수 전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G2",
+          "label": "타당성·초기검토",
+          "gw": 37.8012124,
+          "storageGW": 18.99538,
+          "count": 515
+        },
+        {
+          "code": "G3",
+          "label": "계통영향 검토",
+          "gw": 28.584867000000003,
+          "storageGW": 6.75082,
+          "count": 267
+        },
+        {
+          "code": "GC",
+          "label": "클러스터 검토·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G4",
+          "label": "설비검토·비용배분",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G5",
+          "label": "접속계약 협의",
+          "gw": 3.447,
+          "storageGW": 0.075,
+          "count": 9
+        },
+        {
+          "code": "G6",
+          "label": "접속계약 체결",
+          "gw": 31.768639999999998,
+          "storageGW": 3.1879,
+          "count": 343
+        },
+        {
+          "code": "G7",
+          "label": "접속·발전설비 공사",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G8",
+          "label": "통전·상업운전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GU",
+          "label": "단계 미상",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GN",
+          "label": "접속계약 미체결·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GS",
+          "label": "중단·보류",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "BC",
+          "label": "BPA 측 완료·수용가 통전 미확인",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "W",
+          "label": "철회",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "SPP",
+      "generationGW": 120.309899,
+      "storageGW": 30.84212,
+      "generationCount": 683,
+      "loadGW": null,
+      "loadCount": null,
+      "loadRecords": 2449,
+      "scoreLow": 47.441143558769,
+      "scoreHigh": 59.07342828041107,
+      "unknownCount": 57,
+      "stages": [
+        {
+          "code": "G1",
+          "label": "접수·검토 착수 전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G2",
+          "label": "타당성·초기검토",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G3",
+          "label": "계통영향 검토",
+          "gw": 52.677097,
+          "storageGW": 13.850400000000002,
+          "count": 251
+        },
+        {
+          "code": "GC",
+          "label": "클러스터 검토·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G4",
+          "label": "설비검토·비용배분",
+          "gw": 19.473502,
+          "storageGW": 6.968,
+          "count": 133
+        },
+        {
+          "code": "G5",
+          "label": "접속계약 협의",
+          "gw": 2.1632,
+          "storageGW": 2.4903900000000005,
+          "count": 30
+        },
+        {
+          "code": "G6",
+          "label": "접속계약 체결",
+          "gw": 32.001310000000004,
+          "storageGW": 5.565639999999999,
+          "count": 212
+        },
+        {
+          "code": "G7",
+          "label": "접속·발전설비 공사",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G8",
+          "label": "통전·상업운전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GU",
+          "label": "단계 미상",
+          "gw": 13.99479,
+          "storageGW": 1.9676900000000002,
+          "count": 57
+        },
+        {
+          "code": "GN",
+          "label": "접속계약 미체결·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GS",
+          "label": "중단·보류",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "BC",
+          "label": "BPA 측 완료·수용가 통전 미확인",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "W",
+          "label": "철회",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "Southeast",
+      "generationGW": 126.453446,
+      "storageGW": 17.366362000000002,
+      "generationCount": 957,
+      "loadGW": null,
+      "loadCount": null,
+      "loadRecords": 126,
+      "scoreLow": 39.785568200331994,
+      "scoreHigh": 59.240001612925596,
+      "unknownCount": 382,
+      "stages": [
+        {
+          "code": "G1",
+          "label": "접수·검토 착수 전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "G2",
+          "label": "타당성·초기검토",
+          "gw": 0.8697,
+          "storageGW": 0.0,
+          "count": 4
+        },
+        {
+          "code": "G3",
+          "label": "계통영향 검토",
+          "gw": 11.3876,
+          "storageGW": 0.6,
+          "count": 100
+        },
+        {
+          "code": "GC",
+          "label": "클러스터 검토·세부단계 불명",
+          "gw": 30.559147,
+          "storageGW": 4.908095,
+          "count": 240
+        },
+        {
+          "code": "G4",
+          "label": "설비검토·비용배분",
+          "gw": 29.728809,
+          "storageGW": 3.1424000000000003,
+          "count": 204
+        },
+        {
+          "code": "G5",
+          "label": "접속계약 협의",
+          "gw": 1.4669,
+          "storageGW": 0.499,
+          "count": 15
+        },
+        {
+          "code": "G6",
+          "label": "접속계약 체결",
+          "gw": 33.923269999999995,
+          "storageGW": 3.8876500000000003,
+          "count": 192
+        },
+        {
+          "code": "G7",
+          "label": "접속·발전설비 공사",
+          "gw": 4.612920000000001,
+          "storageGW": 0.416317,
+          "count": 60
+        },
+        {
+          "code": "G8",
+          "label": "통전·상업운전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GU",
+          "label": "단계 미상",
+          "gw": 13.905100000000001,
+          "storageGW": 3.9129,
+          "count": 142
+        },
+        {
+          "code": "GN",
+          "label": "접속계약 미체결·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GS",
+          "label": "중단·보류",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "BC",
+          "label": "BPA 측 완료·수용가 통전 미확인",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "W",
+          "label": "철회",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "West",
+      "generationGW": 322.318484,
+      "storageGW": 126.282512,
+      "generationCount": 1603,
+      "loadGW": null,
+      "loadCount": null,
+      "loadRecords": 469,
+      "scoreLow": 19.09677050975457,
+      "scoreHigh": 80.54498115596746,
+      "unknownCount": 1046,
+      "stages": [
+        {
+          "code": "G1",
+          "label": "접수·검토 착수 전",
+          "gw": 0.125,
+          "storageGW": 0.0,
+          "count": 1
+        },
+        {
+          "code": "G2",
+          "label": "타당성·초기검토",
+          "gw": 0.2419,
+          "storageGW": 0.1,
+          "count": 5
+        },
+        {
+          "code": "G3",
+          "label": "계통영향 검토",
+          "gw": 5.576,
+          "storageGW": 2.075,
+          "count": 50
+        },
+        {
+          "code": "GC",
+          "label": "클러스터 검토·세부단계 불명",
+          "gw": 52.22806,
+          "storageGW": 8.3628,
+          "count": 227
+        },
+        {
+          "code": "G4",
+          "label": "설비검토·비용배분",
+          "gw": 29.21165,
+          "storageGW": 6.667800000000001,
+          "count": 126
+        },
+        {
+          "code": "G5",
+          "label": "접속계약 협의",
+          "gw": 3.62975,
+          "storageGW": 0.835,
+          "count": 17
+        },
+        {
+          "code": "G6",
+          "label": "접속계약 체결",
+          "gw": 49.452004,
+          "storageGW": 11.1252,
+          "count": 346
+        },
+        {
+          "code": "G7",
+          "label": "접속·발전설비 공사",
+          "gw": 2.075,
+          "storageGW": 0.75,
+          "count": 12
+        },
+        {
+          "code": "G8",
+          "label": "통전·상업운전",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GU",
+          "label": "단계 미상",
+          "gw": 179.27737000000002,
+          "storageGW": 95.950912,
+          "count": 814
+        },
+        {
+          "code": "GN",
+          "label": "접속계약 미체결·세부단계 불명",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "GS",
+          "label": "중단·보류",
+          "gw": 0.50175,
+          "storageGW": 0.4158,
+          "count": 5
+        },
+        {
+          "code": "BC",
+          "label": "BPA 측 완료·수용가 통전 미확인",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        },
+        {
+          "code": "W",
+          "label": "철회",
+          "gw": 0.0,
+          "storageGW": 0.0,
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "policies": [
+    [
+      "FERC Order 2023/2023-A",
+      "FERC 관할 transmission providers",
+      "최종규칙 시행·사업자별 tariff compliance 승인 순차",
+      "접속검토·cluster·준비도·보증금",
+      "n.a.",
+      "2025 중 69 compliance orders, 35 providers final compliance; GW 미산정",
+      "2023-11-06 / 2024-03-21",
+      "미확보",
+      "미국 전체 큐에 일률 완공률 부여 금지; ERCOT 직접 적용 제외; 인허가·망시공 별도",
+      "https://www.ferc.gov/explainer-interconnection-final-rule https://www.ferc.gov/sites/default/files/2026-03/26_State-of-the-Market_0324_1430.pdf"
+    ],
+    [
+      "FERC Order 1920/1920-A/1920-B",
+      "FERC 관할 지역 송전계획",
+      "최종규칙·지역별 준수신고/심사",
+      "장기망계획·편익평가·비용배분",
+      "n.a.",
+      "계획기간 20년 이상; 표 내 SERTP/SCRTP first compliance 2026-12-12 등 지역별 차이",
+      "2024-05-13 onward",
+      "미확보",
+      "제도 적용 대상 GW와 즉시 개방된 N-1 송전용량 구별; 발전원 큐 직접 완료 효과 아님",
+      "https://www.ferc.gov/news-events/news/order-no-1920-compliance-filings-schedule"
+    ],
+    [
+      "PJM Reliability Resource Initiative",
+      "PJM",
+      "승인·2025 선정·Transition Cycle 2 심사",
+      "신뢰도기여 발전원 접속검토 우선 진입",
+      11.793,
+      "initial selected energy MW",
+      "2025-05-02",
+      "미확보",
+      "남은 개별행 최신 상태 확인 전 승인/해소 대상 상한에 미사용; energy와 UCAP 합산 금지",
+      "https://insidelines.pjm.com/pjm-chooses-51-generation-resource-projects-to-address-near-term-electricity-demand-growth/ https://www.ferc.gov/sites/default/files/2026-03/26_State-of-the-Market_0324_1430.pdf"
+    ],
+    [
+      "MISO ERAS",
+      "MISO",
+      "5차 심사 대상 발표·일부 GIA 완료",
+      "신뢰도 발전·저장 신속 접속검토",
+      29,
+      "누적 58건·약29 GW 제안용량. 38건·약18 GW GIA 완료; 추가5건·약3 GW 완료 임박. 5차15건·약7.3 GW 포함",
+      "2026-09-08",
+      "미확보",
+      "발전·저장 혼합 제안용량이며 통전량 아님. GIA 완료와 준공 구별. 2025년12.1 GW 및2026모델29.759 GW와 단순 증감·중복 합산 금지. 원장 개별행 상태는 연결 근거 확보 전 유지.",
+      "https://www.misoenergy.org/meet-miso/media-center/2026---news-releases/miso-accelerates-new-generation-and-storage-projects-with-fifth-eras-cycle/"
+    ],
+    [
+      "SPP expedited generation study",
+      "SPP",
+      "FERC 승인·2025 일회 신청",
+      "발전원 신속 접속검토",
+      13.3,
+      "36 interconnection requests received",
+      "2025-09",
+      "미확보",
+      "접수액; 검토완료·계약체결·통전 완료량 아님",
+      "https://www.ferc.gov/sites/default/files/2026-03/26_State-of-the-Market_0324_1430.pdf"
+    ],
+    [
+      "SPP HILL / HILLGA",
+      "SPP",
+      "FERC 승인·compliance/운영절차",
+      "대형부하+연계 발전원 공동검토",
+      "n.a.",
+      "미공개",
+      "2026",
+      "미확보",
+      "90일 검토·승인 과정; 90일 실제 전력공급 보장 아님; CHILL 별도 요금절차와 구분",
+      "https://www.spp.org/news-list/ferc-approves-spp-s-large-load-connection-proposal/"
+    ],
+    [
+      "SPP CHILL",
+      "SPP",
+      "2026-07-06 후속 compliance filing 확인",
+      "조건부 송전서비스·부하 감축",
+      "n.a.",
+      "미공개",
+      "2026-07-06",
+      "미확보",
+      "FERC 최종수리 여부 및 계약대상 목록 추가 확인 필요; HILL 승인 기사만으로 CHILL 전체 승인 추정 금지",
+      "https://spp.org/documents/77151/20260706_compliance%20filing%20-%20revisions%20to%20add%20the%20conditional%20high%20impact%20large%20load%20service_er26-1323-002.pdf"
+    ],
+    [
+      "Texas SB6 + Batch Zero",
+      "ERCOT",
+      "SB6 2025-06-20 발효; Batch Zero 2026-06 승인; 2026-08 이후 감사·통전 승인 일시정지",
+      "중복신청/준비도/동특성·공동검토/커뮤니티 영향",
+      "n.a.",
+      "9/3 잠정 분류. p1 요약 studied 127.9 vs p6 chart125.4 내부불일치",
+      "2026-09-11",
+      "미확보",
+      "base에 기존 energised 포함. 제외큐=전력공급 완료 아님. 감사 보고 2026-12-10 예정, 일정 영향 미확정",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf https://capitol.texas.gov/BillLookup/History.aspx?Bill=sb6&LegSess=89R https://www.ercot.com/services/comm/mkt_notices/M-B062326-01"
+    ],
+    [
+      "BPA cluster transition",
+      "BPA",
+      "2024-06-30 tariff 시행",
+      "발전원 serial→cluster",
+      "n.a.",
+      "미공개",
+      "2024-06-30",
+      "미확보",
+      "BPA LLI 절차와 별개; GAT/LLI 변경 제안의 시행을 함께 가정 금지",
+      "https://www.bpa.gov/energy-and-services/transmission/interconnection/large-generator-interconnection"
+    ],
+    [
+      "PGE GridCARE flexible interconnection",
+      "PGE Oregon",
+      "기업 도입·수용능력 확인",
+      "유연자원 활용·기존망 검토",
+      0.4,
+      ">0.4 GW additional identified hosting; > qualifier",
+      "2026-03-13",
+      "미확보",
+      "0.08GW는 2026 available, actual energised 미검증; queue project 링크 미확보",
+      "https://www.sec.gov/Archives/edgar/data/784977/000078497726000034/por-20260313.htm"
+    ],
+    [
+      "Georgia Power–OpenAI 25-year flexible service contract",
+      "Georgia Power",
+      "약정 발표·2026-08-26 규제검토 승인 발표",
+      "전원부담·첨두 신뢰도·비용회수",
+      3.2,
+      "해당 부하 캠퍼스",
+      "2026-08-26",
+      "미확보",
+      "감축가능 상한이며 해당 3.2GW의 통전완료나 1GW 완전 확정공급과 동치 아님",
+      "https://www.georgiapower.com/news-hub/press-releases/georgia-power-to-serve-openai-project-in-effingham-county.html https://www.prnewswire.com/news-releases/georgia-powers-contract-with-openai-approved-latest-approval-part-of-portfolio-of-large-load-contracts-delivering-approximately-950-million-in-annual-savings-beginning-in-2029-302861080.html"
+    ],
+    [
+      "PJM Cycle 1",
+      "PJM",
+      "2026-09-28 Phase 1 진입",
+      "준비도·계통검토",
+      168.6,
+      "617개 명목 GW; 기존 발전표본과 기준일 상이",
+      "2026-09-30",
+      "미확보",
+      "168.6GW는 심사 진입; 즉시 공급·순증 용량 아님",
+      "https://insidelines.pjm.com/over-600-projects-enter-phase-1-of-pjms-new-interconnection-process/"
+    ],
+    [
+      "FERC 대규모 부하 Section 206",
+      "PJM;SPP;NYISO;MISO;CAISO;ISO-NE",
+      "6개 ISO/RTO 대상 소명 절차 개시·권역별 규칙 심사",
+      "신청·검토·비용배분·co-location·유연서비스",
+      "n.a.",
+      "전국 공통 접속규칙 최종 시행과 구별",
+      "2026-06-18",
+      "미확보",
+      "ERCOT and non-RTO territories are outside these six proceedings. Procedural order is not project energization or a quantified GW release. All-six final implementation not verified as of 2026-10-02.",
+      "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration https://www.ferc.gov/news-events/events/notational-orders-2026-08-14-08142026"
+    ],
+    [
+      "PJM Section 206",
+      "PJM",
+      "8/14 FERC 90일 절차 유예 승인·9/30 초안 협의",
+      "대규모 부하 송전서비스·검토·co-location",
+      "n.a.",
+      "최종 승인 요금규칙 아님",
+      "2026-09-30",
+      "미확보",
+      "2026-08-17 is the PJM posting date for the abeyance order, not order issuance. No causally attributable GW relief established. Exact November deadline not independently verified from the order text in this pass.",
+      "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260814-3059 https://www.pjm.com/committees-and-groups/workshops/cllsco"
+    ],
+    [
+      "PJM EIT",
+      "PJM",
+      "FERC 6/9 승인·7/31 접수 개시",
+      "대규모 발전 신속검토",
+      "n.a.",
+      "2026·2027년 각각 최대10건·GIA10개월 목표; 통전GW와 구별",
+      "2026-07-31",
+      "미확보",
+      "Project-count cap and minimum UCAP are eligibility/process parameters. They do not establish awarded/energized GW; do not convert 20 x 250MW into an expected 5GW outcome or mix UCAP with nameplate MW. Sunset end2027.",
+      "https://www.pjm.com/-/media/DotCom/documents/ferc/orders/2026/20260609-er26-1563-000.PDF https://insidelines.pjm.com/pjm-begins-accepting-expedited-interconnection-track-requests/"
+    ],
+    [
+      "CAISO 대규모 부하",
+      "CAISO",
+      "8월 제안·절차 유예 관련 신고",
+      "부하 접속·서비스",
+      "n.a.",
+      "최종 시행 여부 별도 확인",
+      "2026-08-12",
+      "미확보",
+      "An abeyance request and straw proposal are not final tariff approval. The August14 official FERC docket listing includes EL26-71 but order body was not accessible in this pass.",
+      "https://www.caiso.com/legal-regulatory/regulatory-filings-orders/filings https://stakeholdercenter.caiso.com/Comments/AllComments/43A11EC9-FE21-4255-BB1C-336AD3703845"
+    ],
+    [
+      "ISO-NE 대규모 부하",
+      "ISO-NE",
+      "8/3 90일 절차 유예 신청 확인",
+      "부하 접속·서비스",
+      "n.a.",
+      "유예 신청과 승인 구별",
+      "2026-08-03",
+      "미확보",
+      "August14 FERC docket listing includes EL26-72 but the accessible primary evidence here confirms the motion, not the detailed order conditions. Preserve unknown actual GW outcome.",
+      "https://www.govinfo.gov/content/pkg/FR-2026-08-07/pdf/2026-16172.pdf"
+    ],
+    [
+      "MISO 대규모 부하",
+      "MISO",
+      "8/3 90일 절차 유예 신청 확인",
+      "부하 접속·서비스",
+      "n.a.",
+      "유예 신청과 승인 구별",
+      "2026-08-03",
+      "미확보",
+      "August14 FERC docket listing includes EL26-70 but the accessible primary evidence here confirms the motion, not detailed order conditions. ERAS approval is a separate program and should not be conflated with this proceeding.",
+      "https://www.govinfo.gov/content/pkg/FR-2026-08-07/html/2026-16167.htm"
+    ],
+    [
+      "PJM Reliability Backstop Procurement",
+      "PJM",
+      "FERC 수리·5개월 효력 유예·추가 절차",
+      "신규 공급 조달·비용배분·부하전망",
+      "n.a.",
+      "9/30 조달 개시 취소; 명시 효력일2027-02-28, 실제 조달 일정 재검토",
+      "2026-09-29",
+      "미확보",
+      "수리=즉시 시행 아님. 추가 절차·환급 조건. 접속검토·실제통전·정량 병목해소와 구별. 10/7 MIC 후속 안내 예정.",
+      "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/"
+    ]
+  ],
+  "evidence": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "권역별 수용가 공개자료와 전국 커버리지",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "계약·문의·전망·신청·이미 가동 용량의 별도 보존. 서로 다른 행의 단순합계 금지",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "권역",
+      "사업자",
+      "지표",
+      "상태",
+      "공개값",
+      "단위",
+      "기준일",
+      "건수",
+      "범위",
+      "합산 조건",
+      "출처 URL",
+      "한계"
+    ],
+    [
+      "NYISO",
+      "NYISO",
+      "project register by original status",
+      "Withdrawn",
+      3.0788800000000003,
+      "GW",
+      "2026-10-02",
+      17,
+      "load_request_peak",
+      "전국합계 제외",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "NYISO 공개 Load Projects 범위; 소매/배전/BTM 전체 포괄 여부 미확인. 요청 peak이며 동시 최대수요 아님. status 0·14 대기열 합계 제외. 공식 요약 탭 오류를 원장 재합계로 교정."
+    ],
+    [
+      "NYISO",
+      "NYISO",
+      "project register by original status",
+      "Scoping Meeting Pending",
+      0.771,
+      "GW",
+      "2026-10-02",
+      3,
+      "load_request_peak",
+      "해당 공개큐 내",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "NYISO 공개 Load Projects 범위; 소매/배전/BTM 전체 포괄 여부 미확인. 요청 peak이며 동시 최대수요 아님. status 0·14 대기열 합계 제외. 공식 요약 탭 오류를 원장 재합계로 교정."
+    ],
+    [
+      "NYISO",
+      "NYISO",
+      "project register by original status",
+      "Accepted Cost Allocation / IA In Progress",
+      0.3023,
+      "GW",
+      "2026-10-02",
+      4,
+      "load_request_peak",
+      "해당 공개큐 내",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "NYISO 공개 Load Projects 범위; 소매/배전/BTM 전체 포괄 여부 미확인. 요청 peak이며 동시 최대수요 아님. status 0·14 대기열 합계 제외. 공식 요약 탭 오류를 원장 재합계로 교정."
+    ],
+    [
+      "NYISO",
+      "NYISO",
+      "project register by original status",
+      "Under Construction",
+      1.515,
+      "GW",
+      "2026-10-02",
+      4,
+      "load_request_peak",
+      "해당 공개큐 내",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "NYISO 공개 Load Projects 범위; 소매/배전/BTM 전체 포괄 여부 미확인. 요청 peak이며 동시 최대수요 아님. status 0·14 대기열 합계 제외. 공식 요약 탭 오류를 원장 재합계로 교정."
+    ],
+    [
+      "NYISO",
+      "NYISO",
+      "project register by original status",
+      "In Service Commercial",
+      0.36019999999999996,
+      "GW",
+      "2026-10-02",
+      4,
+      "load_request_peak",
+      "전국합계 제외",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "NYISO 공개 Load Projects 범위; 소매/배전/BTM 전체 포괄 여부 미확인. 요청 peak이며 동시 최대수요 아님. status 0·14 대기열 합계 제외. 공식 요약 탭 오류를 원장 재합계로 교정."
+    ],
+    [
+      "NYISO",
+      "NYISO",
+      "project register by original status",
+      "SIS Pending",
+      5.503,
+      "GW",
+      "2026-10-02",
+      16,
+      "load_request_peak",
+      "해당 공개큐 내",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "NYISO 공개 Load Projects 범위; 소매/배전/BTM 전체 포괄 여부 미확인. 요청 peak이며 동시 최대수요 아님. status 0·14 대기열 합계 제외. 공식 요약 탭 오류를 원장 재합계로 교정."
+    ],
+    [
+      "NYISO",
+      "NYISO",
+      "project register by original status",
+      "SIS In Progress",
+      4.431,
+      "GW",
+      "2026-10-02",
+      16,
+      "load_request_peak",
+      "해당 공개큐 내",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "NYISO 공개 Load Projects 범위; 소매/배전/BTM 전체 포괄 여부 미확인. 요청 peak이며 동시 최대수요 아님. status 0·14 대기열 합계 제외. 공식 요약 탭 오류를 원장 재합계로 교정."
+    ],
+    [
+      "NYISO",
+      "NYISO",
+      "project register by original status",
+      "SIS Approved",
+      0.588,
+      "GW",
+      "2026-10-02",
+      4,
+      "load_request_peak",
+      "해당 공개큐 내",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "NYISO 공개 Load Projects 범위; 소매/배전/BTM 전체 포괄 여부 미확인. 요청 peak이며 동시 최대수요 아님. status 0·14 대기열 합계 제외. 공식 요약 탭 오류를 원장 재합계로 교정."
+    ],
+    [
+      "NYISO",
+      "NYISO",
+      "project register by original status",
+      "Facilities Study Pending",
+      0.11,
+      "GW",
+      "2026-10-02",
+      2,
+      "load_request_peak",
+      "해당 공개큐 내",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "NYISO 공개 Load Projects 범위; 소매/배전/BTM 전체 포괄 여부 미확인. 요청 peak이며 동시 최대수요 아님. status 0·14 대기열 합계 제외. 공식 요약 탭 오류를 원장 재합계로 교정."
+    ],
+    [
+      "NYISO",
+      "NYISO",
+      "project register by original status",
+      "Rejected Cost Allocation / Next Facilities Study Pending",
+      0.12,
+      "GW",
+      "2026-10-02",
+      1,
+      "load_request_peak",
+      "해당 공개큐 내",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "NYISO 공개 Load Projects 범위; 소매/배전/BTM 전체 포괄 여부 미확인. 요청 peak이며 동시 최대수요 아님. status 0·14 대기열 합계 제외. 공식 요약 탭 오류를 원장 재합계로 교정."
+    ],
+    [
+      "NYISO",
+      "NYISO",
+      "project register by original status",
+      "Facilities Study In Progress",
+      0.8926000000000001,
+      "GW",
+      "2026-10-02",
+      3,
+      "load_request_peak",
+      "해당 공개큐 내",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx",
+      "NYISO 공개 Load Projects 범위; 소매/배전/BTM 전체 포괄 여부 미확인. 요청 peak이며 동시 최대수요 아님. status 0·14 대기열 합계 제외. 공식 요약 탭 오류를 원장 재합계로 교정."
+    ],
+    [
+      "Non-RTO West",
+      "BPA",
+      "project register by original status",
+      "BPA COMPLETED",
+      0.8076,
+      "GW",
+      "2026-10-02",
+      32,
+      "mixed_line_load_service_mw",
+      "전국합계 제외",
+      "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+      "LL=Line/Load 혼합 대기열. 송전선·HVDC·변전소·기존 부하 이전/증가 포함 가능. 여름 서비스 MW를 신규 수용가 요청 MW로 간주 불가. BPA COMPLETED는 수용가 통전 증거 아님. 모든 LL 행을 수요 전국 합계에서 제외하고 개별 검증 필요."
+    ],
+    [
+      "Non-RTO West",
+      "BPA",
+      "project register by original status",
+      "CONST AGRMT EXE",
+      3.1672,
+      "GW",
+      "2026-10-02",
+      24,
+      "mixed_line_load_service_mw",
+      "전국합계 제외",
+      "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+      "LL=Line/Load 혼합 대기열. 송전선·HVDC·변전소·기존 부하 이전/증가 포함 가능. 여름 서비스 MW를 신규 수용가 요청 MW로 간주 불가. BPA COMPLETED는 수용가 통전 증거 아님. 모든 LL 행을 수요 전국 합계에서 제외하고 개별 검증 필요."
+    ],
+    [
+      "Non-RTO West",
+      "BPA",
+      "project register by original status",
+      "E&P EXECUTED",
+      0,
+      "GW",
+      "2026-10-02",
+      1,
+      "mixed_line_load_service_mw",
+      "전국합계 제외",
+      "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+      "LL=Line/Load 혼합 대기열. 송전선·HVDC·변전소·기존 부하 이전/증가 포함 가능. 여름 서비스 MW를 신규 수용가 요청 MW로 간주 불가. BPA COMPLETED는 수용가 통전 증거 아님. 모든 LL 행을 수요 전국 합계에서 제외하고 개별 검증 필요."
+    ],
+    [
+      "Non-RTO West",
+      "BPA",
+      "project register by original status",
+      "ENERGIZED",
+      2.6271999999999998,
+      "GW",
+      "2026-10-02",
+      84,
+      "mixed_line_load_service_mw",
+      "전국합계 제외",
+      "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+      "LL=Line/Load 혼합 대기열. 송전선·HVDC·변전소·기존 부하 이전/증가 포함 가능. 여름 서비스 MW를 신규 수용가 요청 MW로 간주 불가. BPA COMPLETED는 수용가 통전 증거 아님. 모든 LL 행을 수요 전국 합계에서 제외하고 개별 검증 필요."
+    ],
+    [
+      "Non-RTO West",
+      "BPA",
+      "project register by original status",
+      "RECEIVED",
+      10.5571,
+      "GW",
+      "2026-10-02",
+      19,
+      "mixed_line_load_service_mw",
+      "전국합계 제외",
+      "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+      "LL=Line/Load 혼합 대기열. 송전선·HVDC·변전소·기존 부하 이전/증가 포함 가능. 여름 서비스 MW를 신규 수용가 요청 MW로 간주 불가. BPA COMPLETED는 수용가 통전 증거 아님. 모든 LL 행을 수요 전국 합계에서 제외하고 개별 검증 필요."
+    ],
+    [
+      "Non-RTO West",
+      "BPA",
+      "project register by original status",
+      "STUDY",
+      28.8457,
+      "GW",
+      "2026-10-02",
+      101,
+      "mixed_line_load_service_mw",
+      "전국합계 제외",
+      "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+      "LL=Line/Load 혼합 대기열. 송전선·HVDC·변전소·기존 부하 이전/증가 포함 가능. 여름 서비스 MW를 신규 수용가 요청 MW로 간주 불가. BPA COMPLETED는 수용가 통전 증거 아님. 모든 LL 행을 수요 전국 합계에서 제외하고 개별 검증 필요."
+    ],
+    [
+      "Non-RTO West",
+      "BPA",
+      "project register by original status",
+      "STUDY COMPLETED",
+      2.2144,
+      "GW",
+      "2026-10-02",
+      27,
+      "mixed_line_load_service_mw",
+      "전국합계 제외",
+      "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+      "LL=Line/Load 혼합 대기열. 송전선·HVDC·변전소·기존 부하 이전/증가 포함 가능. 여름 서비스 MW를 신규 수용가 요청 MW로 간주 불가. BPA COMPLETED는 수용가 통전 증거 아님. 모든 LL 행을 수요 전국 합계에서 제외하고 개별 검증 필요."
+    ],
+    [
+      "Non-RTO West",
+      "BPA",
+      "project register by original status",
+      "WITHDRAWN",
+      18.071900000000003,
+      "GW",
+      "2026-10-02",
+      170,
+      "mixed_line_load_service_mw",
+      "전국합계 제외",
+      "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+      "LL=Line/Load 혼합 대기열. 송전선·HVDC·변전소·기존 부하 이전/증가 포함 가능. 여름 서비스 MW를 신규 수용가 요청 MW로 간주 불가. BPA COMPLETED는 수용가 통전 증거 아님. 모든 LL 행을 수요 전국 합계에서 제외하고 개별 검증 필요."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero conditional base",
+      "Base load conditional",
+      66.4,
+      "GW",
+      "2026-09-03",
+      204,
+      "conditional_batch_cohort",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "이미 energized 경로 포함. 통전 승인 또는 순수 미통전 대기량 아님. 검증·감사 이후 최종분류."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero conditional studied",
+      "Studied load conditional",
+      125.4,
+      "GW",
+      "2026-09-03",
+      158,
+      "conditional_batch_cohort",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "p6 기준125.4GW; 같은 deck p1은127.9GW 상충. 모델보완·일부 good-cause exception·검증 조건부."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero excluded",
+      "Excluded from Batch Zero",
+      302.2,
+      "GW",
+      "2026-09-03",
+      373,
+      "conditional_batch_excluded",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "이번 배치 제외이며 영구 취소/철회/물리적 병목 해소와 별개."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero studied subtype 2032",
+      "Firm (Neither WLPUN nor PCLR)",
+      107.398,
+      "GW",
+      "2026-09-03",
+      null,
+      "conditional_batch_subtype",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "차트 MW 개별 수치;125.4GW 요약과 반올림 차이. 상위집계와 중복합산 금지."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero studied subtype 2032",
+      "PCLR flexible load",
+      8.515,
+      "GW",
+      "2026-09-03",
+      null,
+      "conditional_batch_subtype",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "차트 MW 개별 수치;125.4GW 요약과 반올림 차이. 상위집계와 중복합산 금지."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero studied subtype 2032",
+      "WLPUN BYOG load",
+      9.478,
+      "GW",
+      "2026-09-03",
+      null,
+      "conditional_batch_subtype",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "차트 MW 개별 수치;125.4GW 요약과 반올림 차이. 상위집계와 중복합산 금지."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero base subtype 2032",
+      "Energized before 2022-03-25",
+      9.085,
+      "GW",
+      "2026-09-03",
+      null,
+      "conditional_batch_subtype",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "차트 2032 요청/ramp-up MW. 실제 가동부하 및 순수 신규부하 구분 필요. 상위집계와 중복합산 금지."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero base subtype 2032",
+      "Energized after 2022-03-25",
+      13.176,
+      "GW",
+      "2026-09-03",
+      null,
+      "conditional_batch_subtype",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "차트 2032 요청/ramp-up MW. 실제 가동부하 및 순수 신규부하 구분 필요. 상위집계와 중복합산 금지."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero base subtype 2032",
+      "Included in May 2026 QSA/IVRT or earlier",
+      6.604,
+      "GW",
+      "2026-09-03",
+      null,
+      "conditional_batch_subtype",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "차트 2032 요청/ramp-up MW. 실제 가동부하 및 순수 신규부하 구분 필요. 상위집계와 중복합산 금지."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero base subtype 2032",
+      "Included in Permian Reliability Plan",
+      3.36,
+      "GW",
+      "2026-09-03",
+      null,
+      "conditional_batch_subtype",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "차트 2032 요청/ramp-up MW. 실제 가동부하 및 순수 신규부하 구분 필요. 상위집계와 중복합산 금지."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero base subtype 2032",
+      "Advancing Large Load",
+      28.761,
+      "GW",
+      "2026-09-03",
+      null,
+      "conditional_batch_subtype",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "차트 2032 요청/ramp-up MW. 실제 가동부하 및 순수 신규부하 구분 필요. 상위집계와 중복합산 금지."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero base subtype 2032",
+      "Committed Large Load",
+      4.173,
+      "GW",
+      "2026-09-03",
+      null,
+      "conditional_batch_subtype",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "차트 2032 요청/ramp-up MW. 실제 가동부하 및 순수 신규부하 구분 필요. 상위집계와 중복합산 금지."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Batch Zero base subtype 2032",
+      "PURA 39.169 net metering",
+      1.2,
+      "GW",
+      "2026-09-03",
+      null,
+      "conditional_batch_subtype",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+      "차트 2032 요청/ramp-up MW. 실제 가동부하 및 순수 신규부하 구분 필요. 상위집계와 중복합산 금지."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Energization approval pause cohort",
+      "All ERCOT processes completed except energization approval",
+      6.608,
+      "GW",
+      "2026-08-20",
+      17,
+      "approval_pause_exposure",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/08/20/Batch-Zero-Verification-and-Audit-PUCT-Presentation.pdf",
+      "2026년말 영향 대상;6,608MW는5년 최종peak합계로 2026년 즉시 가동 MW 아님. 이후 분류와 중복 가능."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "QSA August 1 cohort",
+      "Expected August QSA",
+      1.959,
+      "GW",
+      "2026-08-20",
+      6,
+      "qsa_cohort",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/08/20/Batch-Zero-Verification-and-Audit-PUCT-Presentation.pdf",
+      "2027Q1 통전 예정 코호트, QSA 참여 자체는 통전 승인 아님."
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "QSA November 1 cohort",
+      "Potential November QSA",
+      6.874,
+      "GW",
+      "2026-08-20",
+      17,
+      "qsa_cohort",
+      "전국합계 제외",
+      "https://www.ercot.com/files/docs/2026/08/20/Batch-Zero-Verification-and-Audit-PUCT-Presentation.pdf",
+      "2027Q2 통전 예정 코호트, 참여 자격·최종분류 조건부."
+    ],
+    [
+      "MISO",
+      "MISO",
+      "2025 pilot survey planned large-load additions",
+      "High confidence: IA/regulatory awareness/construction",
+      21,
+      "GW",
+      "2026-02-12",
+      null,
+      "survey_pipeline",
+      "전국합계 제외",
+      "https://cdn.misoenergy.org/20260212%20LTLF%20Workshop%20Presentation_UPDATED740888.pdf",
+      "20MW 초과, planned-large-load 부분 응답26개로불완전. 44개응답사업자부하80%커버이나 planned section응답60%. Forecast input; 공식 active queue 아님. MW 차트 반올림."
+    ],
+    [
+      "MISO",
+      "MISO",
+      "2025 pilot survey planned large-load additions",
+      "Medium confidence: planning submitted or publicly announced, not construction",
+      9,
+      "GW",
+      "2026-02-12",
+      null,
+      "survey_pipeline",
+      "전국합계 제외",
+      "https://cdn.misoenergy.org/20260212%20LTLF%20Workshop%20Presentation_UPDATED740888.pdf",
+      "20MW 초과, planned-large-load 부분 응답26개로불완전. 44개응답사업자부하80%커버이나 planned section응답60%. Forecast input; 공식 active queue 아님. MW 차트 반올림."
+    ],
+    [
+      "MISO",
+      "MISO",
+      "2025 pilot survey planned large-load additions",
+      "Low confidence: not submitted to MISO planning",
+      30,
+      "GW",
+      "2026-02-12",
+      null,
+      "survey_pipeline",
+      "전국합계 제외",
+      "https://cdn.misoenergy.org/20260212%20LTLF%20Workshop%20Presentation_UPDATED740888.pdf",
+      "20MW 초과, planned-large-load 부분 응답26개로불완전. 44개응답사업자부하80%커버이나 planned section응답60%. Forecast input; 공식 active queue 아님. MW 차트 반올림."
+    ],
+    [
+      "MISO",
+      "MISO",
+      "2025 pilot survey planned large-load additions",
+      "High confidence: IA/regulatory awareness/construction",
+      21,
+      "GW",
+      "2026-02-12",
+      null,
+      "survey_pipeline",
+      "전국합계 제외",
+      "https://cdn.misoenergy.org/20260212%20LTLF%20Workshop%20Presentation_UPDATED740888.pdf",
+      "20MW 초과, planned-large-load 부분 응답26개로불완전. 44개응답사업자부하80%커버이나 planned section응답60%. Forecast input; 공식 active queue 아님. MW 차트 반올림."
+    ],
+    [
+      "MISO",
+      "MISO",
+      "2025 pilot survey planned large-load additions",
+      "Medium confidence: planning submitted or publicly announced, not construction",
+      11,
+      "GW",
+      "2026-02-12",
+      null,
+      "survey_pipeline",
+      "전국합계 제외",
+      "https://cdn.misoenergy.org/20260212%20LTLF%20Workshop%20Presentation_UPDATED740888.pdf",
+      "20MW 초과, planned-large-load 부분 응답26개로불완전. 44개응답사업자부하80%커버이나 planned section응답60%. Forecast input; 공식 active queue 아님. MW 차트 반올림."
+    ],
+    [
+      "MISO",
+      "MISO",
+      "2025 pilot survey planned large-load additions",
+      "Low confidence: not submitted to MISO planning",
+      50,
+      "GW",
+      "2026-02-12",
+      null,
+      "survey_pipeline",
+      "전국합계 제외",
+      "https://cdn.misoenergy.org/20260212%20LTLF%20Workshop%20Presentation_UPDATED740888.pdf",
+      "20MW 초과, planned-large-load 부분 응답26개로불완전. 44개응답사업자부하80%커버이나 planned section응답60%. Forecast input; 공식 active queue 아님. MW 차트 반올림."
+    ],
+    [
+      "MISO",
+      "MISO",
+      "2025 pilot survey planned large-load additions",
+      "High confidence: IA/regulatory awareness/construction",
+      21,
+      "GW",
+      "2026-02-12",
+      null,
+      "survey_pipeline",
+      "전국합계 제외",
+      "https://cdn.misoenergy.org/20260212%20LTLF%20Workshop%20Presentation_UPDATED740888.pdf",
+      "20MW 초과, planned-large-load 부분 응답26개로불완전. 44개응답사업자부하80%커버이나 planned section응답60%. Forecast input; 공식 active queue 아님. MW 차트 반올림."
+    ],
+    [
+      "MISO",
+      "MISO",
+      "2025 pilot survey planned large-load additions",
+      "Medium confidence: planning submitted or publicly announced, not construction",
+      12,
+      "GW",
+      "2026-02-12",
+      null,
+      "survey_pipeline",
+      "전국합계 제외",
+      "https://cdn.misoenergy.org/20260212%20LTLF%20Workshop%20Presentation_UPDATED740888.pdf",
+      "20MW 초과, planned-large-load 부분 응답26개로불완전. 44개응답사업자부하80%커버이나 planned section응답60%. Forecast input; 공식 active queue 아님. MW 차트 반올림."
+    ],
+    [
+      "MISO",
+      "MISO",
+      "2025 pilot survey planned large-load additions",
+      "Low confidence: not submitted to MISO planning",
+      55,
+      "GW",
+      "2026-02-12",
+      null,
+      "survey_pipeline",
+      "전국합계 제외",
+      "https://cdn.misoenergy.org/20260212%20LTLF%20Workshop%20Presentation_UPDATED740888.pdf",
+      "20MW 초과, planned-large-load 부분 응답26개로불완전. 44개응답사업자부하80%커버이나 planned section응답60%. Forecast input; 공식 active queue 아님. MW 차트 반올림."
+    ],
+    [
+      "CAISO",
+      "CAISO",
+      "CEC data-center load increase forecast",
+      "Forecast",
+      1.8,
+      "GW",
+      "2026-01-01",
+      null,
+      "forecast_increase",
+      "전국합계 제외",
+      "https://www.caiso.com/generation-transmission/load/large-loads",
+      "신청 대기열 아님; 순증 forecast. utility retail interconnection governs, CAISO consolidated load register 미확보."
+    ],
+    [
+      "CAISO",
+      "CAISO",
+      "CEC data-center load increase forecast",
+      "Forecast",
+      4.9,
+      "GW",
+      "2026-01-01",
+      null,
+      "forecast_increase",
+      "전국합계 제외",
+      "https://www.caiso.com/generation-transmission/load/large-loads",
+      "신청 대기열 아님; 순증 forecast. utility retail interconnection governs, CAISO consolidated load register 미확보."
+    ],
+    [
+      "SPP",
+      "SPP",
+      "Annual AQ request flow >=100MW",
+      "Requested",
+      3.198,
+      "GW",
+      "2025-05-05",
+      null,
+      "historical_annual_flow",
+      "전국합계 제외",
+      "https://www.spp.org/documents/73732/2025-05-05%20joint%20stakeholder%20briefing%20materials%20v3.pdf",
+      "연간유입 flow;현존대기 stock 아님. 2023/24 통계 미완료. 중복/철회 보정없음."
+    ],
+    [
+      "SPP",
+      "SPP",
+      "Annual AQ signed-SA flow >=100MW",
+      "Signed service agreement",
+      1.498,
+      "GW",
+      "2025-05-05",
+      null,
+      "historical_annual_flow",
+      "전국합계 제외",
+      "https://www.spp.org/documents/73732/2025-05-05%20joint%20stakeholder%20briefing%20materials%20v3.pdf",
+      "상위 requested cohort의부분집합. 실가동량아님.2023/24 미완료."
+    ],
+    [
+      "SPP",
+      "SPP",
+      "Annual AQ request flow >=100MW",
+      "Requested",
+      10.842,
+      "GW",
+      "2025-05-05",
+      null,
+      "historical_annual_flow",
+      "전국합계 제외",
+      "https://www.spp.org/documents/73732/2025-05-05%20joint%20stakeholder%20briefing%20materials%20v3.pdf",
+      "연간유입 flow;현존대기 stock 아님. 2023/24 통계 미완료. 중복/철회 보정없음."
+    ],
+    [
+      "SPP",
+      "SPP",
+      "Annual AQ signed-SA flow >=100MW",
+      "Signed service agreement",
+      4.6,
+      "GW",
+      "2025-05-05",
+      null,
+      "historical_annual_flow",
+      "전국합계 제외",
+      "https://www.spp.org/documents/73732/2025-05-05%20joint%20stakeholder%20briefing%20materials%20v3.pdf",
+      "상위 requested cohort의부분집합. 실가동량아님.2023/24 미완료."
+    ],
+    [
+      "SPP",
+      "SPP",
+      "Annual AQ request flow >=100MW",
+      "Requested",
+      4.817,
+      "GW",
+      "2025-05-05",
+      null,
+      "historical_annual_flow",
+      "전국합계 제외",
+      "https://www.spp.org/documents/73732/2025-05-05%20joint%20stakeholder%20briefing%20materials%20v3.pdf",
+      "연간유입 flow;현존대기 stock 아님. 2023/24 통계 미완료. 중복/철회 보정없음."
+    ],
+    [
+      "SPP",
+      "SPP",
+      "Annual AQ signed-SA flow >=100MW",
+      "Signed service agreement",
+      0.858,
+      "GW",
+      "2025-05-05",
+      null,
+      "historical_annual_flow",
+      "전국합계 제외",
+      "https://www.spp.org/documents/73732/2025-05-05%20joint%20stakeholder%20briefing%20materials%20v3.pdf",
+      "상위 requested cohort의부분집합. 실가동량아님.2023/24 미완료."
+    ],
+    [
+      "SPP",
+      "SPP",
+      "Annual AQ request flow >=100MW",
+      "Requested",
+      6.305,
+      "GW",
+      "2025-05-05",
+      null,
+      "historical_annual_flow",
+      "전국합계 제외",
+      "https://www.spp.org/documents/73732/2025-05-05%20joint%20stakeholder%20briefing%20materials%20v3.pdf",
+      "연간유입 flow;현존대기 stock 아님. 2023/24 통계 미완료. 중복/철회 보정없음."
+    ],
+    [
+      "SPP",
+      "SPP",
+      "Annual AQ signed-SA flow >=100MW",
+      "Signed service agreement",
+      0.2,
+      "GW",
+      "2025-05-05",
+      null,
+      "historical_annual_flow",
+      "전국합계 제외",
+      "https://www.spp.org/documents/73732/2025-05-05%20joint%20stakeholder%20briefing%20materials%20v3.pdf",
+      "상위 requested cohort의부분집합. 실가동량아님.2023/24 미완료."
+    ],
+    [
+      "West_nonRTO",
+      "APS",
+      "committed large C&I load",
+      "committed",
+      4.5,
+      "GW",
+      "2026-03-02",
+      null,
+      "Arizona APS territory",
+      "NR_AG_APS_U와 구분; APS 총요청 중 확정집계",
+      "https://s22.q4cdn.com/464697698/files/doc_events/2026/Mar/02/March-Investor-Deck.pdf",
+      "committed 용어만 확인; 개별 계약·접속허가·착공·통전 단계 미공개"
+    ],
+    [
+      "West_nonRTO",
+      "APS",
+      "uncommitted load opportunity",
+      "opportunity",
+      20,
+      "GW",
+      "2026-03-02",
+      null,
+      "Arizona APS territory",
+      "committed 4.5GW와 구분",
+      "https://s22.q4cdn.com/464697698/files/doc_events/2026/Mar/02/March-Investor-Deck.pdf",
+      "정식 유효 접속신청 큐와 동의어 아님; 실현 가능성·중복 미확인"
+    ],
+    [
+      "Southeast_nonRTO",
+      "Southern electric subsidiaries",
+      "signed large load contracts",
+      "signed",
+      11,
+      "GW",
+      "2026-Q1 earnings",
+      null,
+      "AL/GA/MS",
+      "Southern 집계와 산하 개별 project 용량 중복 합산 금지",
+      "https://www.southerncompany.com/content/dam/southerncompany/sustainability/pdfs/sustainability-shareholder-presentation.pdf",
+      "2026-Q2 17GW 보도 존재하지만 이 JSON의 11GW는 검증된 1차자료 시점치; 현재치 아님"
+    ],
+    [
+      "Southeast_nonRTO",
+      "Southern electric subsidiaries",
+      "prospective pipeline early/mid stage requested service",
+      "prospective",
+      75,
+      "GW",
+      "2026-Q1 earnings",
+      null,
+      "AL/GA/MS",
+      "11GW 포함 관계 검증 없이 덧셈 금지",
+      "https://www.southerncompany.com/content/dam/southerncompany/sustainability/pdfs/sustainability-shareholder-presentation.pdf",
+      "비구속·초기/중기 요청 포함; 계약/통전 아님"
+    ],
+    [
+      "Mixed_nonRTO_PJM_MISO",
+      "Duke Energy enterprise",
+      "signed data center electric service agreements",
+      "signed",
+      7.6,
+      "GW",
+      "2026-05-05",
+      null,
+      "기업 전체",
+      "PJM/MISO와 Carolina/Florida 비RTO 분해 전 지역합산 제외",
+      "https://s201.q4cdn.com/583395453/files/doc_financials/2026/q1/Q1-2026-Earnings-Presentation-w-Reg-G.pdf",
+      "2024 이후 서명 누적; 기존 통전분 차감 및 지역분해 미공개"
+    ],
+    [
+      "West_nonRTO",
+      "Black Hills Wyoming Electric",
+      "large-load demand pipeline",
+      "pipeline",
+      3,
+      "GW",
+      "2026-08-05",
+      null,
+      "Wyoming",
+      "600MW plan, 1.8GW project 하위 항목",
+      "https://www.sec.gov/Archives/edgar/data/1130464/000119312526335259/bkh-ex99.htm",
+      "확정계약/가동/신규대기 분해 미공개"
+    ],
+    [
+      "West_nonRTO",
+      "Black Hills Wyoming Electric",
+      "data-center load included in financial plan by 2030",
+      "financial plan",
+      0.6,
+      "GW",
+      "2026-08-05",
+      null,
+      "Microsoft expansion + Meta",
+      "3GW pipeline 하위항목; 개별 project 미분해",
+      "https://www.sec.gov/Archives/edgar/data/1130464/000119312526335259/bkh-ex99.htm",
+      "계획연도 총부하와 신규미통전 대기량 혼동 금지"
+    ],
+    [
+      "West_nonRTO",
+      "Portland General Electric",
+      "additional hosting capacity identified with GridCARE",
+      "identified grid capacity",
+      0.4,
+      "GW",
+      "2026-03-13",
+      null,
+      "PGE Oregon",
+      "대기열 합산 제외",
+      "https://www.sec.gov/Archives/edgar/data/784977/000078497726000034/por-20260313.htm",
+      "연구·유연성 활용 수용능력; 400MW 통전 완료 아님"
+    ],
+    [
+      "West_nonRTO",
+      "Portland General Electric",
+      "near-term capacity available for data-center load in 2026",
+      "available capacity",
+      0.08,
+      "GW",
+      "2026-03-13",
+      null,
+      "PGE Oregon",
+      "0.4GW 하위항목; 대기열 합산 제외",
+      "https://www.sec.gov/Archives/edgar/data/784977/000078497726000034/por-20260313.htm",
+      "이용계약·통전실적 미확인; 신규발전 정격MW 아님"
+    ],
+    [
+      "Southeast_nonRTO",
+      "TVA",
+      "additional generation needs through 2040",
+      "planning scenarios",
+      "n.a.",
+      "GW",
+      "2026 IRP",
+      null,
+      "TVA",
+      "대기열 합산 제외",
+      "https://tva.com/environment/final-2026-integrated-resource-plan",
+      "수요/발전원 개별 큐 아님; 신규확정 발주량 아님"
+    ],
+    [
+      "Southeast",
+      "Georgia Power",
+      "경제개발 파이프라인 최종 발표부하",
+      "Technical Review",
+      64.492,
+      "GW",
+      "2026-06-30",
+      86,
+      "CES/RFS/Technical Review 구분",
+      "기존 ramping·OpenAI 공시 중복 가능; 전국합계 제외",
+      "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227753/109137",
+      "최종 발표부하이며 계약MW·실제통전MW·잔여미통전MW 미공개"
+    ],
+    [
+      "Southeast",
+      "Georgia Power",
+      "경제개발 파이프라인 최종 발표부하",
+      "Request for Service",
+      5.9954790000000004,
+      "GW",
+      "2026-06-30",
+      10,
+      "CES/RFS/Technical Review 구분",
+      "기존 ramping·OpenAI 공시 중복 가능; 전국합계 제외",
+      "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227753/109137",
+      "최종 발표부하이며 계약MW·실제통전MW·잔여미통전MW 미공개"
+    ],
+    [
+      "Southeast",
+      "Georgia Power",
+      "경제개발 파이프라인 최종 발표부하",
+      "Contract for Electric Service",
+      9.572,
+      "GW",
+      "2026-06-30",
+      22,
+      "CES/RFS/Technical Review 구분",
+      "기존 ramping·OpenAI 공시 중복 가능; 전국합계 제외",
+      "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227753/109137",
+      "최종 발표부하이며 계약MW·실제통전MW·잔여미통전MW 미공개"
+    ],
+    [
+      "PJM",
+      "Dominion",
+      "ELOA engineering contracts",
+      "Engineering Letter of Authorization",
+      32.473,
+      "GW",
+      "2026-07-31",
+      null,
+      "contract_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5ai---dominion_energy.pdf",
+      "CLOA/ESA와 단계 구분. 원시 신청전체와 동일하지 않으며 신규 미통전분만 분리 불가."
+    ],
+    [
+      "PJM",
+      "Dominion",
+      "CLOA construction contracts",
+      "Construction Letter of Authorization / firm",
+      9.356,
+      "GW",
+      "2026-07-31",
+      null,
+      "contract_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5ai---dominion_energy.pdf",
+      "공사 승인 약정이며 물리적 착공/완공 증거와 별개."
+    ],
+    [
+      "PJM",
+      "Dominion",
+      "ESA service contracts",
+      "Electric Service Agreement / firm",
+      11.997,
+      "GW",
+      "2026-07-31",
+      null,
+      "contract_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5ai---dominion_energy.pdf",
+      "기존 가동+향후통전 구분 비공개; 가동 4.8GW 수요의 단순 차감 금지."
+    ],
+    [
+      "PJM",
+      "Dominion",
+      "All executed contract capacity",
+      "ESA+CLOA+ELOA arithmetic sum",
+      53.826,
+      "GW",
+      "2026-07-31",
+      null,
+      "contract_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5ai---dominion_energy.pdf",
+      "약54GW 표기; 3계약유형 직접 합산 계산, 미통전 대기열 아님."
+    ],
+    [
+      "PJM",
+      "Dominion",
+      "ELOA admitted to forecast",
+      "Non-firm forecast inclusion",
+      13.429,
+      "GW",
+      "2026-07-31",
+      null,
+      "forecast_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5ai---dominion_energy.pdf",
+      "ELOA32,473MW의 부분집합; 추가합산 금지."
+    ],
+    [
+      "PJM",
+      "Dominion",
+      "ELOA excluded from forecast",
+      "Excluded from forecast",
+      19.044,
+      "GW",
+      "2026-07-31",
+      null,
+      "contract_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5ai---dominion_energy.pdf",
+      "제외는 병목 해소나 취소 확정 의미 아님."
+    ],
+    [
+      "PJM",
+      "Dominion",
+      "Data center billing peak load",
+      "Operating",
+      4800,
+      "MW",
+      "2026-08-31",
+      null,
+      "observed_demand",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5ai---dominion_energy.pdf",
+      "청구피크수요와 계약용량 개념 상이."
+    ],
+    [
+      "PJM",
+      "PPL",
+      "Cumulative interconnection requests since September 2024",
+      "Initial inquiry/study through later stages",
+      240,
+      "GW",
+      "2026-09-29",
+      null,
+      "raw_capacity / 초과값 >",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5e---ppl.pdf",
+      "240GW 초과 누적요청; 현재 잔존큐·중복제거값 아님."
+    ],
+    [
+      "PJM",
+      "PPL",
+      "ESA/CSA capacity included in forecast at plateau",
+      "ESA/CSA",
+      10.912,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2034",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5e---ppl.pdf",
+      "2032년 이후 총계; 2034-2047 plateau 기준. 초기문의240GW에 추가합산 금지."
+    ],
+    [
+      "PJM",
+      "PPL",
+      "LOA capacity included in forecast at plateau",
+      "LOA",
+      21.177,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2034",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5e---ppl.pdf",
+      "2034-2047 plateau; 계통보강·허가·착공 증거와 별개."
+    ],
+    [
+      "PJM",
+      "PPL",
+      "Included capacity plateau",
+      "LOA plus ESA/CSA",
+      32.089,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2034",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5e---ppl.pdf",
+      "예측반영용 계약용량; 원시대기열 대신 사용 금지."
+    ],
+    [
+      "PJM",
+      "AEP",
+      "Incremental planned summer-peak additions",
+      "Signed LOA/ESA",
+      19675,
+      "MW",
+      "2026-09-29",
+      null,
+      "forecast_demand / 목표 2031",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5f---aep.pdf",
+      "피크부하 전망 조정치; 명목계약용량 아님. 97% ESA 비중은 프로젝트 수 비중, MW비중 아님."
+    ],
+    [
+      "PJM",
+      "AEP",
+      "Incremental planned summer-peak additions ultimate",
+      "Signed LOA/ESA",
+      22095,
+      "MW",
+      "2026-09-29",
+      null,
+      "forecast_demand / 목표 Ultimate",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5f---aep.pdf",
+      "종료연도 미정; 큐 원시용량 아님."
+    ],
+    [
+      "PJM",
+      "AEP",
+      "Existing plus planned summer-peak additions",
+      "Signed LOA/ESA",
+      22175,
+      "MW",
+      "2026-09-29",
+      null,
+      "forecast_demand / 목표 2031",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5f---aep.pdf",
+      "기존 가동 포함; 증분19,675MW와 혼용 금지."
+    ],
+    [
+      "PJM",
+      "Exelon",
+      "Total pipeline capacity",
+      "Mixed stages",
+      37,
+      "GW",
+      "2026-09-29",
+      null,
+      "tracked_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+      "반올림, 기존가동 포함; ComEd/PECO 중심."
+    ],
+    [
+      "PJM",
+      "Exelon",
+      "High-probability included capacity",
+      "TSA+LOC or paid Phase-1 engineering",
+      12,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+      "기존가동 포함, 약값; 원시요청37GW의 부분집합."
+    ],
+    [
+      "PJM",
+      "Exelon",
+      "Excluded requested capacity",
+      "Forecast excluded",
+      25,
+      "GW",
+      "2026-09-29",
+      null,
+      "tracked_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+      "제외분은 취소/망병목 해소와 동일하지 않음."
+    ],
+    [
+      "PJM",
+      "FirstEnergy",
+      "Total study requests",
+      "Study requested",
+      102,
+      "GW",
+      "2026-09-29",
+      null,
+      "raw_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5h---firstenergy.pdf",
+      "현재유효·중복제거·취소 차감 불명확."
+    ],
+    [
+      "PJM",
+      "FirstEnergy",
+      "Growth contracts and pipeline through 2035",
+      "Contract plus pipeline",
+      22,
+      "GW",
+      "2026-09-29",
+      null,
+      "tracked_capacity / 목표 2035",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5h---firstenergy.pdf",
+      "약값; 기존 계약/가동 약2GW 제외. 전체 요청102GW의 부분집합."
+    ],
+    [
+      "PJM",
+      "FirstEnergy",
+      "Existing contracted and active load excluded from growth",
+      "Contracted and active",
+      2,
+      "GW",
+      "2026-09-29",
+      null,
+      "contract_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5h---firstenergy.pdf",
+      "약값; 계측 peak demand와 다름."
+    ],
+    [
+      "PJM",
+      "FirstEnergy",
+      "PJM forecast capacity 2035",
+      "Score >=5 forecast",
+      21.515,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2035",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5h---firstenergy.pdf",
+      "그림 하단표 직접 판독; 약22GW headline과 반올림 차이."
+    ],
+    [
+      "PJM",
+      "FirstEnergy",
+      "PJM forecast capacity plateau",
+      "Score >=5 forecast",
+      22.926,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2041",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5h---firstenergy.pdf",
+      "2041-2047; forecast portfolio 기준."
+    ],
+    [
+      "PJM",
+      "ODEC",
+      "Tracked delivery point requests",
+      "Mixed projects",
+      16.544,
+      "GW",
+      "2026-07-31",
+      null,
+      "tracked_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5d---odec.pdf",
+      "REC/HES 별도 제출 명시; 두 자료 사이 원시신청 중복범위 확인 전 합산 금지."
+    ],
+    [
+      "PJM",
+      "ODEC",
+      "2027 submission portfolio capacity",
+      "Existing 3 + planned 7 projects",
+      2.644,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5d---odec.pdf",
+      "2027 forecast edition 제출 총량이며 달력2027 통전용량이라는 의미 아님."
+    ],
+    [
+      "PJM",
+      "ODEC",
+      "Existing firm capacity",
+      "Firm existing 2 projects",
+      0.658,
+      "GW",
+      "2026-09-29",
+      null,
+      "contract_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5d---odec.pdf",
+      "가동분이므로 미통전큐에서 제외. 세번째 기존프로젝트 협상중."
+    ],
+    [
+      "PJM",
+      "ODEC",
+      "Submitted demand",
+      "70% utilization",
+      1851,
+      "MW",
+      "2026-09-29",
+      null,
+      "forecast_demand",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5d---odec.pdf",
+      "2644MW capacity에 이용률 적용한 결과; 별도물량 아님."
+    ],
+    [
+      "PJM",
+      "NOVEC",
+      "Contracted capacity 2031",
+      "ESO+CC / CC / pre-CC",
+      8465,
+      "MVA",
+      "2026-09-29",
+      null,
+      "forecast_apparent_capacity / 목표 2031",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5b---novec.pdf",
+      "단위MVA; 역률 없이MW/GW 변환 금지. 기존가동 포함."
+    ],
+    [
+      "PJM",
+      "NOVEC",
+      "Contracted capacity 2047",
+      "ESO+CC / CC / pre-CC",
+      15794,
+      "MVA",
+      "2026-09-29",
+      null,
+      "forecast_apparent_capacity / 목표 2047",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5b---novec.pdf",
+      "단위MVA; 역률 없이MW/GW 변환 금지. 기존가동 포함."
+    ],
+    [
+      "PJM",
+      "NOVEC",
+      "Coincident peak demand 2031",
+      "Forecast with screened projects",
+      5897,
+      "MW",
+      "2026-09-29",
+      null,
+      "forecast_demand / 목표 2031",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5b---novec.pdf",
+      "capacity가 아닌 계량수요 전망; 대기용량으로 사용 금지."
+    ],
+    [
+      "PJM",
+      "NOVEC",
+      "Coincident peak demand 2047",
+      "Forecast with screened projects",
+      12139,
+      "MW",
+      "2026-09-29",
+      null,
+      "forecast_demand / 목표 2047",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5b---novec.pdf",
+      "capacity가 아닌 계량수요 전망; 대기용량으로 사용 금지."
+    ],
+    [
+      "PJM",
+      "REC",
+      "Requested data-center capacity",
+      "Mixed contract stages",
+      22.426,
+      "GW",
+      "2026-09-29",
+      null,
+      "raw_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5c---rappahannock.pdf",
+      "DOM transmission queue batch, site/permit/contract 조건 적용 전 요청량. ODEC/HES 범위 확인 필요."
+    ],
+    [
+      "PJM",
+      "REC",
+      "Probability-weighted capacity 2031",
+      "Firm/non-firm weighted forecast",
+      2.673,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2031",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5c---rappahannock.pdf",
+      "확률가중 후 값; 원시신청22.426GW와 동등 비교 금지."
+    ],
+    [
+      "PJM",
+      "REC",
+      "Probability-weighted capacity 2047",
+      "Firm/non-firm weighted forecast",
+      11.916,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2047",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5c---rappahannock.pdf",
+      "확률가중 후 값; 원시신청22.426GW와 동등 비교 금지."
+    ],
+    [
+      "PJM",
+      "Duquesne",
+      "Three projects under study requested capacity",
+      "Under study / non-firm",
+      1.145,
+      "GW",
+      "2026-09-29",
+      null,
+      "raw_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5g---duquesne.pdf",
+      "개별프로젝트 명칭과MW 비공개. 실현가능성 범위9.5%-27.5%."
+    ],
+    [
+      "PJM",
+      "Duquesne",
+      "Probability-scaled forecast capacity plateau",
+      "Non-firm",
+      0.186,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2037",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5g---duquesne.pdf",
+      "2037년 이후, 1145MW의 확률가중+램프 반영."
+    ],
+    [
+      "PJM",
+      "AES Ohio",
+      "Project TEAC capacity sum",
+      "9 anonymized projects / mixed milestones",
+      6.635,
+      "GW",
+      "2026-09-29",
+      null,
+      "raw_capacity",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5j---dayton_aes.pdf",
+      "표 합계6,635MW vs 전망6,485MW 150MW 차이, 원문 조정근거 미공개."
+    ],
+    [
+      "PJM",
+      "AES Ohio",
+      "Forecast maximum capacity/demand",
+      "9 planned projects",
+      6.485,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2033",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5j---dayton_aes.pdf",
+      "capacity=demand로 제출. p2 2032 문구와 p5 2033 도달 표기 불일치; p5 기준2033."
+    ],
+    [
+      "PJM",
+      "Duke OH/KY",
+      "Firm forecast capacity plateau",
+      "ESO 250MW Ohio + firm Kentucky48MW",
+      0.298,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2032",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5k---duke.pdf",
+      "2032-2047, raw queue 아님."
+    ],
+    [
+      "PJM",
+      "Duke OH/KY",
+      "Non-firm probability-discounted capacity plateau",
+      "No ESO, probability discounted",
+      1.08,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2032",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5k---duke.pdf",
+      "원시신청용량 아님."
+    ],
+    [
+      "PJM",
+      "Duke OH/KY",
+      "Total forecast capacity plateau",
+      "Firm+non-firm",
+      1.378,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2032",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5k---duke.pdf",
+      "298+1080의 총계; 추가합산 금지."
+    ],
+    [
+      "PJM",
+      "PSEG",
+      "Data center forecast capacity plateau",
+      "20% firm / 80% non-firm forecast",
+      4.061,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2045",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5l---pseg.pdf",
+      "기존DC40개/peak297MW와 신규 포함; 확률/램프 적용 전망."
+    ],
+    [
+      "PJM",
+      "PSEG",
+      "Port electrification forecast capacity plateau",
+      "Roadmap-based forecast",
+      0.148,
+      "GW",
+      "2026-09-29",
+      null,
+      "forecast_capacity / 목표 2046",
+      "전국합계 제외",
+      "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5l---pseg.pdf",
+      "원시접속큐 아님."
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "구역",
+      "분류",
+      "경계",
+      "발전 공개범위",
+      "부하 공개범위",
+      "현재 경계 주의",
+      "출처",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "CAISO",
+      "ISO/RTO",
+      "California CAISO control area; 일부 NV",
+      "LBNL+CAISO project queue",
+      "본 에이전트 미조사; utility별 large-load 공시 필요",
+      "California 전체와 동일 경계 아님",
+      "https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "PJM",
+      "ISO/RTO",
+      "13 states+DC 일부",
+      "LBNL+PJM queue",
+      "본 에이전트 미조사; PJM forecast adjustments와 utility ESA 별도",
+      "Dominion Virginia, Duke Ohio/Kentucky 등 중복 유의",
+      "https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "MISO",
+      "ISO/RTO",
+      "중서부·Gulf 일부",
+      "LBNL+MISO queue",
+      "본 에이전트 미조사; 신청과 forecast 구별",
+      "Duke Indiana·Entergy·MS 일부는 Southeast nonRTO 제외",
+      "https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "SPP",
+      "ISO/RTO",
+      "중부+2026-04-01 western expansion",
+      "LBNL+SPP queue; 2025 historical footprint→2026 mapping 필요",
+      "HILL 자료 및 member utility별",
+      "SPP West 회원 가입 지역만 이전; WestConnect 전체를 SPP로 분류 금지",
+      "https://spp.org/western-services/rto-expansion/ https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "NYISO",
+      "ISO/RTO",
+      "New York",
+      "LBNL+NYISO queue",
+      "본 에이전트 미조사",
+      "project-level supplement 필요",
+      "https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "ISO-NE",
+      "ISO/RTO",
+      "CT/MA/ME/NH/RI/VT",
+      "LBNL+ISO-NE queue",
+      "본 에이전트 미조사",
+      "forecast 성장량은 접속큐 아님",
+      "https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "ERCOT",
+      "ERCOT",
+      "Texas ERCOT footprint",
+      "LBNL+ERCOT queue",
+      "공식 Batch Zero 조건부 단계집계 확보; 사업별 비공개/부분공개",
+      "TX 전체 아님; El Paso/MISO/SPP TX 제외",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Southeast—Southern",
+      "nonRTO",
+      "Georgia Power/Alabama Power/Mississippi Power",
+      "LBNL/OASIS utility-level",
+      ">11GW signed /75GW+ prospective 역사시점 확보; GA3.2GW named project",
+      "Entergy Mississippi는 MISO; Southern Power 전국 IPP portfolio 별도",
+      "https://www.southerncompany.com/content/dam/southerncompany/sustainability/pdfs/sustainability-shareholder-presentation.pdf https://www.georgiapower.com/news-hub/press-releases/georgia-power-to-serve-openai-project-in-effingham-county.html https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Southeast—Duke Carolinas/Progress",
+      "nonRTO",
+      "NC/SC Duke service areas",
+      "LBNL/OASIS",
+      "기업7.6GW ESA는 혼합지역; Carolina 숫자 미분해",
+      "기업전체 합계 비RTO 배정 금지",
+      "https://s201.q4cdn.com/583395453/files/doc_financials/2026/q1/Q1-2026-Earnings-Presentation-w-Reg-G.pdf https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Southeast—TVA",
+      "nonRTO",
+      "TN 및 AL/MS/KY/VA/NC/GA 일부",
+      "LBNL/TVA generation interconnection+IRP",
+      "확정 대규모부하 프로젝트 총큐 미확보; IRP 신규발전필요11~32GW는 대체 불가",
+      "주별 분류보다 serving BA/utility 기준",
+      "https://tva.com/environment/final-2026-integrated-resource-plan https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Southeast—LG&E/KU",
+      "nonRTO",
+      "Kentucky 및 일부 Virginia utility areas",
+      "LBNL/OASIS",
+      "PowerHouse–Poe 400MW 역사발표 확보; 전체큐 미확보",
+      "PPL Pennsylvania PJM territory와 분리",
+      "https://lge-ku.com/newsroom/press-releases/2025/01/16/lge-announces-first-major-data-center-electric-customer https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Southeast—Florida",
+      "nonRTO",
+      "FPL/Duke Florida/TECO/OUC/JEA/Seminole 등",
+      "LBNL/OASIS+FRCC planning",
+      "각 utility 공식 총큐/단계분해 미확보",
+      "Duke enterprise total 분리 필요",
+      "https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Southeast—SC/coops/municipals",
+      "nonRTO",
+      "Dominion SC/Santee Cooper/NC-SC cooperatives 등",
+      "LBNL 및 개별 utility queues; 일부 residual coverage 확인 필요",
+      "전체큐 미확보",
+      "Dominion Virginia PJM과 Dominion SC 분리",
+      "https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "West—BPA",
+      "nonRTO",
+      "Pacific Northwest Federal Columbia River Transmission System",
+      "BPA XLSX 공개 확인",
+      "동일 XLSX Line & Load 존재; 이 에이전트 파일 내려받기 실패",
+      "line requests와 new load 구분 및 다른 utility/BPA project 이중계수 확인 필요",
+      "https://www.bpa.gov/energy-and-services/transmission/interconnection",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "West—PGE/PacifiCorp",
+      "nonRTO",
+      "OR/WA/UT/WY/ID/CA utility areas",
+      "LBNL+utility OASIS",
+      "PGE 유연접속 수용능력 0.4GW+ 확인; PacifiCorp25MW+ 절차 확인, 전체 프로젝트큐 미확보",
+      "WEIM/EDAM 참여는 CAISO RTO 가입과 상이; PacifiCorp WA 자산 PGE 인수발표는 closing 확인 필요",
+      "https://www.sec.gov/Archives/edgar/data/784977/000078497726000034/por-20260313.htm https://www.rockymountainpower.net/working-with-us/large-service-requests.html https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "West—Other Northwest",
+      "nonRTO",
+      "PSE/Avista/Idaho Power/Seattle/Tacoma/Chelan/Grant/Douglas 등",
+      "LBNL+individual OASIS; public/co-op gaps possible",
+      "기업·규제자료 일부 공개; 통합 project-level load queue 미확보",
+      "BPA transmission queue와 utility demand 통합 시 중복검사",
+      "https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics https://www.sec.gov/Archives/edgar/data/49648/000105787726000129/ida-20260630.htm",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "West—Arizona/New Mexico/El Paso",
+      "nonRTO",
+      "APS/SRP/TEP/PNM/EPE utility areas",
+      "LBNL+utility OASIS",
+      "APS4.5GW committed/~20GW uncommitted 확보; 타 사업자 전체큐 미확보",
+      "AZ/NM 일부 SPP West 여부 utility·delivery point로 판단; El Paso TX는 ERCOT 아님",
+      "https://s22.q4cdn.com/464697698/files/doc_events/2026/Mar/02/March-Investor-Deck.pdf https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "West—Nevada",
+      "nonRTO",
+      "NV Energy Sierra Pacific/Nevada Power",
+      "LBNL+NV Energy OASIS",
+      "2026IRP 시나리오 공개; 검증된 전체 load queue GW 미확보",
+      "발표개발용량·IRP 시나리오·계약수요 분리",
+      "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/help/brochures/Data-Centers-Fact-Sheet.pdf https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "West—CO/WY/MT residual",
+      "nonRTO",
+      "PSCo/Black Hills/NorthWestern 등 현행 비RTO utility areas",
+      "LBNL+utility OASIS",
+      "Black Hills WY3GW+ pipeline, 계획0.6GW, 협의1.8GW 확보",
+      "2026 SPP 가입 Tri-State/Platte River/Colorado Springs/Deseret/WAPA 일부는 SPP로 재매핑",
+      "https://www.sec.gov/Archives/edgar/data/1130464/000119312526335259/bkh-ex99.htm https://spp.org/western-services/rto-expansion/ https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "West—California nonCAISO",
+      "nonRTO",
+      "LADWP/BANC-SMUD/IID 등 nonCAISO BAs",
+      "LBNL+utility queue",
+      "전체 대규모부하 큐 미확보",
+      "CA 주 전체를 CAISO 배정 금지",
+      "https://eta-publications.lbl.gov/publications/queued-2026-edition-characteristics",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Alaska",
+      "nonRTO isolated",
+      "Railbelt 및 비연계 지역계통",
+      "RRC 절차/IRP 및 utility별; LBNL 전국자료 밖 커버리지 별도 확인",
+      "통합 공개 GW 큐 미확보",
+      "Railbelt ERO=ISO/RTO wholesale market 아님; rural island systems 별도",
+      "https://www.akrrc.org/matters/interconnection-standards-processes-development-working-group",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Hawaii",
+      "nonRTO isolated",
+      "HECO Oahu/Maui/Hawaii + KIUC Kauai",
+      "Hawaii PUC/HECO RFP interconnection; KIUC 별도",
+      "대규모부하 통합 공개 GW 큐 미확보",
+      "HECO RFP/IIQ/DG를 LBNL transmission queue와 무비판 합산 금지",
+      "https://www.hawaiianelectric.com/clean-energy-hawaii/selling-power-to-the-utility/competitive-bidding-for-system-resources/stage-3-rfp-interconnection-process https://puc.hawaii.gov/energy/renewable-energy-procurement/",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "notes": [
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      "추가 리서치 결론과 남은 데이터 공백",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      "주제",
+      "분석",
+      "근거"
+    ],
+    [
+      "전국 수요·공급 구조",
+      "공급 측은 LBNL 통합 원장으로 전국 비교 가능. 수요 측은 소매 유틸리티별 절차·비공개 고객자료로 분산되어 전국 통일 큐 전수합계 미확보. 이 파일은 공개 가능한 개별 레코드와 서로 다른 성격의 지역집계를 연결한 분석 기반.",
+      "https://emp.lbl.gov/queues"
+    ],
+    [
+      "확정공급으로의 전환",
+      "접속계약 체결 이후에도 부지·환경허가·자금조달·연료·주요 기자재·망보강·시운전 관문 잔존. IA 체결 GW를 즉시 공급 가능한 GW로 계상 불가. 기자재 수요 확정성은 계약 이후 프로젝트별 실제 발주·착공 확인을 통해 추가 판별.",
+      "https://emp.lbl.gov/queues"
+    ],
+    [
+      "PJM 최신 발전",
+      "2026-09-28 Cycle 1 Phase 1에 617개·168.6GW 진입. 2025말 LBNL 스냅샷과 다른 시점·모집단. 같은 발표에서 체결 IA 49GW의 일부가 인허가·공급망 제약으로 지연 상태. 심사 개선과 계약 이후 공사의 분리 필요.",
+      "https://insidelines.pjm.com/over-600-projects-enter-phase-1-of-pjms-new-interconnection-process/"
+    ],
+    [
+      "PJM 수용가",
+      "2026-09-29 공식 발표의 중앙 load interconnection queue 부재 확인. LSE 제출 load adjustments를 통해 전망 작성. 문의·계약·건설약정·중복신청 여부를 확인하더라도 전력망 통전 절차와 완전히 동일한 지표가 아닌 구조.",
+      "https://insidelines.pjm.com/pjm-kicks-off-annual-process-of-vetting-large-load-requests/"
+    ],
+    [
+      "ERCOT 최신 상태",
+      "9/3 조건부 base204개66.4GW·studied158개125.4~127.9GW. 제외373개302.2GW. 내부 studied 수치 불일치 및 base의 이미 통전 프로젝트 포함. 75MW 이상 데이터센터·암호화폐 통전 승인 중단과 자격·커뮤니티 검토 진행.",
+      "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf"
+    ],
+    [
+      "NYISO 원장 교정",
+      "Load Projects 행 직접 합계: active53개14.2329GW, 철회17개3.07888GW, 상업운전4개0.3602GW. 공식 요약14.4731GW는 운영 포함·status8 0.12GW 누락으로 현재 유효 대기열 합계와 불일치.",
+      "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx"
+    ],
+    [
+      "BPA 원장 해석",
+      "LL 원장은 Line/Load 접속요청 혼합. 송전선·변전소·기존 부하 이전·신규 수용가의 구별 필요. BPA Completed는 BPA 측 완료 상태이며 수용가 energization과 구분. 확인 전 미국 수요 합계 제외.",
+      "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx"
+    ],
+    [
+      "Georgia 개별 파이프라인",
+      "118개·80.059GW의 고객 발표 최종부하. 기술검토86개64.492GW, 공급요청서10개5.995GW, 전력서비스계약22개9.572GW. 고객 약정32개 중21개 착공(10개 ramping 포함), 11개 미착공. 프로젝트별 실제 계약MW·통전MW와 익명행 간 연결 미확보.",
+      "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227753/109137"
+    ],
+    [
+      "발전원 실측대기와 표본",
+      "LBNL 전체 active8,513행은 보고서8,244개 물리적 프로젝트와 다른 단위. ERCOT 하이브리드 결합 집계에 따른269개 차이. 원장 키 중복과 물리적 캠퍼스 중복은 별개.",
+      "https://eta-publications.lbl.gov/sites/default/files/2026-05/lbnl_ix_queue_data_file_thru2025.xlsx"
+    ],
+    [
+      "저장 추정치",
+      "보고서749.307GW의 저장용량에는 미공개 하이브리드 추정치 포함. 원장 공개값552.750GW와 차이196.558GW를 개별 프로젝트에 임의배분하지 않은 구조. 단계별 저장 GW는 공개값 부분합.",
+      "https://eta-publications.lbl.gov/sites/default/files/2026-05/lbnl_ix_queue_data_file_thru2025.xlsx"
+    ],
+    [
+      "지역 경계",
+      "2026-04-01 SPP West 개시로 현재 RTO 경계 변화. 과거 LBNL West 표본은2025말 경계 유지. WEIM·EDAM·Markets+ 참여를 RTO 가입과 동일하게 취급 금지.",
+      "https://spp.org/western-services/rto-expansion/"
+    ],
+    [
+      "정책 대상과 실현",
+      "RRI·ERAS 선정/접수용량은 정책노출 모집단. 후속 철회·비용재산정·인허가·공사 지연으로 결과 축소 가능. RRI 최초11.793GW와 UCAP9.361GW 구분 및2025말3.710GW 철회 반영 필요.",
+      "https://www.ferc.gov/sites/default/files/2026-03/26_State-of-the-Market_0324_1430.pdf"
+    ],
+    [
+      "원본 인허가 오류",
+      "NO IA는 접속계약 미체결의 증거. 발전소 대기·수자원·부지허가 미충족으로 자동 변환 불가. ERCOT 풍력·PV 관련 air permit/water attestation 면제 규정과 원본 추론 충돌의 개별 재검증 필요.",
+      "https://www.ercot.com/mktrules/issues/reports/pgrr/approved"
+    ],
+    [
+      "표본의 경계",
+      "LBNL AK·HI 원장 미포함, 설치용량 약98% 표본. 국외 MX4건과 소재미상49건의 별도 표시. 행별 용량에는 교체·증설·Surplus 및 음수조정 혼재, 전량 신규 순증 공급과 구별.",
+      "https://eta-publications.lbl.gov/sites/default/files/2026-05/lbnl_ix_queue_data_file_thru2025.xlsx"
+    ],
+    [
+      "필요 추가 확보 1",
+      "각 유틸리티의 안정적 고객/캠퍼스 ID·각 phase별 peak MW·계약유형·부지권·예치금·중복신청·검토 착수/완료·건설/통전 일정의 동시 스냅샷. 중앙 큐 부재 지역의 수요 전수합계 산출 전제.",
+      "미확보"
+    ],
+    [
+      "필요 추가 확보 2",
+      "정책 대상 프로젝트 명단과 전후 관문 상태, 정책 없는 경우의 일정, 망보강과 기자재 발주 증빙. 검토 해소량에서 실제 추가 통전량으로 전환하기 위한 연결 필드.",
+      "미확보"
+    ],
+    [
+      "필요 추가 확보 3",
+      "동시간 지역부하·ELCC/UCAP·저장 지속시간·N-1 송전가능량·실제 조류·증강사업 완료일. 접속요청 GW 차이를 firm 공급 부족 GW로 변환하기 위한 조건.",
+      "미확보"
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ]
+  ]
+}

@@ -1,0 +1,740 @@
+[
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2026_DPNS/PLPS%20Report%20(PLP-2026-January-0004-H%20Aether%202)_updated(7_16_2026).docx",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=259",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2026_PLPS_Report_(PLP-2026-January-0004-H_Aether_2)_updated(7_16_2026).docx",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2026_PLPS_Report_(PLP-2026-January-0004-H_Aether_2)_updated(7_16_2026).txt",
+    "sha256": "aa49f318cb25a39db1ccce39811c0ed7b8e87bd3184595b8b4960d58eeda0b66",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "PLP-2026-January-0004-H"
+    ],
+    "rawIntroductionIds": [
+      "PLP-2026-January-0004-H"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Project Aether / Alpha — Clarksville",
+    "modeledMaximumStudyCaseLoadMW": 816,
+    "deliveryPointModeledMWValues": {
+      "CLRKSVL2": [
+        18
+      ],
+      "Clarksville Bravo": [
+        667,
+        798
+      ]
+    },
+    "publicationOrVersionDate": "2026-07-16",
+    "utility": "Clarksville Connected Utilities / Southwestern Power Administration",
+    "industry": "data_center"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2026_DPNS/HDPS%20Report%20(PLP-2026-March-0017-H%20Quindaro)_Updated.docx",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=259",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2026_HDPS_Report_(PLP-2026-March-0017-H_Quindaro)_Updated.docx",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2026_HDPS_Report_(PLP-2026-March-0017-H_Quindaro)_Updated.txt",
+    "sha256": "9ce5b963fd125634715f1d020138baf395ebcc37d6df602a6abe57e901312e0b",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "PLP-2026-March-0017-H"
+    ],
+    "rawIntroductionIds": [
+      "PLP-2026-March-0017-H"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Quindaro",
+    "modeledMaximumStudyCaseLoadMW": 300,
+    "deliveryPointModeledMWValues": {
+      "Quindaro": [
+        300
+      ]
+    },
+    "publicationOrVersionDate": "2026-07-31",
+    "utility": "Kansas City Board of Public Utilities",
+    "industry": null
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2026_DPNS/DPA-2026-May-2350_Sofidel.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=259",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2026_DPA-2026-May-2350_Sofidel.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2026_DPA-2026-May-2350_Sofidel.txt",
+    "sha256": "09255e74e132648cf5a5e05ce4969292f1f1827bbed9a30ab3056a5adbe9adac",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2026-May-2350"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2026-May-2350"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Sofidel — Rocky Point",
+    "modeledMaximumStudyCaseLoadMW": 45,
+    "deliveryPointModeledMWValues": {
+      "Rocky Point": [
+        45
+      ]
+    },
+    "publicationOrVersionDate": "2026-08-10",
+    "proposedInServiceDate": "2028-06-01",
+    "utility": "AEP"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2025_DPNS/DPNS-2024-March-1919.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=249",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPNS-2024-March-1919.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPNS-2024-March-1919.txt",
+    "sha256": "8ca4f3089b0b48726960544ac7b23c791517a9386853b4a1bd04b5e1f44782fa",
+    "alsoPublishedAt": [
+      {
+        "url": "https://opsportal.spp.org/documents/studies/files/2024_DPNS/DPNS-2024-March-1919%20Delaware%20Cluster.pdf",
+        "indexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=240"
+      }
+    ],
+    "queueIds": [
+      "DPA-2024-March-1919",
+      "DPA-2024-March-1921",
+      "DPA-2024-March-1928",
+      "DPA-2024-March-1929",
+      "DPA-2024-April-1948"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2024-March-1919",
+      "DPA-2024-March-1921",
+      "DPA-2024-March-1928",
+      "DPA-2024-March-1929",
+      "DPA-2024-April-1948"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Multi-request cluster study",
+    "modeledMaximumStudyCaseLoadMW": null,
+    "deliveryPointModeledMWValues": {},
+    "publicationOrVersionDate": null,
+    "individualQueueMWMapping": "Not assigned: multiple delivery points and requests; retain full case tables to avoid false allocation."
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2025_DPNS/DPA-2025-January-2082%20Shale%20and%20Mica.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=249",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-January-2082_Shale_and_Mica.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-January-2082_Shale_and_Mica.txt",
+    "sha256": "55b39a5cb0f8f78790f52f02afe235dadbd77527a083b1423c66e5d29f918845",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2025-January-2082"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2025-January-2082"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Shale and Mica",
+    "modeledMaximumStudyCaseLoadMW": 1200,
+    "deliveryPointModeledMWValues": {
+      "Shale": [
+        363,
+        500,
+        775
+      ],
+      "Mica": [
+        40,
+        391,
+        425
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": null,
+    "utility": "Evergy"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2025_DPNS/DPA-2025-July-2161%20Expo%20Sub_Updated.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=249",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-July-2161_Expo_Sub_Updated.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-July-2161_Expo_Sub_Updated.txt",
+    "sha256": "72993ccb445f921590e107ad19e997597be6f446978902823533e12a4c3b9ad9",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2025-July-2161"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2025-July-2161"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Expo",
+    "modeledMaximumStudyCaseLoadMW": 17.3,
+    "deliveryPointModeledMWValues": {
+      "Expo": [
+        9.8,
+        12,
+        14.2,
+        17.3
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": "2025-10-01",
+    "utility": "Basin Electric Power Cooperative"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2025_DPNS/DPA-2025-September-2193%20Stack.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=249",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-September-2193_Stack.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-September-2193_Stack.txt",
+    "sha256": "6763e7895241ea443b8071cfa8a038728dd75a8f9318f8ba63206d816dddf269",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2025-September-2193"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2025-September-2193"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Resilient Tech Park / Blanchard / Bossier",
+    "modeledMaximumStudyCaseLoadMW": 1500,
+    "deliveryPointModeledMWValues": {
+      "Resilient Tech Park": [
+        500
+      ],
+      "Blanchard Site": [
+        500
+      ],
+      "Bossier Site": [
+        500
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": "2028-09-01",
+    "utility": "AEP"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2025_DPNS/DPA-2025-October-2223%20Cloverleaf.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=249",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-October-2223_Cloverleaf.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-October-2223_Cloverleaf.txt",
+    "sha256": "3d4647021c84ae363531bc247206d133d54adbfbf26d1013780a5b095a4aedc2",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2025-October-2223"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2025-October-2223"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Cloverleaf",
+    "modeledMaximumStudyCaseLoadMW": 375,
+    "deliveryPointModeledMWValues": {
+      "Cloverleaf": [
+        20,
+        375
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": "2026-12-01",
+    "utility": "GRDA"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2025_DPNS/DPA-2025-September-2207%20Astra%20North_Updated%209_9_26.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=249",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-September-2207_Astra_North_Updated_9_9_26.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-September-2207_Astra_North_Updated_9_9_26.txt",
+    "sha256": "d55a72793baed837246119e16878bb8501c8b7394bb456de5a27735e1c85d401",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2025-September-2207"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2025-September-2207"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Pilot and Astra North",
+    "modeledMaximumStudyCaseLoadMW": 1200,
+    "deliveryPointModeledMWValues": {
+      "Pilot": [
+        100,
+        600
+      ],
+      "Astra North": [
+        408,
+        600
+      ]
+    },
+    "publicationOrVersionDate": "2026-09-09",
+    "proposedInServiceDate": null,
+    "utility": "Evergy Kansas Central"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2025_DPNS/DPA-2025-December-2263%20Iren%20Pittsburg_6_4_2026.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=249",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-December-2263_Iren_Pittsburg_6_4_2026.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-December-2263_Iren_Pittsburg_6_4_2026.txt",
+    "sha256": "5a1ca4d7314eaf5d53b65ba3785e59cabeb91c0df8ff27cd3861f5c1916680f9",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2025-December-2263"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2025-December-2263"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Pittsburg",
+    "modeledMaximumStudyCaseLoadMW": 1600,
+    "deliveryPointModeledMWValues": {
+      "Pittsburg": [
+        600,
+        1600
+      ]
+    },
+    "publicationOrVersionDate": "2026-06-04",
+    "proposedInServiceDate": "2031-09-30",
+    "utility": "AEP"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2025_DPNS/DPA-2025-November-2233%20R3.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=249",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-November-2233_R3.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-November-2233_R3.txt",
+    "sha256": "2bed1b5d2fa0e5a242c1d871a969efb429f00a37e6395330102357915982a1a3",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2025-November-2233"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2025-November-2233"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Cave 161 kV and Cave 345 kV",
+    "modeledMaximumStudyCaseLoadMW": 975,
+    "deliveryPointModeledMWValues": {
+      "Cave 161 kV": [
+        250
+      ],
+      "Cave 345 kV": [
+        514,
+        725
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": "2028-04-01",
+    "utility": "Evergy Metro"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2025_DPNS/DPA-2025-October-2218%20Claremore%20R1.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=249",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-October-2218_Claremore_R1.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2025_DPA-2025-October-2218_Claremore_R1.txt",
+    "sha256": "e607081f1591ff64fb9dcd509d513b3dff9bc947d517bdd7d7cea0fe9794da61",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2025-October-2218"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2025-October-2218"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Claremore",
+    "modeledMaximumStudyCaseLoadMW": 250,
+    "deliveryPointModeledMWValues": {
+      "Claremore": [
+        250
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": "2028-01-01",
+    "utility": "GRDA"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2024_DPNS/DPNS-2024-March-1924%20Claremore%20138.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=240",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2024_DPNS-2024-March-1924_Claremore_138.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2024_DPNS-2024-March-1924_Claremore_138.txt",
+    "sha256": "6489b840c929a8cdf9b92ecc7c556a7b9dd43753754578ed80c899e57327fa47",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2024-March-1924"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2024-March-1924"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Claremore",
+    "modeledMaximumStudyCaseLoadMW": 250,
+    "deliveryPointModeledMWValues": {
+      "Claremore": [
+        250
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": null,
+    "utility": "GRDA"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2024_DPNS/DPA-2024-October-2044.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=240",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2024_DPA-2024-October-2044.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2024_DPA-2024-October-2044.txt",
+    "sha256": "eb0c70d275061d389db6d332c1ffa649f98b4dfbbbf6f64f3aa36fba65968a1f",
+    "alsoPublishedAt": [
+      {
+        "url": "https://opsportal.spp.org/documents/studies/files/2024_DPNS/DPA-2024-October-2044.pdf",
+        "indexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=240"
+      }
+    ],
+    "queueIds": [
+      "DPA-2024-October-2044"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2024-October-2044"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "477 — Wildwood Ranch",
+    "modeledMaximumStudyCaseLoadMW": 200,
+    "deliveryPointModeledMWValues": {
+      "WWR477": [
+        100,
+        200
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": "2027-07-01",
+    "utility": "Liberty Utilities (EMDE)"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2024_DPNS/DPA-2024-November-2060%20PCA%20Phase%203.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=240",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2024_DPA-2024-November-2060_PCA_Phase_3.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2024_DPA-2024-November-2060_PCA_Phase_3.txt",
+    "sha256": "609af64864c3f2eb276cdde8e9ce9611e699bbe394594bc025da925aedd09d4f",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2024-November-2060"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2024-November-2060"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "PCA Phase 3 — Lusk 2",
+    "modeledMaximumStudyCaseLoadMW": 70.404,
+    "deliveryPointModeledMWValues": {
+      "Lusk 2": [
+        46.48,
+        70.404
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": "2025-07-01",
+    "utility": "SPS"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2023_DPNS/DPA-2023-January-1715-1716.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=229",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPA-2023-January-1715-1716.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPA-2023-January-1715-1716.txt",
+    "sha256": "9863e4c1bcf174c3fb28bf378cccf320d92096b6c70316ef22ce7bbd1320a012",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2023-January-1715",
+      "DPA-2023-January-1716"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2023-January-1715",
+      "DPA-2023-January-1716"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Multi-request cluster study",
+    "modeledMaximumStudyCaseLoadMW": null,
+    "deliveryPointModeledMWValues": {},
+    "publicationOrVersionDate": null,
+    "individualQueueMWMapping": "Not assigned: multiple delivery points and requests; retain full case tables to avoid false allocation."
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2023_DPNS/DPA-2023-February-1719%20SPS%20Cluster%20B_updated%20(8_20_24).pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=229",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPA-2023-February-1719_SPS_Cluster_B_updated_(8_20_24).pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPA-2023-February-1719_SPS_Cluster_B_updated_(8_20_24).txt",
+    "sha256": "19b9b8a10cacc8f184f6725d4c20d521b832f328a2474aa585eb49ce21151d18",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2023-February-1719",
+      "DPA-2023-March-1750",
+      "DPA-2023-March-1751",
+      "DPA-2023-March-1752",
+      "DPA-2023-May-1780"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2023-February-1719",
+      "DPA-2023-March-1750",
+      "DPA-2023-March-1751",
+      "DPA-2023-March-1752",
+      "DPA-2023-May-1780"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Multi-request cluster study",
+    "modeledMaximumStudyCaseLoadMW": null,
+    "deliveryPointModeledMWValues": {},
+    "publicationOrVersionDate": null,
+    "individualQueueMWMapping": "Not assigned: multiple delivery points and requests; retain full case tables to avoid false allocation."
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2023_DPNS/DPA-2023-April-1765%20SPS%20Cluster%20C%20(with%202025ITP).pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=229",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPA-2023-April-1765_SPS_Cluster_C_(with_2025ITP).pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPA-2023-April-1765_SPS_Cluster_C_(with_2025ITP).txt",
+    "sha256": "ba06d9c3b9b50f848b21c450feea0ea5af98841edaa5ba14aa429996cbff08f6",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2023-April-1765",
+      "DPA-2023-April-1771",
+      "DPA-2023-April-1774",
+      "DPA-2023-April-1775",
+      "DPA-2023-April-1777",
+      "DPA-2023-August-1833",
+      "DPA-2023-August-1837",
+      "DPA-2023-June-1791",
+      "DPA-2023-June-1792",
+      "DPA-2023-June-1799",
+      "DPA-2023-June-1818"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2023-April-1765",
+      "DPA-2023-April-1771",
+      "DPA-2023-April-1774",
+      "DPA-2023-April-1775",
+      "DPA-2023-April-1777",
+      "DPA-2023-August-1833",
+      "DPA-2023-August-1837",
+      "DPA-2023-June-1791",
+      "DPA-2023-June-1792",
+      "DPA-2023-June-1799",
+      "DPA-2023-June-1818"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Multi-request cluster study",
+    "modeledMaximumStudyCaseLoadMW": null,
+    "deliveryPointModeledMWValues": {},
+    "publicationOrVersionDate": null,
+    "individualQueueMWMapping": "Not assigned: multiple delivery points and requests; retain full case tables to avoid false allocation."
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2023_DPNS/DPNS-2023-April-1762.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=229",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPNS-2023-April-1762.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPNS-2023-April-1762.txt",
+    "sha256": "7cb439512ce7a678a4e78a8fefcb04ee20d4fe19fd19ad4996f1a064d8c805ed",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2023-April-1762"
+    ],
+    "rawIntroductionIds": [
+      "DPNS-2023-April-1762"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Coon Rapids",
+    "modeledMaximumStudyCaseLoadMW": 59,
+    "deliveryPointModeledMWValues": {
+      "Coon Rapids": [
+        59
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": null,
+    "utility": "Corn Belt Power Cooperative"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2023_DPNS/DPNS-2023-June-1790.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=229",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPNS-2023-June-1790.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPNS-2023-June-1790.txt",
+    "sha256": "5597d8597482cab31001e42e1151d306fe769b400467de03ea782d67c9f28212",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2023-June-1790",
+      "DPA-2023-June-1790"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2023-June-1790",
+      "DPNS-2023-June-1790"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Sirius",
+    "modeledMaximumStudyCaseLoadMW": 100,
+    "deliveryPointModeledMWValues": {
+      "Sirius": [
+        5,
+        15,
+        100
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": null,
+    "utility": "AEP"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2023_DPNS/DPNS-2023-October-1856.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=229",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPNS-2023-October-1856.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2023_DPNS-2023-October-1856.txt",
+    "sha256": "30701c7e7b53a3f6ee60849d89b5ba84b65a8f6f029fa1e5645a13a500aa008f",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2023-October-1856"
+    ],
+    "rawIntroductionIds": [
+      "DPNS-2023-October-1856"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Blue Sky",
+    "modeledMaximumStudyCaseLoadMW": 15,
+    "deliveryPointModeledMWValues": {
+      "Blue Sky": [
+        11,
+        12.7,
+        15
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": null,
+    "utility": "Midwest Energy"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2022_DPNS/DPA-2022-August-1629.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=228",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2022_DPA-2022-August-1629.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2022_DPA-2022-August-1629.txt",
+    "sha256": "176e24decf89c5d7d57ad40eb11c0215e8a52d32a300daf30fd78af40f1bc07b",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2022-August-1629"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2022-August-1629"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Ashby",
+    "modeledMaximumStudyCaseLoadMW": null,
+    "deliveryPointModeledMWValues": {},
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": "2023-12-15",
+    "utility": "SPS"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2022_DPNS/DPNS-2022-September-1658.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=228",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2022_DPNS-2022-September-1658.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2022_DPNS-2022-September-1658.txt",
+    "sha256": "c9452aa3e44e5639e9e4a912ccb0b45f7cdbc102d2623117b4f899d1edb4fb68",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2022-September-1658"
+    ],
+    "rawIntroductionIds": [
+      "DPNS-2022-September-1658"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "Pacific",
+    "modeledMaximumStudyCaseLoadMW": 236,
+    "deliveryPointModeledMWValues": {
+      "Pacific": [
+        1.6,
+        42.4,
+        113,
+        236
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": null,
+    "utility": "Evergy"
+  },
+  {
+    "sourceUrl": "https://opsportal.spp.org/documents/studies/files/2022_DPNS/DPA-2022-October-1665%20White%20Deer.pdf",
+    "sourceIndexUrl": "https://opsportal.spp.org/Studies/DPNS?yearTypeId=228",
+    "sourceLocalFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2022_DPA-2022-October-1665_White_Deer.pdf",
+    "sourceTextFile": "/workspace/scratch/5efc33d74d8e/research-census/spp-west/raw/spp_dpns_2022_DPA-2022-October-1665_White_Deer.txt",
+    "sha256": "bd41410ff83573bd68fbd2376e414635d5ffe23fdf862f12326e76d28ed17423",
+    "alsoPublishedAt": [],
+    "queueIds": [
+      "DPA-2022-October-1665"
+    ],
+    "rawIntroductionIds": [
+      "DPA-2022-October-1665"
+    ],
+    "recordMeaning": "Published network/provisional/high-impact study; does not establish current pending status, executed service contract or energization.",
+    "capacityMeaning": "Modeled delivery-point load in study case; preserve case years/seasons and distinguish from net-new contracted customer demand.",
+    "sourceDateMeaning": "Original report/version date where explicitly extracted, otherwise unknown; retrieval 2026-10-03 is not event date.",
+    "retrievedAt": "2026-10-03",
+    "name": "White Deer",
+    "modeledMaximumStudyCaseLoadMW": 50,
+    "deliveryPointModeledMWValues": {
+      "White Deer": [
+        50
+      ]
+    },
+    "publicationOrVersionDate": null,
+    "proposedInServiceDate": null,
+    "utility": "SPS"
+  }
+]

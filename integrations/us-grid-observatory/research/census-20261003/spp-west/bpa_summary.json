@@ -1,0 +1,39 @@
+{
+  "rowCount": 458,
+  "rawStatusCounts": {
+    "RECEIVED": 19,
+    "WITHDRAWN": 170,
+    "STUDY": 101,
+    "BPA COMPLETED": 32,
+    "STUDY COMPLETED": 27,
+    "CONST AGRMT EXE": 24,
+    "ENERGIZED": 84,
+    "E&P EXECUTED": 1
+  },
+  "classificationCounts": {
+    "unspecified_line_or_load": 329,
+    "explicit_load_description": 90,
+    "network_description_load_purpose_unconfirmed": 31,
+    "explicit_line_only_description": 7,
+    "explicit_load_and_network_description": 1
+  },
+  "industryTagCounts": {
+    "mining": 5,
+    "data_center": 31,
+    "hydrogen": 4,
+    "steel_metals": 5,
+    "industrial_unspecified": 16,
+    "crypto_blockchain": 3,
+    "refining_fuels": 10,
+    "semiconductor": 1,
+    "paper_packaging": 3
+  },
+  "missingSummerServiceMW": 103,
+  "missingWinterServiceMW": 103,
+  "sourceTimestamp": "2026-10-03T03:01:04.129000",
+  "coverageDenominator": {
+    "allPublishedLLRows": 458,
+    "allNewLargeLoadCustomers": null
+  },
+  "scope": "All BPA Connection Type LL rows including historical energized, withdrawn, line, mixed network/load and unspecified purpose. Summer/Winter Interconnection Service MW are preserved, not recast as net-new requested load."
+}

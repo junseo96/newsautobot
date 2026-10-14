@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-10-03",
+  "registerRowsExtracted": 254,
+  "registerRowsActiveByOriginalTab": 160,
+  "allNormalizedRegisterMWNull": true,
+  "rawRegisterRowsInspected": 84621,
+  "tariffRowsInspected": 44901,
+  "mpuRowsOutsideScope": 39720,
+  "selection": "All tariff rows screened for >=10000 raw requested kW or explicit industrial/large-load class. Residential and MPU excluded; ordinary Commercial with unknown/small capacity is not automatically industrial. Source XLSX is retained intact.",
+  "countsAre": "Public service-request rows, not distinct customers, unique sites or confirmed high-load facilities.",
+  "units": "No SDGE raw kW normalized to MW; no MVA converted to MW; named project equipment, grid capacity and generation capacity distinguished.",
+  "latestLimit": "No complete current 2026-10-03 utility census. PG&E imported snapshot June 2025; SDGE December 2025. SCE acquisition incomplete. Later closed/cancelled/energized changes may not be reflected.",
+  "badSourceFiles": [
+    {
+      "file": "raw/scepubliceet-september-2025-report20250930ver2.xlsx",
+      "issue": "Zero-byte response; not parsed."
+    },
+    {
+      "file": "raw/sce-september-2025-alternate.xlsx",
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/infrastructure/energization/sce-public_attachment-b-energization_report_20250930.xlsx",
+      "issue": "Official URL named SCE but actual workbook has SDGE sheets/notes; retained for audit only, excluded from SCE."
+    }
+  ],
+  "stageRules": {
+    "PG&E Energized": "Utility service energized by 2025-06-30, not independent proof customer business is operational.",
+    "PG&E In-progress": "Submitted in covered period, not energized as of 2025-06-30.",
+    "PG&E Cancelled": "Source cancelled/rejected tab; exclude pending.",
+    "SDGE Closed": "Finished energization procedure. Narrative Step 8 can be ready-for-service/transformer set or first meter set, so do not label full-site operating.",
+    "SDGE Ongoing": "Source ongoing tab as of 2025-12-31; stage cannot be inferred from requested capacity."
+  },
+  "rejectedLeads": [
+    {
+      "name": "PG&E S-238 Hinkley compressor station",
+      "source": "https://docs.cpuc.ca.gov/PublishedDocs/SupDoc/A2504004/8832/594293802.pdf",
+      "reason": "Source describes natural-gas-engine-driven compressors and replacement auxiliary distribution. No qualifying incremental electric compression load established."
+    },
+    {
+      "name": "Plug Mendota hydrogen plant",
+      "source": "https://www.ir.plugpower.com/press-releases/news-details/2021/Plug-Power-to-Build-Largest-Green-Hydrogen-Production-Facility-on-the-West-Coast-2021-9-20/default.aspx",
+      "reason": "Historic 2021 proposal found, current primary development/cancellation status not verified; not imported as pending."
+    }
+  ],
+  "files": {
+    "normalized-projects.json": "254 integration-ready anonymous service rows",
+    "energization-selected-rows.json": "254 raw selected rows with original headers/cell metadata",
+    "energization-inventory.json": "Full-sheet counts, source URLs, SHA256 and headers",
+    "energization-excluded-residential-anomalies.json": "225 excluded residential raw >=10000 kW rows for audit",
+    "coverage-inventory.json": "14 entries including explicit gaps",
+    "named-project-evidence.json": "5 named records, four non-DC, capacity/stage provenance separated",
+    "parse_energization.py": "Reproducible XLSX extraction without modifying workbook",
+    "build_research_package.py": "Creates evidence inventory/notes/named records"
+  }
+}

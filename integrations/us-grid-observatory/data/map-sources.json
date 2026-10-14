@@ -1,0 +1,122 @@
+{
+  "created_for": "미국 발전·대규모부하 대기열 지도",
+  "retrieved_at": "2026-10-02",
+  "recommended_default": "Census 주경계 중립색 + 2025 큐 권역집계 마커",
+  "assets": [
+    {
+      "file": "us_states_50dc_2026.geojson",
+      "features": 51,
+      "kind": "state_admin_boundaries",
+      "publisher": "U.S. Census Bureau",
+      "source_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/USLandmass/MapServer/0",
+      "data_as_of": "2026-01-01",
+      "crs": "EPSG:4326",
+      "source_transform": "ArcGIS query outputSR4326, maxAllowableOffset0.03 degrees, geometryPrecision4; 50 states + DC filter; simplified properties",
+      "license": "U.S. government public data",
+      "notes_ko": [
+        "실제 Census 지형·주경계의 지도 표시용 일반화",
+        "주경계는 ISO/RTO·BA 경계와 불일치",
+        "AK/HI 포함; 큐자료 미포함을 0GW로 표현 금지",
+        "영토는 50주+DC 파일에서 제외, 원본56개 파일에 보존"
+      ],
+      "bytes": 92110,
+      "sha256": "dd4f4cecb1efe2790a53fd09fc91bf7a322f1808577d8648783afcaac6b4c136"
+    },
+    {
+      "file": "us_states_conus49_2026.geojson",
+      "features": 49,
+      "kind": "state_admin_boundaries",
+      "source_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/USLandmass/MapServer/0",
+      "data_as_of": "2026-01-01",
+      "notes_ko": [
+        "본토48주+DC, AK/HI 별도 인셋과 결합 가능"
+      ],
+      "bytes": 68593,
+      "sha256": "8faf625071938d16535dde113fe546760a8ad83e794367e5424dbf8bbc7fbd2c"
+    },
+    {
+      "file": "us_states_ak_hi_2026.geojson",
+      "features": 2,
+      "kind": "state_admin_boundaries",
+      "source_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/USLandmass/MapServer/0",
+      "data_as_of": "2026-01-01",
+      "notes_ko": [
+        "별도 인셋용 실제 AK/HI 경계, 투영과 inset 축척은 프런트에서 조정"
+      ],
+      "bytes": 23558,
+      "sha256": "e6819f9936d56253bcc53ddc19c5e0861bb6126341c4df16a9d2378930282370"
+    },
+    {
+      "file": "iso_historical_reference_2020.geojson",
+      "features": 7,
+      "kind": "historical_iso_polygon_reference",
+      "publisher": "HIFLD ORNL/LANL/INL/NGA/HSIP; public mirror hosted at PNNL ArcGIS organization",
+      "source_url": "https://services8.arcgis.com/Rl9BjEMrBgxxeBfh/arcgis/rest/services/Independent_System_Operator/FeatureServer/0",
+      "item_url": "https://www.arcgis.com/home/item.html?id=a46da7ed5ccd467e817c581ea02b73c1",
+      "original_source_date": "2020-06-24",
+      "validation_date": "2021-05-28",
+      "mirror_created_date": "2025-12-11",
+      "boundary_as_of_2025_verified": false,
+      "current_boundary_verified": false,
+      "default_visible": false,
+      "notes_ko": [
+        "역사 참고 경계임을 지도에 상시 명시 필요",
+        "2025 원장 권역경계·2026 운영경계의 정밀 매칭용 사용 금지",
+        "SPP 2026 서부확장 미반영",
+        "SourceDate와 mirror 업로드일 구분",
+        "과거 loadMW 등 속성 제거, 경계만 보존"
+      ],
+      "bytes": 321028,
+      "sha256": "bb7df98b8a307dfb06f3d12a7085e652518e7b62b17823dfd6c325009ba73ebf"
+    },
+    {
+      "file": "queue_region_anchors.geojson",
+      "features": 9,
+      "kind": "aggregate_label_anchors",
+      "source_id": "MANUAL-LABEL-ANCHORS",
+      "data_as_of": "2025-12-31 queue region definitions",
+      "notes_ko": [
+        "좌표는 분석자가 배치한 집계 라벨 앵커",
+        "프로젝트 위치·계통 경계·기관 본사 위치 의미 없음",
+        "2025 region 문자열과 연결만 허용, 공간조인 금지"
+      ],
+      "bytes": 5509,
+      "sha256": "27853d768c1abc49e1aca2d15476fff58b2aeb110ffe2fbd8f60ef9f72356379"
+    },
+    {
+      "file": "spp_rto_west_expansion_20260401.jpg",
+      "kind": "official_reference_map_image",
+      "publisher": "Southwest Power Pool",
+      "source_url": "https://www.spp.org/media/2552/rto-rtoe.jpg",
+      "context_url": "https://www.spp.org/western-services/rto-expansion/",
+      "data_as_of": "2026-04-01",
+      "notes_ko": [
+        "공식 운영권역 지도 참고자료",
+        "지리 좌표가 없는 이미지·벡터 경계 대체 불가",
+        "이미지 내 제3자 재사용 허가요건 확인·사이트 배포자산 제외, 공식 출처 링크만 제공"
+      ],
+      "bytes": 1337559,
+      "sha256": "d3c555e6a522eea08d1dbe286ae86ff098d4efe30869b1c9ce1c3f15c527b94d",
+      "publication_reuse_allowed_without_permission": false,
+      "license_note": "Image explicitly states third-party use/copy/dissemination requires express permission of SPP. Reference-only local download; do not bundle/display this image in the published dashboard. Link to the official SPP page instead."
+    },
+    {
+      "file": "operating_territory_changes_2026.json",
+      "kind": "operating_change_notes",
+      "data_as_of": "2026-10-02",
+      "bytes": 1607,
+      "sha256": "1b03f5a3c5dd6883e07e249b9c2d5fe4b8c2c0aa3cb2154449c8e5669093a935"
+    }
+  ],
+  "coverage_rules_ko": [
+    "2025 큐 원장 region은 source가 확정한 속성; 2026 운영권역 변경으로 덮어쓰기 금지",
+    "권역 total을 특정 주 전체 면색으로 표시하여 ISO 경계로 오인 유발 금지",
+    "주별 통계가 별도로 필요할 경우 원장 state로 합산하고 권역통계와 다른 집계 단위 명시",
+    "비RTO는 단일 운영기관이 아니라 복수 BA/유틸리티 묶음; 대표점 1개는 묶음 집계",
+    "AK/HI는 데이터 미포함, DC active0은 전국총량0이나 부하수요없음 의미 아님",
+    "2026 현행 경계가 필요한 정밀 분석에는 검증된 개별 ISO/BA 최신 GIS 추가 확보 필요"
+  ],
+  "source_search_limitations": [
+    "Official current 2026 nationwide ISO/RTO/BA polygon dataset not located with verified vintage. EIA/HIFLD original ISO catalog URLs are absent/inaccessible; government laboratory mirror has legacy polygons. Default marker-on-state-map is the supported precise claim."
+  ]
+}
