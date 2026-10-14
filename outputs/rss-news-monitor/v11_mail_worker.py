@@ -1,17 +1,19 @@
-"""Read-only Gmail plugin worker with durable local evidence and MIME caching.
+"""Read-only Gmail worker with durable local evidence and MIME caching.
 
-Only actual completed Gmail MCP results advance ingestion. The collector and
+Only actual completed Gmail MCP or REST results advance ingestion. The collector and
 article/editorial/Telegram stages belong to the caller, not this worker.
 """
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 import re
 
 import gmail_scan
 import v11_gmail
 import v11_runtime
+from project_paths import evidence_path
 
 
 def _json(value):
@@ -173,7 +175,17 @@ def run(root, config, directory):
     captured = {}
     attempts = max(1, min(3, int(config.get("gmail_evidence_attempts", 2))))
     batch_size = max(1, min(100, int(config.get("gmail_read_batch_size", 10))))
-    for attempt in range(attempts):
+    transport = os.environ.get("NEWS_GMAIL_TRANSPORT", config.get("gmail_transport", "connected_plugin"))
+    evidence_files, search_source = [], "gmail_search_email_ids"
+    if transport == "gmail_api":
+        import gmail_api
+        result = gmail_api.collect(start["query"], known, cached, queued,
+                                   directory / "gmail-api", attempts=attempts)
+        search, captured, failures = result["search"], result["captured"], result["failures"]
+        evidence_files, search_source = result["evidence_files"], gmail_api.SEARCH_SOURCE
+    elif transport not in {"connected_plugin", "actual_connected_plugin_incremental_poll_not_push"}:
+        raise ValueError("Unsupported Gmail transport; use connected_plugin or gmail_api")
+    for attempt in range(attempts if transport != "gmail_api" else 0):
         allowed = (set(search["message_ids"]) | queued) - known
         missing = allowed - cached - set(captured)
         if attempt and search["pagination_complete"] and not missing:
@@ -203,10 +215,10 @@ def run(root, config, directory):
         for mid, envelope in captured.items():
             v11_runtime.save_json(directory / ("body-" + mid + ".json"), envelope)
     scan = {"scan_started_epoch": start["scan_started_epoch"], "scope_start_epoch": start["scope_start_epoch"],
-            "query": start["query"], "search_tool": "gmail_search_email_ids", **search,
+            "query": start["query"], "search_tool": search_source, **search,
             "new_message_ids": sorted(set(search["message_ids"]) - known),
             "queued_message_ids": sorted(queued), "read_message_ids": sorted(captured),
-            "cached_message_ids": sorted(cached), "tool_evidence_files": [
+            "cached_message_ids": sorted(cached), "tool_evidence_files": evidence_files + [
                 str(path.resolve()) for path in sorted(directory.glob("transport-*/events.jsonl"))]}
     v11_runtime.save_json(scan_path, scan)
     # Even incomplete pagination may contain valid reads. Persist those IDs and
@@ -286,10 +298,13 @@ def run(root, config, directory):
 
 def finalize(root, scan_file):
     """Call only after the caller's collector has committed NewsletterFile."""
-    root, scan_file = Path(root).resolve(), Path(scan_file).resolve()
+    root = Path(root).resolve()
+    scan_file = evidence_path(scan_file, root=root)
+    if not scan_file.is_relative_to((root / "work").resolve()):
+        raise ValueError("Gmail scan must be inside the project work directory")
     scan = json.loads(scan_file.read_text(encoding="utf-8-sig"))
     if scan.get("pagination_complete") is not True:
-        raise ValueError("Cannot finalize an incomplete plugin search")
+        raise ValueError("Cannot finalize an incomplete Gmail search")
     result = gmail_scan.finish(root, scan)
     v11_runtime.save_json(scan_file.parent / "finish.json", result)
     return result

@@ -1,0 +1,26 @@
+# Only source needed by the news worker enters the build context.
+**
+!outputs/
+!outputs/rss-news-monitor/
+!outputs/rss-news-monitor/*.py
+!outputs/rss-news-monitor/*.ps1
+!outputs/rss-news-monitor/*.json
+!outputs/rss-news-monitor/*.md
+!outputs/telegram-forwarder/
+!outputs/telegram-forwarder/*.ps1
+!outputs/telegram-forwarder/*.md
+!deploy/
+!deploy/cloud/
+!deploy/cloud/**
+**/__pycache__/
+**/*.pyc
+**/*.age
+**/*.key
+**/*.db
+**/*.sqlite*
+**/.env*
+**/*secret*
+**/*credential*
+**/*connection.json
+**/work/
+**/logs/

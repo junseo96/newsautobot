@@ -34,6 +34,11 @@ def message(mid, linked=True):
 
 class WorkerTests(unittest.TestCase):
     def setUp(self):
+        # These cases exercise actual MCP evidence. Deployment defaults must
+        # not switch their mocked connector calls to the independent REST path.
+        transport = patch.dict('os.environ', {'NEWS_GMAIL_TRANSPORT': 'connected_plugin'})
+        transport.start()
+        self.addCleanup(transport.stop)
         self.temp = tempfile.TemporaryDirectory()
         self.root = Path(self.temp.name)
         (self.root / 'outputs/rss-news-monitor').mkdir(parents=True)

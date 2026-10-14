@@ -103,8 +103,20 @@ if reused:
     for url in urls:
         validate_receipt(receipt_path, url, canonical, generated)
 expected = {'run_id': run_id, 'decisions': [{'url': u, 'status': 'delivered', 'reason': reason, 'receipt_file': str(receipt_path)} for u in urls]}
-if decision_path.exists() and read_json(decision_path) != expected:
-    raise ValueError('DecisionFile already contains different decisions; no overwrite permitted')
+if decision_path.exists():
+    stored = read_json(decision_path)
+    # An explicitly migrated receipt has a new filesystem address, not a new
+    # decision. Compare a mapped copy; preserve every original evidence byte
+    # and require every non-path field (including extra fields) to match.
+    comparable = stored
+    if isinstance(stored, dict) and isinstance(stored.get('decisions'), list):
+        comparable = {**stored, 'decisions': [
+            {**row, 'receipt_file': str(receipt_path)}
+            if isinstance(row, dict) and isinstance(row.get('receipt_file'), str)
+               and same_evidence_path(row['receipt_file'], receipt_path) else row
+            for row in stored['decisions']]}
+    if comparable != expected:
+        raise ValueError('DecisionFile already contains different decisions; no overwrite permitted')
 db = root / 'work/rss-news-monitor.db'
 with sqlite3.connect(db.as_uri() + '?mode=ro', uri=True, timeout=30) as con:
     if not reused:

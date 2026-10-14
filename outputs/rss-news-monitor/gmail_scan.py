@@ -1,4 +1,4 @@
-"""Label-free Gmail checkpoints and a durable body queue; access stays in the plugin.
+"""Label-free Gmail checkpoints and a durable queue, independent of transport.
 
 The search cursor may advance only after every result ID is durably queued.
 The ingestion cursor and editorial/Telegram completion remain separate.
@@ -10,10 +10,12 @@ import sqlite3
 import time
 from contextlib import closing
 from pathlib import Path
+from project_paths import evidence_path
 import runtime_scope
 
 ROOT = Path(__file__).resolve().parents[2]
 OVERLAP_SECONDS = 6 * 3600
+SEARCH_SOURCES = {'gmail_search_email_ids', 'gmail_api_messages_list'}
 
 
 def processed_ids(root):
@@ -67,15 +69,15 @@ def _scan_ids(scan, now, require_tool=False, require_complete=True):
         raise ValueError('Invalid scan start timestamp')
     if require_complete and scan.get('pagination_complete') is not True:
         raise ValueError('All Gmail result pages are required')
-    if require_tool and scan.get('search_tool') != 'gmail_search_email_ids':
-        raise ValueError('Actual Gmail plugin search evidence is required')
+    if require_tool and scan.get('search_tool') not in SEARCH_SOURCES:
+        raise ValueError('Actual Gmail plugin or Gmail API search evidence is required')
     if not isinstance(ids, list) or any(not isinstance(value, str) or not value for value in ids):
         raise ValueError('All actual search result message IDs are required')
     return started, set(ids)
 
 
 def _body_path(root, value):
-    path = Path(value).resolve()
+    path = evidence_path(value, root=root)
     if not path.is_relative_to((root / 'work').resolve()):
         raise ValueError('Cached Gmail body must be inside the project work directory')
     return path

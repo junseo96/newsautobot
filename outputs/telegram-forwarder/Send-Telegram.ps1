@@ -31,20 +31,7 @@ if ($ReceiptFile -or $ArticleUrl.Count -gt 0 -or $ArticleUrlsFile -or $NewsForma
     return
 }
 
-if ([string]::IsNullOrWhiteSpace($ConfigDir)) {
-    $projectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
-    $ConfigDir = Join-Path $projectRoot ".telegram-forwarder"
-}
-
-$tokenPath = Join-Path $ConfigDir "bot-token.dpapi"
-$chatIdPath = Join-Path $ConfigDir "chat-id.txt"
-
-if (-not (Test-Path -LiteralPath $tokenPath -PathType Leaf)) {
-    throw "암호화된 봇 토큰이 없습니다. 먼저 Setup-Telegram.ps1을 실행하세요."
-}
-if (-not (Test-Path -LiteralPath $chatIdPath -PathType Leaf)) {
-    throw "저장된 chat_id가 없습니다. 먼저 Setup-Telegram.ps1을 실행하세요."
-}
+. (Join-Path $PSScriptRoot 'Telegram-Auth.ps1')
 
 if ($PSCmdlet.ParameterSetName -eq "File") {
     if (-not (Test-Path -LiteralPath $MessageFile -PathType Leaf)) {
@@ -95,17 +82,16 @@ function Split-TelegramText {
     return $parts.ToArray()
 }
 
-$encryptedToken = [IO.File]::ReadAllText($tokenPath, [Text.Encoding]::UTF8).Trim()
-$secureToken = ConvertTo-SecureString $encryptedToken
-$pointer = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureToken)
+$credential = $null
+$pointer = [IntPtr]::Zero
 $plainToken = $null
+$uri = $null
 
 try {
+    $credential = Get-NewsTelegramCredential -ConfigDir $ConfigDir
+    $pointer = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($credential.SecureToken)
     $plainToken = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($pointer)
-    $chatId = [IO.File]::ReadAllText($chatIdPath, [Text.Encoding]::UTF8).Trim()
-    if ([string]::IsNullOrWhiteSpace($chatId)) {
-        throw "저장된 chat_id가 비어 있습니다. Setup-Telegram.ps1을 다시 실행하세요."
-    }
+    $chatId = $credential.ChatId
 
     $parts = @(Split-TelegramText -Value $message)
     for ($index = 0; $index -lt $parts.Count; $index++) {
@@ -142,8 +128,9 @@ try {
 }
 finally {
     $plainToken = $null
+    $uri = $null
     if ($pointer -ne [IntPtr]::Zero) {
         [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($pointer)
     }
-    $secureToken.Dispose()
+    if ($null -ne $credential) { $credential.SecureToken.Dispose(); $credential = $null }
 }

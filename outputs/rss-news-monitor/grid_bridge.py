@@ -4,7 +4,8 @@ No collector, LLM or Telegram invocation. An HTTP failure never rolls back a
 news decision. Legacy verified facts are context, not invented project stages.
 """
 from __future__ import annotations
-import argparse, datetime as dt, hashlib, json, sqlite3, urllib.request, re, math
+import argparse, datetime as dt, hashlib, json, sqlite3, urllib.request, re, math, os
+from urllib.parse import urlsplit
 from pathlib import Path
 from copy import deepcopy
 from contextlib import contextmanager, closing
@@ -39,6 +40,29 @@ PROMPT=('\nDASHBOARD (independent of Telegram action): Return dashboard_events=[
 
 def now(): return dt.datetime.now(dt.timezone.utc).isoformat()
 def digest(value): return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+
+def _bridge_url(value):
+    # Preserve the configured base path and never permit a credential-bearing
+    # URL, query, or redirect to choose another ingestion endpoint.
+    message='Expected HTTPS dashboard base URL without credentials, query or fragment'
+    if not isinstance(value,str) or any(ord(c)<=32 or ord(c)==127 for c in value) or '\\' in value:
+        raise ValueError(message)
+    try:
+        endpoint=urlsplit(value)
+        valid=(endpoint.scheme=='https' and endpoint.hostname and not endpoint.username
+               and not endpoint.password and not endpoint.query and not endpoint.fragment)
+        endpoint.port  # Reject malformed ports before handling a credential.
+    except ValueError:
+        raise ValueError(message) from None
+    if not valid or '@' in endpoint.netloc or '?' in value or '#' in value:
+        raise ValueError(message)
+    return value.rstrip('/')
+
+class _NoBridgeRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self,req,fp,code,msg,headers,newurl):
+        # urllib otherwise forwards custom authorization headers on redirects.
+        # Retry only against the explicitly configured base URL.
+        return None
 
 class Bridge:
     def __init__(self,root):
@@ -118,11 +142,11 @@ class Bridge:
     def configure(self,value):
         import ctypes,base64
         from ctypes import wintypes
-        from urllib.parse import urlsplit
-        endpoint=urlsplit(value['url'])
-        if endpoint.scheme!='https' or not endpoint.hostname or not endpoint.hostname.endswith('.chatgpt.site') or endpoint.username or endpoint.password or endpoint.query or endpoint.fragment:raise ValueError('Expected private Sites URL')
+        url=_bridge_url(value['url'])
+        if not urlsplit(url).hostname.endswith('.chatgpt.site'):raise ValueError('Expected private Sites URL')
         raw=value['token'].encode('utf-8')
         if not raw:raise ValueError('Missing platform credential')
+        if os.name!='nt':raise RuntimeError('Configure NEWS_GRID_URL and NEWS_GRID_TOKEN together on this platform')
         class Blob(ctypes.Structure):_fields_=[('size',wintypes.DWORD),('data',ctypes.POINTER(ctypes.c_byte))]
         buffer=ctypes.create_string_buffer(raw);source=Blob(len(raw),ctypes.cast(buffer,ctypes.POINTER(ctypes.c_byte)));out=Blob()
         if not ctypes.windll.crypt32.CryptProtectData(ctypes.byref(source),None,None,None,None,0,ctypes.byref(out)):raise RuntimeError('Credential protection failed')
@@ -130,7 +154,7 @@ class Bridge:
         finally:
             ctypes.windll.kernel32.LocalFree.argtypes=[ctypes.c_void_p];ctypes.windll.kernel32.LocalFree(out.data)
         from v11_runtime import save_json
-        save_json(self.root/'work/grid-bridge/connection.json',{'url':value['url'].rstrip('/'),'protected_token':encrypted,'protection':'Windows-DPAPI-current-user','configured_at':now()})
+        save_json(self.root/'work/grid-bridge/connection.json',{'url':url,'protected_token':encrypted,'protection':'Windows-DPAPI-current-user','configured_at':now()})
         return {'configured':True,'credential_protection':'Windows-DPAPI-current-user'}
 
     def seed_mapping(self):
@@ -166,11 +190,19 @@ class Bridge:
             return {'database':str(self.path),'observations':c.execute('SELECT COUNT(*) FROM observations').fetchone()[0],
                     'outbox':dict(c.execute('SELECT dashboard_status,COUNT(*) FROM observations GROUP BY dashboard_status')),
                     'review_audit':dict(c.execute('SELECT decision,COUNT(*) FROM review_audit GROUP BY decision'))}
-    def sync(self):
-        self.refresh_deliveries()
+    def _connection(self):
+        url=os.environ.get('NEWS_GRID_URL');token=os.environ.get('NEWS_GRID_TOKEN')
+        if url is not None or token is not None:
+            if not url or not url.strip() or not token or not token.strip():
+                raise ValueError('NEWS_GRID_URL and NEWS_GRID_TOKEN must be configured together')
+            if any(ord(c)<32 or ord(c)==127 for c in token):
+                raise ValueError('Invalid dashboard credential')
+            return {'url':_bridge_url(url),'token':token}
         cfg=self.root/'work/grid-bridge/connection.json'
-        if not cfg.exists():return {**self.status(),'status':'not_configured'}
+        if not cfg.exists():return None
+        if os.name!='nt':raise RuntimeError('Windows bridge credentials require NEWS_GRID_URL and NEWS_GRID_TOKEN on this platform')
         config=json.loads(cfg.read_text(encoding='utf-8-sig'))
+        url=_bridge_url(config['url'])
         # Windows current-user DPAPI: credential never leaves memory or appears
         # in arguments/logs. Remote endpoint also requires the platform token.
         import ctypes,base64
@@ -182,11 +214,16 @@ class Bridge:
         try:token=ctypes.string_at(out.data,out.size).decode('utf-8')
         finally:
             ctypes.windll.kernel32.LocalFree.argtypes=[ctypes.c_void_p];ctypes.windll.kernel32.LocalFree(out.data)
+        return {'url':url,'token':token}
+    def sync(self):
+        self.refresh_deliveries()
+        config=self._connection()
+        if config is None:return {**self.status(),'status':'not_configured'}
         with self.connect() as c:rows=c.execute("SELECT * FROM observations WHERE dashboard_status='pending' ORDER BY observed_at LIMIT 20").fetchall()
         if not rows:return {**self.status(),'status':'complete','uploaded':0}
-        request=urllib.request.Request(config['url']+'/api/newsflow',data=json.dumps({'events':[json.loads(r['payload']) for r in rows]},ensure_ascii=False).encode(),headers={'Content-Type':'application/json','OAI-Sites-Authorization':'Bearer '+token},method='POST')
+        request=urllib.request.Request(config['url']+'/api/newsflow',data=json.dumps({'events':[json.loads(r['payload']) for r in rows]},ensure_ascii=False).encode(),headers={'Content-Type':'application/json','OAI-Sites-Authorization':'Bearer '+config['token']},method='POST')
         try:
-            with urllib.request.urlopen(request,timeout=30) as response:result=json.load(response)
+            with urllib.request.build_opener(_NoBridgeRedirect()).open(request,timeout=30) as response:result=json.load(response)
             accepted=set(result.get('accepted_ids',[]))
             if not accepted.issubset({r['id'] for r in rows}):raise ValueError('Unexpected ingestion ACK')
             with self.connect() as c:
