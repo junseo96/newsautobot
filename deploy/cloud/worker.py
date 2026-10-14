@@ -196,12 +196,12 @@ def cycle_duration(value):
     return seconds
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('command', choices=['check', 'audit', 'run', 'cycle'])
     parser.add_argument('--seconds', type=cycle_duration,
                         help='Cycle duration before graceful drain (1-3600; default 600)')
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     if args.seconds is not None and args.command != 'cycle':
         parser.error('--seconds is only valid with cycle')
     if args.command == 'check':

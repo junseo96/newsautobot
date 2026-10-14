@@ -98,6 +98,18 @@ probe는 Gmail 검색 ID, Telegram `getMe`·`getChat`, DART 읽기, 기존 대�
 
 첫 실제 적격 기사 처리에서 Telegram 영수증의 `complete`, message ID, ACK와 기존 대시보드 반영을 확인한다. 적격 기사가 없는 동안 검증용 가짜 뉴스를 보내지 않는다. Actions가 성공했다는 사실과 각 수집 출처·기사 검토·발송의 결과는 구분해서 확인한다.
 
+## Python 상시 실행
+
+복원된 운영 이력, `work/` 경로와 위 인증 설정이 준비된 Linux 실행 환경에서 다음 진입점을 사용한다.
+
+```bash
+NEWS_SERVICE_ENABLED=true NEWS_GMAIL_TRANSPORT=gmail_api python3 deploy/cloud/run_forever.py
+```
+
+`run_forever.py`는 시간 제한 없이 기존 수집·Gmail·기사 검토·발송·대시보드 동기화 루프를 실행한다. 기존 supervisor 잠금으로 중복 실행을 막고, Ctrl+C 또는 SIGTERM을 받으면 새 작업을 멈춘 뒤 진행 중인 처리와 영수증·ACK 기록을 정리한다. 인증·이력 검증 실패 시 시작하지 않으며, `NEWS_SERVICE_ENABLED`가 꺼져 있으면 발송 없이 대기한다.
+
+이 프로세스가 실행되는 머신이 유지되는 동안 계속 동작한다. GitHub Actions에서 실행하면 runner의 작업 시간 제한이 적용된다. 예약 워크플로는 기존 `cycle --seconds 600`을 사용한다.
+
 ## 실패·중지·복구
 
 중지는 먼저 `NEWS_SERVICE_ENABLED=false`로 바꿔 이후 실행을 막고 현재 회차가 종료·상태 저장될 때까지 기다리는 방식으로 한다. 실행 도중 Cancel을 누르면 발송 이후 상태 저장이 끊길 수 있다. 작업 시간 제한은 새 작업을 멈추고 진행 중인 처리를 정리하는 기준이며, 발송 도중 프로세스를 즉시 강제 종료하는 타이머가 아니다. runner 강제 종료·전체 job timeout은 여전히 발생할 수 있다.
