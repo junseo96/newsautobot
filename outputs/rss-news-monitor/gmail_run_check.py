@@ -27,7 +27,7 @@ def check(scan, run_epoch, known_ids, now_epoch, root=None):
         errors.append('scan_not_current_run')
     if scan.get('pagination_complete') is not True:
         errors.append('search_pagination_incomplete')
-    if scan.get('search_tool') not in gmail_scan.SEARCH_SOURCES:
+    if scan.get('search_tool') != 'gmail_search_email_ids':
         errors.append('actual_search_evidence_missing')
     if 'message_ids' not in scan:
         errors.append('invalid_message_ids')

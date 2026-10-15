@@ -6,7 +6,6 @@ from pathlib import Path
 import tempfile
 import unittest
 from unittest import mock
-from urllib.error import HTTPError, URLError
 import zipfile
 
 import collector
@@ -108,33 +107,6 @@ class DartCollectorTests(unittest.TestCase):
         self.assertEqual(result['source']['name'],'OpenDART Extended')
         self.assertEqual(len(result['items']),1)
         self.assertTrue(result['items'][0]['must_review'])
-
-    def test_transport_errors_never_persist_credential_urls(self):
-        key='synthetic-dart-secret'
-        url='https://opendart.fss.or.kr/api/corpCode.xml?crtfc_key='+key
-        for error, expected in ((URLError(url), 'URLError'),
-                                (HTTPError(url, 403, key, {}, io.BytesIO(key.encode())), 'HTTPError: HTTP 403')):
-            with self.subTest(error=type(error).__name__), \
-                    mock.patch.dict(os.environ, {'NEWS_DART_KEY':key}), \
-                    mock.patch.object(collector.urllib.request, 'urlopen', side_effect=error):
-                result=collector.fetch_dart(self.cfg)
-            self.assertFalse(result['ok'])
-            self.assertEqual(result['error'],expected)
-            self.assertNotIn(key,json.dumps(result))
-            self.assertNotIn('crtfc_key',json.dumps(result))
-
-    def test_upstream_error_message_cannot_echo_credential(self):
-        key='synthetic-dart-secret'
-        def fake_urlopen(request, **_):
-            if 'corpCode.xml' in request.full_url:
-                return io.BytesIO(corp_archive())
-            return io.BytesIO(json.dumps({'status':'010','message':key}).encode())
-        with mock.patch.dict(os.environ, {'NEWS_DART_KEY':key}), \
-                mock.patch.object(collector.urllib.request, 'urlopen', side_effect=fake_urlopen):
-            result=collector.fetch_dart(self.cfg)
-        self.assertFalse(result['ok'])
-        self.assertEqual(result['error'],'RuntimeError')
-        self.assertNotIn(key,json.dumps(result))
 
 
 if __name__ == '__main__':

@@ -8,7 +8,6 @@ param(
 $ErrorActionPreference="Stop"
 [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12
 . (Join-Path $PSScriptRoot "Telegram-Format.ps1")
-. (Join-Path $PSScriptRoot "Telegram-Auth.ps1")
 $messagePath=$null
 if ($PSCmdlet.ParameterSetName -eq "File") {
  $messagePath=(Resolve-Path -LiteralPath $MessageFile).Path
@@ -81,14 +80,20 @@ try {
   Save-TelegramReceipt $receiptPath $receipt
  }
  if ($NewsFormat) { Assert-NoveltyReview }
- $credential=$null
- $pointer=[IntPtr]::Zero
+ if ([string]::IsNullOrWhiteSpace($ConfigDir)) {
+  $projectRoot=(Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
+  $ConfigDir=Join-Path $projectRoot ".telegram-forwarder"
+ }
+ $tokenPath=Join-Path $ConfigDir "bot-token.dpapi"
+ $chatIdPath=Join-Path $ConfigDir "chat-id.txt"
+ if (-not (Test-Path -LiteralPath $tokenPath -PathType Leaf) -or -not (Test-Path -LiteralPath $chatIdPath -PathType Leaf)) { throw "Telegram configuration missing." }
+ $secureToken=ConvertTo-SecureString ([IO.File]::ReadAllText($tokenPath,[Text.Encoding]::UTF8).Trim())
+ $pointer=[Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureToken)
  $plainToken=$null
  try {
-  $credential=Get-NewsTelegramCredential -ConfigDir $ConfigDir
-  $pointer=[Runtime.InteropServices.Marshal]::SecureStringToBSTR($credential.SecureToken)
   $plainToken=[Runtime.InteropServices.Marshal]::PtrToStringBSTR($pointer)
-  $chatId=$credential.ChatId
+  $chatId=[IO.File]::ReadAllText($chatIdPath,[Text.Encoding]::UTF8).Trim()
+  if ([string]::IsNullOrWhiteSpace($chatId)) { throw "Empty Telegram chat configuration." }
   for ($index=0; $index -lt $parts.Count; $index++) {
    $chunk=$parts[$index]
    if ($parts.Count -gt 1) { $chunk="[{0}/{1}]`r`n{2}" -f ($index+1),$parts.Count,$chunk }
@@ -130,6 +135,6 @@ try {
  } finally {
   $plainToken=$null
   if ($pointer -ne [IntPtr]::Zero) { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($pointer) }
-  if ($null -ne $credential) { $credential.SecureToken.Dispose(); $credential=$null }
+  $secureToken.Dispose()
  }
 } finally { if ($newsLock) { $newsLock.Dispose() }; $receiptLock.Dispose() }

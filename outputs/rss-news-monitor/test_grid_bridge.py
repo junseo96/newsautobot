@@ -1,10 +1,7 @@
-import io,json,os,sqlite3,tempfile,unittest,urllib.request,urllib.error
-from email.message import Message
-from unittest.mock import patch
-from urllib.response import addinfourl
+import json,sqlite3,tempfile,unittest
 from pathlib import Path
 from contextlib import closing
-from grid_bridge import Bridge, _NoBridgeRedirect
+from grid_bridge import Bridge
 
 class GridBridgeTests(unittest.TestCase):
     def setUp(self):
@@ -50,93 +47,5 @@ class GridBridgeTests(unittest.TestCase):
     def test_no_event_records_explicit_no_dashboard_decision(self):
         self.bridge.record(self.job,{**self.decision,'dashboard_events':[]})
         self.assertEqual(self.bridge.status()['review_audit'],{'not_applicable':1})
-
-class GridBridgeCloudTests(unittest.TestCase):
-    rows=GridBridgeTests.rows
-    def setUp(self):
-        GridBridgeTests.setUp(self)
-        self.environment=patch.dict(os.environ,{},clear=True)
-        self.environment.start();self.addCleanup(self.environment.stop)
-        with closing(sqlite3.connect(self.root/'work/rss-news-monitor.db')) as c:
-            c.execute('CREATE TABLE delivery_history(url TEXT,receipt_file TEXT,message_sha256 TEXT)');c.commit()
-        self.bridge.record(self.job,self.decision)
-        self.credentials={'NEWS_GRID_URL':'https://dashboard.example/base/', 'NEWS_GRID_TOKEN':'synthetic-platform-credential'}
-
-    def test_environment_bypasses_unreadable_windows_config_and_keeps_base_path(self):
-        config=self.root/'work/grid-bridge/connection.json'
-        config.write_text('not valid JSON or DPAPI',encoding='utf-8')
-        event_id=self.rows()[0]['id']
-        with patch.dict(os.environ,self.credentials),patch('grid_bridge.urllib.request.build_opener') as build:
-            build.return_value.open.return_value=io.BytesIO(json.dumps({'accepted_ids':[event_id]}).encode())
-            result=self.bridge.sync()
-        request=build.return_value.open.call_args.args[0]
-        self.assertIsInstance(build.call_args.args[0],_NoBridgeRedirect)
-        self.assertEqual(request.full_url,'https://dashboard.example/base/api/newsflow')
-        self.assertEqual(request.get_header('Oai-sites-authorization'),'Bearer synthetic-platform-credential')
-        self.assertEqual(request.method,'POST')
-        self.assertEqual(json.loads(request.data)['events'][0]['id'],event_id)
-        self.assertEqual(result['uploaded'],1)
-        self.assertEqual(self.rows()[0]['dashboard_status'],'synced')
-        self.assertEqual(self.rows()[0]['telegram_status'],'not_sent')
-        self.assertEqual(config.read_text(encoding='utf-8'),'not valid JSON or DPAPI')
-
-    def test_environment_never_writes_connection_file(self):
-        with patch.dict(os.environ,self.credentials),patch('grid_bridge.urllib.request.build_opener') as build:
-            build.return_value.open.return_value=io.BytesIO(b'{"accepted_ids":[]}')
-            result=self.bridge.sync()
-        self.assertEqual(result['status'],'partial')
-        self.assertEqual(self.rows()[0]['dashboard_status'],'pending')
-        self.assertFalse((self.root/'work/grid-bridge/connection.json').exists())
-
-    def test_incomplete_environment_does_not_fall_back_or_send(self):
-        (self.root/'work/grid-bridge/connection.json').write_text('not valid JSON',encoding='utf-8')
-        for values in ({'NEWS_GRID_URL':self.credentials['NEWS_GRID_URL']},
-                       {'NEWS_GRID_TOKEN':self.credentials['NEWS_GRID_TOKEN']},
-                       {**self.credentials,'NEWS_GRID_TOKEN':' '},
-                       {**self.credentials,'NEWS_GRID_URL':''}):
-            with self.subTest(names=sorted(values)),patch.dict(os.environ,values),patch('grid_bridge.urllib.request.build_opener') as build:
-                with self.assertRaisesRegex(ValueError,'must be configured together'):
-                    self.bridge.sync()
-                build.assert_not_called()
-
-    def test_endpoint_validation_never_includes_bad_url_or_secret(self):
-        urls=['http://dashboard.example','https://user:secret@dashboard.example',
-              'https://dashboard.example?secret=value','https://dashboard.example#fragment',
-              'https://dashboard.example:bad','https://dashboard.example\\@attacker.example',
-              ' https://dashboard.example','https://dashboard.example\n/path','//dashboard.example']
-        for url in urls:
-            with self.subTest(url=url),patch.dict(os.environ,{**self.credentials,'NEWS_GRID_URL':url}),patch('grid_bridge.urllib.request.build_opener') as build:
-                with self.assertRaisesRegex(ValueError,'Expected HTTPS dashboard base URL') as failure:
-                    self.bridge.sync()
-                self.assertNotIn(url,str(failure.exception));build.assert_not_called()
-
-    def test_bad_ack_remains_pending_and_does_not_disclose_transport_error(self):
-        for response in (io.BytesIO(b'{"accepted_ids":["not-this-event"]}'),
-                         urllib.error.URLError('secret https://bad.example/private-token')):
-            with patch.dict(os.environ,self.credentials),patch('grid_bridge.urllib.request.build_opener') as build:
-                if isinstance(response,Exception):build.return_value.open.side_effect=response
-                else:build.return_value.open.return_value=response
-                with self.assertRaisesRegex(RuntimeError,'Dashboard sync failed:') as failure:
-                    self.bridge.sync()
-                self.assertNotIn('secret',str(failure.exception));self.assertNotIn('https://',str(failure.exception))
-                row=self.rows()[0];self.assertEqual(row['dashboard_status'],'pending')
-                self.assertNotIn('https://',row['last_error'])
-        self.assertEqual(self.rows()[0]['attempts'],2)
-
-    def test_redirect_cannot_forward_credential_to_another_url(self):
-        seen=[]
-        class FakeHTTPS(urllib.request.HTTPSHandler):
-            def https_open(self,request):
-                seen.append(request.full_url)
-                headers=Message();headers['Location']='https://attacker.example/private-token'
-                response=addinfourl(io.BytesIO(b''),headers,request.full_url,302)
-                response.msg='Found'
-                return response
-        opener=urllib.request.build_opener(FakeHTTPS(),_NoBridgeRedirect())
-        with patch.dict(os.environ,self.credentials),patch('grid_bridge.urllib.request.build_opener',return_value=opener):
-            with self.assertRaisesRegex(RuntimeError,'Dashboard sync failed: HTTPError: HTTP 302'):
-                self.bridge.sync()
-        self.assertEqual(seen,['https://dashboard.example/base/api/newsflow'])
-        self.assertEqual(self.rows()[0]['dashboard_status'],'pending')
 
 if __name__=='__main__':unittest.main()

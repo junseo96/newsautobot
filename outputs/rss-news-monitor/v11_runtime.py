@@ -6,7 +6,6 @@ import json
 import os
 from pathlib import Path
 import shutil
-import signal
 import sqlite3
 import subprocess
 import time
@@ -115,27 +114,20 @@ def run_process(command, *, timeout=900, stdin=None, cwd=None):
             str(Path(os.environ['SystemRoot'])/'System32/WindowsPowerShell/v1.0/Modules')])
     process = subprocess.Popen([str(x) for x in command], stdin=subprocess.PIPE,
         stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=cwd,
-        text=True, encoding='utf-8', errors='replace', creationflags=creationflags,env=environment,
-        start_new_session=os.name != 'nt')
+        text=True, encoding='utf-8', errors='replace', creationflags=creationflags,env=environment)
     try:
         out,err = process.communicate(stdin, timeout=timeout)
     except subprocess.TimeoutExpired:
         if os.name == 'nt':
             subprocess.run(['taskkill','/PID',str(process.pid),'/T','/F'],capture_output=True,creationflags=creationflags)
         else:
-            # Shell/Codex descendants can inherit the output pipes. Killing only
-            # the parent leaves workers running and communicate() waiting forever.
-            try:
-                os.killpg(process.pid, signal.SIGKILL)
-            except ProcessLookupError:
-                pass
+            process.kill()
         out,err = process.communicate()
         raise TimeoutError('Child process timed out; output retained by caller only when available')
     return process.returncode,out,err
 
 def powershell(root, filename, *arguments, timeout=300):
-    executable = 'powershell.exe' if os.name == 'nt' else 'pwsh'
-    code,out,err = run_process([executable,'-NoProfile','-ExecutionPolicy','Bypass','-File',
+    code,out,err = run_process(['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File',
         Path(root)/'outputs/rss-news-monitor'/filename,*arguments],timeout=timeout,cwd=root)
     if code:
         raise RuntimeError(f'{filename} exited {code}: {err[-1800:]}')

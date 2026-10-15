@@ -24,7 +24,6 @@ from v11_decision import DECISION_SCHEMA, NOVELTY_REVIEW_SCHEMA, validate_plan, 
 from v11_runtime import Queue, InstanceLock, codex, fingerprint, may_send, powershell, read_json, save_json, scheduled_brief_slot, stamp
 from v12_decision_context import shortlist_related, compact_novelty_payload
 from grid_bridge import Bridge, WORKER_SCHEMA, PROMPT as GRID_PROMPT
-from project_paths import evidence_path
 
 
 def normalize_simple_headline(plan):
@@ -91,28 +90,25 @@ class Service:
             save_json(self.work/'health.json',self.health)
 
     def collect(self,fast=False):
-        if self.stop.is_set():return
         stage='fast_collector' if fast else 'collector'
         started=time.monotonic()
         self.update(stage,'running')
         with self.collection_lock:
-            if self.stop.is_set():return
             pending=None if fast else self.queue.get('pending_newsletter')
             args=['-Mode','collect','-LookbackHours','12','-Lane','realtime','-MaxCandidates','40']
             if fast:args+=['-FastPoll']
             if pending and pending.get('newsletter_file'):
-                args+=['-NewsletterFile',str(evidence_path(pending['newsletter_file'],root=self.root))]
+                args+=['-NewsletterFile',pending['newsletter_file']]
             result=powershell(self.root,'Run-Collector.ps1',*args,timeout=600)
             snapshot_path=result.get('run_files',{}).get('snapshot')
             if not snapshot_path: raise ValueError('Collector returned no immutable snapshot')
-            snapshot_path=evidence_path(snapshot_path,root=self.root)
             packet=RunPacket.load(snapshot_path)
             with self.lock:
                 added=self.queue.enqueue(packet.snapshot,snapshot_path)
             if pending:
                 from v11_mail_worker import finalize
-                completed=finalize(self.root,evidence_path(pending['scan_file'],root=self.root))
-                save_json(evidence_path(pending['directory'],root=self.root)/'finalized.json',completed)
+                completed=finalize(self.root,pending['scan_file'])
+                save_json(Path(pending['directory'])/'finalized.json',completed)
                 self.queue.set('pending_newsletter',None)
                 self.queue.set('last_gmail_import',{'at':stamp(),**completed})
             summary=packet.summary()
@@ -130,7 +126,6 @@ class Service:
         return result
 
     def gmail(self):
-        if self.stop.is_set():return
         if self.queue.get('pending_newsletter'): return
         from v11_mail_worker import run
         directory=self.work/'gmail'/uuid.uuid4().hex
@@ -146,7 +141,7 @@ class Service:
         self.update('gmail','failed' if result['status'] in ('failed','partial') else 'complete',result=result)
 
     def _latest(self, jobs):
-        packet=RunPacket.load(evidence_path(self.queue.get('latest_snapshot'),root=self.root))
+        packet=RunPacket.load(self.queue.get('latest_snapshot'))
         index={c['url']:i for i,c in enumerate(packet.candidates)}
         current=[]
         for job in jobs:
@@ -172,7 +167,6 @@ class Service:
         return history,rows
 
     def review(self):
-        if self.stop.is_set():return False
         if time.time()<self.queue.get('worker_backoff_until',0):return False
         jobs=self.queue.take(self.config.get('review_batch_size',12))
         if not jobs: return False
@@ -188,7 +182,6 @@ class Service:
             from v12_newsletter_context import candidate_link_evidence,local_link_decision
             local_checks=[];article_current=[];link_context={}
             for job,index in current:
-                if self.stop.is_set():return True
                 context=candidate_link_evidence(self.root,packet.candidates[index])
                 if context is not None:link_context[index]=context
                 local=local_link_decision(index,context)
@@ -218,7 +211,6 @@ class Service:
                 return True
             remaining=[];replayed=[]
             for job,index in current:
-                if self.stop.is_set():return True
                 cached=None
                 if job.get('result') and job.get('status')=='deferred':
                     try:
@@ -263,10 +255,8 @@ class Service:
                          **({'previous_attempt':{'attempts':job['attempts'],'reason':job.get('reason')}} if job.get('reason') else {})} for job,i in current]
             from v11_source_cache import get as source_cache
             cache_urls=[c['url'] for c in candidates]
-            if self.stop.is_set():return True
             with ThreadPoolExecutor(max_workers=6) as pool:
-                cached=list(pool.map(lambda url:None if self.stop.is_set() else source_cache(self.root,url),cache_urls))
-            if self.stop.is_set():return True
+                cached=list(pool.map(lambda url:source_cache(self.root,url),cache_urls))
             original_cache=[{k:c.get(k) for k in ('url','final_url','title','published_at','usable','error','cache_file')} |
                             {'text':c.get('text','')[:6000],'text_truncated':len(c.get('text',''))>6000} for c in cached]
             save_json(directory/'source-cache-index.json',original_cache)
@@ -303,7 +293,6 @@ class Service:
                 'It need not be an emergency or have a before-morning deadline. Major new project decisions, contracts, supply changes and market rules qualify by material industry impact. '
                 'Verified lower-tier but still meaningful industrial changes are standard and must receive a complete article brief; standard items wait for the 06:00, 10:00, 14:00 or 18:00 KST scheduled brief. Never use standard as filler for stock-only, promotional, historical, duplicate or unverified material. '
                 +GRID_PROMPT+'\nPOLICY\n'+policy+'\nActual date now '+stamp()+'.\nASSIGNMENT\n'+json.dumps({**packet.identity(),'schema_version':1,'candidates':candidates,'original_cache':original_cache,'verified_related_deliveries':related},ensure_ascii=False,separators=(',',':')))
-            if self.stop.is_set():return True
             plan,events=codex(self.root,self.config,prompt,directory,schema=WORKER_SCHEMA)
             self.process_plan(plan,packet,current,directory,evidence,expected_indices=indices)
             self.queue.set('worker_failures',0)
@@ -330,7 +319,6 @@ class Service:
         return decision
 
     def process_plan(self,plan,packet,current,directory,evidence=None,expected_indices=None):
-        if self.stop.is_set():return {'status':'stopping'}
         jobs={i:job for job,i in current}
         # Dashboard evidence is validated independently, even when a Telegram
         # draft fails its format/novelty contract. Neither channel gates the other.
@@ -354,7 +342,6 @@ class Service:
         for i,error in invalid.items():
             if i in jobs:self.queue.finish(jobs[i],'deferred','Worker contract: '+error,delay=600)
         for position,decision in enumerate(decisions):
-            if self.stop.is_set():return {'status':'stopping'}
             job=jobs.get(decision['index'])
             if not job:continue
             # Do not hold an already-stale original until the next brief just
@@ -381,8 +368,8 @@ class Service:
         return result
 
     def resume_review(self,directory):
-        directory=evidence_path(directory,root=self.root)
-        if directory.parent!=(self.work/'reviews').resolve():raise ValueError('Review must belong to this service')
+        directory=Path(directory).resolve()
+        if directory.parent!=self.work/'reviews':raise ValueError('Review must belong to this service')
         plan=read_json(directory/'response.json')
         if Path(plan['run_id']).name!=plan['run_id']:raise ValueError('Invalid run identity')
         packet=RunPacket.load(self.root/'work/runs'/plan['run_id']/'snapshot.json')
@@ -400,12 +387,11 @@ class Service:
         return self._apply(job,decision,directory,force_standard)
 
     def _apply(self,job,decision,directory,force_standard=False):
-        if self.stop.is_set():return
         if decision['action']=='send':
             for previous in (self.work/'publications').glob('*.json'):
                 prior=read_json(previous)
                 if prior['job']['url']==job['url'] and prior['status']=='attempted':
-                    receipt=evidence_path(prior['arguments']['ReceiptFile'],root=self.root)
+                    receipt=Path(prior['arguments']['ReceiptFile'])
                     if receipt.exists() and read_json(receipt).get('status')=='complete':
                         self.publish_manifest(previous)
                         if prior['job']['fingerprint']!=job['fingerprint']:
@@ -448,9 +434,7 @@ class Service:
                         'properties':{'action':{'type':'string','enum':['publish','duplicate','defer']},'reason':{'type':'string'},
                         'duplicate_receipt_id':{'anyOf':[{'type':'string'},{'type':'null'}]},
                         'review':{'anyOf':[NOVELTY_REVIEW_SCHEMA,{'type':'null'}]}}}
-                if self.stop.is_set():return
                 second,_=codex(self.root,{**self.config,'worker_web_search':'disabled'},prompt,Path(directory)/('novelty-'+uuid.uuid4().hex),schema=schema)
-                if self.stop.is_set():return
                 if len(second.get('reason',''))<20:raise ValueError('Novelty judgment needs a concrete reason')
                 if second['action']=='defer':
                     self.queue.finish(job,'deferred',second['reason'],decision,delay=3600);return
@@ -473,13 +457,12 @@ class Service:
         # snapshot. Lock order: delivery -> collection -> state; research above
         # holds none of these locks.
         with self.delivery_lock,self.collection_lock,self.lock:
-            if self.stop.is_set():return
             if not self.queue.active_fresh(job):
                 self.queue.drop_pending(job)
                 return
             packet,current=self._latest([job])
             if not current:return
-            run_dir=evidence_path(self.queue.get('latest_snapshot'),root=self.root).parent
+            run_dir=Path(self.queue.get('latest_snapshot')).parent
             suffix='v11-'+uuid.uuid4().hex
             if decision['action']=='reviewed':
                 if decision.get('duplicate_of'):
@@ -497,7 +480,6 @@ class Service:
                 if decision.get('duplicate_of'):row['duplicate_of']=decision['duplicate_of']['url']
                 path=run_dir/('decisions-'+suffix+'.json')
                 save_json(path,{'run_id':packet.snapshot['run_id'],'decisions':[row]})
-                if self.stop.is_set():return
                 ack=powershell(self.root,'Ack-Collector.ps1','-BatchFile',run_dir/'snapshot.json','-DecisionFile',path)
                 save_json(run_dir/('ack-'+suffix+'.json'),ack)
                 if ack.get('run_id')!=packet.snapshot['run_id'] or ack.get('reviewed',0)+ack.get('already_recorded',0)!=1:
@@ -520,15 +502,7 @@ class Service:
             self.publish_manifest(manifest)
 
     def publish_manifest(self,manifest):
-        if self.stop.is_set():return
-        manifest=evidence_path(manifest,root=self.root)
-        record=read_json(manifest)
-        path_arguments={'BatchFile','MessageFile','ArticleUrlsFile','NoveltyReviewFile','ReceiptFile','DecisionFile'}
-        # Historic arguments remain bound to their original evidence. Resolve
-        # only the invocation copy after an explicit operating-state migration.
-        args={key:str(evidence_path(value,root=self.root)) if key in path_arguments else value
-              for key,value in record['arguments'].items()}
-        receipt=Path(args['ReceiptFile'])
+        record=read_json(manifest); args=record['arguments']; receipt=Path(args['ReceiptFile'])
         if record['status']=='complete':return
         if record['status']=='attempted' and (not receipt.exists() or read_json(receipt).get('status')!='complete'):
             raise RuntimeError('Uncertain/incomplete prior publication; automatic resend blocked: '+str(manifest))
@@ -537,15 +511,7 @@ class Service:
             validation=powershell(self.root,'Publish-Brief.ps1',*arguments,'-ValidateOnly')
             if validation.get('valid') is not True or validation.get('novelty_checked') is not True:
                 raise ValueError('Publication preflight failed; no send attempted')
-        if self.stop.is_set():return
-        previous_status=record['status']
         record['status']='attempted';save_json(manifest,record)
-        if self.stop.is_set():
-            # No sender has started, so leave this durable manifest retryable.
-            record['status']=previous_status;save_json(manifest,record)
-            return
-        # Once the sender starts, finish its receipt/ACK path even during stop.
-        # A host force-kill still requires the existing uncertain-send recovery.
         try:
             result=powershell(self.root,'Publish-Brief.ps1',*arguments)
         except Exception as exc:
@@ -569,10 +535,9 @@ class Service:
 
     def recover(self):
         for manifest in (self.work/'publications').glob('*.json'):
-            if self.stop.is_set():return
             record=read_json(manifest)
             if record['status'] in ('complete','failed_before_send'):continue
-            receipt=evidence_path(record['arguments']['ReceiptFile'],root=self.root)
+            receipt=Path(record['arguments']['ReceiptFile'])
             # Prepared-but-never-attempted manifests may have stale snapshots; review afresh.
             if record['status']=='prepared':continue
             if receipt.exists() and read_json(receipt).get('status')=='complete':
@@ -582,14 +547,12 @@ class Service:
                 self.update('publication','failed',error='Uncertain delivery requires receipt reconciliation',manifest=str(manifest))
 
     def deliver_scheduled_brief(self,slot):
-        if self.stop.is_set() or not slot:return False
+        if not slot:return False
         jobs=self.queue.ready(); outcomes=collections.Counter(); failed=0
         if not jobs and self.queue.get('last_standard_brief_slot')==slot:return False
         for job in jobs:
-            if self.stop.is_set():return bool(outcomes)
             try:
                 self.apply(job,json.loads(job['result']),self.work/'reviews'/uuid.uuid4().hex,force_standard=True)
-                if self.stop.is_set():return bool(outcomes)
                 with self.queue.connect() as con:
                     row=con.execute('SELECT status FROM jobs WHERE url=?',(job['url'],)).fetchone()
                 outcomes[row['status'] if row else 'expired']+=1
@@ -614,36 +577,22 @@ class Service:
 
     def run(self):
         with InstanceLock(self.work/'supervisor.lock'):
-            threads=[]
+            self.queue.reset_inflight();self.recover()
+            self.update('service','complete',mode='continuous')
+            threads=[threading.Thread(target=self.timed_loop,args=('dashboard_sync',self.sync_dashboard,60),daemon=True),
+                     threading.Thread(target=self.timed_loop,args=('fast_collector',lambda:self.collect(fast=True),self.config['fast_poll_interval_seconds']),daemon=True),
+                     threading.Thread(target=self.timed_loop,args=('collector',self.collect,self.config['collection_interval_seconds']),daemon=True),
+                     threading.Thread(target=self.timed_loop,args=('gmail',self.gmail,self.config['gmail_interval_seconds']),daemon=True),
+                     threading.Thread(target=self.timed_loop,args=('scheduled_brief',lambda:self.deliver_scheduled_brief(scheduled_brief_slot(self.config)),15),daemon=True)]
+            for thread in threads:thread.start()
             try:
-                if self.stop.is_set():return
-                self.queue.reset_inflight();self.recover()
-                if self.stop.is_set():return
-                self.update('service','complete',mode='continuous')
-                tasks=[('dashboard_sync',self.sync_dashboard,60),
-                       ('fast_collector',lambda:self.collect(fast=True),self.config['fast_poll_interval_seconds']),
-                       ('collector',self.collect,self.config['collection_interval_seconds']),
-                       ('gmail',self.gmail,self.config['gmail_interval_seconds']),
-                       ('scheduled_brief',lambda:self.deliver_scheduled_brief(scheduled_brief_slot(self.config)),15)]
-                for task in tasks:
-                    if self.stop.is_set():break
-                    thread=threading.Thread(target=self.timed_loop,args=task,daemon=True)
-                    threads.append(thread)
-                    thread.start()
                 while not self.stop.is_set():
                     worked=self.review() if self.queue.get('latest_snapshot') else False
                     self.update('service','complete',mode='continuous')
                     self.stop.wait(2 if worked else 15)
-            except KeyboardInterrupt:pass
-            finally:
-                self.stop.set()
-                # Keep the supervisor lock until every started loop has exited.
-                # Their external calls retain their existing finite timeouts.
-                for thread in threads:
-                    if thread.ident is not None:thread.join()
+            except KeyboardInterrupt:self.stop.set()
 
     def sync_dashboard(self):
-        if self.stop.is_set():return
         result=self.grid_bridge.sync()
         status=result.pop('status')
         self.update('dashboard_sync','complete' if status=='complete' else 'failed',sync_status=status,**result)

@@ -24,7 +24,5 @@
 **/__pycache__/
 **/*.pyc
 **/*.log
-**/*.age
-**/*.key
 **/*.tsbuildinfo
 **/.npmrc

@@ -37,22 +37,18 @@ if ($Mode -eq "status") {
 }
 $dartKeyPath = Join-Path $projectRoot ".news-monitor-secrets\dart-key.dpapi"
 $dartPointer = [IntPtr]::Zero
-$dartSecure = $null
-$originalDartKey = $env:NEWS_DART_KEY
-try {
-    if (-not $originalDartKey -and (Test-Path -LiteralPath $dartKeyPath -PathType Leaf)) {
-        $dartSecure = ConvertTo-SecureString ([IO.File]::ReadAllText($dartKeyPath, [Text.Encoding]::UTF8).Trim())
-        $dartPointer = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($dartSecure)
-        $env:NEWS_DART_KEY = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($dartPointer)
-    }
-    $collectArgs = @($collector, "collect", "--db", $database, "--output", $output, "--lookback-hours", $LookbackHours, "--lane", $Lane, "--max-candidates", $MaxCandidates)
-    if ($NewsletterFile) { $collectArgs += @("--newsletter-file", (Resolve-Path -LiteralPath $NewsletterFile).Path) }
-    if ($FastPoll) { $collectArgs += "--fast-poll" }
-    if ($IncludeArchive) { $collectArgs += "--include-archive" }
-    & $python @collectArgs
+if (Test-Path -LiteralPath $dartKeyPath -PathType Leaf) {
+    $dartSecure = ConvertTo-SecureString ([IO.File]::ReadAllText($dartKeyPath, [Text.Encoding]::UTF8).Trim())
+    $dartPointer = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($dartSecure)
+    $env:NEWS_DART_KEY = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($dartPointer)
 }
+$collectArgs = @($collector, "collect", "--db", $database, "--output", $output, "--lookback-hours", $LookbackHours, "--lane", $Lane, "--max-candidates", $MaxCandidates)
+if ($NewsletterFile) { $collectArgs += @("--newsletter-file", (Resolve-Path -LiteralPath $NewsletterFile).Path) }
+if ($FastPoll) { $collectArgs += "--fast-poll" }
+if ($IncludeArchive) { $collectArgs += "--include-archive" }
+try { & $python @collectArgs }
 finally {
-    $env:NEWS_DART_KEY = $originalDartKey
+    $env:NEWS_DART_KEY = $null
     if ($dartPointer -ne [IntPtr]::Zero) { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($dartPointer) }
     if ($null -ne $dartSecure) { $dartSecure.Dispose() }
 }

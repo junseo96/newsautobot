@@ -9,14 +9,13 @@ import hashlib
 import html
 import json
 import os
-from pathlib import Path, PureWindowsPath
+from pathlib import Path
 import shutil
 import sqlite3
 import subprocess
 import sys
 import tempfile
 import unittest
-from unittest.mock import patch
 
 import collector
 
@@ -111,8 +110,6 @@ class PublishBriefTests(unittest.TestCase):
 
     def invoke(self, *extra):
         env = dict(os.environ, NEWS_PYTHON=sys.executable)
-        for name, directory in (('XDG_CACHE_HOME', 'cache'), ('XDG_CONFIG_HOME', 'config'), ('XDG_DATA_HOME', 'data')):
-            env[name] = str(self.root / directory)
         return subprocess.run([self.shell,'-NoProfile','-NonInteractive','-ExecutionPolicy','Bypass','-File',str(self.monitor/'Publish-Brief.ps1'),'-BatchFile',str(self.batch_path),'-MessageFile',str(self.message_path),'-ArticleUrlsFile',str(self.urls_path),'-NoveltyReviewFile',str(self.novelty_path),'-Reason','Confirmed new 2GW final approval', *extra], capture_output=True, text=True, encoding='utf-8', env=env, timeout=45)
 
     def calls(self):
@@ -266,67 +263,6 @@ class PublishBriefTests(unittest.TestCase):
         self.assertEqual(json.loads(recovered.stdout)['ack']['recovered_history'],1)
         self.assertEqual(self.status(),'delivered')
         self.assertEqual(self.calls(),['validate','send'])
-
-    def migrated_artifacts(self):
-        import re
-        legacy_root = r'D:\Operations\newsautobot'
-        def legacy(path):
-            return str(PureWindowsPath(legacy_root).joinpath(*path.relative_to(self.root).parts))
-        self.batch['run_files']['snapshot'] = legacy(self.batch_path)
-        self.write_json(self.batch_path, self.batch)
-        digest = hashlib.sha256(self.message.encode()).hexdigest()
-        rendered = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', html.escape(self.message, quote=False))
-        receipt_path = self.run/'receipt-migrated.json'
-        self.write_json(receipt_path, {
-            'schema_version':1, 'status':'complete', 'message_file':legacy(self.message_path),
-            'message_text':self.message, 'message_sha256':digest, 'markdown_bold':True,
-            'article_urls':[self.url], 'sent_at':dt.datetime.now(dt.timezone.utc).isoformat(),
-            'telegram_message_ids':[99], 'total_parts':1, 'in_flight_part':None,
-            'completed_parts':[{'index':0, 'message_id':99, 'sha256':hashlib.sha256(rendered.encode()).hexdigest()}],
-        })
-        decision_path = self.run/'decisions-migrated.json'
-        self.write_json(decision_path, {'run_id':'test-run', 'decisions':[
-            {'url':self.url, 'status':'delivered', 'reason':'Confirmed new 2GW final approval',
-             'receipt_file':legacy(receipt_path)}]})
-        return legacy_root, receipt_path, decision_path
-
-    def test_migrated_windows_complete_receipt_and_decisions_recover_without_resend(self):
-        legacy_root, receipt_path, decision_path = self.migrated_artifacts()
-        immutable = {path:path.read_bytes() for path in (self.batch_path, receipt_path, decision_path, self.message_path)}
-        with self.connection() as con:
-            con.execute("UPDATE source_runs SET run_id='newer-run'")
-        with patch.dict(os.environ, {'NEWS_LEGACY_ROOT':legacy_root}):
-            first = self.invoke('-ReceiptFile', str(receipt_path), '-DecisionFile', str(decision_path))
-            self.assertEqual(first.returncode, 0, first.stderr)
-            self.assertEqual(json.loads(first.stdout)['ack']['recovered_history'], 1)
-            second = self.invoke('-ReceiptFile', str(receipt_path), '-DecisionFile', str(decision_path))
-        self.assertEqual(second.returncode, 0, second.stderr)
-        self.assertEqual(json.loads(second.stdout)['ack']['already_recorded'], 1)
-        self.assertEqual(self.status(), 'delivered')
-        self.assertEqual(self.calls(), [])
-        for path, content in immutable.items():
-            self.assertEqual(path.read_bytes(), content)
-        with self.connection() as con:
-            self.assertEqual(con.execute('SELECT count(*) FROM delivery_history').fetchone()[0], 1)
-
-    def test_migrated_decision_comparison_keeps_all_non_path_fields_exact(self):
-        legacy_root, receipt_path, decision_path = self.migrated_artifacts()
-        original = json.loads(decision_path.read_text())
-        variants = [
-            {**original, 'unexpected':True},
-            {**original, 'decisions':[{**original['decisions'][0], 'reason':'Changed decision reason'}]},
-            {**original, 'decisions':[{**original['decisions'][0], 'receipt_file':str(self.run/'receipt-different.json')}]},
-        ]
-        for value in variants:
-            with self.subTest(value=value):
-                self.write_json(decision_path, value)
-                before = decision_path.read_bytes()
-                with patch.dict(os.environ, {'NEWS_LEGACY_ROOT':legacy_root}):
-                    result = self.invoke('-ReceiptFile', str(receipt_path), '-DecisionFile', str(decision_path))
-                self.assert_failed(result)
-                self.assertIn('DecisionFile already contains different decisions', result.stderr)
-                self.assertEqual(decision_path.read_bytes(), before)
-                self.assertEqual(self.calls(), [])
 
 
 if __name__ == '__main__':

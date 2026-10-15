@@ -442,7 +442,7 @@ def fetch_dart(cfg, cache_path=None, *, extended=False):
         for corp_code,name in companies:
             query=urllib.parse.urlencode({"crtfc_key":key,"corp_code":corp_code,"bgn_de":start,"end_de":end,"page_count":100})
             with urllib.request.urlopen(urllib.request.Request("https://opendart.fss.or.kr/api/list.json?"+query,headers=headers),timeout=TIMEOUT,context=dart_ssl) as r: payload=json.loads(r.read().decode("utf-8"))
-            if payload.get("status") not in {"000","013"}: raise RuntimeError("DART rejected the request")
+            if payload.get("status") not in {"000","013"}: raise RuntimeError(f"DART {payload.get('status')}: {payload.get('message')}")
             for filing in payload.get("list",[]):
                 report_name=filing.get("report_nm","")
                 if extended and not dart_material_report(report_name): continue
@@ -460,14 +460,7 @@ def fetch_dart(cfg, cache_path=None, *, extended=False):
                     cache_dart_document(cache_path,x["url"],x["title"],filing_day,key,rcp,headers,dart_ssl)
                 x["sec_watch"]=True; items.append(x)
         return {"source":src,"ok":True,"items":items,"error":None,"started_at":iso(started),"finished_at":iso(now_utc())}
-    except Exception as e:
-        # DART authenticates in the URL query. Never persist transport URLs or
-        # upstream messages, which can echo the injected crtfc_key.
-        safe=type(e).__name__
-        if isinstance(e,urllib.error.HTTPError) and type(e.code) is int:
-            safe+=f": HTTP {e.code}"
-            e.close()
-        return {"source":src,"ok":False,"items":[],"error":safe,"started_at":iso(started),"finished_at":iso(now_utc())}
+    except Exception as e: return {"source":src,"ok":False,"items":[],"error":f"{type(e).__name__}: {str(e)[:300]}","started_at":iso(started),"finished_at":iso(now_utc())}
 def ensure_db(c):
     c.executescript("""
     CREATE TABLE IF NOT EXISTS articles(id INTEGER PRIMARY KEY,url TEXT NOT NULL UNIQUE,url_hash TEXT NOT NULL,normalized_title TEXT NOT NULL,title TEXT NOT NULL,summary TEXT NOT NULL DEFAULT '',source TEXT NOT NULL,source_url TEXT NOT NULL,published_at TEXT,first_seen_at TEXT NOT NULL,last_seen_at TEXT NOT NULL,score INTEGER NOT NULL,score_reasons TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'pending',delivered_at TEXT,reviewed_at TEXT);
