@@ -6,6 +6,38 @@ GitHub Actions가 뉴스봇을 주기적으로 실행한다. 로컬 PC를 켜 �
 
 현재 저장소에는 이 실행 경로를 위한 코드가 준비되어 있다. 실제 GitHub 반영·Actions 활성화·인증값·원본 운영 상태를 연결하고 첫 회차를 확인하기 전에는 실운영 이전 완료로 보지 않는다. Codex 개발 환경의 Publish는 이 워크플로 실행과 별개다.
 
+## 원본 Windows PC에서 이관
+
+[Migrate-ToGitHub.ps1](Migrate-ToGitHub.ps1)은 인증 등록과 연결 검사, 발송 이력 이전을 두 단계로 진행한다. 원본 뉴스봇을 운영하던 **같은 Windows 사용자**로 실행한다. GitHub CLI(`gh`), Python 3.10 이상, `age`와 `age-keygen`이 필요하다. `gh auth login`으로 저장소의 Actions Secrets·Variables·Release·워크플로를 관리할 수 있는 계정에 로그인한다. 이 버전의 저장소는 기존 운영 폴더를 덮어쓰지 않는 별도 폴더에 준비한다.
+
+GitHub CLI나 age가 없으면 Windows 패키지 관리자로 설치할 수 있다. 설치 후 새 PowerShell 창에서 GitHub에 로그인하고 저장소를 받는다. 이미 받은 이관용 저장소가 있으면 같은 폴더에 다시 clone하지 않고 그 복사본을 최신 버전으로 갱신한다.
+
+```powershell
+winget install --id GitHub.cli --exact --source winget
+winget install --id FiloSottile.age --exact --source winget
+# 설치 후 새 PowerShell 창에서:
+gh auth login
+gh repo clone junseo96/newsautobot newsautobot-migration
+Set-Location .\newsautobot-migration
+```
+
+아래 `-SourceRoot`는 원본 뉴스봇의 `work/`가 있는 실제 운영 폴더로 바꾼다. **이 저장소의 복사본이 아니라 기존 발송 이력이 있는 폴더**를 지정한다.
+
+```powershell
+# 새 저장소 폴더에서 실행. 원본 뉴스봇은 준비 검사가 끝날 때까지 운영 가능하다.
+powershell -NoProfile -ExecutionPolicy Bypass -File .\deploy\cloud\Migrate-ToGitHub.ps1 -Phase Prepare -SourceRoot 'C:\Users\pos03\Documents\Codex\newflow'
+```
+
+준비 단계는 GitHub 예약을 꺼 둔 상태에서 인증을 등록하고, 별도의 [연결 검사 워크플로](../../.github/workflows/news-connection-check.yml)를 실행한다. Telegram·DART·대시보드 인증은 기존 환경변수 또는 Windows DPAPI 저장소를 사용한다. 모델 API 키와 Gmail OAuth 값은 환경변수에 없으면 보안 입력으로 받는다. 서비스 인증값을 화면·명령줄 인수·임시 평문 파일로 출력하지 않는다. 상태 암호화용 age identity는 원본 밖의 사용자 전용 폴더에 별도 보관한다. 모델 검사는 GitHub에서 수행하며 원본 PC의 Codex 로그인은 변경하지 않는다. 최소 모델 응답에는 API 비용이 발생한다.
+
+준비 성공 후 원본의 자동 재시작 예약과 수집·검토·발송기를 중지하고 불명확한 Telegram 전송이 없는지 확인한다. 콘솔로 실행한 서비스는 Ctrl+C 후 종료 완료를 기다린다. 기존 `pythonw` 예약 서비스에는 외부 정상 종료 인터페이스가 없어, 이관 도구가 프로세스를 강제 종료하지 않는다. 기존 운영 절차로 중지하고 전송 결과가 불명확한 영수증은 먼저 대조한다. 다음 `-Stopped`는 모든 원본 쓰기 작업이 중지되었다는 운영자의 확인이다.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\deploy\cloud\Migrate-ToGitHub.ps1 -Phase Cutover -SourceRoot 'C:\Users\pos03\Documents\Codex\newflow' -Stopped
+```
+
+전환 단계는 준비 결과와 원본 supervisor 잠금을 확인하고, 원본 밖의 비공개 폴더에 상태를 암호화한다. 암호문만 `news-state-bootstrap` Release에 올린 뒤 첫 운영 회차를 실행한다. 성공 회차와 최신 `newsautobot-state` artifact를 확인한 후에만 GitHub 예약을 켠다. 기존 Release·암호화 키·운영 상태를 자동 덮어쓰지 않는다. 활성화 전 실패하면 원본을 자동 재시작하지 않고 GitHub 예약도 꺼 둔다. 마지막 활성화 요청의 결과가 불명확하면 GitHub 변수와 실행 회차를 확인한 뒤 조치한다. 생성된 age identity는 안전하게 보관한다.
+
 ## 실행과 상태 보존
 
 - [운영 워크플로](../../.github/workflows/news-runtime.yml)는 `main`의 예약 실행과 수동 `Run workflow`를 사용한다. 예약 실행은 저장소 변수 `NEWS_SERVICE_ENABLED=true`일 때만 운영한다. 수동 `bootstrap:true`는 이 예약 스위치와 별개로 실제 처리를 시작한다.

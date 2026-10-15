@@ -1,10 +1,15 @@
 name: Scheduled news runtime
+run-name: News runtime ${{ inputs.request_id || github.run_number }}
 
 on:
   schedule:
     - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
     inputs:
+      request_id:
+        description: 'Optional identifier used by the local migration helper'
+        type: string
+        default: ''
       bootstrap:
         description: 'Import the verified latest state.tar.age from release news-state-bootstrap (first migration or manual recovery only; starts real processing)'
         type: boolean
